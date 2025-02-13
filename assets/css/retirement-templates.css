@@ -298,7 +298,8 @@ h1.specialCaptioned span.bottomRightCaption {
 #birthday-temp-1 h4,
 #birthday-temp-1 h5,
 #birthday-temp-1 h6 {
-    text-shadow: 0 3px 2px rgba(0, 0, 0, .3);
+    paint-order: stroke fill;
+    -webkit-text-stroke: 3px #333;
 }
 
 .thumbFloater {

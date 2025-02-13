@@ -63,7 +63,8 @@ body {
     color: #fff000;
     width: 100%;
     text-align: center;
-    text-shadow: 0 4px 3px rgba(0, 0, 0, .8);
+    paint-order: stroke fill;
+    -webkit-text-stroke: 3px #333;
 }
 
 .promoHeading-1 {
@@ -97,7 +98,8 @@ body {
     transform: translate(-50%, -50%);
     white-space: nowrap;
     z-index: -1;
-    text-shadow: 0 4px 3px rgba(0, 0, 0, .8);
+    paint-order: stroke fill;
+    -webkit-text-stroke: 3px #333;
 }
 
 .promoHeading-4 {

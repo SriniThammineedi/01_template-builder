@@ -400,7 +400,8 @@ body {
     text-align: center;
     color: #fff;
     white-space: nowrap;
-    text-shadow: 0 0 3px #573625;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 3px #573625;
 }
 
 .anvsrBody .splDecorTxt {

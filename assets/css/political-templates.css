@@ -44,7 +44,9 @@ body {
     color: #fb0653;
     width: fit-content;
     text-align: center;
-    text-shadow: 0 2px 1px rgba(255, 255, 255, .8);
+    paint-order: stroke fill;
+    -webkit-text-stroke: 3px #fff;
+
 }
 
 .sidiriBody {
