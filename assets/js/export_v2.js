@@ -26,7 +26,11 @@ async function exportAsHTML() {
     const cssFile = 'assets/css/temp_builder_mainV2.css';
     const response = await fetch(cssFile);
     const data = await response.text();
+<<<<<<< HEAD
     const updatedCSS = data.replace(/(\.\.\/images\/)/g, 'assets/images/');
+=======
+    const updatedCSS = data.replace(/(\/images\/)/g, './assets/images/');
+>>>>>>> a76290f5571e55f969214440e2cfc08287e6611b
         
         styles = `<style>
             ${updatedCSS}
