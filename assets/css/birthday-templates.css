@@ -383,7 +383,8 @@ h1.specialCaptioned span.bottomRightCaption {
 }
 
 /* Birthday Template 5 */
-.bt5Head {
+.bt5Head,
+.bt7Head {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -393,7 +394,8 @@ h1.specialCaptioned span.bottomRightCaption {
     gap: .5rem;
 }
 
-.bt5Head .imgHolder {
+.bt5Head .imgHolder,
+.bt7Head .imgHolder {
     width: 100%;
     margin: 0 auto;
     text-align: center;
@@ -411,7 +413,8 @@ h1.specialCaptioned span.bottomRightCaption {
     text-align: center;
 }
 
-.bt5Body {
+.bt5Body,
+.bt7Body {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -420,14 +423,16 @@ h1.specialCaptioned span.bottomRightCaption {
     gap: .25rem;
 }
 
-.bt5Body .imgHolder {
+.bt5Body .imgHolder,
+.bt7Body .imgHolder {
     width: auto;
     height: 260px;
     margin: 0 auto;
     text-align: center;
 }
 
-.bt5Body .imgHolder img {
+.bt5Body .imgHolder img,
+.bt7Body .imgHolder img {
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -445,7 +450,8 @@ h1.specialCaptioned span.bottomRightCaption {
     text-align: center;
 }
 
-.bt5Body p {
+.bt5Body p,
+.bt7Body p {
     font-family: "Ramabhadra", sans-serif !important;
     font-size: 19px !important;
     line-height: 1.2;
@@ -457,7 +463,8 @@ h1.specialCaptioned span.bottomRightCaption {
     text-align: center;
 }
 
-.bt5Body h2 {
+.bt5Body h2,
+.bt7Body h2 {
     font-family: "Dhurjati", sans-serif !important;
     font-size: 28px !important;
     line-height: 1;
@@ -475,7 +482,8 @@ h1.specialCaptioned span.bottomRightCaption {
     margin: 0 -1.5rem;
 }
 
-.bt5Footer {
+.bt5Footer,
+.bt7Footer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -779,4 +787,161 @@ h1.specialCaptioned span.bottomRightCaption {
     white-space: nowrap;
     width: fit-content;
     text-align: center !important;
+}
+
+/* Birthday Template 7 */
+.bt7Head {
+    margin: 0 auto;
+}
+
+.bt7Head h1 {
+    font-family: "Oswald", sans-serif !important;
+    font-size: 30px;
+    letter-spacing: -.07rem;
+    line-height: 1;
+    font-weight: 800;
+    position: relative;
+    white-space: nowrap;
+    padding: 0;
+    color: #7f161a;
+    width: 100%;
+    text-align: center;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 5px #fff;
+}
+
+.bt7Head h1 sup {
+    font-size: 20px;
+}
+
+.bt7Body h1 {
+    font-family: "Oswald", sans-serif !important;
+    font-size: 30px !important;
+    line-height: 1.2;
+    font-weight: 900;
+    position: relative;
+    white-space: nowrap;
+    font-style: italic;
+    padding: 0;
+    color: #f5c638;
+    width: 100%;
+    text-align: center;
+    margin-top: -1.5rem;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 8px #692600;
+}
+
+.bt7Body h6 {
+    font-family: "Oswald", sans-serif !important;
+    font-size: 16px !important;
+    line-height: 1.2;
+    font-weight: 600;
+    position: relative;
+    white-space: nowrap;
+    padding: 0;
+    color: #f5c638;
+    width: 100%;
+    text-align: center;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 5px #692600;
+}
+
+.bt7Body p {
+    font-size: 18px !important;
+    text-shadow: 0 3px 6px #692600;
+}
+
+.bt7Body h4 {
+    font-family: "Mallanna", sans-serif !important;
+    font-size: 30px !important;
+    line-height: 1;
+    font-weight: 600 !important;
+    position: relative;
+    padding: 0 !important;
+    color: #fef300 !important;
+    width: 100%;
+    text-align: center;
+    text-shadow: 0 6px 10px #692600;
+}
+
+.bt7Body h5 {
+    font-family: "Oswald", sans-serif !important;
+    font-size: 14px !important;
+    line-height: 1;
+    font-weight: 600 !important;
+    position: relative;
+    padding: 0 !important;
+    color: #fff !important;
+    width: 100%;
+    text-align: center;
+    text-shadow: 0 6px 10px #692600;
+}
+
+#birthday-temp-7 #temp-footer {
+    background-color: #fff;
+    width: -webkit-fill-available;
+    width: -moz-fill-available;
+    height: -webkit-fill-available;
+    height: -moz-fill-available;
+    margin: 1rem -1.5rem 0;
+}
+
+.bt7Footer {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1.2rem;
+}
+
+.bt7Footer .imgHolder {
+    width: 60px;
+}
+
+.bt7Footer .logoText {
+    width: calc(100% - 70px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.bt7Footer .logoText h1 {
+    font-family: "Oswald", sans-serif !important;
+    font-size: 22px !important;
+    line-height: 1;
+    font-weight: 700 !important;
+    position: relative;
+    padding: 0 !important;
+    color: #255aa8 !important;
+    width: 100%;
+    text-align: center;
+}
+
+.bt7Footer .logoText h6 {
+    font-family: "Oswald", sans-serif !important;
+    font-size: 13px !important;
+    line-height: 1;
+    font-weight: 500 !important;
+    position: relative;
+    padding: .25rem 0 !important;
+    color: #333 !important;
+    width: 100%;
+    text-align: center;
+}
+
+.bt7Footer .logoText p {
+    font-family: "Oswald", sans-serif !important;
+    font-size: 12px !important;
+    line-height: 1;
+    font-weight: 600 !important;
+    position: relative;
+    padding: .25rem !important;
+    color: #333 !important;
+    width: 100%;
+    text-align: center;
+}
+
+.bt7Footer .logoText p.colorBlue {
+    color: #255aa8 !important;
 }
