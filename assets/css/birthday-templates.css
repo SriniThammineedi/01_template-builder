@@ -1,0 +1,382 @@
+@import url("temp_builder_mainV2.css");
+
+body {
+    background-color: #ddd;
+}
+
+.template-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+#birthday-temp-2 {
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    flex-direction: column;
+    padding: 1.5rem;
+    width: 100%;
+    gap: .5rem;
+}
+
+#birthday-temp-3 {
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 1.5rem;
+    width: 100%;
+    gap: .5rem;
+}
+
+#birthday-temp-4 {
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 1.5rem;
+    width: 100%;
+    gap: .5rem;
+}
+
+.birthday-temp-header-thumbs {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem !important;
+}
+
+.birthday-temp-header-thumbs .row-photo-frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: -.85rem;
+    width: 100%;
+    gap: .5rem;
+}
+
+.birthday-temp-header-thumbs .row-photo-frame .imgHolder {
+    aspect-ratio: 1;
+    max-width: 12%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 4px;
+}
+
+.birthday-temp-header-thumbs .row-photo-frame .imgHolder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.birthday-temp-header-thumbs .row-photo-frame.inlineFlex {
+    margin-bottom: 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.birthday-temp-header-thumbs .row-photo-frame.inlineFlex h1 {
+    font-family: "Ramabhadra", sans-serif;
+    white-space: nowrap;
+    font-size: 34px;
+    line-height: 1;
+    font-weight: normal;
+    position: relative;
+    padding: 0;
+    color: var(--text-light);
+    width: fit-content !important;
+    text-align: left;
+}
+
+.birthday-temp-header-thumbs .row-photo-frame.inlineFlex h1.centered2lines {
+    white-space: pre-line;
+    text-align: center;
+}
+
+.birthday-temp-header-thumbs .row-photo-frame.inlineFlex .imgHolder {
+    border-radius: 100%;
+    width: 50px;
+    max-width: inherit !important;
+    aspect-ratio: 1;
+}
+
+.birthday-temp-header-thumbs .row-photo-frame .imgHolder input[type='file'],
+.birthday-main-photo input[type='file'],
+.birthday-footer-photo input[type='file'] {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 5;
+}
+
+#birthday-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: .5rem 0;
+    width: 100%;
+    gap: .5rem;
+}
+
+#birthday-title h1 {
+    font-family: "Ramabhadra", sans-serif;
+    font-size: 42px;
+    line-height: 1;
+    font-weight: normal;
+    position: relative;
+    padding: 0;
+    color: var(--text-light);
+    width: 100%;
+    text-align: center;
+}
+
+#birthday-title h1.stroked-light {
+    color: #ad0000;
+}
+
+h1.specialCaptioned {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    font-family: 'Bowlby One', sans-serif !important;
+    text-transform: uppercase !important;
+    font-size: 30px;
+    color: #1e3508 !important;
+    width: fit-content !important;
+    margin: 0 auto;
+}
+
+h1.specialCaptioned span.topLeftCaption {
+    margin: 0 auto 0 -1rem;
+    position: relative;
+    font-family: 'Birthstone', sans-serif;
+    text-transform: none !important;
+    font-size: 30px;
+    color: #1e3508;
+}
+
+h1.specialCaptioned span.bottomRightCaption {
+    margin: 0 -1.5rem 0 auto;
+    position: relative;
+    font-family: 'Bowlby One', sans-serif;
+    font-size: 20px;
+    color: #1e3508;
+}
+
+.birthday-main-photo {
+    width: 100%;
+    height: 100%;
+    max-height: 220px;
+    margin: 0 auto -3vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+    justify-content: flex-end;
+}
+
+#birthday-temp-4 .birthday-main-photo {
+    max-height: 200px;
+}
+
+#birthday-temp-4 #temp-footer {
+    margin-top: 3rem;
+}
+
+.birthday-footer-photo {
+    width: 100%;
+    height: 100%;
+    max-height: 160px;
+    margin: 0 auto -2.5vh;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.birthday-main-photo img,
+.birthday-footer-photo img {
+    max-width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.wishes {
+    font-family: "Dhurjati", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: normal;
+    position: relative;
+    padding: 0;
+    color: var(--text-light);
+    width: 100%;
+    text-align: center;
+}
+
+.wishes.stroked-dark-minimal {
+    font-family: "Mallanna", sans-serif;
+    font-weight: 600;
+    color: #fff;
+    font-size: 13px;
+}
+
+.template-wrapper #temp-body h4 {
+    font-family: "Ramabhadra", sans-serif;
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: normal;
+    position: relative;
+    padding: 0;
+    color: #ad0000;
+    width: 100%;
+    text-align: center;
+}
+
+.wisher {
+    font-family: "Dhurjati", sans-serif;
+    font-size: 22px;
+    line-height: 1;
+    font-weight: normal;
+    position: relative;
+    padding: 0;
+    color: var(--text-light);
+    width: 100%;
+    text-align: center;
+}
+
+.who-wished {
+    font-family: "Dhurjati", sans-serif;
+    font-size: 36px;
+    line-height: 1.4;
+    font-weight: normal;
+    position: relative;
+    padding: 0;
+    color: #ee2307;
+    width: 100%;
+    text-align: center;
+}
+
+.recognition {
+    font-family: "Mallanna", sans-serif;
+    font-size: 20px !important;
+    line-height: 1.4;
+    font-weight: normal;
+    position: relative;
+    padding: 0 !important;
+    color: #ee2307 !important;
+    width: 100%;
+    text-align: center;
+}
+
+.recognition.color-white {
+    color: #fff !important;
+}
+
+#birthday-temp-1 p,
+#birthday-temp-1 h1,
+#birthday-temp-1 h2,
+#birthday-temp-1 h3,
+#birthday-temp-1 h4,
+#birthday-temp-1 h5,
+#birthday-temp-1 h6 {
+    text-shadow: 0 3px 2px rgba(0, 0, 0, .3);
+}
+
+.thumbFloater {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: .35rem;
+    padding: .25rem;
+    border: 1px solid #8d3838;
+    flex-wrap: wrap;
+    border-radius: 6px;
+}
+
+.thumbFloater .imgHolder {
+    width: calc(1/5 * 100% - (1 - 1/5) * .5rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 4px;
+    max-height: 50px;
+    position: relative;
+}
+
+.thumbFloater .imgHolder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.thumbFloater .imgHolder input {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+}
+
+.footerContents {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: .5rem auto;
+    text-align: center;
+    gap: 0;
+}
+
+.footerContents h6 {
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    position: relative;
+    padding: 0;
+    color: #000;
+    width: 100%;
+    text-align: center;
+}
+
+.footerContents h4 {
+    font-family: "Bowlby One", sans-serif !important;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: normal;
+    position: relative;
+    padding: 0;
+    color: #ad0000;
+    width: 100%;
+    text-align: center;
+}
+
+.footerContents p {
+    font-family: "Bowlby One", sans-serif !important;
+    font-size: 13px !important;
+    line-height: 1;
+    font-weight: normal;
+    position: relative;
+    padding: 0;
+    color: #000 !important;
+    width: 100%;
+    text-align: center;
+}

@@ -1,0 +1,193 @@
+@import url("temp_builder_mainV2.css");
+
+body {
+    background-color: #ddd;
+}
+
+.template-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+#admission-template-1 {
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    flex-direction: column;
+    font-family: "Oswald", sans-serif;
+    padding: 1.5rem 1.5rem 0 !important;
+    width: 100%;
+    gap: .5rem;
+}
+
+#admission-template-1 #temp-header {
+    flex-direction: column;
+    gap: 0;
+}
+
+#admission-template-1 #temp-header .imgHolder {
+    max-width: 70%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#admission-template-1 #temp-header .imgHolder img {
+    max-width: 90%;
+}
+
+#admission-template-1 #temp-body {
+    padding: 0 .5rem;
+}
+
+.adminHeading-3 {
+    font-family: "Oswald", sans-serif;
+    font-size: 18px;
+    line-height: 1.25;
+    font-weight: 600;
+    position: relative;
+    text-transform: uppercase;
+    padding: 0;
+    color: #464d9b;
+    width: 100%;
+    text-align: center;
+}
+
+.adminHeading-3 span {
+    font-size: 14px;
+}
+
+.splitRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    gap: 1rem;
+}
+
+.splitRow .titleOffers {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: .5rem;
+}
+
+.splitRow .listGrp {
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: .5rem;
+}
+
+.splitRow .titleOffers .adminHeading-1 {
+    font-family: "Oswald", sans-serif;
+    font-size: 21px;
+    line-height: 1.15;
+    font-weight: 600;
+    position: relative;
+    text-transform: uppercase;
+    padding: 0;
+    color: #464d9b;
+    width: 100%;
+    text-align: left;
+}
+
+.titleOffers .imgTitle {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: .5rem;
+    width: 100%;
+}
+
+.titleOffers .imgTitle .adminHeading-1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    white-space: nowrap;
+    color: #e72428;
+}
+
+
+.titleOffers .imgHolder img.imgOffer {
+    max-width: 75%;
+}
+
+.titleOffers .imgHolder img {
+    max-width: 100%;
+}
+
+.splitRow .listGrp .imgHolder img {
+    max-width: 100%;
+}
+
+.splitRow .listGrp ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    gap: .35rem;
+}
+
+.splitRow .listGrp ul li {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    line-height: 1;
+    font-size: 16px;
+    color: #464d9b;
+    gap: .45rem;
+}
+
+.splitRow .listGrp ul li .imgHolder img {
+    max-width: 20px;
+}
+
+#temp-footer.fullWidthFooter {
+    width: -webkit-fill-available !important;
+    width: -moz-fill-available !important;
+    height: -webkit-fill-available !important;
+    height: -moz-fill-available !important;
+    padding: 0 !important;
+    margin: 0 -1.5rem;
+    gap: 0;
+}
+
+#temp-footer.fullWidthFooter .imgHolder img {
+    max-width: 100%;
+}
+
+#temp-footer.fullWidthFooter .footer-content {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: -webkit-fill-available;
+    height: -moz-fill-available;
+    padding: .5rem;
+    background-color: #e72428;
+}
+
+#temp-footer.fullWidthFooter .footer-content p {
+    font-family: "Oswald", sans-serif;
+    font-size: 12px;
+    line-height: 1.15;
+    font-weight: 400;
+    position: relative;
+    padding: 0;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Template Header-2</title>
+
+        <!-- Google Fonts Declaration -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Doppio+One&family=Birthstone&family=Bowlby+One&display=swap"
+            rel="stylesheet" />
+
+        <!-- Telugu Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Chathura:wght@100;300;400;700;800&family=Dhurjati&family=Gurajada&family=Lakki+Reddy&family=Mallanna&family=Mandali&family=NTR&family=Ramabhadra&family=Tiro+Telugu:ital@0;1&family=Anek+Telugu:wght@100..800&display=swap"
+            rel="stylesheet">
+
+        <link rel="stylesheet" href="../assets/css/temp_builder_mainV2.css">
+    </head>
+
+    <body>
+        <div id="themeOuter" style="height: fit-content;">
+
+            <div class="template-wrapper" id="birthday-temp-4"
+                style="background-image: url(../assets/images/back-bg-none.jpg);">
+
+                <div id="temp-header" class="birthday-temp-header-thumbs selectable">
+                    <div class="row-photo-frame inlineFlex" id="row-head-frame">
+                        <h1 class="selectable" contenteditable="true" data-options="editOptions">జన్మదిన శుభాకాంక్షలు
+                        </h1>
+                        <div class="imgHolder">
+                            <img id="thumb-1" src="../assets/images/replacable-photo.jpg" alt="" />
+                            <input name="photo" type="file" accept="image/*"
+                                onchange="document.getElementById('thumb-1').src = window.URL.createObjectURL(this.files[0])" />
+                        </div>
+                        <div class="imgHolder">
+                            <img id="thumb-2" src="../assets/images/replacable-photo.jpg" alt="" />
+                            <input name="photo" type="file" accept="image/*"
+                                onchange="document.getElementById('thumb-2').src = window.URL.createObjectURL(this.files[0])" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

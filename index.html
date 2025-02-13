@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <title>Ads Template Builder | Create Ads</title>
+        <link rel="icon" href="assets/images/Icon_216x16.png" sizes="32x32">
+        <link rel="icon" href="assets/images/Icon_216x16.png" sizes="192x192">
+        <link rel="apple-touch-icon-precomposed" href="assets/images/Icon_216x16.png">
+
+        <!-- Google Fonts Declaration -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Doppio+One&family=Birthstone&family=Oswald:wght@200..700&family=Bowlby+One&display=swap"
+            rel="stylesheet" />
+
+        <!-- Telugu Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Chathura:wght@100;300;400;700;800&family=Dhurjati&family=Gurajada&family=Lakki+Reddy&family=Mallanna&family=Mandali&family=NTR&family=Ramabhadra&family=Tiro+Telugu:ital@0;1&family=Anek+Telugu:wght@100..800&display=swap"
+            rel="stylesheet">
+
+        <!-- Page Styles Declaration -->
+        <link rel="stylesheet" href="./assets/css/animations.css">
+        <link rel="stylesheet" href="./assets/css/temp_builder_mainV2.css" />
+
+        <!-- Fontawesome Icons Kit -->
+        <script src="https://kit.fontawesome.com/75b0afa4e1.js" crossorigin="anonymous"></script>
+
+        <!-- For Animated Icons -->
+        <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    </head>
+
+    <body>
+        <div id="main">
+            <div class="topNav desktopOnly">
+                <div class="siteLogo"><img src="assets/images/w2n_logo.svg" alt=""></div>
+                <h4>Ad - Template Builder</h4>
+                <!-- Export Template Dropdown Menu -->
+                <ul class="dropdown">
+                    <li><button class="publishBtn"><lord-icon src="https://cdn.lordicon.com/rszslpey.json"
+                                trigger="loop" delay="500" stroke="bold" colors="primary:#ffffff,secondary:#eee966"
+                                style="width:26px;height:26px">
+                            </lord-icon> <span>Export
+                                Template</span></button>
+                        <ul id="exportDropdown" class="dropdown-content">
+                            <li><button class="exportBtn exportAsImage"><lord-icon
+                                        src="https://cdn.lordicon.com/wsaaegar.json" trigger="loop" delay="1000"
+                                        stroke="bold" colors="primary:#000000,secondary:#ff0000"
+                                        style="width:28px;height:28px" class="lordIcon">
+                                    </lord-icon>
+                                    <span>As Image Poster</span></button></li>
+                            <li><button class="exportBtn exportAsHTML"><lord-icon
+                                        src="https://cdn.lordicon.com/yvaxaowk.json" trigger="loop" delay="1000"
+                                        stroke="bold" colors="primary:#000000,secondary:#ff0000"
+                                        style="width:28px;height:28px" class="lordIcon">
+                                    </lord-icon>
+                                    <span>As Animated HTML</span></button></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Left Panel -->
+            <div class="asideLeft">
+                <ul class="expandable-menu">
+                    <li id="templates">
+                        <div class="dropdownlink">
+                            <!-- <i class="fa-solid fa-id-badge"></i> -->
+                            <lord-icon src="https://cdn.lordicon.com/sobzmbzh.json" class="lordIcon" trigger="loop"
+                                delay="1000" stroke="bold" colors="primary:#111111,secondary:#e83a30"
+                                style="width:40px;height:40px">
+                            </lord-icon>
+                            <span>Templates</span>
+                        </div>
+                        <div class="accorParentContainer" id="templates-menu-container">
+                            <div class="accordHead">
+                                <h3>Templates</h3>
+                                <button id="close-btn" class="close-btn">X</button>
+                            </div>
+
+                            <div class="catRadios">
+                                <div class="radioGrp">
+                                    <input type="radio" name="temp" id="birthday" checked />
+                                    <label for="birthday"><span>Birthday</span></label>
+                                </div>
+                                <div class="radioGrp">
+                                    <input type="radio" name="temp" id="obituary" />
+                                    <label for="obituary"><span>Obituary</span></label>
+                                </div>
+                                <div class="radioGrp">
+                                    <input type="radio" name="temp" id="promotions" />
+                                    <label for="promotions"><span>Promotions</span></label>
+                                </div>
+                                <div class="radioGrp">
+                                    <input type="radio" name="temp" id="greetings" />
+                                    <label for="greetings"><span>Greetings</span></label>
+                                </div>
+                                <div class="radioGrp">
+                                    <input type="radio" name="temp" id="welcome" />
+                                    <label for="welcome"><span>Welcome</span></label>
+                                </div>
+                                <div class="radioGrp">
+                                    <input type="radio" name="temp" id="political" />
+                                    <label for="political"><span>Political</span></label>
+                                </div>
+                                <div class="radioGrp">
+                                    <input type="radio" name="temp" id="inauguration" />
+                                    <label for="inauguration"><span>Inauguration</span></label>
+                                </div>
+                                <div class="radioGrp">
+                                    <input type="radio" name="temp" id="admissions" />
+                                    <label for="admissions"><span>Admissions</span></label>
+                                </div>
+                            </div>
+
+                            <div id="birthdayTemps" class="inner-container row split-2 active" data-category="birthday">
+                                <h3>Birthday Templates</h3>
+                                <div class="radioSet">
+                                    <input type="radio" name="bday" id="birthday-temp1"
+                                        onclick="loadTemplate('birthday-temp1')">
+                                    <label for="birthday-temp1"><span>Birthday - 1</span></label>
+                                    <img src="assets/images/bday-temp-1.jpg" alt="birthday-temp1">
+                                </div>
+                                <div class="radioSet">
+                                    <input type="radio" name="bday" id="birthday-temp2"
+                                        onclick="loadTemplate('birthday-temp2')">
+                                    <label for="birthday-temp2"><span>Birthday - 2</span></label>
+                                    <img src="assets/images/bday-temp-2.jpg" alt="birthday-temp2">
+                                </div>
+                                <div class="radioSet">
+                                    <input type="radio" name="bday" id="birthday-temp3"
+                                        onclick="loadTemplate('birthday-temp3')">
+                                    <label for="birthday-temp3"><span>Birthday - 3</span></label>
+                                    <img src="assets/images/bday-temp-3.jpg" alt="birthday-temp3">
+                                </div>
+                                <div class="radioSet">
+                                    <input type="radio" name="bday" id="birthday-temp4"
+                                        onclick="loadTemplate('birthday-temp4')">
+                                    <label for="birthday-temp4"><span>Birthday - 4</span></label>
+                                    <img src="assets/images/bday-temp-4.jpg" alt="birthday-temp4">
+                                </div>
+                            </div>
+                            <div id="obituaryTemps" class="inner-container row split-2 hidden" data-category="obituary">
+                                <h3>Obituary Templates</h3>
+                                <div class="radioSet">
+                                    <input type="radio" name="obituary" id="obituary-temp1"
+                                        onclick="loadTemplate('obituary-temp1')">
+                                    <label for="obituary-temp1"><span>Obituary - 1</span></label>
+                                    <img src="assets/images/obit-temp-1.jpg" alt="obituary-temp1">
+                                </div>
+                                <div class="radioSet">
+                                    <input type="radio" name="obituary" id="obituary-temp2"
+                                        onclick="loadTemplate('obituary-temp2')">
+                                    <label for="obituary-temp2"><span>Obituary - 2</span></label>
+                                    <img src="assets/images/obit-temp-2.jpg" alt="obituary-temp1">
+                                </div>
+                            </div>
+                            <div id="promotionTemps" class="inner-container row split-2 hidden"
+                                data-category="promotions">
+                                <h3>Promotion Templates</h3>
+                                <div class="radioSet">
+                                    <input type="radio" name="promotions" id="promotion-temp1"
+                                        onclick="loadTemplate('promotion-temp1')">
+                                    <label for="promotion-temp1"><span>Promotion - 1</span></label>
+                                    <img src="assets/images/promot-temp-1.jpg" alt="promotion-temp1">
+                                </div>
+                                <div class="radioSet">
+                                    <input type="radio" name="promotions" id="promotion-temp2"
+                                        onclick="loadTemplate('promotion-temp2')">
+                                    <label for="promotion-temp2"><span>Promotion - 2</span></label>
+                                    <img src="assets/images/promot-temp-2.jpg" alt="promotion-temp2">
+                                </div>
+                            </div>
+                            <div id="admissionTemps" class="inner-container row split-2 hidden"
+                                data-category="admissions">
+                                <h3>Admission Templates</h3>
+                                <div class="radioSet">
+                                    <input type="radio" name="admission" id="admission-temp1"
+                                        onclick="loadTemplate('admission-temp1')">
+                                    <label for="admission-temp1"><span>Admission - 1</span></label>
+                                    <img src="assets/images/admsn-temp-1.jpg" alt="admission-temp1">
+                                </div>
+                            </div>
+                            <div id="inaugurationTemps" class="inner-container row split-2 hidden"
+                                data-category="inauguration">
+                                <h3>Inauguration Templates</h3>
+                                <div class="radioSet">
+                                    <input type="radio" name="inauguration" id="inauguration-temp1"
+                                        onclick="loadTemplate('inauguration-temp1')">
+                                    <label for="inauguration-temp1"><span>Inauguration - 1</span></label>
+                                    <img src="assets/images/inauguration-temp-1.jpg" alt="inauguration-temp1">
+                                </div>
+                            </div>
+                            <div id="greetingTemps" class="inner-container row split-2 hidden"
+                                data-category="greetings">
+                                <h3>Inauguration Templates</h3>
+                                <div class="radioSet">
+                                    <input type="radio" name="greetings" id="greetings-temp1"
+                                        onclick="loadTemplate('greetings-temp1')">
+                                    <label for="greetings-temp1"><span>Greetings - 1</span></label>
+                                    <img src="assets/images/greetings-temp-1.jpg" alt="greetings-temp1">
+                                </div>
+                                <div class="radioSet">
+                                    <input type="radio" name="greetings" id="greetings-temp2"
+                                        onclick="loadTemplate('greetings-temp2')">
+                                    <label for="greetings-temp2"><span>Greetings - 2</span></label>
+                                    <img src="assets/images/greetings-temp-2.jpg" alt="greetings-temp2">
+                                </div>
+                            </div>
+                            <div id="politicalTemps" class="inner-container row split-2 hidden"
+                                data-category="political">
+                                <h3>Political Templates</h3>
+                                <div class="radioSet">
+                                    <input type="radio" name="political" id="political-temp1"
+                                        onclick="loadTemplate('political-temp1')">
+                                    <label for="political-temp1"><span>Political - 1</span></label>
+                                    <img src="assets/images/political-temp-1.jpg" alt="political-temp1">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="cliparts">
+                        <div class="dropdownlink">
+                            <lord-icon src="https://cdn.lordicon.com/ohcuigqh.json" class="lordIcon" trigger="loop"
+                                stroke="bold" colors="primary:#111111,secondary:#e83a30" style="width:40px;height:40px">
+                            </lord-icon>
+                            <span>Cliparts</span>
+                        </div>
+                        <div class="accorParentContainer" id="cliparts-menu-container">
+                            <div class="accordHead">
+                                <h3>ClipArts</h3>
+                                <button id="close-btn" class="close-btn">X</button>
+                            </div>
+                            <div class="inner-container row split-2">
+                                <div class="radioSet">
+                                    <input type="radio" name="clipart" id="clipart-1">
+                                    <label for="clipart-1"></label>
+                                    <img src="assets/images/clip-art-1.png" alt="clipart-1">
+                                </div>
+                                <div class="radioSet">
+                                    <input type="radio" name="clipart" id="clipart-2">
+                                    <label for="clipart-2"></label>
+                                    <img src="assets/images/clip-art-2.png" alt="clipart-2">
+                                </div>
+                                <div class="radioSet">
+                                    <input type="radio" name="clipart" id="clipart-3">
+                                    <label for="clipart-3"></label>
+                                    <img src="assets/images/clip-art-3.png" alt="clipart-3">
+                                </div>
+                                <div class="radioSet">
+                                    <input type="radio" name="clipart" id="clipart-4">
+                                    <label for="clipart-4"></label>
+                                    <img src="assets/images/clip-art-4.png" alt="clipart-4">
+                                </div>
+                            </div>
+
+                            <div class="inner-container row">
+                                <h3>Frame Side Decorators</h3>
+                                <div class="radioSet">
+                                    <input type="radio" name="siders" id="siders-1"
+                                        data-img="assets/images/baloons-1.png">
+                                    <label for="siders-1"></label>
+                                    <img src="assets/images/baloons-1.png" alt="siders-1">
+                                </div>
+                                <div class="radioSet">
+                                    <input type="radio" name="siders" id="siders-2"
+                                        data-img="assets/images/baloons-2.png">
+                                    <label for="siders-2"></label>
+                                    <img src="assets/images/baloons-2.png" alt="siders-2">
+                                </div>
+                                <div class="radioSet">
+                                    <input type="radio" name="siders" id="siders-3"
+                                        data-img="assets/images/baloons-3.png">
+                                    <label for="siders-3"></label>
+                                    <img src="assets/images/baloons-3.png" alt="siders-3">
+                                </div>
+                                <div class="radioSet">
+                                    <input type="radio" name="siders" id="siders-4" data-img="assets/images/diya-1.png">
+                                    <label for="siders-4"></label>
+                                    <img src="assets/images/diya-1.png" alt="siders-4">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="animations">
+                        <div class="dropdownlink">
+                            <lord-icon src="https://cdn.lordicon.com/vmkushle.json" class="lordIcon" trigger="loop"
+                                stroke="bold" colors="primary:#111111,secondary:#e83a30" style="width:40px;height:40px">
+                            </lord-icon>
+                            <span>Animations</span>
+                        </div>
+                        <div class="accorParentContainer" id="animations-menu-container">
+                            <div class="accordHead">
+                                <h3>Animations</h3>
+                                <button id="close-btn" class="close-btn">X</button>
+                            </div>
+                            <div class="inner-container row split-4">
+                                <div class="animContainer">
+                                    <div class="lamp swing"></div>
+                                </div>
+                                <div class="animContainer">
+                                    <div class="lamp2 swing2"></div>
+                                </div>
+                                <div class="animContainer">
+                                    <div class="marigold flowersSwing alignLeft smallHeight"></div>
+                                </div>
+                                <div class="animContainer">
+                                    <div class="diya">
+                                        <img src="assets/images/diya-flowers.png" alt="">
+                                        <div class="holder">
+                                            <div class="candle">
+                                                <div class="blinking-glow"></div>
+                                                <div class="thread"></div>
+                                                <div class="glow"></div>
+                                                <div class="flame" id="flame"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="animContainer fullWidth scaleDown">
+                                    <div class="stickyFlowers">
+                                        <div class="flowers">
+                                            <img src="assets/images/flower3.png" alt="" class="f1">
+                                            <img src="assets/images/flower9.png" alt="" class="f2 medium">
+                                            <img src="assets/images/flower14.png" alt="" class="f19 small">
+                                            <img src="assets/images/flower8.png" alt="" class="f3">
+                                            <img src="assets/images/flower5.png" alt="" class="f4">
+                                            <img src="assets/images/flower11.png" alt="" class="f5 medium">
+                                            <img src="assets/images/flower2.png" alt="" class="f6">
+                                            <img src="assets/images/flower4.png" alt="" class="f7">
+                                            <img src="assets/images/flower6.png" alt="" class="f8 small">
+                                            <img src="assets/images/flower1.png" alt="" class="f9">
+                                            <img src="assets/images/flower7.png" alt="" class="f10">
+                                            <img src="assets/images/flower10.png" alt="" class="f11">
+                                            <img src="assets/images/flower5.png" alt="" class="f12">
+                                            <img src="assets/images/flower12.png" alt="" class="f13">
+                                            <img src="assets/images/flower13.png" alt="" class="f14 medium">
+                                            <img src="assets/images/flower14.png" alt="" class="f15">
+                                            <img src="assets/images/flower15.png" alt="" class="f16">
+                                            <img src="assets/images/flower6.png" alt="" class="f17 small">
+                                            <img src="assets/images/flower11.png" alt="" class="f18">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="animContainer">
+                                    <div class="raysHolder">
+                                        <div id="rays"></div>
+                                    </div>
+                                </div>
+                                <div class="animContainer">
+                                    <div class="live">
+                                        <h6 class="blinking"><span></span> Live</h6>
+                                    </div>
+                                </div>
+                                <div class="animContainer">
+                                    <h4 class="linear-wipe">All Star Reloaded</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="impressions">
+                        <div class="dropdownlink">
+                            <lord-icon src="https://cdn.lordicon.com/rhmbrqqg.json" class="lordIcon" trigger="loop"
+                                stroke="bold" colors="primary:#111111,secondary:#e83a30" style="width:40px;height:40px">
+                            </lord-icon>
+                            <span>Impressions</span>
+                        </div>
+                        <div class="accorParentContainer" id="impressions-menu-container">
+                            <div class="accordHead">
+                                <h3>Impressions</h3>
+                                <button id="close-btn" class="close-btn">X</button>
+                            </div>
+                            <div class="inner-container row">
+                                <h3>Birthday Card Impressions</h3>
+                                <div class="interactions">
+                                    <button id="celebration"><i class="icon"></i> <label
+                                            class="count">0</label></button>
+                                    <button id="like"><i class="icon"></i> <label class="count">0</label></button>
+                                    <button id="party"><i class="icon"></i> <label class="count">0</label></button>
+                                    <button id="heart"><i class="icon"></i> <label class="count">0</label></button>
+                                    <button id="share"><img src="https://m.way2news.com/assets/images/icons/share.svg"
+                                            alt=""></button>
+                                </div>
+                            </div>
+
+                            <div class="inner-container row">
+                                <h3>Obituary Card Impressions</h3>
+                                <div class="interactions">
+                                    <button id="roses"><i class="icon"></i> <label class="count">0</label></button>
+                                    <button id="heart2"><i class="icon"></i> <label class="count">0</label></button>
+                                    <button id="share"><img src="https://m.way2news.com/assets/images/icons/share.svg"
+                                            alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="showMobile exportMenu">
+                        <div class="dropdownlink">
+                            <lord-icon src="https://cdn.lordicon.com/rszslpey.json" trigger="loop" delay="500"
+                                stroke="bold" colors="primary:#000000,secondary:#ff0000">
+                            </lord-icon>
+                            <span>Export</span>
+                        </div>
+                        <ul id="mobExportDropdown" class="dropdown-content">
+                            <li><button class="exportBtn exportAsImage"><lord-icon
+                                        src="https://cdn.lordicon.com/wsaaegar.json" trigger="loop" delay="1000"
+                                        stroke="bold" colors="primary:#000000,secondary:#ff0000"
+                                        style="width:28px;height:28px" class="lordIcon">
+                                    </lord-icon>
+                                    <span>As Image Poster</span></button></li>
+                            <li><button class="exportBtn exportAsHTML"><lord-icon
+                                        src="https://cdn.lordicon.com/yvaxaowk.json" trigger="loop" delay="1000"
+                                        stroke="bold" colors="primary:#000000,secondary:#ff0000"
+                                        style="width:28px;height:28px" class="lordIcon">
+                                    </lord-icon>
+                                    <span>As Animated HTML</span></button></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- Editable Options Panel -->
+                <div class="asideRight">
+                    <button id="mobileToggle" class="showMobile"><span>Show</span> <img
+                            src="assets/images/select-down-arrow.svg" alt=""></button>
+
+                    <!-- Main Theme Edit Options (Background and Decorations) -->
+                    <div id="exportOptions" class="edit-options" style="display: flex;">
+                        <h3 class="showDesktop"><lord-icon src="https://cdn.lordicon.com/jectmwqf.json" trigger="loop"
+                                delay="1000" colors="primary:#000000,secondary:#ff0000" style="width:28px;height:28px">
+                            </lord-icon> Edit Template</h3>
+                        <div class="setOptions">
+                            <div class="flexRow">
+                                <div class="formGroup fullWidth splMobileView">
+                                    <label>Change Template Mode</label>
+                                    <div class="switch-container">
+                                        <input class="switch-checkbox" type="checkbox" id="true">
+                                        <span class="status up" for="true" data-checked="Light Mode"
+                                            data-notchecked="Dark Mode"></span>
+                                        <label class="switch" for="true" id="change-theme"><span></span></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button id="toggleAllBtn" class="desktopOnly">Collapse All</button>
+                        <div id="backBg" class="inner-container row gap-lr-1">
+                            <h3><lord-icon src="https://cdn.lordicon.com/rszslpey.json" trigger="loop" delay="1000"
+                                    state="morph-sea" colors="primary:#000,secondary:#c74b16"
+                                    style="width:28px;height:28px">
+                                </lord-icon> Backgrounds</h3>
+                            <div class="radioSet">
+                                <input type="radio" name="back-bg" id="bg-n" checked>
+                                <label for="bg-n"><span>None</span></label>
+                                <img src="assets/images/back-bg-none.jpg" alt="" for="bg-n">
+                            </div>
+                            <div class="radioSet">
+                                <input type="radio" name="back-bg" id="bg-0">
+                                <label for="bg-0"></label>
+                                <img src="assets/images/back-bg-0.jpg" alt="" for="bg-0">
+                            </div>
+                            <div class="radioSet">
+                                <input type="radio" name="back-bg" id="bg-1">
+                                <label for="bg-1"></label>
+                                <img src="assets/images/back-bg-1.jpg" alt="" for="bg-1">
+                            </div>
+                            <div class="radioSet">
+                                <input type="radio" name="back-bg" id="bg-2">
+                                <label for="bg-2"></label>
+                                <img src="assets/images/back-bg-2.jpg" alt="" for="bg-2">
+                            </div>
+                            <div class="radioSet">
+                                <input type="radio" name="back-bg" id="bg-3">
+                                <label for="bg-3"></label>
+                                <img src="assets/images/back-bg-3.jpg" alt="" for="bg-3">
+                            </div>
+                            <div class="radioSet">
+                                <input type="radio" name="back-bg" id="bg-4">
+                                <label for="bg-4"></label>
+                                <img src="assets/images/back-bg-4.jpg" alt="" for="bg-4">
+                            </div>
+                            <div class="radioSet">
+                                <input type="radio" name="back-bg" id="bg-5">
+                                <label for="bg-5"></label>
+                                <img src="assets/images/back-bg-5.jpg" alt="" for="bg-5">
+                            </div>
+                            <div class="radioSet">
+                                <input type="radio" name="back-bg" id="bg-6">
+                                <label for="bg-6"></label>
+                                <img src="assets/images/back-bg-6.jpg" alt="" for="bg-6">
+                            </div>
+
+                            <div class="radioSet">
+                                <input type="radio" name="back-bg" id="bg-7">
+                                <label for="bg-7"></label>
+                                <img src="assets/images/back-bg-7.jpg" alt="" for="bg-7">
+                            </div>
+                            <div class="radioSet">
+                                <input type="radio" name="back-bg" id="bg-8">
+                                <label for="bg-8"></label>
+                                <img src="assets/images/back-bg-8.jpg" alt="" for="bg-8">
+                            </div>
+                            <div class="radioSet">
+                                <input type="radio" name="back-bg" id="bg-9">
+                                <label for="bg-9"></label>
+                                <img src="assets/images/back-bg-9.jpg" alt="" for="bg-9">
+                            </div>
+                            <div class="radioSet">
+                                <input type="radio" name="back-bg" id="bg-10">
+                                <label for="bg-10"></label>
+                                <img src="assets/images/back-bg-10.jpg" alt="" for="bg-10">
+                            </div>
+                            <div class="radioSet">
+                                <input type="radio" name="back-bg" id="bg-11">
+                                <label for="bg-11"></label>
+                                <img src="assets/images/back-bg-11.jpg" alt="" for="bg-11">
+                            </div>
+                            <div class="radioSet">
+                                <input type="radio" name="back-bg" id="bg-12">
+                                <label for="bg-12"></label>
+                                <img src="assets/images/back-bg-12.jpg" alt="" for="bg-12">
+                            </div>
+                            <div class="radioSet">
+                                <input type="radio" name="back-bg" id="bg-13">
+                                <label for="bg-13"></label>
+                                <img src="assets/images/back-bg-13.jpg" alt="" for="bg-13">
+                            </div>
+                            <div class="radioSet">
+                                <input type="radio" name="back-bg" id="bg-14">
+                                <label for="bg-14"></label>
+                                <img src="assets/images/back-bg-14.jpg" alt="" for="bg-14">
+                            </div>
+                            <div class="radioSet">
+                                <input type="radio" name="back-bg" id="bg-15">
+                                <label for="bg-15"></label>
+                                <img src="assets/images/back-bg-15.jpg" alt="" for="bg-15">
+                            </div>
+                            <div class="radioSet">
+                                <input type="radio" name="back-bg" id="bg-16">
+                                <label for="bg-16"></label>
+                                <img src="assets/images/back-bg-16.jpg" alt="" for="bg-16">
+                            </div>
+                            <div class="radioSet">
+                                <input type="radio" name="back-bg" id="bg-17">
+                                <label for="bg-17"></label>
+                                <img src="assets/images/back-bg-17.jpg" alt="" for="bg-17">
+                            </div>
+                            <div class="radioSet">
+                                <input type="radio" name="back-bg" id="bg-18">
+                                <label for="bg-18"></label>
+                                <img src="assets/images/back-bg-18.jpg" alt="" for="bg-18">
+                            </div>
+                            <div class="radioSet">
+                                <input type="radio" name="back-bg" id="bg-19">
+                                <label for="bg-19"></label>
+                                <img src="assets/images/back-bg-19.jpg" alt="" for="bg-19">
+                            </div>
+
+                        </div>
+
+                        <div id="backDecors" class="inner-container row gap-lr-1">
+                            <h3><lord-icon src="https://cdn.lordicon.com/snxksidl.json" trigger="loop" delay="1000"
+                                    colors="primary:#000000,secondary:#c74b16" style="width:30px;height:30px">
+                                </lord-icon> Decorations</h3>
+                            <h5><lord-icon src="https://cdn.lordicon.com/hqrhprrj.json" trigger="loop" delay="1000"
+                                    colors="primary:#ff0000,secondary:#000000" style="width:28px;height:28px">
+                                </lord-icon> Top Decorations</h5>
+                            <div class="radioSet bg-light-gray">
+                                <input type="radio" name="top-decor" id="bg-decor-0" checked>
+                                <label for="bg-decor-0"><span>None</span></label>
+                                <img src="assets/images/back-decor-0.png" alt="" for="bg-decor-0" class="top-center">
+                            </div>
+                            <div class="radioSet bg-light-gray">
+                                <input type="radio" name="top-decor" id="bg-decor-1">
+                                <label for="bg-decor-1"></label>
+                                <img src="assets/images/top-decor-1.png" alt="" for="bg-decor-1" class="top-center">
+                            </div>
+                            <div class="radioSet bg-light-gray">
+                                <input type="radio" name="top-decor" id="bg-decor-2">
+                                <label for="bg-decor-2"></label>
+                                <img src="assets/images/top-decor-2.png" alt="" for="bg-decor-2" class="top-center">
+                            </div>
+                            <div class="radioSet bg-light-gray">
+                                <input type="radio" name="top-decor" id="bg-decor-3">
+                                <label for="bg-decor-3"></label>
+                                <img src="assets/images/top-decor-3.png" alt="" for="bg-decor-3" class="top-center">
+                            </div>
+                            <div class="radioSet bg-light-gray">
+                                <input type="radio" name="top-decor" id="bg-decor-4">
+                                <label for="bg-decor-4"></label>
+                                <img src="assets/images/top-decor-4.png" alt="" for="bg-decor-4" class="top-center">
+                            </div>
+                            <div class="radioSet bg-light-gray">
+                                <input type="radio" name="top-decor" id="bg-decor-5">
+                                <label for="bg-decor-5"></label>
+                                <img src="assets/images/top-decor-5.png" alt="" for="bg-decor-5" class="top-center">
+                            </div>
+                            <div class="radioSet bg-light-gray">
+                                <input type="radio" name="top-decor" id="bg-decor-6">
+                                <label for="bg-decor-6"></label>
+                                <img src="assets/images/top-decor-6.png" alt="" for="bg-decor-6" class="top-center">
+                            </div>
+                            <div class="radioSet bg-light-gray">
+                                <input type="radio" name="top-decor" id="bg-decor-7">
+                                <label for="bg-decor-7"></label>
+                                <img src="assets/images/top-decor-7.png" alt="" for="bg-decor-7" class="top-center">
+                            </div>
+                            <div class="radioSet bg-light-gray">
+                                <input type="radio" name="top-decor" id="bg-decor-8">
+                                <label for="bg-decor-8"></label>
+                                <img src="assets/images/top-decor-8.png" alt="" for="bg-decor-8" class="top-center">
+                            </div>
+                            <div class="radioSet bg-light-gray">
+                                <input type="radio" name="top-decor" id="bg-decor-9">
+                                <label for="bg-decor-9"></label>
+                                <img src="assets/images/top-decor-9.png" alt="" for="bg-decor-9" class="top-center">
+                            </div>
+                            <div class="radioSet bg-light-gray">
+                                <input type="radio" name="top-decor" id="bg-decor-10">
+                                <label for="bg-decor-10"></label>
+                                <img src="assets/images/top-decor-10.png" alt="" for="bg-decor-10" class="top-center">
+                            </div>
+                            <div class="radioSet bg-light-gray">
+                                <input type="radio" name="top-decor" id="bg-decor-11">
+                                <label for="bg-decor-11"></label>
+                                <img src="assets/images/top-decor-11.png" alt="" for="bg-decor-11" class="top-center">
+                            </div>
+                            <div class="radioSet bg-light-gray">
+                                <input type="radio" name="top-decor" id="bg-decor-12">
+                                <label for="bg-decor-12"></label>
+                                <img src="assets/images/top-decor-12.png" alt="" for="bg-decor-12" class="top-center">
+                            </div>
+
+                            <h5><lord-icon src="https://cdn.lordicon.com/gjpeglhr.json" trigger="loop" delay="1000"
+                                    colors="primary:#ff0000,secondary:#000000" style="width:28px;height:28px">
+                                </lord-icon> Bottom Decorations</h5>
+                            <div class="radioSet bg-light-gray bottom-decor">
+                                <input type="radio" name="bot-decor" id="bg-decor-n" checked>
+                                <label for="bg-decor-n"><span>None</span></label>
+                                <img src="assets/images/back-decor-0.png" alt="" for="bg-decor-n" class="bottom-center">
+                            </div>
+                            <div class="radioSet bg-light-gray bottom-decor">
+                                <input type="radio" name="bot-decor" id="bg-decor-13">
+                                <label for="bg-decor-13"></label>
+                                <img src="assets/images/bot-decor-1.png" alt="" for="bg-decor-13" class="bottom-center">
+                            </div>
+                            <div class="radioSet bg-light-gray bottom-decor">
+                                <input type="radio" name="bot-decor" id="bg-decor-14">
+                                <label for="bg-decor-14"></label>
+                                <img src="assets/images/bot-decor-2.png" alt="" for="bg-decor-14" class="bottom-center">
+                            </div>
+                            <div class="radioSet bg-light-gray bottom-decor">
+                                <input type="radio" name="bot-decor" id="bg-decor-15">
+                                <label for="bg-decor-15"></label>
+                                <img src="assets/images/bot-decor-3.png" alt="" for="bg-decor-15" class="bottom-center">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Header Photo Frame Edit Options -->
+                    <div id="headerOptions" class="edit-options">
+                        <h3>Choose Photo Frame Variations</h3>
+                        <div class="setOptions">
+                            <div class="radioSet">
+                                <input type="radio" name="head" id="head-1" checked>
+                                <label for="head-1"><span>Frame -1 (Default)</span></label>
+                                <img src="assets/images/temp1-head-1.jpg" alt="" id="head-frame-1">
+                            </div>
+                            <div class="radioSet">
+                                <input type="radio" name="head" id="head-2">
+                                <label for="head-2"><span>Frame -2</span></label>
+                                <img src="assets/images/temp1-head-2.jpg" alt="" id="head-frame-2">
+                            </div>
+                            <div class="radioSet">
+                                <input type="radio" name="head" id="head-3">
+                                <label for="head-3"><span>Frame -3</span></label>
+                                <img src="assets/images/temp1-head-3.jpg" alt="" id="head-frame-3">
+                            </div>
+                            <div class="radioSet">
+                                <input type="radio" name="head" id="head-4">
+                                <label for="head-4"><span>Frame -4</span></label>
+                                <img src="assets/images/temp1-head-4.jpg" alt="" id="head-frame-4">
+                            </div>
+                        </div>
+
+                        <!-- Change positioning by adding the positive or negative value -->
+                        <h3>Position Controls</h3>
+                        <div id="position-controls">
+                            <label for="top-pos">
+                                <span>Top</span>
+                                <input id="top-pos" class="position-input" type="number" value="0" />
+                            </label>
+                            <label for="left-pos">
+                                <span>Left</span>
+                                <input id="left-pos" class="position-input" type="number" value="0" />
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- All In One Text Edit Options Panel -->
+                    <div id="editOptions" class="edit-options">
+                        <h3>Edit Text</h3>
+                        <div class="setOptions">
+                            <div class="flexRow">
+                                <div class="formGroup fullWidth">
+                                    <div class="custom-font-select" id="customFontDropdown">
+                                        <div class="selected-font">Font Family</div>
+                                        <div class="font-dropdown" id="fontFamily">
+                                            <h6>Telugu Fonts</h6>
+                                            <div class="font-option" data-font="ramabhadra">
+                                                <img src="assets/images/font-ramabhadra.jpg" alt="Ramabhadra"
+                                                    class="font-image"> <span>Ramabhadra</span>
+                                            </div>
+                                            <div class="font-option" data-font="chathura">
+                                                <img src="assets/images/font-chathura.jpg" alt="Chathura"
+                                                    class="font-image"> <span>Chathura</span>
+                                            </div>
+                                            <div class="font-option" data-font="mandali">
+                                                <img src="assets/images/font-mandali.jpg" alt="Mandali"
+                                                    class="font-image">
+                                                <span>Mandali</span>
+                                            </div>
+                                            <div class="font-option" data-font="mallanna">
+                                                <img src="assets/images/font-mallanna.jpg" alt="Mallanna"
+                                                    class="font-image"> <span>Mallanna</span>
+                                            </div>
+                                            <div class="font-option" data-font="tiro telugu">
+                                                <img src="assets/images/font-tiro-telugu.jpg" alt="Tiro Telugu"
+                                                    class="font-image"> <span>Tiro Telugu</span>
+                                            </div>
+                                            <div class="font-option" data-font="gurajada">
+                                                <img src="assets/images/font-gurajada.jpg" alt="Gurajada"
+                                                    class="font-image"> <span>Gurajada</span>
+                                            </div>
+                                            <div class="font-option" data-font="ntr">
+                                                <img src="assets/images/font-ntr.jpg" alt="NTR" class="font-image">
+                                                <span>NTR</span>
+                                            </div>
+                                            <div class="font-option" data-font="akaya telivigala">
+                                                <img src="assets/images/font-akaya-telivigala.jpg"
+                                                    alt="Akaya Telivigala" class="font-image"> <span>Akaya
+                                                    Telivigala</span>
+                                            </div>
+                                            <div class="font-option" data-font="durjati">
+                                                <img src="assets/images/font-durjati.jpg" alt="Durjati"
+                                                    class="font-image">
+                                                <span>Durjati</span>
+                                            </div>
+                                            <div class="font-option" data-font="lakki reddy">
+                                                <img src="assets/images/font-lakkireddy.jpg" alt="Lakki Reddy"
+                                                    class="font-image"> <span>Lakki Reddy</span>
+                                            </div>
+                                            <div class="font-option" data-font="lohit telugu">
+                                                <img src="assets/images/font-lohit-telugu.jpg" alt="Lohit Telugu"
+                                                    class="font-image"> <span>Lohit Telugu</span>
+                                            </div>
+                                            <h6>English Fonts</h6>
+                                            <div class="font-option" data-font="inter">
+                                                <img src="assets/images/font-inter.jpg" alt="Inter" class="font-image">
+                                                <span>Inter</span>
+                                            </div>
+                                            <div class="font-option" data-font="lato">
+                                                <img src="assets/images/font-lato.jpg" alt="Lato" class="font-image">
+                                                <span>Lato</span>
+                                            </div>
+                                            <div class="font-option" data-font="ubuntu">
+                                                <img src="assets/images/font-ubuntu.jpg" alt="Ubuntu"
+                                                    class="font-image">
+                                                <span>Ubuntu</span>
+                                            </div>
+                                            <div class="font-option" data-font="roboto">
+                                                <img src="assets/images/font-roboto.jpg" alt="Roboto"
+                                                    class="font-image">
+                                                <span>Roboto</span>
+                                            </div>
+                                            <div class="font-option" data-font="poppins">
+                                                <img src="assets/images/font-poppins.jpg" alt="Poppins"
+                                                    class="font-image">
+                                                <span>Poppins</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="formGroup">
+                                    <label for="fontSize">Font Size</label>
+                                    <select id="fontSize">
+                                        <option value="10">10</option>
+                                        <option value="12">12</option>
+                                        <option value="14">14</option>
+                                        <option value="16">16</option>
+                                        <option value="18">18</option>
+                                        <option value="20">20</option>
+                                        <option value="22">22</option>
+                                        <option value="24">24</option>
+                                        <option value="26">26</option>
+                                        <option value="28">28</option>
+                                        <option value="30">30</option>
+                                        <option value="32">32</option>
+                                        <option value="36">36</option>
+                                        <option value="38">38</option>
+                                        <option value="40">40</option>
+                                        <option value="42">42</option>
+                                        <option value="44">44</option>
+                                        <option value="46">46</option>
+                                        <option value="48">48</option>
+                                        <option value="50">50</option>
+                                        <option value="54">54</option>
+                                        <option value="60">60</option>
+                                        <option value="66">64</option>
+                                        <option value="72">72</option>
+                                        <option value="78">78</option>
+                                        <option value="84">84</option>
+                                        <option value="92">92</option>
+                                        <option value="100">100</option>
+                                    </select>
+                                </div>
+                                <div class="formGroup">
+                                    <label for="fontStyle">Font Style</label>
+                                    <select id="fontStyle">
+                                        <option value="normal">Normal</option>
+                                        <option value="italic">Italic</option>
+                                        <option value="oblique">Oblique</option>
+                                    </select>
+                                </div>
+                                <div class="formGroup">
+                                    <label for="fontWeight">Font Weight</label>
+                                    <select id="fontWeight">
+                                        <option value="normal">Normal</option>
+                                        <option value="bold">Bold</option>
+                                        <option value="bolder">Bolder</option>
+                                    </select>
+                                </div>
+                                <div class="formGroup">
+                                    <label for="textAlign">Text Align</label>
+                                    <select id="textAlign">
+                                        <option value="left">Left</option>
+                                        <option value="center">Center</option>
+                                        <option value="right">Right</option>
+                                        <option value="justify">Justify</option>
+                                    </select>
+                                </div>
+                                <div class="formGroup">
+                                    <label for="textColor">Text Color</label>
+                                    <div class="color-picker" style="background-color: rgb(255, 255, 255);">
+                                        <input type="color" id="textColor" class="color-input" name="txtcolor"
+                                            value="#000000">
+                                        <input type="text" name="color" class="hex-input" placeholder="#ffffff">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Change positioning by adding the positive or negative value -->
+                        <h3>Position Controls</h3>
+                        <div id="position-controls">
+                            <label for="top-pos">
+                                <span>Top</span>
+                                <input class="top-pos position-input" type="number" value="0" />
+                            </label>
+                            <label for="left-pos">
+                                <span>Left</span>
+                                <input class="left-pos position-input" type="number" value="0" />
+                            </label>
+                        </div>
+
+                        <div id="lineDecors" class="inner-container row split-3 gap-lr-1">
+                            <h3><lord-icon src="https://cdn.lordicon.com/ayjfxoly.json" trigger="loop" delay="1000"
+                                    colors="primary:#000000,secondary:#c74b16" style="width:30px;height:30px">
+                                </lord-icon> Lines &amp; Curves</h3>
+                            <div class="radioSet">
+                                <input type="radio" name="back-line" id="line-1">
+                                <label for="line-1"></label>
+                                <img src="assets/images/decor-line-1-dark.png" alt="" class="decor-img">
+                            </div>
+                            <div class="radioSet">
+                                <input type="radio" name="back-line" id="line-2">
+                                <label for="line-2"></label>
+                                <img src="assets/images/decor-line-2-dark.png" alt="" class="decor-img">
+                            </div>
+                            <div class="radioSet">
+                                <input type="radio" name="back-line" id="line-3">
+                                <label for="line-3"></label>
+                                <img src="assets/images/decor-line-3-dark.png" alt="" class="decor-img">
+                            </div>
+                            <div class="radioSet">
+                                <input type="radio" name="back-line" id="line-4">
+                                <label for="line-4"></label>
+                                <img src="assets/images/decor-line-4-dark.png" alt="" class="decor-img">
+                            </div>
+                            <div class="radioSet">
+                                <input type="radio" name="back-line" id="line-5">
+                                <label for="line-5"></label>
+                                <img src="assets/images/decor-line-5-dark.png" alt="" class="decor-img">
+                            </div>
+                            <div class="radioSet">
+                                <input type="radio" name="back-line" id="line-6">
+                                <label for="line-6"></label>
+                                <img src="assets/images/decor-line-6-dark.png" alt="" class="decor-img">
+                            </div>
+                            <div class="radioSet">
+                                <input type="radio" name="back-line" id="line-7">
+                                <label for="line-7"></label>
+                                <img src="assets/images/decor-line-7-dark.png" alt="" class="decor-img">
+                            </div>
+                            <div class="radioSet">
+                                <input type="radio" name="back-line" id="line-8">
+                                <label for="line-8"></label>
+                                <img src="assets/images/decor-line-8-dark.png" alt="" class="decor-img">
+                            </div>
+                            <div class="radioSet">
+                                <input type="radio" name="back-line" id="line-9">
+                                <label for="line-9"></label>
+                                <img src="assets/images/decor-line-9-dark.png" alt="" class="decor-img">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Title Line Edit Options -->
+                    <div id="imgEditOptions" class="edit-options">
+                        <h3>Edit Line Placements &amp; Size</h3>
+                        <div id="position-controls">
+                            <label for="top-pos">
+                                <span>Top</span>
+                                <input class="top-pos position-input" type="number" value="0" />
+                            </label>
+                            <label for="left-pos">
+                                <span>Left</span>
+                                <input class="left-pos position-input" type="number" value="0" />
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Designer Space -->
+            <div id="designerSpace" class="lessHeight">
+                <div id="themeOuter" class="theme-dark selectable" data-options="exportOptions">
+
+                    <!-- WebView Animations -->
+                    <!--<div class="animations">
+                         <div class="fire">
+                            <div class="before"></div>
+                            <div class="after"></div>
+                        </div>
+                        <div class="fire">
+                            <div class="before"></div>
+                            <div class="after"></div>
+                        </div> 
+                    </div>-->
+
+                    <img src="assets/images/way2news-watermark.png" alt="watermark" class="waterMarkLogo">
+
+                    <!-- Change Background & Decorations -->
+                    <div id="background-selector" style="background-image: url(assets/images/back-bg-1.jpg);">
+                        <div id="bgr-decorator">
+                            <img id="top-decorator" class="top-center" src="assets/images/back-decor-0.png"
+                                alt="Top Decorative Image">
+                            <img id="bottom-decorator" class="bottom-center" src="assets/images/back-decor-0.png"
+                                alt="Bottom Decorative Image">
+                        </div>
+                    </div>
+
+                    <!-- New Template 2 -->
+                    <div class="template-wrapper" id="main-template-1">
+                        <!-- Template Header -->
+                        <div id="temp-header" class="default selectable" data-options="headerOptions">
+                            <div class="clipArt" id="left-object">
+                                <img src="assets/images/baloons-1.png" alt="">
+                            </div>
+                            <div class="photo-frame" id="head-frame">
+                                <div class="imgHolder">
+                                    <img id="output" src="assets/images/replacable-photo.jpg" alt="" />
+                                    <input name="photo" type="file" accept="image/*"
+                                        onchange="document.getElementById('output').src = window.URL.createObjectURL(this.files[0])" />
+                                </div>
+                            </div>
+                            <div class="clipArt" id="right-object">
+                                <img src="assets/images/baloons-1.png" alt="">
+                            </div>
+                        </div>
+
+
+
+                        <!-- Template Body Section -->
+                        <div id="temp-body">
+                            <!-- Template Title Section -->
+                            <div id="temp-title">
+                                <h6 contenteditable="true" id="caption" class="selectable" data-options="editOptions">మా
+                                    ఆశా జ్యోతి, మా బంగారు చిట్టి తల్లి</h6>
+                                <h1 contenteditable="true" id="main-title" class="selectable"
+                                    data-options="editOptions">
+                                    జ్ఞాన ప్రియ ప్రసూన <span contenteditable="true" class="selectable"
+                                        data-options="editOptions">కు</span>
+                                </h1>
+                                <h3 contenteditable="true" id="wish-type" class="selectable" data-options="editOptions">
+                                    పుట్టిన రోజు శుభాకాంక్షలు</h3>
+                            </div>
+
+                            <p contenteditable="true" id="wish-body-content" class="selectable"
+                                data-options="editOptions">
+                                కోటి
+                                కాంతుల
+                                చరునవ్వులతో భగవంతుడు నీకు నిండు నూరేళ్ళు ఇవ్వాలని మనస్పూర్తిగా కోరుకుంటూ</p>
+                        </div>
+
+                        <!-- Template Footer Section -->
+                        <div id="temp-footer">
+                            <h2 contenteditable="true" id="from-wish" class="selectable" data-options="editOptions">
+                                ఇట్లు
+                                ప్రేమతో:
+                            </h2>
+                            <p contenteditable="true" id="who-wished" class="selectable" data-options="editOptions">
+                                అమ్మా,
+                                నాన్న, అమ్మమ్మలు, తాతయ్యలు, బాబాయి, మామయ్యా, పిన్ని ఇంకా ప్రియ సహచర బంధుగణం.!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Show This Loading While Generating Template -->
+                <div id="loadingDiv">
+                    <div class="loader"></div>
+                    <p>We are preparing your template, please wait for a moment..!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page Scripts -->
+        <script src="./assets/js/jquery.min.js"></script>
+        <script src="./assets/js/html2canvas.min.js"></script>
+        <script src="./assets/js/page-scripts.js"></script>
+        <script src="./assets/js/export_v2.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
+        <script src="./assets/js/birthday_emotions.js"></script>
+    </body>
+
+</html>

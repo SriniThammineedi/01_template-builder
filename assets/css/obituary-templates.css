@@ -1,0 +1,308 @@
+@import url("temp_builder_mainV2.css");
+
+body {
+    background-color: #ddd;
+}
+
+.template-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+#obituary-temp-1 {
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    flex-direction: column;
+    padding: 1.5rem;
+    width: 100%;
+    gap: .5rem;
+}
+
+.spl-obt-title {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    width: fit-content;
+    margin: -1.5rem auto 0;
+    padding: 2rem 3.5rem 0;
+    position: relative;
+}
+
+.spl-obt-title h1 {
+    font-family: "Anek Telugu", sans-serif;
+    font-size: 36px;
+    line-height: 1.5;
+    font-weight: 600;
+    padding: 0;
+    color: #db1c21;
+    text-align: center;
+}
+
+.spl-obt-title h1::before,
+.spl-obt-title h1::after {
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 100px;
+    background: url(../images/hanging-diya-top-2.png) no-repeat left bottom;
+    background-size: 100% auto;
+    left: 0;
+    top: 0;
+}
+
+.spl-obt-title h1::after {
+    left: auto;
+    right: 0;
+}
+
+.obit-photo-flowered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    max-height: 220px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.obit-photo-flowered input {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.obit-photo-flowered img {
+    max-width: 100%;
+    max-height: 200px;
+    position: relative;
+    z-index: 1;
+}
+
+.obit-photo-flowered::after {
+    position: absolute;
+    content: '';
+    width: 80%;
+    height: 100%;
+    left: 50%;
+    bottom: -60px;
+    transform: translateX(-50%);
+    background: url(../images/flowers-photo-bottom.png) no-repeat center bottom;
+    background-size: 100% auto;
+    z-index: 2;
+}
+
+
+/* Template 2 Styles */
+
+#obituary-temp-2 .spl-obt-title {
+    margin-top: -2.5rem;
+}
+
+#obituary-temp-2 .spl-obt-title h1 {
+    font-family: "Anek Telugu", sans-serif;
+    color: #fef305;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 600;
+    white-space: nowrap;
+    text-shadow: 0 5px 3px rgba(0, 0, 0, .8);
+    text-align: center;
+    letter-spacing: -.15rem;
+}
+
+.photoTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    gap: .25rem;
+}
+
+.photoTitle .imgHolder {
+    width: auto;
+    height: 240px;
+    position: relative;
+}
+
+.photoTitle .imgHolder img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.photoTitle h1 {
+    font-family: "Mandali", sans-serif;
+    color: #ff0100;
+    font-size: 28px;
+    font-weight: 600;
+    white-space: nowrap;
+    text-align: center;
+    padding: .5rem 0 0;
+    margin-top: -1rem;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 1);
+}
+
+.photoTitle h3 {
+    font-family: "Anek Telugu", sans-serif;
+    color: #fff;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: center;
+    padding: .25rem 0 0;
+}
+
+.photoTitle .d-flex-row p.jananam,
+.photoTitle .d-flex-row p.maranam {
+    font-family: "Anek Telugu", sans-serif;
+    color: #fff;
+    font-size: 11px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 1;
+    padding: .6rem .5rem .2rem;
+    background-color: #02293a;
+    border-radius: 5px;
+}
+
+.photoTitle p.content {
+    font-family: "Anek Telugu", sans-serif;
+    color: #fff;
+    font-size: 11px;
+    line-height: 1.3;
+    font-weight: normal;
+    text-align: center;
+    padding: 0;
+}
+
+.photoTitle p.wish {
+    font-family: "Anek Telugu", sans-serif;
+    color: #fff100;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    padding: 0;
+}
+
+.wishers-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #02293a;
+    margin-top: -.5rem;
+    border-radius: 5px;
+    padding: .75rem;
+    gap: .5rem;
+}
+
+.wishers-footer .contentColumn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    align-self: stretch;
+    gap: .5rem;
+}
+
+.wishers-footer .contentColumn:first-child {
+    max-width: 32%;
+    border-right: 1px solid rgba(255, 255, 255, .5);
+    padding-right: 1rem;
+}
+
+.wishers-footer .contentColumn:nth-child(2) {
+    max-width: 65%;
+}
+
+.wishers-footer .contentColumn h3 {
+    font-family: "Anek Telugu", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: .15rem;
+    color: #fff100;
+    font-size: 11px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.2;
+    padding: 0;
+}
+
+.wishers-footer .contentColumn h3 span {
+    font-weight: normal;
+    color: #fff;
+    font-size: 9px;
+}
+
+.wishers-footer p.remained {
+    font-family: "Anek Telugu", sans-serif;
+    color: #fff;
+    font-size: 13px !important;
+    font-weight: normal;
+    text-align: center;
+    flex: 1 1 100%;
+    line-height: 1.2;
+    padding: 0 !important;
+}
+
+#obituary-temp-2 .d-flex-row .labeledText,
+.labeledText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    margin: .5rem auto 0;
+    width: 47%;
+    gap: 0;
+}
+
+#obituary-temp-2 .d-flex-row .labeledText h1,
+.labeledText h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fef305;
+    border-radius: 4px;
+    padding: .5rem .6rem .25rem !important;
+    font-family: "Anek Telugu", sans-serif;
+    line-height: 1;
+    color: #db1c21;
+    font-size: 14px !important;
+    position: relative;
+    font-weight: 600;
+    text-align: center;
+    z-index: 2 !important;
+}
+
+#obituary-temp-2 .d-flex-row .labeledText p,
+.labeledText p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -.75rem;
+    border-radius: 5px;
+    padding: 1.1rem .25rem .25rem !important;
+    font-family: "Anek Telugu", sans-serif;
+    border: 1px dashed #75a2b5;
+    line-height: 1.3;
+    color: #fff;
+    font-size: 9px !important;
+    position: relative;
+    font-weight: normal;
+    text-align: center;
+    width: 100%;
+    z-index: 1 !important;
+}

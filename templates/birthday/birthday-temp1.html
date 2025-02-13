@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Default Birthday Template-1</title>
+
+        <link rel="stylesheet" href="/assets/css/birthday-templates.css">
+    </head>
+
+    <body>
+        <div id="themeOuter">
+            <!-- Default Birthday Template Start -->
+            <div class="template-wrapper" id="main-template-1"
+                style="background-image: url(../../assets/images/back-bg-1.jpg);">
+                <!-- Template Header -->
+                <div id="temp-header" class="default selectable" data-options="headerOptions">
+                    <div class="clipArt" id="left-object">
+                        <img src="../../assets/images/baloons-1.png" alt="">
+                    </div>
+                    <div class="photo-frame" id="head-frame">
+                        <div class="imgHolder">
+                            <img id="output" src="../../assets/images/replacable-photo.jpg" alt="" />
+                            <input name="photo" type="file" accept="image/*"
+                                onchange="document.getElementById('output').src = window.URL.createObjectURL(this.files[0])" />
+                        </div>
+                    </div>
+                    <div class="clipArt" id="right-object">
+                        <img src="../../assets/images/baloons-1.png" alt="">
+                    </div>
+                </div>
+
+                <!-- Template Body Section -->
+                <div id="temp-body">
+                    <!-- Template Title Section -->
+                    <div id="temp-title">
+                        <h6 contenteditable="true" id="caption" class="selectable" data-options="editOptions">మా
+                            ఆశా జ్యోతి, మా బంగారు చిట్టి తల్లి</h6>
+                        <h1 contenteditable="true" id="main-title" class="selectable" data-options="editOptions">
+                            జ్ఞాన ప్రియ ప్రసూన <span contenteditable="true" class="selectable"
+                                data-options="editOptions">కు</span>
+                        </h1>
+                        <h3 contenteditable="true" id="wish-type" class="selectable" data-options="editOptions">
+                            పుట్టిన రోజు శుభాకాంక్షలు</h3>
+                    </div>
+
+                    <p contenteditable="true" id="wish-body-content" class="selectable" data-options="editOptions">
+                        కోటి
+                        కాంతుల
+                        చరునవ్వులతో భగవంతుడు నీకు నిండు నూరేళ్ళు ఇవ్వాలని మనస్పూర్తిగా కోరుకుంటూ</p>
+                </div>
+
+                <!-- Template Footer Section -->
+                <div id="temp-footer">
+                    <h2 contenteditable="true" id="from-wish" class="selectable" data-options="editOptions">
+                        ఇట్లు
+                        ప్రేమతో:
+                    </h2>
+                    <p contenteditable="true" id="who-wished" class="selectable" data-options="editOptions">
+                        అమ్మా,
+                        నాన్న, అమ్మమ్మలు, తాతయ్యలు, బాబాయి, మామయ్యా, పిన్ని ఇంకా ప్రియ సహచర బంధుగణం.!</p>
+                </div>
+            </div>
+            <!-- Birthday Template End -->
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,331 @@
+@import url("temp_builder_mainV2.css");
+
+body {
+    background-color: #ddd;
+}
+
+.template-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+#inauguration-template-1 {
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    flex-direction: column;
+    padding: 1.5rem 1.5rem 0 !important;
+    width: 100%;
+    gap: .5rem;
+}
+
+#inauguration-template-1 #temp-body {
+    padding: 0 !important;
+}
+
+#temp-header.negativeTop {
+    margin-top: -1.5rem;
+}
+
+.show-in-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: .5rem;
+    position: relative;
+    margin-bottom: .35rem;
+    width: 100%;
+}
+
+.show-in-row.headerRow {
+    align-items: flex-end;
+}
+
+.show-in-row .guestCard,
+.guestCard {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+    flex-direction: column;
+    gap: .15rem;
+    position: relative;
+    width: calc(1/3 * 100% - (1 - 1/3) * .5rem);
+}
+
+.show-in-row .guestCard .imgHolder,
+.guestCard .imgHolder {
+    width: 90px;
+    height: 96px;
+    border-radius: 5px;
+    border: .12rem solid #fff;
+    overflow: hidden;
+}
+
+.show-in-row .guestCard .imgHolder img,
+.guestCard .imgHolder img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.show-in-row .guestCard.middleLogo .imgHolder,
+.guestCard.middleLogo .imgHolder {
+    border: none;
+    width: 100%;
+    height: auto;
+    border-radius: none;
+    overflow: inherit;
+}
+
+.show-in-row .guestCard .heading-2,
+.guestCard .heading-2 {
+    font-family: "Ramabhadra", sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: normal;
+    position: relative;
+    padding: 0;
+    color: #ff0238;
+    width: fit-content;
+    text-align: center;
+}
+
+.show-in-row .guestCard .heading-2 span,
+.guestCard .heading-2 span {
+    font-size: 10px;
+}
+
+.show-in-row.moreWishers .guestCard .heading-2 {
+    color: #22900b !important;
+}
+
+.show-in-row.moreWishers .guestCard:nth-child(2) .heading-2,
+.show-in-row.moreWishers .guestCard:nth-child(5) .heading-2 {
+    color: #1e1b8e !important;
+}
+
+.show-in-row .guestCard p {
+    font-family: "Ramabhadra", sans-serif;
+    font-size: 11px;
+    line-height: 1;
+    font-weight: normal;
+    position: relative;
+    padding: 0;
+    color: #1e1b8e;
+    width: fit-content;
+    text-align: center;
+}
+
+.guestCard h4.paraWithBg {
+    font-family: "Ramabhadra", sans-serif;
+    background-image: linear-gradient(to top, #6f0400 0%, #d40807 100%);
+    font-size: 13px !important;
+    line-height: 1;
+    font-weight: normal;
+    position: relative;
+    padding: .3rem !important;
+    white-space: nowrap;
+    border: .12rem solid #fff;
+    border-radius: 5px;
+    color: #fff !important;
+    width: 100%;
+    text-align: center;
+}
+
+h2.heading-1.withBg {
+    font-family: "Ramabhadra", sans-serif;
+    background-image: linear-gradient(to top, #de5600 0%, #d51127 100%);
+    font-size: 16px;
+    line-height: 1;
+    font-weight: normal;
+    position: relative;
+    padding: .3rem;
+    border: .12rem solid #c51f09;
+    border-radius: 5px;
+    color: #f7f700;
+    width: 100%;
+    text-align: center;
+}
+
+h2.heading-1.withBg span {
+    display: block;
+    clear: both;
+    font-size: 10px;
+    color: #fff;
+}
+
+h1.spl-heading.withBg {
+    font-family: "Anek Telugu", sans-serif;
+    background-color: #eef9ff;
+    font-size: 24px;
+    line-height: 1;
+    font-weight: bold;
+    white-space: nowrap;
+    position: relative;
+    padding: .5rem .65rem .25rem;
+    border-radius: 5px;
+    color: #22900b;
+    width: fit-content;
+    text-align: center;
+}
+
+.show-in-row .guestCard.fullWidth {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.show-in-row .guestCard .imgHolder.leftVector,
+.show-in-row .guestCard .imgHolder.rightVector {
+    max-width: 38px;
+    margin: 0 .35rem;
+    border: none;
+    border-radius: 0;
+    height: auto;
+}
+
+.show-in-row .guestCard .imgHolder.rightVector {
+    transform: rotateY(180deg);
+}
+
+#inauguration-template-1 #temp-footer {
+    background-color: transparent !important;
+}
+
+#temp-footer.footerRow .guestCard .wishedBy {
+    font-family: "Ramabhadra", sans-serif !important;
+    font-size: 20px !important;
+    line-height: 1.5;
+    font-weight: normal;
+    position: relative;
+    padding: 0;
+    color: #a90101 !important;
+    width: fit-content;
+    text-align: center;
+}
+
+#temp-footer.footerRow .guestCard p {
+    font-family: "Ramabhadra", sans-serif !important;
+    font-size: 12px !important;
+    line-height: 1;
+    font-weight: normal;
+    position: relative;
+    padding: 0 !important;
+    color: #3f4344 !important;
+    width: fit-content;
+    text-align: center;
+}
+
+#temp-footer.footerRow .imgHolder.leftVector,
+#temp-footer.footerRow .imgHolder.rightVector,
+.show-in-row.welcome-row .imgHolder.leftVector,
+.show-in-row.welcome-row .imgHolder.rightVector {
+    position: relative;
+    max-width: 45px;
+    border: none;
+    border-radius: 0;
+    height: auto;
+}
+
+#temp-footer.footerRow .imgHolder.leftVector,
+.show-in-row.welcome-row .imgHolder.leftVector {
+    left: -.5rem;
+}
+
+#temp-footer.footerRow .imgHolder.rightVector,
+.show-in-row.welcome-row .imgHolder.rightVector {
+    right: -.5rem;
+    transform: rotateY(180deg);
+}
+
+.show-in-row.welcome-row {
+    align-items: center;
+    margin-top: -.7rem;
+}
+
+.show-in-row.welcome-row .matContent {
+    width: 100%;
+    max-width: 70%;
+    position: relative;
+    padding: .5rem 0;
+}
+
+.show-in-row.welcome-row .matContent h2.heading {
+    font-family: "Ramabhadra", sans-serif !important;
+    border: none !important;
+    font-size: 16px !important;
+    background: url(../images/mat-bg.png) repeat-x center center !important;
+    line-height: 1;
+    font-weight: normal !important;
+    position: relative !important;
+    padding: .35rem !important;
+    color: #fff !important;
+    width: fit-content;
+    text-align: center !important;
+}
+
+.show-in-row.welcome-row .matContent::before,
+.show-in-row.welcome-row .matContent::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -.5rem;
+    width: 10px;
+    height: 100%;
+    background: url(../images/mat-end.png) no-repeat center center;
+    background-size: contain;
+}
+
+.show-in-row.welcome-row .matContent::after {
+    transform: rotateY(180deg);
+    right: -.5rem;
+    left: auto;
+}
+
+#temp-footer.footerRow p.address {
+    font-family: "Anek Telugu", sans-serif;
+    font-size: 12px;
+    line-height: 1.4;
+    font-weight: bold;
+    position: relative;
+    padding: 0;
+    color: #0c3024;
+    width: fit-content;
+    text-align: center;
+}
+
+#temp-footer.footerRow p.contact {
+    font-family: "Anek Telugu", sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 1;
+    font-weight: bold;
+    position: relative;
+    padding: .15rem 0 0;
+    color: #a90101;
+    width: fit-content;
+    white-space: nowrap;
+    text-align: center;
+}
+
+#temp-footer.footerRow .guestCard .imgHolder {
+    border-radius: 0;
+    border: none;
+}
+
+#temp-footer.footerRow .guestCard .imgHolder img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+#inauguration-temp-1 #temp-body.d-flex-row {
+    flex-wrap: wrap !important;
+}

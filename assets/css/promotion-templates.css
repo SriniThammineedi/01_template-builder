@@ -1,0 +1,707 @@
+@import url("temp_builder_mainV2.css");
+
+body {
+    background-color: #ddd;
+}
+
+.template-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+#promotion-template-1 {
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    flex-direction: column;
+    padding: 1.5rem 1.5rem 0 !important;
+    width: 100%;
+    gap: .5rem;
+}
+
+#promotion-template-1 #temp-body {
+    padding: 0 !important;
+}
+
+#promotion-template-1 #temp-body.d-flex-row {
+    flex-wrap: nowrap !important;
+}
+
+.imgHolder.fullWidth {
+    margin-bottom: -2rem;
+}
+
+.promoHeading-3 {
+    font-family: "Anek Telugu", sans-serif;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: -.5rem;
+    padding: 0;
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+}
+
+.promoHeading-3 span {
+    font-size: 16px;
+}
+
+.promoHeading-2 {
+    font-family: "Ramabhadra", sans-serif;
+    font-size: 32px;
+    line-height: 1;
+    font-weight: normal;
+    margin-bottom: -.5rem;
+    position: relative;
+    padding: 0;
+    color: #fff000;
+    width: 100%;
+    text-align: center;
+    text-shadow: 0 4px 3px rgba(0, 0, 0, .8);
+}
+
+.promoHeading-1 {
+    font-family: "Oswald", sans-serif;
+    font-size: 36px;
+    line-height: 1;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    padding: 0;
+    color: #b1b4b4;
+    background: #b1b4b4;
+    background: linear-gradient(to right, #b1b4b4 20%, #ffffff 50%, #b1b4b4 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 100%;
+    text-align: center;
+}
+
+.promoHeading-1::after {
+    position: absolute;
+    content: 'Silver Jubilee Offer';
+    font-family: "Oswald", sans-serif;
+    font-size: 36px;
+    line-height: 1;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #b1b4b4;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    z-index: -1;
+    text-shadow: 0 4px 3px rgba(0, 0, 0, .8);
+}
+
+.promoHeading-4 {
+    font-family: "Ramabhadra", sans-serif;
+    font-size: 18px;
+    line-height: 1.25;
+    font-weight: normal;
+    position: relative;
+    padding: 0;
+    color: #ffffff;
+    width: fit-content;
+    text-align: center;
+}
+
+.promoHeading-4.withBg {
+    background-color: #ca2f3d;
+    padding: .3rem .5rem;
+    white-space: nowrap;
+    border-radius: 4px;
+}
+
+.adTexts {
+    padding: 1rem 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: .5rem;
+    position: relative;
+    width: 40%;
+}
+
+.adBanner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0;
+    flex-direction: column;
+    gap: .5rem;
+    position: relative;
+    width: 60%;
+}
+
+.adTexts .para-1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1;
+    margin-bottom: -.5rem;
+    font-weight: normal;
+    position: relative;
+    padding: 0;
+    color: #ffffff;
+    width: 100%;
+    text-align: left;
+}
+
+.adTexts .para-1.telugu {
+    font-family: "Anek Telugu", sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-top: .5rem;
+    font-weight: normal;
+    position: relative;
+    padding: 0;
+    color: #ffffff;
+    width: 100%;
+    text-align: left;
+}
+
+.adTexts .para-1.telugu span {
+    color: #fdf305;
+}
+
+.adTexts .para-2 {
+    font-family: "Ramabhadra", sans-serif;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: normal;
+    margin-bottom: -.5rem;
+    white-space: nowrap;
+    position: relative;
+    padding: 0;
+    color: #ffffff;
+    width: 100%;
+    text-align: left;
+}
+
+.adTexts .para-3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+    line-height: 1.25;
+    top: 3.5rem;
+    right: -2rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    white-space: nowrap;
+    position: absolute !important;
+    padding: 0;
+    color: #ffffff;
+    text-align: center;
+}
+
+.adTexts .para-3 span {
+    font-family: "Anek Telugu", sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.adTexts .offerHeading-1 {
+    font-family: "Oswald", sans-serif;
+    font-size: 52px;
+    line-height: 1.3;
+    font-weight: 800;
+    white-space: nowrap;
+    position: relative;
+    padding: 0;
+    color: #ffffff;
+    width: 100%;
+    text-align: left;
+}
+
+.adTexts .offerHeading-1 em {
+    font-size: 22px;
+}
+
+.adTexts .offerHeading-1 span {
+    display: block;
+    clear: both;
+    font-family: "Anek Telugu", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.adTexts .termsLabel {
+    --s: 20px;
+    line-height: 1.3;
+    padding-inline: .3em calc(var(--s) + .3em);
+    clip-path: polygon(0 0, calc(100% - var(--s)) 0, 100% 50%, calc(100% - var(--s)) 100%, 0 100%);
+    background: #d43e98;
+    width: 100%;
+    font-family: "Anek Telugu", sans-serif;
+    padding: .5rem;
+    font-size: 9px;
+    font-weight: normal;
+    color: #fff;
+}
+
+.adTexts .offerHeading-2 {
+    font-family: "Ramabhadra", sans-serif;
+    font-size: 22px;
+    line-height: 1.4;
+    font-weight: normal;
+    white-space: nowrap;
+    position: relative;
+    border-bottom: 3px solid #fdf305;
+    padding: 0;
+    color: #fdf305;
+    width: 100%;
+    text-align: left;
+}
+
+.adTexts .paraOffer {
+    font-family: "Anek Telugu", sans-serif;
+    background-color: #fff;
+    padding: .35rem .5rem 0;
+    border-radius: 6px;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: normal;
+    margin-top: .75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    gap: .35rem;
+    position: relative;
+    color: #222;
+    width: fit-content;
+    text-align: left;
+}
+
+.adTexts .paraOffer span {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.adBanner .imgHolder.modal-img {
+    width: 100%;
+    height: 100%;
+}
+
+.adBanner .imgHolder.modal-img img {
+    width: 125%;
+    max-width: inherit;
+    position: relative;
+    left: -2.5rem;
+}
+
+.adBanner .imgHolder.stamp-img {
+    position: absolute;
+    top: 1rem;
+    right: 0;
+}
+
+.adBanner .imgHolder.stamp-img img {
+    max-width: 60px;
+}
+
+#promotion-template-1 #temp-footer {
+    padding: .5rem 1.25rem .75rem;
+    width: -webkit-fill-available !important;
+    width: -moz-fill-available !important;
+    margin: .5rem -1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    gap: .5rem;
+}
+
+.footLogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    position: relative;
+    margin-bottom: -.75rem;
+    width: 100%;
+}
+
+.footLogo .imgHolder img {
+    max-width: 48px;
+}
+
+.footLogo .logoText {
+    font-family: "Anek Telugu", sans-serif;
+    font-size: 28px;
+    line-height: 1;
+    font-weight: bold;
+    position: relative;
+    padding: 0;
+    color: #6f1016;
+    width: fit-content;
+    white-space: nowrap;
+    text-align: center;
+}
+
+#promotion-template-1 #temp-footer p.address,
+p.address {
+    font-family: "Anek Telugu", sans-serif !important;
+    font-size: 16px !important;
+    line-height: 1;
+    font-weight: bold;
+    position: relative !important;
+    padding: 0 !important;
+    color: #0c3024 !important;
+    width: fit-content !important;
+    white-space: nowrap;
+    text-align: center;
+}
+
+#promotion-template-1 #temp-footer p.address::before,
+p.address::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: url(../images/location-dark.svg) no-repeat center center;
+    background-size: 100% auto;
+    left: -17px;
+    top: -4px;
+}
+
+#promotion-template-1 #temp-footer p.contact,
+p.contact {
+    font-family: "Oswald", sans-serif !important;
+    text-transform: uppercase !important;
+    font-size: 18px !important;
+    line-height: 1;
+    font-weight: bold;
+    position: relative;
+    padding: 0 !important;
+    color: #000 !important;
+    width: fit-content !important;
+    white-space: nowrap;
+    text-align: center;
+}
+
+/* Promotions Template-2 Styles */
+#promotion-template-2 .ajaraHospitals {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -1.5rem;
+    width: 100%;
+}
+
+#promotion-template-2 .ajaraHospitals .imgHolder {
+    width: 150px;
+    height: 55px;
+    overflow: hidden;
+}
+
+#promotion-template-2 .ajaraHospitals .imgHolder img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#promotion-template-2 .ajaraHospitals .ajaraMain {
+    font-family: "Bonalu", sans-serif;
+    font-size: 70px;
+    line-height: 1;
+    font-weight: normal;
+    position: relative;
+    padding: 0;
+    color: #233d9c;
+    width: fit-content;
+    white-space: nowrap;
+    text-align: center;
+}
+
+#promotion-template-2 .ajaraHospitals .ajaraSub {
+    font-family: "Anek Telugu", sans-serif;
+    font-size: 26px;
+    line-height: 1.2;
+    font-weight: 500;
+    position: relative;
+    padding: 0;
+    color: #f2701a;
+    width: fit-content;
+    white-space: nowrap;
+    text-align: center;
+}
+
+#promotion-template-2 .ajaraHospitals .ajaraSub span {
+    font-size: 20px;
+    font-weight: normal;
+    color: #233d9c;
+}
+
+#promotion-template-2 .ajaraHospitals .ajaraSubThirdLevel {
+    font-family: "Anek Telugu", sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 500;
+    margin-top: -.5rem;
+    position: relative;
+    padding: .6rem .6rem 0;
+    color: #fff;
+    width: fit-content;
+    white-space: nowrap;
+    text-align: center;
+    background-color: #233d9c;
+    border-radius: 5px;
+}
+
+#promotion-template-2 .ajaraListBody {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: .75rem;
+    position: relative;
+    gap: 1rem;
+    margin: .5rem auto 0;
+    border: 1px solid #0a8745;
+    border-radius: 6px;
+    width: 100%;
+}
+
+#promotion-template-2 .ajaraListBody .ajaraListHead {
+    margin: -2rem auto;
+    font-family: "Anek Telugu", sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 500;
+    position: relative;
+    padding: .6rem .6rem 0;
+    color: #fff;
+    width: fit-content;
+    white-space: nowrap;
+    text-align: center;
+    background-color: #0a8745;
+    border-radius: 5px;
+}
+
+#promotion-template-2 .ajaraListBody ul {
+    margin: -.5rem 0 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: .1rem 1rem;
+    width: 100%;
+}
+
+#promotion-template-2 .ajaraListBody ul li {
+    font-family: "Anek Telugu", sans-serif;
+    display: list-item;
+    list-style: disc inside;
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 600;
+    position: relative;
+    padding: 0;
+    color: #000;
+    width: calc(1/2 * 100% - (1 - 1/2) * 1rem);
+    background-color: transparent;
+    white-space: nowrap;
+    text-align: left;
+}
+
+#promotion-template-2 .ajaraFooter {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    gap: .35rem;
+    position: relative;
+}
+
+#promotion-template-2 .ajaraFooter .offers {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: .5rem;
+    position: relative;
+    background-color: #233d9c;
+    margin-top: .5rem;
+    padding: .3rem 1.2rem .6rem;
+    border-radius: 6px;
+}
+
+#promotion-template-2 .ajaraFooter .offers h4 {
+    position: absolute;
+    top: -.75rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Mallanna", sans-serif;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 600;
+    background-color: #fff;
+    text-align: center;
+    border: 1px solid #233d9c;
+    border-radius: 5px;
+    padding: .25rem .5rem;
+    color: #233d9c;
+}
+
+#promotion-template-2 .ajaraFooter .offers h1 {
+    font-family: "Mallanna", sans-serif;
+    font-size: 26px;
+    line-height: 1;
+    font-weight: 600;
+    padding: 0;
+    color: #fff005;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#promotion-template-2 .ajaraFooter .offers h1 span {
+    font-size: 42px;
+}
+
+#promotion-template-2 .ajaraFooter .offers h3 {
+    font-family: "Mallanna", sans-serif;
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 600;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    text-decoration: line-through;
+}
+
+#promotion-template-2 .ajaraFooter .offers h2 {
+    font-family: "Mallanna", sans-serif;
+    font-size: 28px;
+    line-height: 1;
+    font-weight: 600;
+    padding: .15rem .5rem;
+    background-color: #fff005;
+    display: flex;
+    width: fit-content;
+    color: #233d9c;
+    border-radius: 4px;
+    text-align: center;
+}
+
+#promotion-template-2 .ajaraFooter p.address {
+    font-family: "Mallanna", sans-serif;
+    font-size: 17px;
+    line-height: 1;
+    font-weight: 600;
+    padding: 0 0 0 1.2rem;
+    margin: 0 auto;
+    width: fit-content;
+    display: flex;
+    color: #233d9c;
+    text-align: center;
+    position: relative;
+}
+
+#promotion-template-2 .ajaraFooter p.address::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: auto;
+    transform: translateY(-50%);
+    margin-left: -1.2rem;
+    width: 4px;
+    height: 4px;
+    background: url(../images/location-dark.svg) no-repeat center center;
+    background-size: 100% auto;
+    width: 16px;
+    height: 16px;
+}
+
+#promotion-template-2 .ajaraFooter p.contact {
+    font-family: "Oswald", sans-serif;
+    font-size: 17px;
+    line-height: 1;
+    font-weight: 600;
+    padding: .25rem .5rem .25rem 1.5rem;
+    color: #233d9c;
+    text-align: center;
+    position: relative;
+    display: flex;
+    width: fit-content;
+    background-color: #fdf305;
+    border-radius: 5px;
+}
+
+#promotion-template-2 .ajaraFooter p.contact::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: auto;
+    transform: translateY(-50%);
+    margin-left: -1.2rem;
+    width: 4px;
+    height: 4px;
+    background: url(../images/phone-icon.png) no-repeat center center;
+    background-size: 100% auto;
+    width: 14px;
+    height: 14px;
+}
+
+#promotion-template-2 .ajaraFooter p.whatsapp {
+    font-family: "Mallanna", sans-serif;
+    font-size: 17px;
+    line-height: 1;
+    font-weight: 500;
+    padding: .25rem 1.5rem;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    display: flex;
+    width: fit-content;
+    background-color: #29a61e;
+    border-radius: 5px;
+}
+
+#promotion-template-2 .ajaraFooter p.whatsapp::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: auto;
+    transform: translateY(-50%);
+    margin-left: -1.2rem;
+    width: 4px;
+    height: 4px;
+    background: url(../images/whatsapp_icon.png) no-repeat center center;
+    background-size: 100% auto;
+    filter: invert(1);
+    width: 14px;
+    height: 14px;
+}
+
+#promotion-template-2 .ajaraFooter p.whatsapp::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    margin-right: -.75rem;
+    width: 4px;
+    height: 4px;
+    background: url(../images/click_hand_icon.png) no-repeat center center;
+    background-size: 100% auto;
+    width: 30px;
+    height: 30px;
+}

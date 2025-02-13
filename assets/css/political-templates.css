@@ -1,0 +1,230 @@
+@import url("temp_builder_mainV2.css");
+
+body {
+    background-color: #ddd;
+}
+
+.template-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+#political-template-1 {
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    flex-direction: column;
+    padding: 1.5rem;
+    width: 100%;
+    gap: .5rem;
+}
+
+.sidiriHead {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0 0;
+}
+
+.sidiriHead h1.mainTitle {
+    font-family: "Bonalu", sans-serif;
+    font-size: 40px;
+    line-height: 1;
+    font-weight: normal;
+    letter-spacing: .07rem;
+    position: relative;
+    white-space: nowrap;
+    padding: 0;
+    color: #fb0653;
+    width: fit-content;
+    text-align: center;
+    text-shadow: 0 2px 1px rgba(255, 255, 255, .8);
+}
+
+.sidiriBody {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: .5rem 0;
+}
+
+.sidiriBody .imgHolder.absPosition {
+    width: auto;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    right: 1.5rem;
+    z-index: 2;
+}
+
+.sidiriBody .imgHolder {
+    width: auto;
+    height: 270px;
+}
+
+.sidiriBody .imgHolder img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.sidiriBody .splBgTitle {
+    margin: -1.2rem auto .6rem;
+    position: relative;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url(../images/title-bg-3.png) repeat-x center center;
+    padding: .8rem .25rem;
+    background-size: contain;
+}
+
+.sidiriBody .splBgTitle::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -2.75rem;
+    width: 100%;
+    height: 100%;
+    background: url(../images/title-bg-3-left-end.png) no-repeat left center;
+    background-size: contain;
+}
+
+.sidiriBody .splBgTitle::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -2.75rem;
+    width: 100%;
+    height: 100%;
+    background: url(../images/title-bg-3-right-end.png) no-repeat right center;
+    background-size: contain;
+}
+
+.sidiriBody .splBgTitle h1 {
+    font-family: "Anek Telugu", sans-serif;
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: 600;
+    position: relative;
+    white-space: nowrap;
+    padding: 0;
+    color: #f8f603;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: -.07rem;
+    gap: .25rem;
+    width: fit-content;
+    text-align: center;
+}
+
+.sidiriBody .splBgTitle h1 span {
+    font-size: 10px;
+}
+
+.sidiriBody .splBgTitle h6 {
+    font-family: "Anek Telugu", sans-serif;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: normal;
+    position: relative;
+    padding: 0;
+    color: #fff;
+    width: fit-content;
+    text-align: center;
+}
+
+.sidiriBody h2 {
+    font-family: "Anek Telugu", sans-serif;
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: 600;
+    position: relative;
+    white-space: nowrap;
+    padding: 0;
+    color: #ff0400;
+    width: fit-content;
+    text-align: center;
+}
+
+.sidiriBody h2 span {
+    font-size: 12px;
+}
+
+.sidiriBody p {
+    font-family: "Anek Telugu", sans-serif;
+    font-size: 12px;
+    line-height: 1.3;
+    font-weight: 600;
+    position: relative;
+    white-space: nowrap;
+    padding: .35rem 0;
+    color: #78094b;
+    width: fit-content;
+    text-align: center;
+}
+
+/* Political Temps Footer Styles */
+#political-template-1 #temp-footer {
+    padding: 0 !important;
+}
+
+.sidiriFooter {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: .5rem;
+}
+
+.sidiriFooter .guestCard .imgHolder {
+    border-color: #f0c425;
+    background-color: #b0b0b2;
+    height: 150px;
+    width: 100%;
+}
+
+.sidiriFooter .guestCard .imgHolder img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.sidiriFooter .guestCard .heading-2 {
+    font-family: "Anek Telugu", sans-serif !important;
+    font-size: 14px !important;
+    line-height: 1.3;
+    font-weight: 600 !important;
+    position: relative;
+    white-space: nowrap;
+    padding: .25rem 0 0 !important;
+    color: #fff;
+    width: fit-content;
+    text-align: center !important;
+    border: none !important;
+}
+
+.sidiriFooter .guestCard p {
+    font-family: "Mallanna", sans-serif !important;
+    font-size: 13px !important;
+    line-height: 1;
+    font-weight: normal;
+    position: relative;
+    padding: 0 !important;
+    color: #fff;
+    width: fit-content;
+    text-align: center;
+}
