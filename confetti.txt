@@ -1,0 +1,35 @@
+
+                <canvas id="confettiCanvas"></canvas>
+                <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.1.2/dist/confetti.browser.min.js"></script>
+                <script>
+                    var canvas = document.getElementById("confettiCanvas");
+                    canvas.width = window.innerWidth;
+                    canvas.height = window.innerHeight;
+                    var confettiInstance = confetti.create(canvas, { resize: true });
+
+                    function launchConfetti() {
+                        var end = Date.now() + (3 * 200);
+                        var colors = ['#000', '#ff0000', '#f3f3f3'];
+                        function frame() {
+                            confetti({
+                                particleCount: 120,
+                                angle: 60,
+                                spread: 100,
+                                origin: { x: 0 },
+                                colors: colors
+                            });
+                            confetti({
+                                particleCount: 80,
+                                angle: 145,
+                                spread: 100,
+                                origin: { x: 1 },
+                                colors: colors
+                            });
+                        }
+
+                        frame();
+                    }
+
+                    launchConfetti();
+                    setInterval(launchConfetti, 10000);
+                </script>

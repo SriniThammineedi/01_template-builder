@@ -106,7 +106,7 @@ body {
 
 .birthday-temp-header-thumbs .row-photo-frame.inlineFlex .imgHolder {
     border-radius: 100%;
-    width: 50px;
+    width: 70px;
     max-width: inherit !important;
     aspect-ratio: 1;
 }
@@ -944,4 +944,519 @@ h1.specialCaptioned span.bottomRightCaption {
 
 .bt7Footer .logoText p.colorBlue {
     color: #255aa8 !important;
+}
+
+/* Birthday Template 8 */
+.bt8Body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.bt8Body .imgHolder {
+    width: auto;
+    height: 360px;
+}
+
+.bt8Body .imgHolder img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.bt8Body h6 {
+    font-family: "Oswald", sans-serif !important;
+    font-size: 25px !important;
+    line-height: 1.2;
+    font-weight: 600 !important;
+    letter-spacing: .15rem;
+    text-transform: uppercase;
+    position: relative;
+    padding: 0 !important;
+    color: #a40081 !important;
+    margin-top: -1.5rem;
+    width: fit-content;
+    text-align: center;
+    text-shadow: 0 2px 3px #fff;
+}
+
+.bt8Body h1 {
+    font-family: "Bonheur Royale", sans-serif !important;
+    font-size: 96px !important;
+    line-height: 1.2;
+    font-weight: 600 !important;
+    position: relative;
+    padding: 0 !important;
+    color: #a40081 !important;
+    width: fit-content;
+    text-align: center;
+    text-shadow: 0 3px 2px #fff;
+    margin-top: -1rem;
+}
+
+.bt8Body p {
+    font-family: "Oswald", sans-serif !important;
+    font-size: 22px !important;
+    line-height: 1.2;
+    font-weight: 600 !important;
+    position: relative;
+    padding: 0 !important;
+    color: #0b19ba !important;
+    width: fit-content;
+    text-align: center;
+    text-shadow: 0 2px 3px #fff;
+}
+
+.bt8Body .splBodyTxt {
+    background-color: #df0211;
+    margin: .35rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: .75rem 1.2rem;
+    width: fit-content;
+}
+
+.bt8Body .splBodyTxt h2 {
+    font-family: "Oswald", sans-serif !important;
+    font-size: 32px !important;
+    line-height: 1.2;
+    font-weight: 600 !important;
+    letter-spacing: -.07rem;
+    position: relative;
+    padding: 0 !important;
+    color: #fff !important;
+    width: fit-content;
+    text-align: center
+}
+
+.bt8Body .splBodyTxt h5 {
+    font-family: "Oswald", sans-serif !important;
+    font-size: 20px !important;
+    line-height: 1.2;
+    font-weight: 500 !important;
+    position: relative;
+    padding: 0 !important;
+    color: #fff !important;
+    width: fit-content;
+    text-align: center;
+}
+
+.bt8Body h3 {
+    font-family: "Oswald", sans-serif !important;
+    font-size: 28px !important;
+    line-height: 1;
+    font-weight: 600 !important;
+    position: relative;
+    padding: 0 !important;
+    color: #df0211 !important;
+    width: fit-content;
+    text-align: center;
+    text-shadow: 0 2px 1px #fff;
+}
+
+/* Birthday Template 9 */
+.bt9Head,
+.bt9Body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+}
+
+.bt9Head h1 {
+    font-family: "Batukamma", sans-serif !important;
+    font-size: 40px !important;
+    line-height: 1;
+    font-weight: normal !important;
+    font-style: italic;
+    position: relative;
+    padding: 0 !important;
+    color: #ca0405 !important;
+    width: fit-content;
+    text-align: center;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 4px #fff;
+}
+
+.bt9Head h2 {
+    font-family: "Oswald", sans-serif !important;
+    font-size: 30px !important;
+    line-height: 1;
+    font-weight: 800 !important;
+    text-transform: uppercase;
+    position: relative;
+    padding: 0 !important;
+    color: rgba(255, 255, 255, .3) !important;
+    width: fit-content;
+    text-align: center;
+}
+
+.bt9Body .photoSplit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin: -1rem auto -3rem;
+}
+
+.bt9Body .photoSplit .imgHolder.imgLS,
+.bt9Body .photoSplit .imgHolder.imgRS {
+    width: auto;
+    height: 240px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.bt9Body .photoSplit .imgHolder.imgLS {
+    left: 3rem;
+}
+
+.bt9Body .photoSplit .imgHolder.imgRS {
+    right: 3rem;
+}
+
+.bt9Body .photoSplit .imgHolder img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.bt9Body .photoSplit .imgHolder.mainPhoto {
+    z-index: 2;
+    width: auto;
+    height: 300px;
+}
+
+.bt9Body h1 {
+    font-family: "Batukamma", sans-serif !important;
+    font-size: 36px !important;
+    line-height: 1;
+    font-weight: normal !important;
+    position: relative;
+    padding: 0 !important;
+    color: #ca0405 !important;
+    width: fit-content;
+    text-align: center;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 4px #fff;
+}
+
+.bt9Body h1 span {
+    font-size: 20px;
+}
+
+.bt9Body p {
+    font-family: "Mallanna", sans-serif !important;
+    font-size: 18px !important;
+    line-height: 1.2;
+    font-weight: 500 !important;
+    position: relative;
+    padding: 0 !important;
+    color: #fff !important;
+    width: fit-content;
+    text-align: center;
+}
+
+.bt9Body p span {
+    color: #fff004;
+    font-weight: bold !important;
+}
+
+.bt9Body .contntFlowers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: fit-content;
+    padding: .5rem 0;
+}
+
+.bt9Body .contntFlowers h2 {
+    font-family: "Ramabhadra", sans-serif !important;
+    font-size: 24px !important;
+    line-height: 1;
+    font-weight: normal !important;
+    position: relative;
+    padding: 0 !important;
+    color: #fff004 !important;
+    width: fit-content;
+    text-align: center;
+    text-shadow: 0 2px 1px #000;
+}
+
+.bt9Body .contntFlowers .imgHolder {
+    max-width: 40px;
+    position: absolute;
+    top: -1.25rem;
+}
+
+.bt9Body .contntFlowers .imgHolder img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.bt9Body .contntFlowers .imgHolder.flowersLS {
+    left: 2.5rem;
+    transform: rotateY(180deg);
+}
+
+.bt9Body .contntFlowers .imgHolder.flowersRS {
+    right: 2.5rem;
+}
+
+.bt9Footer .boxedText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: fit-content;
+    margin: -.5rem auto .5rem;
+    gap: .25rem;
+    padding: .75rem;
+    border: 1px solid #fff;
+    border-radius: 8px;
+}
+
+.bt9Footer .boxedText h3 {
+    font-family: "Mallanna", sans-serif !important;
+    font-size: 18px !important;
+    line-height: 1;
+    font-weight: normal !important;
+    position: relative;
+    padding: 0 !important;
+    color: #fff !important;
+    width: fit-content;
+    text-align: center;
+}
+
+.bt9Footer .boxedText h3 span {
+    font-family: 'Batukamma', sans-serif !important;
+    color: #ffdd00 !important;
+}
+
+.bt9Footer h2 {
+    font-family: "Mallanna", sans-serif !important;
+    font-size: 18px !important;
+    line-height: 1;
+    font-weight: normal !important;
+    position: relative;
+    padding: 0 !important;
+    color: #fff !important;
+    width: fit-content;
+    text-align: center !important;
+    border: none !important;
+}
+
+#confettiCanvas {
+    position: absolute !important;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+/* Birthday Template 9 */
+.bt10Head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+.bt10Head h1 {
+    font-family: "Batukamma", sans-serif !important;
+    font-size: 40px !important;
+    line-height: 30px !important;
+    font-weight: normal !important;
+    position: relative;
+    padding: 0 !important;
+    color: #ff004b !important;
+    width: fit-content;
+    text-align: center !important;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 4px #fff;
+}
+
+.bt10Body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+}
+
+.bt10Body .imgHolder img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.bt10Body .imgHolder.mainPhoto {
+    z-index: 2;
+    width: auto;
+    height: 285px;
+    margin: 0 auto -4rem;
+}
+
+.bt10Body h1 {
+    font-family: "Dhurjati", sans-serif !important;
+    font-size: 36px !important;
+    line-height: 1.3;
+    font-weight: normal !important;
+    position: relative;
+    padding: 0 !important;
+    color: #fff !important;
+    width: fit-content;
+    text-align: center;
+    text-shadow: 0 2px 1px #3f1d0f;
+}
+
+.bt10Body h1 span {
+    font-size: 22px;
+}
+
+.bt10Body p {
+    font-family: "Bhagamati", sans-serif !important;
+    font-size: 26px !important;
+    letter-spacing: .05rem;
+    line-height: 1;
+    font-weight: normal !important;
+    position: relative;
+    padding: 0 !important;
+    color: #fff !important;
+    width: fit-content;
+    text-align: center;
+    text-shadow: 0 2px 1px #3f1d0f;
+}
+
+.bt10Body h3 {
+    font-family: "Kumram Bheem", sans-serif !important;
+    font-size: 26px !important;
+    line-height: 1.2;
+    font-weight: normal !important;
+    position: relative;
+    padding: 0 !important;
+    color: #ecff00 !important;
+    width: fit-content;
+    text-align: center;
+    text-shadow: 0 2px 1px #3f1d0f;
+}
+
+.bt10Body h4 {
+    font-family: "Kumram Bheem", sans-serif !important;
+    font-size: 24px !important;
+    line-height: 1.2;
+    font-weight: normal !important;
+    position: relative;
+    padding: 0 !important;
+    color: #fff400 !important;
+    width: fit-content;
+    text-align: center;
+    text-shadow: 0 2px 1px #3f1d0f;
+}
+
+.bt10Footer h2 {
+    font-family: "Mallanna", sans-serif !important;
+    font-size: 18px !important;
+    line-height: 1;
+    font-weight: normal !important;
+    position: relative;
+    padding: 0 !important;
+    color: #fff !important;
+    width: fit-content;
+    text-align: center !important;
+    border: none !important;
+}
+
+.bt10Footer .cardSideImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.bt10Footer .cardSideImg .imgHolder.idCard {
+    max-width: 55%;
+}
+
+.bt10Footer .cardSideImg .distCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 45%;
+}
+
+.bt10Footer .cardSideImg .distCard .imgHolder {
+    width: auto;
+    height: 140px;
+    position: relative;
+}
+
+.bt10Footer .cardSideImg .imgHolder img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.bt10Footer .cardSideImg .distCard h3 {
+    font-family: "Bhagamati", sans-serif !important;
+    font-size: 20px !important;
+    line-height: 1;
+    font-weight: normal !important;
+    position: relative;
+    padding: 0 !important;
+    color: #fff400 !important;
+    width: fit-content;
+    text-align: center !important;
+    margin-top: -1.2rem;
+    border: none !important;
+    text-shadow: 0 2px 1px #251007;
+}
+
+#temp-footer .bt10Footer p.address {
+    color: #fff !important;
+}
+
+#temp-footer .bt10Footer p.contact {
+    margin-top: .35rem;
+    background-color: #fff;
+    padding: .5rem 1.5rem !important;
+    font-size: 20px !important;
+    font-weight: 800 !important;
+    border-radius: 4px;
+    color: #8f0000 !important;
+}
+
+#temp-footer .bt10Footer p.contact::before {
+    left: .35rem !important;
+    top: .7rem !important;
+    filter: none !important;
+    background-size: 17px auto !important;
+}
+
+#temp-footer .bt10Footer p.contact::after {
+    position: absolute;
+    content: '';
+    width: 24px;
+    height: 24px;
+    background: url(../images/click_hand_icon.png) no-repeat center center;
+    background-size: 100% auto;
+    right: 0;
+    bottom: .35rem;
+    filter: invert(1);
 }

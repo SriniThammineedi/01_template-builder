@@ -308,3 +308,71 @@ body {
     width: 100%;
     z-index: 1 !important;
 }
+
+/* Obituary Template 3 */
+.obt3Head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+.obt3Head h1 {
+    font-family: "Batukamma", sans-serif;
+    color: #fef305;
+    font-size: 34px;
+    font-weight: normal;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.obt3Body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
+
+.obt3Body .obitOvalFramed {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 280px;
+    position: relative;
+    background: url(../images/golden-photo-oval-frame.png) no-repeat center center;
+    background-size: contain;
+    margin: 0 auto;
+}
+
+.obt3Body .obitOvalFramed::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 85px;
+    background: url(../images/flowers-photo-bottom.png) no-repeat center bottom;
+    background-size: contain;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -.5rem;
+    z-index: 2;
+}
+
+.obt3Body .obitOvalFramed input {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    z-index: 1;
+}
+
+.obt3Body .obitOvalFramed img {
+    max-width: 100%;
+    max-height: 220px;
+    position: relative;
+    border-radius: 35%;
+    z-index: -1;
+}

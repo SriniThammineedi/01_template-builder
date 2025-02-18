@@ -115,6 +115,42 @@ link:focus-visible {
     font-display: swap;
 }
 
+/* Batukamma Telugu Font Declaration */
+@font-face {
+    font-family: 'Batukamma';
+    src: url('../fonts/Batukamma.otf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Bhagamati Telugu Font Declaration */
+@font-face {
+    font-family: 'Bhagamati';
+    src: url('../fonts/Bhagamati.otf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* KumramBheem Telugu Font Declaration */
+@font-face {
+    font-family: 'Kumram Bheem';
+    src: url('../fonts/KumramBheem.otf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Lashkar Telugu Font Declaration */
+@font-face {
+    font-family: 'Lashkar';
+    src: url('../fonts/Lashkar.otf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
     background-color: transparent;
     border: none;
@@ -2124,6 +2160,10 @@ h3.withBg {
     border-radius: 12px;
 }
 
+.mt-0 {
+    margin-top: .5rem;
+}
+
 .mt-1 {
     margin-top: 1rem;
 }
@@ -2332,6 +2372,65 @@ h3.withBg {
     justify-content: space-between !important;
     gap: .5rem !important;
     width: 100% !important;
+}
+
+
+/* Address and Contact */
+#temp-footer p.address,
+p.address {
+    font-family: "Mallanna", sans-serif !important;
+    font-size: 16px !important;
+    line-height: 1;
+    font-weight: normal !important;
+    position: relative !important;
+    padding: 0 !important;
+    margin: .5rem auto 0;
+    color: #fff !important;
+    width: fit-content !important;
+    white-space: nowrap;
+    text-align: center !important;
+}
+
+#temp-footer p.address::before,
+p.address::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: url(../images/location-dark.svg) no-repeat center center;
+    background-size: 100% auto;
+    left: -20px;
+    top: -2px;
+    filter: invert(1);
+}
+
+#temp-footer p.contact,
+p.contact {
+    font-family: "Oswald", sans-serif !important;
+    text-transform: uppercase !important;
+    font-size: 18px !important;
+    line-height: 1;
+    font-weight: bold;
+    position: relative;
+    padding: 0 !important;
+    color: #fff;
+    margin: 0 auto;
+    width: fit-content !important;
+    white-space: nowrap;
+    text-align: center !important;
+}
+
+#temp-footer p.contact::before,
+p.contact::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: url(../images/phone-icon.png) no-repeat center center;
+    background-size: 100% auto;
+    filter: invert(1);
+    left: -20px;
+    top: 2px;
 }
 
 
