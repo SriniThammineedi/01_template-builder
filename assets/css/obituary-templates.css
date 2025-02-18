@@ -373,6 +373,643 @@ body {
     max-width: 100%;
     max-height: 220px;
     position: relative;
-    border-radius: 35%;
+    border-radius: 45%;
     z-index: -1;
+}
+
+#temp-body .obt3Body .splDecorTxt {
+    background: url(../images/title-bg-2-full.png) no-repeat center top;
+    background-size: contain;
+}
+
+.obt3Body h3 {
+    font-family: "Ramabhadra", sans-serif;
+    color: #fff;
+    font-size: 18px;
+    font-weight: normal !important;
+    text-align: center;
+    line-height: 1.5;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.obt3Body h2 {
+    font-family: "Bhagamati", sans-serif;
+    color: #fef305;
+    font-size: 26px;
+    font-weight: normal !important;
+    position: relative;
+    letter-spacing: .05rem;
+    text-align: center;
+    line-height: 1.5;
+    padding: 0 !important;
+}
+
+.obt3Body h2::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 255, 255, 1), rgba(255, 0, 0, 0));
+}
+
+.obt3Footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    margin-top: 1rem;
+}
+
+.obt3Footer p {
+    font-family: "Ramabhadra", sans-serif !important;
+    color: #fff;
+    font-size: 18px;
+    font-weight: normal !important;
+    text-align: center;
+    line-height: 1.5;
+    padding: 0 !important;
+}
+
+.obt3Footer h5 {
+    font-family: "Bhagamati", sans-serif !important;
+    color: #fff;
+    font-size: 26px;
+    font-weight: normal !important;
+    text-align: center;
+    line-height: 1;
+    padding: .05rem .5rem !important;
+    border: 1px solid #fef305;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: .75rem auto !important;
+}
+
+.obt3Footer h3 {
+    font-family: "Batukamma", sans-serif !important;
+    letter-spacing: .05rem;
+    color: #fef305;
+    font-size: 22px;
+    font-weight: normal !important;
+    text-align: center;
+    line-height: 1;
+    padding: 0 !important;
+}
+
+#temp-footer .obt3Footer p.address {
+    font-family: 'Ramabhadra', sans-serif !important;
+}
+
+/* Obituary Template 4 */
+.obt4Head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+.obt4Head .diyaTitle {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../images/title-bg-3-full.png) no-repeat center center;
+    background-size: contain;
+    padding: 0;
+    height: 70px;
+    margin-top: -.7rem;
+}
+
+.obt4Head .diyaTitle::before {
+    position: absolute;
+    content: '';
+    width: 65px;
+    height: 120px;
+    background: url(../images/hanging-diya-top-3.png) no-repeat center bottom;
+    background-size: 100% auto;
+    display: block;
+    z-index: -1;
+    top: -2.65rem;
+    left: 2.2rem;
+}
+
+.obt4Head .diyaTitle::after {
+    position: absolute;
+    content: '';
+    width: 65px;
+    height: 120px;
+    background: url(../images/hanging-diya-top-3.png) no-repeat center bottom;
+    background-size: 100% auto;
+    display: block;
+    z-index: -1;
+    top: -2.65rem;
+    right: 2.2rem;
+}
+
+.obt4Head .diyaTitle h1 {
+    font-family: "Bonalu", sans-serif;
+    color: #fef305;
+    font-size: 42px;
+    font-weight: normal;
+    letter-spacing: .05rem;
+    white-space: nowrap;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.obt4Body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
+
+.obt4Body .obitPhotoSplitter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -.75rem auto;
+    width: 100%;
+    position: relative;
+}
+
+.obt4Body .obitPhotoSplitter .floweredFrame {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 280px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.obt4Body .obitPhotoSplitter::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 72px;
+    background: url(../images/decorative-bot-roses.png) no-repeat center bottom;
+    background-size: contain;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    z-index: 2;
+}
+
+.obt4Body .obitPhotoSplitter .floweredFrame input,
+.obitPhotoSplitter .imgHolder input {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    z-index: 1;
+}
+
+.obt4Body .obitPhotoSplitter .floweredFrame img,
+.obitPhotoSplitter .imgHolder img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.obt4Body .obitPhotoSplitter .imgHolder {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    position: absolute;
+    bottom: 2rem;
+}
+
+.obt4Body .obitPhotoSplitter .imgHolder.imgLS {
+    left: 2.5rem;
+}
+
+.obt4Body .obitPhotoSplitter .imgHolder.imgRS {
+    right: 2.5rem;
+}
+
+.obt4Body p {
+    font-family: "Ramabhadra", sans-serif !important;
+    color: #1f55c1 !important;
+    font-size: 16px !important;
+    font-weight: normal !important;
+    text-align: center;
+    line-height: 1.2;
+    padding: 0 !important;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 3px #fff;
+}
+
+.obt4Body p span {
+    font-family: "Batukamma", sans-serif !important;
+    font-size: 22px !important;
+    letter-spacing: .05rem;
+}
+
+.obt4Body p span.paraHeadGreen {
+    color: #1e5501;
+}
+
+.obt4Body p span.paraHeadRed {
+    color: #9f0001;
+}
+
+.obt4Footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    padding-top: 1rem;
+}
+
+.obt4Footer h1 {
+    font-family: "Batukamma", sans-serif;
+    color: #9f0001;
+    font-size: 26px;
+    font-weight: 500;
+    white-space: nowrap;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.obt4Footer h5 {
+    font-family: "Lashkar", sans-serif;
+    color: #333;
+    font-size: 24px;
+    font-weight: 500;
+    white-space: nowrap;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.obt4Footer h3 {
+    background-color: #ffe751;
+    font-family: "Batukamma", sans-serif;
+    color: #9f0001;
+    font-size: 20px;
+    font-weight: 500;
+    white-space: nowrap;
+    text-align: center;
+    border-radius: 4px;
+    padding: 0 .5rem;
+    margin: .5rem auto 0;
+}
+
+.obt4Footer p {
+    font-family: "Roboto", sans-serif !important;
+    color: #409458 !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    padding: 0 !important;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.obt4Footer .branches {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    padding-top: .15rem;
+}
+
+.obt4Footer .branches h5 {
+    font-family: "Roboto", sans-serif;
+    color: #06336e;
+    font-size: 16px;
+    font-weight: 600 !important;
+    white-space: nowrap;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.obt4Footer .branches h3 {
+    background-color: #06336e;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    font-size: 13px !important;
+    line-height: 1.2;
+    display: flex;
+    font-weight: 500 !important;
+    white-space: normal !important;
+    text-align: center;
+    width: fit-content !important;
+    border-radius: 4px;
+    padding: .25rem .35rem !important;
+    margin: 0 auto !important;
+}
+
+.obt4Footer .branches p {
+    font-family: "Roboto", sans-serif;
+    color: #9f0001 !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    white-space: nowrap;
+    text-align: center;
+    padding: .35rem 0 0 !important;
+    margin: 0;
+}
+
+.obt4Footer .branches h2 {
+    font-family: "Roboto", sans-serif !important;
+    color: #192e49 !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    white-space: nowrap;
+    text-align: center;
+    padding: .35rem 0 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    margin: 0;
+}
+
+.obt4Footer .branches h2 img {
+    max-height: 18px;
+}
+
+/* Obituary Template 5 */
+.obt5Head,
+.obt5Head .christTitle,
+.obt5Body,
+.obt5Footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
+
+.obt5Head .christTitle h5 {
+    width: fit-content;
+    background-color: #d42c11;
+    border-radius: 4px;
+    font-family: "Ramabhadra", sans-serif;
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal !important;
+    margin-top: -1.2rem;
+    white-space: nowrap;
+    text-align: center;
+    padding: .15rem .5rem !important;
+    text-shadow: 0 3px 2px rgba(0, 0, 0, .7);
+}
+
+.obt5Head .christTitle h1 {
+    width: fit-content;
+    font-family: "Batukamma", sans-serif;
+    color: #eb0862;
+    font-size: 44px;
+    font-weight: normal !important;
+    white-space: nowrap;
+    text-align: center;
+    padding: .5rem 0 0 !important;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 3px #fff;
+}
+
+.obt5Head .christTitle .imgHolder {
+    position: absolute;
+    width: 50px;
+    height: auto;
+    top: 50%;
+}
+
+.obt5Head .christTitle .imgHolder img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.obt5Head .christTitle .imgHolder.imgLS {
+    left: 1rem;
+}
+
+.obt5Head .christTitle .imgHolder.imgRS {
+    right: 1rem;
+    transform: rotateY(-180deg);
+}
+
+.obt5Body .obitPhotoSplitter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+.obt5Body .obitPhotoSplitter .mainFrame {
+    width: auto;
+    height: 185px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.obt5Body .obitPhotoSplitter .imgHolder {
+    position: absolute;
+    width: 35px;
+    height: auto;
+    bottom: 0;
+    z-index: 2;
+}
+
+.obt5Body .obitPhotoSplitter .mainFrame img,
+.obt5Body .obitPhotoSplitter .imgHolder img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.obt5Body .obitPhotoSplitter .imgHolder input,
+.obt5Body .obitPhotoSplitter .mainFrame input {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    z-index: 1;
+}
+
+.obt5Body .obitPhotoSplitter .imgHolder.imgLS {
+    left: 0;
+}
+
+.obt5Body .obitPhotoSplitter .imgHolder.imgRS {
+    right: 0;
+}
+
+.obt5Body .coupleTitles {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: fit-content;
+    margin: -1rem auto -.35rem;
+    position: relative;
+    z-index: 2;
+}
+
+.obt5Body .coupleTitles h1 {
+    font-family: "Bonalu", sans-serif;
+    color: #eb0862;
+    font-size: 34px !important;
+    font-weight: normal !important;
+    white-space: nowrap;
+    text-align: center;
+    width: 49.5%;
+    padding: 0 .5rem;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 2px #fff;
+    margin: 0;
+}
+
+.obt5Body .coupleTitles h1 span {
+    font-size: 24px;
+}
+
+.obt5Body .deathDates {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: fit-content;
+    gap: 2.5rem;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.obt5Body .deathDates h5 {
+    background-color: #052a45;
+    border-radius: 4px;
+    font-family: "Mallanna", sans-serif !important;
+    color: #fff !important;
+    font-size: 14px;
+    line-height: 1 !important;
+    font-weight: 600 !important;
+    white-space: nowrap;
+    text-align: center;
+    padding: .25rem .35rem !important;
+    margin: .5rem 0 0 !important;
+}
+
+.obt5Body .bgWithFlowers {
+    position: relative;
+    width: 96% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: .25rem auto;
+    font-family: "Mallanna", sans-serif !important;
+    padding: .5rem 2rem .35rem !important;
+    color: #fff !important;
+    font-size: 13px !important;
+    line-height: 1.2 !important;
+    font-weight: 600 !important;
+    background: rgb(157, 11, 14);
+    background: linear-gradient(326deg, rgba(157, 11, 14, 1) 0%, rgba(232, 103, 35, 1) 100%);
+    border: 2px solid #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    border-radius: 12px 12px 40px 40px;
+    text-shadow: 0 3px 2px rgba(0, 0, 0, .5);
+}
+
+.obt5Body .bgWithFlowers::before,
+.obt5Body .bgWithFlowers::after {
+    position: absolute;
+    content: "";
+    width: 70px;
+    height: 70px;
+    top: -1.5rem;
+    background: url(../images/flower-bokey-yellow.png) no-repeat center center;
+    background-size: contain;
+}
+
+.obt5Body .bgWithFlowers::before {
+    left: -1.5rem;
+    transform: rotateY(-180deg);
+}
+
+.obt5Body .bgWithFlowers::after {
+    right: -1.5rem;
+}
+
+
+.obt5Footer h1 {
+    font-family: "Batukamma", sans-serif;
+    color: #fef305;
+    font-size: 28px !important;
+    font-weight: normal !important;
+    white-space: nowrap;
+    text-align: center;
+    padding: 1.25rem 0 0 !important;
+    margin: 0;
+}
+
+.obt5Footer p {
+    font-family: "Anek Telugu", sans-serif !important;
+    color: #fff;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    white-space: normal !important;
+    line-height: 1.75 !important;
+    text-align: center;
+    text-shadow: 0 2px 1px rgba(0, 0, 0, .5);
+    position: relative;
+    padding: .5rem 0 !important;
+    margin: 0 auto !important;
+}
+
+.obt5Footer p::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background: url(../images/decor-line-1-light.png) no-repeat center center;
+    background-size: contain;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100%;
+}
+
+.obt5Footer p.noDecor {
+    margin-top: .75rem !important;
+}
+
+.obt5Footer p.noDecor::after {
+    display: none;
+}
+
+.obt5Footer h5 {
+    background-color: #fff;
+    border-radius: 4px;
+    font-family: "Anek Telugu", sans-serif !important;
+    color: #b1005a !important;
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    white-space: normal !important;
+    line-height: 1.4 !important;
+    text-align: center;
+    position: relative;
+    padding: .5rem .35rem 0 !important;
+    margin: 0 auto !important;
 }

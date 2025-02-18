@@ -2433,7 +2433,33 @@ p.contact::before {
     top: 2px;
 }
 
+/* Special Decorated Text BG */
+#temp-body .splDecorTxt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    background: url(../images/title-bg-2.png) no-repeat center top;
+    background-size: contain;
+    padding: 1rem 0;
+}
 
+#temp-body .splDecorTxt h1 {
+    font-family: "Bonalu", sans-serif;
+    font-size: 36px;
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: .07rem;
+    position: relative;
+    padding: .05rem .5rem;
+    width: 100%;
+    text-align: center;
+    color: #fef104;
+    white-space: nowrap;
+    text-shadow: 0 2px 1px #000000;
+}
 
 
 
