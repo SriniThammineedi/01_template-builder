@@ -1963,7 +1963,7 @@ ul.dropdown li ul.dropdown-content button:hover .lordIcon {
 
 /* Special Headings with Background */
 .wisher.special {
-    background: url(../images/spl-title-middle-1.png) repeat center top;
+    background: url(../images/spl-title-middle-2.png) repeat center top;
     width: fit-content !important;
     background-size: contain;
     display: flex;
@@ -1981,26 +1981,26 @@ ul.dropdown li ul.dropdown-content button:hover .lordIcon {
 
 .wisher.special::before {
     content: '';
-    width: 45px;
+    width: 34px;
     height: 60px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: -45px;
-    background: url(../images/spl-title-left-end-1.png) no-repeat left top;
+    left: -33px;
+    background: url(../images/spl-title-left-end-2.png) no-repeat left top;
     background-size: cover;
     z-index: -1;
 }
 
 .wisher.special::after {
     content: '';
-    width: 45px;
+    width: 34px;
     height: 60px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: -45px;
-    background: url(../images/spl-title-right-end-1.png) no-repeat right top;
+    right: -33px;
+    background: url(../images/spl-title-right-end-2.png) no-repeat right top;
     background-size: cover;
     z-index: -1;
 }
