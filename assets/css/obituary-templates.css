@@ -536,7 +536,9 @@ body {
     position: relative;
 }
 
-.obt4Body .obitPhotoSplitter {
+.obt4Body .obitPhotoSplitter,
+.obt6Body .obitPhotoSplitter,
+.obt7Body .obitPhotoSplitter {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -545,7 +547,8 @@ body {
     position: relative;
 }
 
-.obt4Body .obitPhotoSplitter .floweredFrame {
+.obt4Body .obitPhotoSplitter .floweredFrame,
+.obt6Body .obitPhotoSplitter .floweredFrame {
     width: auto;
     display: flex;
     align-items: center;
@@ -569,6 +572,7 @@ body {
 }
 
 .obt4Body .obitPhotoSplitter .floweredFrame input,
+.obt6Body .obitPhotoSplitter .floweredFrame input,
 .obitPhotoSplitter .imgHolder input {
     position: absolute;
     inset: 0;
@@ -577,13 +581,15 @@ body {
 }
 
 .obt4Body .obitPhotoSplitter .floweredFrame img,
+.obt6Body .obitPhotoSplitter .floweredFrame img,
 .obitPhotoSplitter .imgHolder img {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
 
-.obt4Body .obitPhotoSplitter .imgHolder {
+.obt4Body .obitPhotoSplitter .imgHolder,
+.obt6Body .obitPhotoSplitter .imgHolder {
     width: auto;
     display: flex;
     align-items: center;
@@ -593,11 +599,13 @@ body {
     bottom: 2rem;
 }
 
-.obt4Body .obitPhotoSplitter .imgHolder.imgLS {
+.obt4Body .obitPhotoSplitter .imgHolder.imgLS,
+.obt6Body .obitPhotoSplitter .imgHolder.imgLS {
     left: 2.5rem;
 }
 
-.obt4Body .obitPhotoSplitter .imgHolder.imgRS {
+.obt4Body .obitPhotoSplitter .imgHolder.imgRS,
+.obt6Body .obitPhotoSplitter .imgHolder.imgRS {
     right: 2.5rem;
 }
 
@@ -1012,4 +1020,628 @@ body {
     position: relative;
     padding: .5rem .35rem 0 !important;
     margin: 0 auto !important;
+}
+
+/* Obituary Template 6 */
+.obt6Head,
+.obt6Body,
+.obt6Footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.obt6Head .christTitle {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+
+.obt6Head .christTitle h5 {
+    width: fit-content;
+    font-family: "Bonalu", sans-serif;
+    color: #fff;
+    font-size: 22px;
+    font-weight: normal !important;
+    letter-spacing: .05rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -1.2rem;
+    white-space: nowrap;
+    text-align: center;
+    padding: 0 !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .4);
+}
+
+.obt6Head .christTitle h5 span {
+    font-size: 14px;
+    font-family: "Mallanna", sans-serif;
+    font-weight: 600;
+}
+
+.obt6Head .christTitle h1 {
+    width: fit-content;
+    font-family: "Batukamma", sans-serif;
+    color: #fbfa00;
+    font-size: 46px;
+    font-weight: normal !important;
+    letter-spacing: .05rem;
+    white-space: nowrap;
+    text-align: center;
+    padding: .5rem 0 0 !important;
+    text-shadow: 0 3px 4px rgba(0, 0, 0, .4);
+}
+
+.obt6Head .christTitle .imgHolder {
+    position: absolute;
+    width: 40px;
+    height: auto;
+    top: 35%;
+}
+
+.obt6Head .christTitle .imgHolder img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.obt6Head .christTitle .imgHolder.imgLS {
+    left: -3.5rem;
+}
+
+.obt6Head .christTitle .imgHolder.imgRS {
+    right: -3.5rem;
+    transform: rotateY(-180deg);
+}
+
+.obt6Head .christTitle .imgHolder.imgLS::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    background: url(../images/pigeon-pair.png) no-repeat center center;
+    background-size: contain;
+    top: 90%;
+    left: 2.5rem;
+}
+
+.obt6Head .christTitle .imgHolder.imgRS::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    background: url(../images/pigeon-pair.png) no-repeat center center;
+    background-size: contain;
+    top: 90%;
+    left: 2rem;
+}
+
+.obt6Body .obitPhotoSplitter,
+.obitPhotoSplitter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: .25rem;
+    position: relative;
+    width: fit-content;
+}
+
+.obt6Body .obitPhotoSplitter .mainFrame,
+.obitPhotoSplitter .mainFrame {
+    width: 226px;
+    height: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+.obt6Body .obitPhotoSplitter .mainFrame::before,
+.obitPhotoSplitter .mainFrame::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url(../images/mirror-frame-1.png) no-repeat center center;
+    background-size: contain;
+    inset: 0;
+    z-index: 1;
+}
+
+.obt6Body .obitPhotoSplitter .mainFrame img,
+.obitPhotoSplitter .mainFrame img {
+    width: auto;
+    height: 80%;
+    object-fit: contain;
+    position: relative;
+    margin: 0 auto;
+    border-radius: 10rem;
+    z-index: -1;
+}
+
+.obt6Body .obitPhotoSplitter .imgHolder,
+.obitPhotoSplitter .imgHolder {
+    position: absolute;
+    width: 35px;
+    height: auto;
+    bottom: 0;
+    z-index: 2;
+}
+
+.obt6Body .obitPhotoSplitter .imgHolder img,
+.obitPhotoSplitter .imgHolder img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.obt6Body .obitPhotoSplitter .imgHolder input,
+.obitPhotoSplitter .imgHolder input,
+.obt6Body .obitPhotoSplitter .mainFrame input,
+.obitPhotoSplitter .mainFrame input {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    z-index: 1;
+}
+
+.obt6Body .obitPhotoSplitter .imgHolder.imgLS,
+.obitPhotoSplitter .imgHolder.imgLS {
+    left: 0;
+}
+
+.obt6Body .obitPhotoSplitter .imgHolder.imgRS,
+.obitPhotoSplitter .imgHolder.imgRS {
+    right: 0;
+}
+
+.obt6Body .obitPhotoSplitter::after,
+.obitPhotoSplitter::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 75px;
+    background: url(../images/roses-photo-bottom.png) no-repeat center bottom;
+    background-size: contain;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -1rem;
+    z-index: 2;
+}
+
+.obt5Body .obitPhotoSplitter .mainFrame::before {
+    display: none;
+}
+
+.obt5Body .obitPhotoSplitter .mainFrame img {
+    border-radius: 0;
+}
+
+.obt6Body h1 {
+    width: fit-content;
+    font-family: "Batukamma", sans-serif;
+    color: #fbfa00;
+    font-size: 34px;
+    font-weight: normal !important;
+    letter-spacing: .035rem;
+    white-space: nowrap;
+    text-align: center;
+    padding: 2.2rem 0 0 !important;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 4px rgba(0, 0, 0, .5);
+}
+
+.obt6Body h1 span {
+    font-size: 22px;
+}
+
+.obt6Body h4 {
+    width: fit-content;
+    font-family: "Mallanna", sans-serif !important;
+    color: #fff !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    white-space: nowrap;
+    text-align: center;
+    padding: .5rem 0 .25rem !important;
+}
+
+.obt6Body h5 {
+    background-color: #fff;
+    border-radius: 4px;
+    width: fit-content;
+    font-family: "Mallanna", sans-serif !important;
+    color: #063257 !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    line-height: 1 !important;
+    white-space: nowrap;
+    text-align: center;
+    padding: .25rem .5rem !important;
+}
+
+.obt6Body p {
+    width: fit-content;
+    font-family: "Ramabhadra", sans-serif !important;
+    color: #fff !important;
+    font-size: 16px !important;
+    font-weight: normal !important;
+    white-space: normal !important;
+    text-align: center;
+    padding: .75rem 0 .25rem !important;
+}
+
+.obt6Footer .requestedBy {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #fff;
+    margin: 0 auto;
+    text-align: center;
+    padding: .25rem !important;
+    border-radius: 6px;
+}
+
+.obt6Footer .requestedBy h5 {
+    width: fit-content;
+    font-family: "Mallanna", sans-serif !important;
+    color: #fed404 !important;
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    white-space: nowrap;
+    text-align: center;
+    padding: 0 !important;
+}
+
+.obt6Footer .requestedBy h3 {
+    width: fit-content;
+    font-family: "Mallanna", sans-serif !important;
+    color: #fed404 !important;
+    font-size: 30px !important;
+    line-height: 1 !important;
+    font-weight: 600 !important;
+    white-space: nowrap;
+    text-align: center;
+    padding: 0 !important;
+}
+
+#temp-footer .obt6Footer .requestedBy p.whatsapp {
+    background-color: #fed404;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content !important;
+    font-family: "Oswald", sans-serif !important;
+    color: #000 !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    white-space: nowrap;
+    text-align: center;
+    padding: .25rem .35rem .25rem 1.5rem !important;
+    border-radius: 4px;
+}
+
+#temp-footer .obt6Footer .requestedBy p.whatsapp::before {
+    left: .5rem !important;
+    top: 50% !important;
+    transform: translateY(-50%);
+}
+
+/* Obituary Template 7 */
+#temp-header .obt7Head,
+#temp-header .obt8Head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+#temp-header .obt7Head .spl-obt-title {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    width: fit-content;
+    margin: -2rem auto 0;
+    padding: 0 4.5rem 0;
+    position: relative;
+}
+
+#temp-header .obt7Head .spl-obt-title h1 {
+    font-family: "Bonalu", sans-serif !important;
+    font-size: 42px;
+    line-height: 1.5;
+    white-space: nowrap;
+    font-weight: 500;
+    padding: 0;
+    color: #fbfa00;
+    text-align: center;
+}
+
+#temp-header .obt7Head .spl-obt-title h1::before,
+#temp-header .obt7Head .spl-obt-title h1::after {
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 100px;
+    background: url(../images/hanging-diya-top-3.png) no-repeat left bottom;
+    background-size: 100% auto;
+    left: 0;
+    top: -1rem;
+}
+
+#temp-header .obt7Head .spl-obt-title h1::after {
+    left: auto;
+    right: 0;
+}
+
+.obt7Body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.obt7Body .obitPhotoSplitter {
+    width: fit-content;
+}
+
+.obt7Body .obitPhotoSplitter .mainFrame {
+    width: 200px;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+.obt7Body .obitPhotoSplitter::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    background: url(../images/decorative-corner-flowers.png) no-repeat center bottom;
+    background-size: contain;
+    left: 30%;
+    transform: translateX(-50%);
+    bottom: -1rem;
+    z-index: 2;
+}
+
+.obitPhotoSplitter .mainFrame img {
+    height: 95%;
+}
+
+.obt7Body h1 {
+    width: fit-content;
+    font-family: "Bhagamati", sans-serif;
+    color: #fbfa00;
+    font-size: 38px;
+    font-weight: 500 !important;
+    letter-spacing: .035rem;
+    white-space: nowrap;
+    text-align: center;
+    padding: 2rem 0 .5rem !important;
+}
+
+.obt7Body h1 span {
+    font-size: 22px;
+}
+
+.obt7Body h4 {
+    width: fit-content;
+    font-family: "Mallanna", sans-serif !important;
+    color: #fff !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    white-space: nowrap;
+    text-align: center;
+    padding: .5rem 0 .25rem !important;
+}
+
+.obt7Body h5 {
+    background-color: #412001;
+    border-radius: 4px;
+    width: fit-content;
+    font-family: "Mallanna", sans-serif !important;
+    color: #fff !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    line-height: 1 !important;
+    white-space: nowrap;
+    text-align: center;
+    padding: .25rem .5rem !important;
+}
+
+.obt7Body .contentBox {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: .25rem auto 0;
+    text-align: center;
+    padding: .25rem .5rem .15rem !important;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+.obt7Body .contentBox h4 {
+    width: fit-content;
+    font-family: "Bhagamati", sans-serif !important;
+    font-size: 26px !important;
+    font-weight: normal !important;
+    line-height: 1 !important;
+    white-space: normal !important;
+    text-align: center;
+    color: #d60f08 !important;
+    padding: 0 0 .25rem !important;
+}
+
+.obt7Body .contentBox p {
+    width: fit-content;
+    font-family: "Ramabhadra", sans-serif !important;
+    font-size: 16px !important;
+    font-weight: normal !important;
+    line-height: 1 !important;
+    white-space: normal !important;
+    text-align: center;
+    color: #000;
+    padding: 0 0 .25rem !important;
+}
+
+.obt7Body .contentBox p.txtRed {
+    color: #d60f08 !important;
+}
+
+.obt7Body .contentBox p.txtGreen {
+    color: #065a05 !important;
+}
+
+.obt7Body .contentBox p.txtDarkBlue {
+    color: #0b0e6d !important;
+}
+
+.obt7Body .obitPhotoSplitter .imgHolder {
+    width: 45px;
+}
+
+.obt7Body .obitPhotoSplitter .imgHolder.imgLS {
+    left: -1.85rem;
+}
+
+.obt7Body .obitPhotoSplitter .imgHolder.imgRS {
+    right: -.85rem;
+}
+
+.obt7Body p.labeledText {
+    background-color: #ac0113;
+    border-radius: 6px;
+    width: fit-content;
+    font-family: "Batukamma", sans-serif !important;
+    font-size: 22px !important;
+    font-weight: normal !important;
+    line-height: 1 !important;
+    white-space: normal !important;
+    text-align: center;
+    color: #ffef00;
+    padding: .25rem .35rem !important;
+}
+
+.obt7Body p.default {
+    width: fit-content;
+    font-family: "Ramabhadra", sans-serif !important;
+    font-size: 15px !important;
+    font-weight: normal !important;
+    line-height: 1.2 !important;
+    white-space: normal !important;
+    text-align: center;
+    color: #fff;
+    padding: .25rem 0 !important;
+}
+
+.obt7Footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.obt7Footer h5 {
+    font-family: "Ramabhadra", sans-serif !important;
+    color: #fff;
+    font-size: 18px;
+    font-weight: normal !important;
+    text-align: center;
+    line-height: 1 !important;
+    padding: 0 !important;
+}
+
+.obt7Footer h2 {
+    font-family: "Batukamma", sans-serif !important;
+    color: #ffef00 !important;
+    font-size: 34px;
+    font-weight: normal !important;
+    text-align: center !important;
+    line-height: 1 !important;
+    border: none !important;
+    padding: 0 !important;
+}
+
+.obt7Footer h3 {
+    font-family: "Ramabhadra", sans-serif !important;
+    color: #ffef00 !important;
+    font-size: 20px;
+    font-weight: normal !important;
+    text-align: center !important;
+    line-height: 1 !important;
+    border: none !important;
+    padding: 0 !important;
+}
+
+.obt7Footer h4 {
+    font-family: "Ramabhadra", sans-serif !important;
+    color: #fff !important;
+    font-size: 16px;
+    font-weight: normal !important;
+    text-align: center !important;
+    line-height: 1 !important;
+    border: none !important;
+    padding: 0 !important;
+}
+
+#temp-footer .obt7Footer p.address {
+    background-color: #ffef00;
+    border-radius: 4px;
+    font-family: "Ramabhadra", sans-serif !important;
+    color: #9d0b0e !important;
+    font-size: 18px;
+    font-weight: normal !important;
+    text-align: center !important;
+    line-height: 1 !important;
+    border: none !important;
+    padding: .25rem 1.75rem !important;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+#temp-footer .obt7Footer p.address::before {
+    left: .6rem !important;
+    top: 50%;
+    transform: translateY(-50%);
+    filter: none !important;
+}
+
+#temp-footer .obt7Footer p.address::after {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background: url(../images/click_hand_icon.png) no-repeat center center;
+    background-size: contain;
+    top: 55%;
+    transform: translateY(-50%);
+    right: -.35rem;
+}
+
+/* Obituary Template 8 */
+#temp-header .obt8Head {
+    margin-top: -1.5rem;
 }

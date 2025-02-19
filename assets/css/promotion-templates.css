@@ -578,7 +578,7 @@ p.contact {
     font-size: 42px;
 }
 
-#promotion-template-2 .ajaraFooter .offers h3 {
+#promotion-template-2 #temp-footer .ajaraFooter .offers h3 {
     font-family: "Mallanna", sans-serif;
     font-size: 24px;
     line-height: 1;
@@ -589,7 +589,7 @@ p.contact {
     text-decoration: line-through;
 }
 
-#promotion-template-2 .ajaraFooter .offers h2 {
+#promotion-template-2 #temp-footer .ajaraFooter .offers h2 {
     font-family: "Mallanna", sans-serif;
     font-size: 28px;
     line-height: 1;
@@ -603,7 +603,7 @@ p.contact {
     text-align: center;
 }
 
-#promotion-template-2 .ajaraFooter p.address {
+#promotion-template-2 #temp-footer .ajaraFooter p.address {
     font-family: "Mallanna", sans-serif;
     font-size: 17px;
     line-height: 1;
@@ -617,7 +617,7 @@ p.contact {
     position: relative;
 }
 
-#promotion-template-2 .ajaraFooter p.address::before {
+#promotion-template-2 #temp-footer .ajaraFooter p.address::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -632,7 +632,7 @@ p.contact {
     height: 16px;
 }
 
-#promotion-template-2 .ajaraFooter p.contact {
+#promotion-template-2 #temp-footer .ajaraFooter p.contact {
     font-family: "Oswald", sans-serif;
     font-size: 17px;
     line-height: 1;
@@ -647,7 +647,7 @@ p.contact {
     border-radius: 5px;
 }
 
-#promotion-template-2 .ajaraFooter p.contact::before {
+#promotion-template-2 #temp-footer .ajaraFooter p.contact::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -662,7 +662,7 @@ p.contact {
     height: 14px;
 }
 
-#promotion-template-2 .ajaraFooter p.whatsapp {
+#promotion-template-2 #temp-footer .ajaraFooter p.whatsapp {
     font-family: "Mallanna", sans-serif;
     font-size: 17px;
     line-height: 1;
@@ -677,7 +677,7 @@ p.contact {
     border-radius: 5px;
 }
 
-#promotion-template-2 .ajaraFooter p.whatsapp::before {
+#promotion-template-2 #temp-footer .ajaraFooter p.whatsapp::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -693,7 +693,7 @@ p.contact {
     height: 14px;
 }
 
-#promotion-template-2 .ajaraFooter p.whatsapp::after {
+#promotion-template-2 #temp-footer .ajaraFooter p.whatsapp::after {
     content: '';
     position: absolute;
     top: 50%;
