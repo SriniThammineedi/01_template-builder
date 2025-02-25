@@ -1,0 +1,721 @@
+@import url("temp_builder_mainV2.css");
+
+body {
+    background-color: #ddd;
+}
+
+.template-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+#wedding-temp-1,
+#wedding-temp-2 {
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    flex-direction: column;
+    padding: 1.5rem;
+    width: 100%;
+    gap: .5rem;
+}
+
+#wedding-temp-1 #temp-body,
+#wedding-temp-2 #temp-body {
+    width: -webkit-fill-available;
+    width: -moz-fill-available;
+    margin: 0 -1.5rem;
+}
+
+#wedding-temp-1 #temp-header .wed1Head,
+#wedding-temp-2 #temp-header .wed2Head {
+    position: relative;
+    width: -webkit-fill-available;
+    width: -moz-fill-available;
+    margin: 0 -2rem;
+}
+
+.wed1Head .imgHolder.topDecor,
+.wed2Head .imgHolder.topDecor {
+    position: absolute;
+    top: -1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.wed1Body,
+.wed1Footer,
+.wed2Body,
+.wed2Head,
+.wed2Footer,
+.wed3Body,
+.wed3Head,
+.wed3Footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.wed1Head .simpleHeading {
+    font-family: 'Bonalu', sans-serif;
+    position: relative;
+    z-index: 2;
+    font-size: 54px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #fad113;
+    text-align: center;
+    padding: 1.75rem 0 0;
+    margin: 0 auto;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, .75);
+}
+
+.wed1Head .simpleHeading span {
+    font-size: 34px;
+}
+
+.wed1Body .imgHolder {
+    width: auto;
+    height: 220px;
+    margin: -1.35rem auto 0;
+}
+
+.wed1Body .imgHolder img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.wed1Body .titleDecorOne,
+.wed1Body .titleDecorTwo {
+    width: 80%;
+    margin: -.5rem auto 0;
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    background: url(../images/wedding-spl-decor-bg-1.png) no-repeat center center;
+    background-size: contain;
+    height: 60px;
+}
+
+.wed1Body .titleDecorTwo {
+    background: url(../images/wedding-spl-decor-bg-2.png) no-repeat center center;
+    background-size: contain;
+    margin: .15rem auto 0;
+}
+
+.wed1Body .titleDecorOne p,
+.wed1Body .titleDecorTwo p {
+    font-family: 'Bhagamati', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: .7;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.wed1Body .titleDecorOne h1,
+.wed1Body .titleDecorTwo h1 {
+    font-family: 'Bhagamati', sans-serif;
+    font-size: 38px;
+    font-weight: 400;
+    padding: 0;
+    line-height: .7;
+    color: #fbc906;
+    text-align: center;
+}
+
+.wed1Body .titleDecorOne h1 span,
+.wed1Body .titleDecorTwo h1 span {
+    font-size: 24px;
+}
+
+.wed1Body .titleDecorTwo h1 {
+    color: #fff;
+}
+
+.wed1Body p {
+    font-family: 'Ramabhadra', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.2;
+    padding: .25rem 0 0;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.wed1Body p.borderAround {
+    font-family: 'Ramabhadra', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    line-height: 1;
+    padding: .5rem;
+    margin-top: .35rem;
+    color: #fff;
+    text-align: center;
+    border: .15rem solid #fbc906;
+    border-radius: 30px;
+    width: fit-content;
+}
+
+.wed1Body p.borderAround b {
+    font-weight: normal;
+    color: #fbc906;
+}
+
+.wed1Body .stage {
+    font-family: 'Ramabhadra', sans-serif !important;
+    position: relative;
+    font-size: 13px !important;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.2;
+    padding: .5rem 1.2rem 0 !important;
+    color: #fff !important;
+    text-align: center !important;
+    width: fit-content;
+}
+
+.wed1Body .stage::before,
+.wed1Body .stage::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 12px;
+    background: url(../images/title-decor-besides.png) no-repeat center center;
+    background-size: contain;
+}
+
+.wed1Body .stage::before {
+    left: -15%;
+}
+
+.wed1Body .stage::after {
+    right: -15%;
+    transform: translateY(-50%) rotateY(180deg);
+}
+
+.wed1Body h3 {
+    font-family: 'Ramabhadra', sans-serif !important;
+    position: relative;
+    font-size: 18px !important;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.2;
+    padding: 0 !important;
+    color: #fff !important;
+    text-align: center !important;
+    width: fit-content;
+}
+
+.wed1Body .borderedLabel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: fit-content;
+    border: 1px solid rgba(255, 255, 255, .5);
+    margin: .75rem auto 0;
+    padding: .8rem .5rem .1rem;
+    border-radius: 6px;
+}
+
+.wed1Body .borderedLabel h6.labelTxt {
+    background-color: #4e1e3f;
+    border: 1px solid rgba(255, 255, 255, .5);
+    padding: .25rem .5rem;
+    border-radius: 4px;
+    font-family: 'Ramabhadra', sans-serif;
+    font-weight: normal;
+    line-height: 1;
+    font-size: 12px;
+    color: #fff;
+    position: absolute !important;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -.6rem;
+}
+
+.wed1Body .borderedLabel p {
+    font-family: 'Ramabhadra', sans-serif;
+    font-size: 14px;
+    color: #fff;
+}
+
+.wed1Body .borderedLabel p b {
+    font-weight: normal;
+    color: #fbc906;
+}
+
+.wed1Footer h4.who-wished {
+    font-family: 'Ramabhadra', sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 1.2;
+    padding: .25rem 0 0;
+    color: #fbc906;
+    text-align: center;
+    position: relative;
+}
+
+.wed1Footer p {
+    font-family: 'Bonalu', sans-serif !important;
+    font-size: 22px !important;
+    font-weight: normal;
+    line-height: 1.2;
+    padding: 0 !important;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+/* Wedding Template 2 */
+
+#wedding-temp-2 #temp-header .wed2Head {
+    margin-top: -.75rem;
+}
+
+.imgHolder.decorBothSides {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+.framedWeddingPhoto {
+    margin: -1.1rem auto 0;
+    position: relative;
+    width: 100%;
+    height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.framedWeddingPhoto::after,
+.framedWeddingPhoto::before {
+    content: "";
+    position: absolute;
+    top: 90%;
+    width: 40px;
+    height: 40px;
+    background: url(../images/frame-vector.png) no-repeat center center;
+    background-size: contain;
+}
+
+.framedWeddingPhoto::before {
+    left: 13%;
+}
+
+.framedWeddingPhoto::after {
+    right: 13%;
+    transform: rotateY(180deg);
+}
+
+.framedWeddingPhoto .imgHolder.backFrame {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 240px;
+    height: 100%;
+    z-index: 0;
+}
+
+.framedWeddingPhoto .imgHolder.backFrame img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.framedWeddingPhoto .imgHolder.groomPair {
+    height: 100%;
+    width: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    bottom: 0;
+}
+
+.wed2Body .framedWeddingPhoto {
+    margin: -1.1rem auto 0;
+    position: relative;
+    width: 100%;
+    height: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wed2Head .simpleHeading {
+    font-family: 'Bonalu', sans-serif;
+    font-style: italic;
+    position: relative;
+    z-index: 2;
+    font-size: 38px;
+    letter-spacing: .025rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #ffee00;
+    text-align: center;
+    padding: 1.75rem 0 0;
+    margin: 0 auto;
+    text-shadow: 0 3px 4px rgba(0, 0, 0, .85);
+}
+
+.wed2Head .simpleHeading span {
+    font-size: 34px;
+}
+
+.wed2Body .imgHolder {
+    width: auto;
+    height: 220px;
+    margin: -1.35rem auto 0;
+}
+
+.wed2Body .imgHolder img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.wed2Body h6 {
+    font-family: 'NTR', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    padding: .5rem 0 0 !important;
+    color: #fff !important;
+    text-align: center !important;
+    width: fit-content;
+}
+
+.wed2Body h1 {
+    font-family: 'Mandali', sans-serif !important;
+    font-size: 23px !important;
+    font-weight: 500;
+    line-height: 1.2;
+    padding: .25rem 0 0 !important;
+    color: #f7f200 !important;
+    text-align: center !important;
+    width: fit-content;
+}
+
+.wed2Body h1 span {
+    font-size: 17px;
+}
+
+.wed2Body p {
+    font-family: 'Mandali', sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 500;
+    line-height: 1.2;
+    padding: 0 !important;
+    color: #fff !important;
+    text-align: center !important;
+    width: fit-content;
+}
+
+.wed2Body h5 {
+    font-family: 'Mandali', sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 500;
+    line-height: 1.2;
+    padding: .15rem 0 !important;
+    color: #f7f200 !important;
+    text-align: center !important;
+    width: fit-content;
+}
+
+.wed2Body h5 span {
+    font-size: 14px;
+    display: block;
+    clear: both;
+    color: #fff;
+}
+
+.wed2Body p.withBg {
+    background-color: #980829;
+    border-radius: 4px;
+    font-family: 'Mandali', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    line-height: 1;
+    padding: .35rem !important;
+    color: #fff !important;
+    text-align: center !important;
+    width: fit-content;
+}
+
+.wed2Body .muhurath {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: fit-content;
+    text-align: center;
+    gap: 1rem;
+}
+
+.wed2Body .muhurath .imgHolder {
+    height: 80px;
+    margin: 0;
+}
+
+.wed2Body .muhurath .contents {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: calc(100% - 150px);
+}
+
+.wed2Body .muhurath .contents h5 {
+    font-family: 'Mandali', sans-serif !important;
+    position: relative;
+    font-size: 14px !important;
+    font-weight: 500;
+    line-height: 1.2;
+    padding: 0 !important;
+    color: #f7f200 !important;
+    text-align: center !important;
+    width: fit-content;
+}
+
+.wed2Body .muhurath .contents p {
+    font-family: 'Mandali', sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 500;
+    line-height: 1.2;
+    padding: .35rem 0 !important;
+    color: #fff !important;
+    text-align: center !important;
+    width: fit-content;
+    white-space: nowrap;
+}
+
+.wed2Body h4.withBg {
+    background-color: #fff;
+    border-radius: 4px;
+    font-family: 'Mandali', sans-serif !important;
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    line-height: 1;
+    padding: .35rem !important;
+    color: #980829 !important;
+    text-align: center !important;
+    margin: -1rem auto 0 !important;
+    width: fit-content !important;
+}
+
+.wed2Body h3 {
+    font-family: 'Kumram Bheem', sans-serif !important;
+    font-size: 17px !important;
+    font-weight: 500 !important;
+    line-height: 1;
+    padding: 0 !important;
+    color: #fff !important;
+    text-align: center !important;
+    width: fit-content;
+}
+
+.wed2Footer {
+    padding-top: .4rem;
+}
+
+.wed2Footer h4 {
+    font-family: 'Kumram Bheem', sans-serif !important;
+    font-size: 21px !important;
+    font-weight: 500 !important;
+    line-height: 1;
+    padding: 0 !important;
+    color: #fff !important;
+    text-align: center !important;
+    width: fit-content;
+}
+
+.wed2Footer h2 {
+    font-family: 'Mandali', sans-serif !important;
+    font-size: 17px !important;
+    font-weight: 600 !important;
+    line-height: 1;
+    padding: .2rem 0 !important;
+    white-space: nowrap;
+    color: #f7f200 !important;
+    text-align: center !important;
+    border: none !important;
+    width: fit-content;
+}
+
+.wed2Footer p.withBg {
+    background-color: #650303;
+    border-radius: 4px;
+    font-family: 'Kumram Bheem', sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    padding: .35rem !important;
+    color: #fff !important;
+    text-align: center !important;
+    width: fit-content !important;
+}
+
+/* Wedding Template 3 */
+
+.wed3Head {
+    padding: 2.75rem 0 0 2rem;
+}
+
+.wed3Head p {
+    font-family: 'Times New Roman', sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 600;
+    line-height: 1.2;
+    padding: 0 !important;
+    color: #3f629c !important;
+    text-align: center !important;
+    position: relative;
+    width: fit-content;
+}
+
+.wed3Head p span {
+    font-size: 11px;
+    position: absolute;
+    display: block;
+    top: 100%;
+    clear: both;
+    right: -1rem;
+}
+
+.wed3Head p:first-child span {
+    top: 55%;
+    right: -1.7rem;
+}
+
+.wed3Body h1 {
+    font-family: 'Rakkas', cursive !important;
+    font-size: 34px !important;
+    font-weight: 500 !important;
+    line-height: 1.2;
+    padding: 0 !important;
+    color: #ba347b !important;
+    text-align: center !important;
+    width: fit-content;
+}
+
+.wed3Body p {
+    font-family: 'Times New Roman', sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 600;
+    line-height: 1.2;
+    padding: .35rem 0 !important;
+    color: #3f629c !important;
+    text-align: center !important;
+    position: relative;
+    width: fit-content;
+}
+
+.wed3Body h2 {
+    font-family: 'Alike', cursive !important;
+    font-size: 24px !important;
+    font-weight: 500 !important;
+    line-height: 1.2;
+    padding: 0 !important;
+    color: #ba347b !important;
+    text-align: center !important;
+    width: fit-content;
+}
+
+.wed3Body h2 span {
+    display: block;
+    clear: both;
+    color: #3f629c;
+    font-size: 18px !important;
+    font-family: "Praise", serif !important;
+}
+
+.wed3Body h2 em {
+    font-style: normal;
+    font-size: 15px !important;
+}
+
+.wed3Body h5 {
+    font-family: 'Roboto', cursive !important;
+    font-size: 13px !important;
+    font-weight: 300 !important;
+    line-height: 1.2;
+    padding: 0 !important;
+    color: #3f629c !important;
+    text-align: center !important;
+    width: fit-content;
+}
+
+.wed3Body .muhurath {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    gap: 1rem;
+}
+
+.wed3Body .muhurath .imgHolder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 220px;
+    margin: .35rem 0 0;
+    border: 4px solid #3f629c;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.wed3Body .muhurath .imgHolder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wed3Body .muhurath .contents {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: calc(100% - 200px);
+}
+
+.wed3Body .muhurath .contents h2 {}

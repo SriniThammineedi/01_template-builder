@@ -525,7 +525,8 @@ function showTemplate(selectedId) {
     'promotion': 'promotionTemps',
     'inauguration': 'inaugurationTemps',
     'greetings': 'greetingTemps',
-    'political': 'politicalTemps'
+    'political': 'politicalTemps',
+    'wedding': 'weddingTemps'
   };
 
   const templateDivs = document.querySelectorAll('.inner-container');

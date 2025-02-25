@@ -5,6 +5,7 @@
 @import url("../css/inauguration-templates.css");
 @import url("../css/greeting-templates.css");
 @import url("../css/political-templates.css");
+@import url("../css/wedding-templates.css");
 
 :root {
     --text-dark: #202020;
@@ -142,10 +143,28 @@ link:focus-visible {
     font-display: swap;
 }
 
+/* Kaloji Telugu Font Declaration */
+@font-face {
+    font-family: 'Kaloji';
+    src: url('../fonts/Kaloji.otf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* Lashkar Telugu Font Declaration */
 @font-face {
     font-family: 'Lashkar';
     src: url('../fonts/Lashkar.otf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* KumramBheem Telugu Font Declaration */
+@font-face {
+    font-family: 'Kumram Bheem';
+    src: url('../fonts/KumramBheem.otf');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
