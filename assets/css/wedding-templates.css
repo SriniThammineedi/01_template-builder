@@ -10,7 +10,13 @@ body {
 }
 
 #wedding-temp-1,
-#wedding-temp-2 {
+#wedding-temp-2,
+#wedding-temp-3,
+#wedding-temp-4,
+#wedding-temp-5,
+#wedding-temp-6,
+#wedding-temp-7,
+#wedding-temp-8 {
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 100% 100%;
@@ -25,14 +31,26 @@ body {
 }
 
 #wedding-temp-1 #temp-body,
-#wedding-temp-2 #temp-body {
+#wedding-temp-2 #temp-body,
+#wedding-temp-3 #temp-body,
+#wedding-temp-4 #temp-body,
+#wedding-temp-5 #temp-body,
+#wedding-temp-6 #temp-body,
+#wedding-temp-7 #temp-body,
+#wedding-temp-8 #temp-body {
     width: -webkit-fill-available;
     width: -moz-fill-available;
     margin: 0 -1.5rem;
 }
 
 #wedding-temp-1 #temp-header .wed1Head,
-#wedding-temp-2 #temp-header .wed2Head {
+#wedding-temp-2 #temp-header .wed2Head,
+#wedding-temp-3 #temp-header .wed3Head,
+#wedding-temp-4 #temp-header .wed4Head,
+#wedding-temp-5 #temp-header .wed5Head,
+#wedding-temp-6 #temp-header .wed6Head,
+#wedding-temp-7 #temp-header .wed7Head,
+#wedding-temp-8 #temp-header .wed8Head {
     position: relative;
     width: -webkit-fill-available;
     width: -moz-fill-available;
@@ -40,7 +58,8 @@ body {
 }
 
 .wed1Head .imgHolder.topDecor,
-.wed2Head .imgHolder.topDecor {
+.wed2Head .imgHolder.topDecor,
+.wed8Head .imgHolder.topDecor {
     position: absolute;
     top: -1.25rem;
     left: 50%;
@@ -63,7 +82,16 @@ body {
 .wed4Footer,
 .wed5Body,
 .wed5Head,
-.wed5Footer {
+.wed5Footer,
+.wed6Body,
+.wed6Head,
+.wed6Footer,
+.wed7Body,
+.wed7Head,
+.wed7Footer,
+.wed8Body,
+.wed8Head,
+.wed8Footer {
     width: 100%;
     display: flex;
     align-items: center;
@@ -304,7 +332,6 @@ body {
 }
 
 /* Wedding Template 2 */
-
 #wedding-temp-2 #temp-header .wed2Head {
     margin-top: -.75rem;
 }
@@ -871,7 +898,7 @@ body {
     gap: 1.5rem;
     font-family: 'Mandali', sans-serif !important;
     font-size: 16px !important;
-    padding: .5rem 0 0 !important;
+    padding: 1.4rem 0 0 !important;
     color: #b81c1f !important;
 }
 
@@ -933,7 +960,7 @@ body {
 }
 
 .wed4Body .photoSplitter .mainFrame {
-    height: 220px;
+    height: 232px;
 }
 
 .wed4Body .photoSplitter .imgHolder {
@@ -1065,7 +1092,7 @@ body {
     font-weight: 600 !important;
     line-height: 1.2 !important;
     letter-spacing: .05rem !important;
-    margin-top: -.85rem !important;
+    margin-top: 0 !important;
     padding: 0 !important;
     text-align: center !important;
     color: #890000 !important;
@@ -1173,7 +1200,7 @@ body {
 
 .wed5Footer .sideBySide {
     width: 90%;
-    margin: -.7rem auto .35rem !important;
+    margin: -.2rem auto .35rem !important;
     justify-content: center;
     gap: .5rem;
 }
@@ -1236,11 +1263,729 @@ body {
     font-size: 20px !important;
     font-weight: 600 !important;
     border-radius: 5px;
-    margin-top: -.25rem !important;
+    margin-top: .1rem !important;
 }
 
 #temp-footer .wed5Footer p.whatsapp::before {
     top: .4rem;
     left: .3rem;
     filter: invert(1);
+}
+
+/* Wedding Template 6 */
+.wed6Head .topDecor {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -1.5rem;
+}
+
+.wed6Head .topDecor input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    inset: 0;
+    opacity: 0;
+}
+
+.wed6Head .topDecor img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.wed6Head .imgHolder {
+    width: auto;
+    height: 65px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -1rem auto 0;
+}
+
+.wed6Head h3 {
+    font-family: 'Bonalu', sans-serif !important;
+    font-size: 28px !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    padding: 0 !important;
+    text-align: center !important;
+    color: #faf311 !important;
+    white-space: nowrap;
+    text-shadow: 0 3px 2px rgba(0, 0, 0, .5);
+}
+
+.wed6Body .imgHolder {
+    width: auto;
+    height: 195px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -.6rem auto 0 !important;
+}
+
+.wed6Body .coconutTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 145px;
+    margin: -4.5rem auto -.25rem !important;
+}
+
+.wed6Body .coconutTitle .imgHolder {
+    position: absolute;
+    width: 130px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto !important;
+}
+
+.wed6Body .coconutTitle .imgHolder img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.wed6Body .coconutTitle h1 {
+    font-family: 'Lashkar', sans-serif !important;
+    font-size: 23px !important;
+    font-weight: 500 !important;
+    line-height: 18px !important;
+    padding: 1rem 0 0 .3rem !important;
+    letter-spacing: .07rem !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    text-align: center !important;
+    color: #fff !important;
+    white-space: nowrap;
+    text-shadow: 0 3px 2px rgba(0, 0, 0, .8);
+}
+
+.wed6Body .coconutTitle h1 span {
+    font-size: 18px;
+    color: #faf311;
+}
+
+.wed6Body h3.borderAround {
+    font-family: 'Mandali', sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    line-height: 1.2 !important;
+    padding: .25rem !important;
+    text-align: center !important;
+    color: #edf200 !important;
+    white-space: nowrap;
+    border: 1px solid #fff;
+    border-radius: 6px;
+}
+
+.wed6Body p {
+    font-family: 'Anek Telugu', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    line-height: 1.2 !important;
+    padding: .35rem 0 0 !important;
+    text-align: center !important;
+    color: #fff !important;
+}
+
+.wed6Body p span {
+    color: #f7f200;
+    display: block;
+    clear: both;
+}
+
+.wed6Body .d-flex-row {
+    margin: -.35rem auto -.6rem !important;
+}
+
+.wed6Body .d-flex-row .labeledText {
+    align-self: stretch;
+}
+
+.wed6Body .labeledText h1 {
+    font-family: 'Mandali', sans-serif !important;
+    font-weight: 600 !important;
+    padding: .25rem !important;
+}
+
+.wed6Body .labeledText p {
+    border: 1px solid #fff;
+    align-self: stretch;
+    padding: 1rem .25rem .15rem !important;
+    line-height: 1.3 !important;
+    font-size: 11px !important;
+}
+
+.wed6Footer .imgHolder {
+    width: auto;
+    height: 125px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -.5rem auto;
+}
+
+.wed6Footer h3 {
+    font-family: 'Mandali', sans-serif !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    line-height: 1 !important;
+    padding: 0 !important;
+    margin: -1.2rem auto 0 !important;
+    text-align: center !important;
+    color: #197e05 !important;
+    white-space: nowrap;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 3px #fff;
+}
+
+.wed6Footer h1 {
+    font-family: 'Anek Telugu', sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    line-height: 1.2 !important;
+    padding: .2rem 0 0 !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+    color: #ffe104 !important;
+    white-space: nowrap;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 3px #000;
+}
+
+.wed6Footer h1 span {
+    display: block;
+    clear: both;
+    font-size: 12px;
+    color: #fff;
+    paint-order: normal;
+    -webkit-text-stroke: 0;
+}
+
+#temp-footer .wed6Footer p.whatsapp {
+    background-color: #ffe104;
+    border-radius: 4px;
+    padding: .25rem .5rem .25rem 1.5rem !important;
+    font-family: 'Oswald', sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    line-height: 1 !important;
+    color: #000 !important;
+    margin: .15rem auto 0 !important;
+}
+
+#temp-footer .wed6Footer p.whatsapp::before {
+    left: .25rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#temp-footer .wed6Footer .stickySplitter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    bottom: -3rem;
+    z-index: 0;
+}
+
+#temp-footer .wed6Footer .stickySplitter .imgHolder {
+    height: 150px;
+    width: auto;
+    margin: 0;
+}
+
+#temp-footer .wed6Footer .stickySplitter .imgHolder.imgLS {
+    left: -3.5rem;
+}
+
+#temp-footer .wed6Footer .stickySplitter .imgHolder.imgRS {
+    right: -3.5rem;
+    transform: rotateY(-180deg);
+}
+
+/* Wedding Template 7 */
+.wed7Head .row-photo-frame {
+    margin-top: -.7rem;
+}
+
+.wed7Head p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    font-family: 'Gaddar', sans-serif !important;
+    font-size: 16px !important;
+    padding: 0 !important;
+    color: #fff !important;
+}
+
+.wed7Head p.slokam {
+    font-family: 'Anek Telugu', sans-serif !important;
+    font-size: 11px !important;
+    line-height: 1.3 !important;
+    text-align: center !important;
+    padding: .5rem 0 0 !important;
+}
+
+.wed7Head h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .25rem;
+    font-family: 'Bonalu', sans-serif !important;
+    font-weight: normal !important;
+    font-size: 54px !important;
+    padding: .5rem 0 0 !important;
+    color: #ffe105 !important;
+    text-shadow: 0 4px 0 #7f1b01;
+}
+
+.wed7Head h1 span {
+    font-size: 30px !important;
+}
+
+.wed7Head h3 {
+    font-family: 'Kaloji', sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 20px !important;
+    line-height: 1.2 !important;
+    padding: 0 !important;
+    color: #fff !important;
+}
+
+.wed7Head .bottom-decor {
+    position: relative;
+    width: auto;
+    height: 35px;
+    margin: -1.4rem auto .2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wed7Head .bottom-decor input {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.wed7Head .bottom-decor img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.wed7Body .photoSplitter {
+    margin-top: -.7rem;
+    position: relative;
+}
+
+.wed7Body .photoSplitter::before,
+.wed7Body .photoSplitter::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../images/cloth-knot.png) no-repeat center center;
+    background-size: 42% auto;
+    z-index: -2;
+}
+
+.wed7Body .photoSplitter::before {
+    top: -22%;
+    left: -40%;
+    transform: rotate(32deg);
+}
+
+.wed7Body .photoSplitter::after {
+    top: -15%;
+    right: -38%;
+}
+
+.wed7Body .photoSplitter .mainFrame {
+    height: 200px;
+    width: 200px;
+    position: relative;
+}
+
+.wed7Body .photoSplitter .mainFrame::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: url(../images/wedding-photo-behind.png) no-repeat center center;
+    background-size: contain;
+}
+
+.wed7Body .photoSplitter .mainFrame img {
+    width: 85%;
+    height: 85%;
+    object-fit: contain;
+    background-color: #fff;
+    border-radius: 100%;
+}
+
+.wed7Body .photoSplitter .imgHolder {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: .5rem;
+}
+
+.wed7Body .photoSplitter .imgHolder.imgLS {
+    left: .5rem;
+    height: 55px;
+}
+
+.wed7Body .photoSplitter .imgHolder.imgRS {
+    right: 1.2rem;
+    height: 90px;
+}
+
+.wed7Body h1 {
+    font-family: 'Batukamma', sans-serif !important;
+    font-size: 34px !important;
+    font-weight: normal !important;
+    line-height: 1 !important;
+    text-align: center !important;
+    padding: .25rem 0 !important;
+    margin: -.5rem auto !important;
+    color: #ffe105 !important;
+}
+
+.wed7Body h1 span {
+    font-family: 'Gaddar', sans-serif !important;
+    font-size: 20px;
+    color: #fff;
+}
+
+.wed7Body h1 em {
+    font-style: normal;
+    font-size: 20px;
+}
+
+.wed7Body h1.negativeTop {
+    margin-top: -1.1rem !important;
+}
+
+.wed7Body p {
+    font-family: 'Gaddar', sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    line-height: 1.2 !important;
+    padding: .25rem 0 !important;
+    text-align: center !important;
+    color: #fff !important;
+}
+
+.wed7Body p b {
+    color: #ffe104;
+}
+
+.wed7Footer .sideBySide {
+    margin-bottom: -.25rem;
+}
+
+.wed7Footer .sideBySide h3,
+.wed7Footer h3 {
+    font-family: 'Anek Telugu', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    line-height: 1.3 !important;
+    padding: 0 !important;
+    text-align: center !important;
+    color: #fff !important;
+    white-space: wrap;
+    gap: .25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.wed7Footer .sideBySide h3 span,
+.wed7Footer h3 span {
+    background-color: #ffe104;
+    border-radius: 4px !important;
+    padding: .25rem .35rem !important;
+    line-height: 1 !important;
+    display: block;
+    clear: both;
+    color: #ba2c08 !important;
+    font-family: 'Mandali', sans-serif !important;
+    font-size: 11px !important;
+    font-weight: 600 !important;
+}
+
+.wed7Footer h5 {
+    font-family: 'Anek Telugu', sans-serif !important;
+    font-size: 10px !important;
+    font-weight: 400 !important;
+    line-height: 1 !important;
+    padding: .25rem 0 0 !important;
+    text-align: center !important;
+    color: #fff !important;
+    white-space: nowrap;
+}
+
+.wed7Footer h6 {
+    font-family: 'Gaddar', sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    line-height: 1 !important;
+    padding: 1.6rem 0 0 !important;
+    text-align: center !important;
+    color: #fff !important;
+    white-space: nowrap;
+}
+
+.wed7Footer p {
+    font-family: 'Anek Telugu', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    line-height: 1.2 !important;
+    padding: .4rem 0 0 !important;
+    text-align: center !important;
+    color: #fff !important;
+    white-space: nowrap;
+}
+
+/* Wedding Template 8 */
+.wed8Head .imgHolder.topDecor {
+    top: -1.45rem !important;
+    z-index: 0;
+}
+
+.wed8Head p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    font-family: 'Gaddar', sans-serif !important;
+    font-size: 17px !important;
+    font-weight: 500 !important;
+    margin: 2rem auto 0 !important;
+    padding: 0 !important;
+    color: #4e8625 !important;
+    position: relative;
+    z-index: 1;
+}
+
+.wed8Head h1 {
+    font-family: 'Bhagamati', sans-serif !important;
+    font-size: 28px !important;
+    font-weight: 500 !important;
+    padding: .75rem 0 0 !important;
+    color: #950310 !important;
+    position: relative;
+    z-index: 1;
+}
+
+.wed8Body .framedWeddingPhoto {
+    margin: 0 auto !important;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wed8Body .framedWeddingPhoto::after,
+.wed8Body .framedWeddingPhoto::before {
+    content: "";
+    position: absolute;
+    top: 85%;
+    width: 50px;
+    height: 50px;
+    background: url(../images/photo-frame-bottom-decor.png) no-repeat center center;
+    background-size: contain;
+}
+
+.wed8Body .framedWeddingPhoto::before {
+    left: 9%;
+}
+
+.wed8Body .framedWeddingPhoto::after {
+    right: 9%;
+    transform: rotateY(180deg);
+}
+
+.wed8Body .framedWeddingPhoto .imgHolder.groomPair {
+    height: 200px;
+    width: 300px;
+    position: absolute;
+    left: auto !important;
+    transform: none !important;
+    border-radius: 40px;
+    overflow: hidden;
+    z-index: 1;
+    bottom: 0;
+}
+
+.wed8Body .decoratedContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
+
+.wed8Body .decoratedContent::before,
+.wed8Body .decoratedContent::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 20px;
+    height: 100%;
+    background: url(../images/titles-besides-vector.png) no-repeat center center;
+    background-size: contain;
+    z-index: -1;
+}
+
+.wed8Body .decoratedContent::before {
+    left: 1rem;
+}
+
+.wed8Body .decoratedContent::after {
+    right: 1rem;
+    transform: rotateY(180deg);
+}
+
+.wed8Body .decoratedContent h6 {
+    font-family: 'Anek Telugu', sans-serif !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    line-height: 1.2 !important;
+    padding: .6rem 0 0 !important;
+    text-align: center !important;
+    color: #325604 !important;
+    white-space: nowrap;
+}
+
+.wed8Body .decoratedContent h1 {
+    font-family: 'Anek Telugu', sans-serif !important;
+    font-size: 30px !important;
+    font-weight: 600 !important;
+    line-height: 1.2 !important;
+    padding: .5rem 0 .35rem !important;
+    text-align: center !important;
+    color: #9a030e !important;
+    white-space: nowrap;
+}
+
+.wed8Body .decoratedContent h1 span {
+    font-size: 18px !important;
+}
+
+.wed8Body .decoratedContent h2 {
+    font-family: 'Anek Telugu', sans-serif !important;
+    font-size: 21px !important;
+    font-weight: 600 !important;
+    line-height: 1.2 !important;
+    padding: 0 !important;
+    text-align: center !important;
+    color: #9a030e !important;
+    white-space: nowrap;
+}
+
+.wed8Body .decoratedContent h2 span {
+    font-size: 16px !important;
+}
+
+.wed8Body .decoratedContent p {
+    font-family: 'Anek Telugu', sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    line-height: 1.3 !important;
+    padding: .5rem 0 0 !important;
+    text-align: center !important;
+    color: #325604 !important;
+}
+
+.wed8Body h5.borderAround {
+    position: relative;
+    font-family: 'Anek Telugu', sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    line-height: 1.3 !important;
+    padding: .5rem .35rem .25rem !important;
+    margin: .5rem auto 0 !important;
+    text-align: center !important;
+    border: 1px solid #333 !important;
+    border-radius: 10px !important;
+    color: #325604 !important;
+    width: 80% !important;
+}
+
+.wed8Body h5.borderAround span {
+    display: block;
+    clear: both;
+    color: #9a030e !important;
+    font-size: 12px !important;
+}
+
+.wed8Footer p {
+    font-family: 'Anek Telugu', sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    line-height: 1.2 !important;
+    padding: .4rem 0 0 !important;
+    text-align: center !important;
+    color: #325604 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.wed8Footer p span {
+    color: #9a030e !important;
+    font-size: 12px !important;
+}
+
+.wed8Footer p.withBg {
+    background-color: #950310;
+    border-radius: 6px !important;
+    width: fit-content !important;
+    padding: .35rem 1.5rem .35rem .5rem !important;
+    margin-top: .35rem !important;
+    line-height: 1.2 !important;
+    color: #fff !important;
+    font-family: 'Anek Telugu', sans-serif !important;
+    position: relative;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+}
+
+.wed8Footer p.withBg::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -.65rem;
+    width: 28px;
+    height: 28px;
+    background: url(../images/click_hand_icon.png) no-repeat center center;
+    background-size: contain;
+    transform: translateY(-50%);
 }
