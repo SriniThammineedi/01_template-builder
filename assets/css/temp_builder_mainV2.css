@@ -2507,6 +2507,135 @@ p.contact::before {
     text-shadow: 0 2px 1px #000000;
 }
 
+.row-photo-frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    width: fit-content;
+    position: relative;
+    gap: .75rem;
+}
+
+.row-photo-frame .imgHolder.imgLS,
+.row-photo-frame .imgHolder.imgRS {
+    width: auto;
+    height: 68px;
+    position: relative;
+}
+
+.row-photo-frame .imgHolder.imgRS {
+    transform: rotateY(-180deg);
+}
+
+.row-photo-frame .imgHolder.imgLS img,
+.row-photo-frame .imgHolder.imgRS img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.photoSplitter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+}
+
+.photoSplitter .mainFrame {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 280px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.photoSplitter .imgHolder input,
+.photoSplitter .mainFrame input {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    z-index: 1;
+}
+
+.photoSplitter .imgHolder img,
+.photoSplitter .mainFrame img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.photoSplitter .imgHolder {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    position: absolute;
+    bottom: 2rem;
+}
+
+.photoSplitter .imgHolder.imgLS {
+    left: .75rem;
+}
+
+.photoSplitter .imgHolder.imgRS {
+    right: .75rem;
+}
+
+
+.coupleTitles {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: fit-content;
+    margin: -1rem auto -.35rem;
+    position: relative;
+    z-index: 2;
+}
+
+.coupleTitles h1 {
+    font-family: "Bonalu", sans-serif;
+    color: #eb0862;
+    font-size: 34px !important;
+    font-weight: normal !important;
+    white-space: nowrap;
+    text-align: center;
+    width: 49.5%;
+    padding: 0 .5rem;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 2px #fff;
+    margin: 0;
+}
+
+.coupleTitles h1 span {
+    font-size: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
