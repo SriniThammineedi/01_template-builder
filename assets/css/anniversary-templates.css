@@ -1,0 +1,680 @@
+@import url("temp_builder_mainV2.css");
+
+body {
+    background-color: #ddd;
+}
+
+.template-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Anniiversary Template 1 */
+.anvsrHead {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    width: fit-content;
+    margin: -1rem auto;
+}
+
+.anvsrHead h1 {
+    font-family: "Bonalu", sans-serif;
+    font-size: 42px;
+    line-height: 1.2;
+    font-weight: normal;
+    position: relative;
+    padding: 0;
+    width: fit-content;
+    text-align: center;
+    color: #fef104;
+    white-space: nowrap;
+}
+
+.anvsrHead .imgHolder {
+    width: 42px;
+    height: 42px;
+    overflow: hidden;
+}
+
+.anvsrHead .imgHolder:first-child {
+    transform: rotateY(180deg);
+}
+
+.anvsrHead .imgHolder img,
+.anvsrBody .imgHolder img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.anvsrBody {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+}
+
+.anvsrBody .imgHolder {
+    width: auto;
+    height: 238px;
+    overflow: hidden;
+}
+
+.anvsrBody h3 {
+    font-family: "Mandali", sans-serif;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 600;
+    position: relative;
+    margin-top: -3rem;
+    padding: 0;
+    width: fit-content;
+    text-align: center;
+    color: #fff;
+    white-space: nowrap;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 3px #573625;
+}
+
+.anvsrBody .splDecorTxt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    background: url(../images/title-bg-2.png) no-repeat center top;
+    background-size: cover;
+    padding: .35rem 0;
+}
+
+.anvsrBody .splDecorTxt h1 {
+    font-family: "Batukamma", sans-serif !important;
+    font-size: 30px !important;
+    line-height: 1;
+    font-weight: 500 !important;
+    letter-spacing: .1rem !important;
+    position: relative;
+    padding: 0 !important;
+    width: fit-content !important;
+    margin-top: -.5rem !important;
+    text-align: center !important;
+    color: #fef104 !important;
+    white-space: nowrap;
+}
+
+.anvsrBody .splDecorTxt h1 span {
+    font-size: 18px;
+}
+
+.anvsrBody .splDecorTxt h6 {
+    font-family: "Kaloji", sans-serif;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: normal !important;
+    position: relative;
+    padding: 0;
+    width: fit-content;
+    text-align: center;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.anvsrBody p {
+    font-family: "Mandali", sans-serif !important;
+    font-size: 13px !important;
+    line-height: 1.3;
+    font-weight: normal;
+    position: relative;
+    padding: .35rem 0 .15rem !important;
+    width: fit-content;
+    text-align: center;
+    color: #fff;
+    margin: -.35rem auto;
+}
+
+.anvsrBody h4 {
+    font-family: "Kaloji", sans-serif !important;
+    font-size: 24px !important;
+    line-height: 1.3;
+    font-weight: 500 !important;
+    position: relative;
+    padding: 0;
+    width: fit-content;
+    white-space: nowrap !important;
+    text-align: center;
+    color: #fff !important;
+}
+
+.authDistbtrs {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    gap: 0;
+}
+
+.authDistbtrs .distList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: 40%;
+    gap: 0;
+}
+
+.authDistbtrs .distList h4 {
+    font-family: "Mandali", sans-serif;
+    font-size: 18px !important;
+    line-height: 1;
+    border-radius: 4px;
+    font-weight: 600;
+    position: relative;
+    padding: .3rem .15rem !important;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    white-space: nowrap;
+    background-color: #a60000;
+}
+
+.authDistbtrs .distList ul {
+    width: 80%;
+    padding: .35rem .5rem;
+    border-radius: 0 0 6px 6px;
+    background-color: #fff;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: .35rem;
+}
+
+.authDistbtrs .distList ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.authDistbtrs .distList ul li .imgHolder {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.authDistbtrs .distList ul li .imgHolder img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+}
+
+.authDistbtrs .distCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: 58%;
+}
+
+.authDistbtrs .distCard .imgHolder {
+    width: auto;
+    height: 150px;
+    overflow: hidden;
+    margin: .85rem auto 0;
+    text-align: center;
+}
+
+.authDistbtrs .distCard .imgHolder img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.authDistbtrs .distCard h1 {
+    font-family: "Kaloji", sans-serif;
+    font-size: 30px;
+    line-height: 1;
+    font-weight: 500;
+    position: relative;
+    margin-top: -1.2rem;
+    padding: 0;
+    width: fit-content;
+    text-align: center;
+    color: #fef104;
+    white-space: nowrap;
+}
+
+.authDistbtrs .distCard h6 {
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 600;
+    position: relative;
+    padding: 0;
+    width: fit-content;
+    text-align: center;
+    color: #fff;
+    white-space: nowrap;
+}
+
+#anniversary-template-2 #temp-footer {
+    width: -webkit-fill-available !important;
+    width: -moz-fill-available !important;
+    margin: 0 -1rem !important;
+    padding: .5rem;
+    background-color: #fff !important;
+}
+
+#anniversary-template-2 #temp-footer .anvsrFooter {
+    max-width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#anniversary-template-2 #temp-footer .anvsrFooter .imgHolder {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#anniversary-template-2 #temp-footer .anvsrFooter .imgHolder img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+
+/* Anniversary Template 2 */
+#anniversary-template-1 {
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    flex-direction: column;
+    padding: 1.5rem 1.5rem 0 !important;
+    width: 100%;
+    gap: .5rem;
+}
+
+#anniversary-template-1 #temp-body {
+    padding: 0 !important;
+}
+
+#anniversary-template-1 #temp-body.d-flex-row {
+    flex-wrap: nowrap !important;
+}
+
+.imgHolder.fullWidth {
+    margin-bottom: -2rem;
+}
+
+.promoHeading-3 {
+    font-family: "Anek Telugu", sans-serif;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: -.5rem;
+    padding: 0;
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+}
+
+.promoHeading-3 span {
+    font-size: 16px;
+}
+
+.promoHeading-2 {
+    font-family: "Ramabhadra", sans-serif;
+    font-size: 32px;
+    line-height: 1;
+    font-weight: normal;
+    margin-bottom: -.5rem;
+    position: relative;
+    padding: 0;
+    color: #fff000;
+    width: 100%;
+    text-align: center;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 3px #333;
+}
+
+.promoHeading-1 {
+    font-family: "Oswald", sans-serif;
+    font-size: 36px;
+    line-height: 1;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    padding: 0;
+    color: #b1b4b4;
+    background: #b1b4b4;
+    background: linear-gradient(to right, #b1b4b4 20%, #ffffff 50%, #b1b4b4 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 100%;
+    text-align: center;
+}
+
+.promoHeading-1::after {
+    position: absolute;
+    content: 'Silver Jubilee Offer';
+    font-family: "Oswald", sans-serif;
+    font-size: 36px;
+    line-height: 1;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #b1b4b4;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    z-index: -1;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 3px #333;
+}
+
+.promoHeading-4 {
+    font-family: "Ramabhadra", sans-serif;
+    font-size: 18px;
+    line-height: 1.25;
+    font-weight: normal;
+    position: relative;
+    padding: 0;
+    color: #ffffff;
+    width: fit-content;
+    text-align: center;
+}
+
+.promoHeading-4.withBg {
+    background-color: #ca2f3d;
+    padding: .3rem .5rem;
+    white-space: nowrap;
+    border-radius: 4px;
+}
+
+.adTexts {
+    padding: 1rem 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: .5rem;
+    position: relative;
+    width: 40%;
+}
+
+.adBanner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0;
+    flex-direction: column;
+    gap: .5rem;
+    position: relative;
+    width: 60%;
+}
+
+.adTexts .para-1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1;
+    margin-bottom: -.5rem;
+    font-weight: normal;
+    position: relative;
+    padding: 0;
+    color: #ffffff;
+    width: 100%;
+    text-align: left;
+}
+
+.adTexts .para-1.telugu {
+    font-family: "Anek Telugu", sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    margin-top: .5rem;
+    font-weight: normal;
+    position: relative;
+    padding: 0;
+    color: #ffffff;
+    width: 100%;
+    text-align: left;
+}
+
+.adTexts .para-1.telugu span {
+    color: #fdf305;
+}
+
+.adTexts .para-2 {
+    font-family: "Ramabhadra", sans-serif;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: normal;
+    margin-bottom: -.5rem;
+    white-space: nowrap;
+    position: relative;
+    padding: 0;
+    color: #ffffff;
+    width: 100%;
+    text-align: left;
+}
+
+.adTexts .para-3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+    line-height: 1.25;
+    top: 3.5rem;
+    right: -2rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    white-space: nowrap;
+    position: absolute !important;
+    padding: 0;
+    color: #ffffff;
+    text-align: center;
+}
+
+.adTexts .para-3 span {
+    font-family: "Anek Telugu", sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.adTexts .offerHeading-1 {
+    font-family: "Oswald", sans-serif;
+    font-size: 52px;
+    line-height: 1.3;
+    font-weight: 800;
+    white-space: nowrap;
+    position: relative;
+    padding: 0;
+    color: #ffffff;
+    width: 100%;
+    text-align: left;
+}
+
+.adTexts .offerHeading-1 em {
+    font-size: 22px;
+}
+
+.adTexts .offerHeading-1 span {
+    display: block;
+    clear: both;
+    font-family: "Anek Telugu", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.adTexts .termsLabel {
+    --s: 20px;
+    line-height: 1.3;
+    padding-inline: .3em calc(var(--s) + .3em);
+    clip-path: polygon(0 0, calc(100% - var(--s)) 0, 100% 50%, calc(100% - var(--s)) 100%, 0 100%);
+    background: #d43e98;
+    width: 100%;
+    font-family: "Anek Telugu", sans-serif;
+    padding: .5rem;
+    font-size: 9px;
+    font-weight: normal;
+    color: #fff;
+}
+
+.adTexts .offerHeading-2 {
+    font-family: "Ramabhadra", sans-serif;
+    font-size: 22px;
+    line-height: 1.4;
+    font-weight: normal;
+    white-space: nowrap;
+    position: relative;
+    border-bottom: 3px solid #fdf305;
+    padding: 0;
+    color: #fdf305;
+    width: 100%;
+    text-align: left;
+}
+
+.adTexts .paraOffer {
+    font-family: "Anek Telugu", sans-serif;
+    background-color: #fff;
+    padding: .35rem .5rem 0;
+    border-radius: 6px;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: normal;
+    margin-top: .75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    gap: .35rem;
+    position: relative;
+    color: #222;
+    width: fit-content;
+    text-align: left;
+}
+
+.adTexts .paraOffer span {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.adBanner .imgHolder.modal-img {
+    width: 100%;
+    height: 100%;
+}
+
+.adBanner .imgHolder.modal-img img {
+    width: 125%;
+    max-width: inherit;
+    position: relative;
+    left: -2.5rem;
+}
+
+.adBanner .imgHolder.stamp-img {
+    position: absolute;
+    top: 1rem;
+    right: 0;
+}
+
+.adBanner .imgHolder.stamp-img img {
+    max-width: 60px;
+}
+
+#anniversary-template-1 #temp-footer {
+    padding: .5rem 1.25rem .75rem;
+    width: -webkit-fill-available !important;
+    width: -moz-fill-available !important;
+    margin: .5rem -1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    gap: .5rem;
+}
+
+.footLogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    position: relative;
+    margin-bottom: -.75rem;
+    width: 100%;
+}
+
+.footLogo .imgHolder img {
+    max-width: 48px;
+}
+
+.footLogo .logoText {
+    font-family: "Anek Telugu", sans-serif;
+    font-size: 28px;
+    line-height: 1;
+    font-weight: bold;
+    position: relative;
+    padding: 0;
+    color: #6f1016;
+    width: fit-content;
+    white-space: nowrap;
+    text-align: center;
+}
+
+#anniversary-template-1 #temp-footer p.address,
+p.address {
+    font-family: "Anek Telugu", sans-serif !important;
+    font-size: 16px !important;
+    line-height: 1;
+    font-weight: bold;
+    position: relative !important;
+    padding: 0 !important;
+    color: #0c3024 !important;
+    width: fit-content !important;
+    white-space: nowrap;
+    text-align: center;
+}
+
+#anniversary-template-1 #temp-footer p.address::before,
+p.address::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: url(../images/location-dark.svg) no-repeat center center;
+    background-size: 100% auto;
+    left: -17px;
+    top: -4px;
+}
+
+#anniversary-template-1 #temp-footer p.contact,
+p.contact {
+    font-family: "Oswald", sans-serif !important;
+    text-transform: uppercase !important;
+    font-size: 18px !important;
+    line-height: 1;
+    font-weight: bold;
+    position: relative;
+    padding: 0 !important;
+    color: #000 !important;
+    width: fit-content !important;
+    white-space: nowrap;
+    text-align: center;
+}

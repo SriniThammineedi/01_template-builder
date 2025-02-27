@@ -90,12 +90,20 @@
                                     <label for="obituary"><span>Obituary</span></label>
                                 </div>
                                 <div class="radioGrp">
+                                    <input type="radio" name="temp" id="anniversary" />
+                                    <label for="anniversary"><span>Anniversary</span></label>
+                                </div>
+                                <div class="radioGrp">
+                                    <input type="radio" name="temp" id="retirement" />
+                                    <label for="retirement"><span>Retirement</span></label>
+                                </div>
+                                <div class="radioGrp">
                                     <input type="radio" name="temp" id="promotions" />
                                     <label for="promotions"><span>Promotions</span></label>
                                 </div>
                                 <div class="radioGrp">
                                     <input type="radio" name="temp" id="greetings" />
-                                    <label for="greetings"><span>Greetings</span></label>
+                                    <label for="greetings"><span>Greets & Wish</span></label>
                                 </div>
                                 <div class="radioGrp">
                                     <input type="radio" name="temp" id="wedding" />
@@ -103,7 +111,7 @@
                                 </div>
                                 <div class="radioGrp">
                                     <input type="radio" name="temp" id="political" />
-                                    <label for="political"><span>Political</span></label>
+                                    <label for="political"><span>Political Greets</span></label>
                                 </div>
                                 <div class="radioGrp">
                                     <input type="radio" name="temp" id="inauguration" />
@@ -253,6 +261,32 @@
                                     <img src="./assets/images/obit-temp-12.jpg" alt="obituary-temp12">
                                 </div>
                             </div>
+                            <div id="anniversaryTemps" class="inner-container row split-2 hidden"
+                                data-category="anniversary">
+                                <h3>Anniversary Templates</h3>
+                                <div class="radioSet">
+                                    <input type="radio" name="anniversary" id="anniversary-temp1"
+                                        onclick="loadTemplate('anniversary-temp1')">
+                                    <label for="anniversary-temp1"><span>Anniversary - 1</span></label>
+                                    <img src="./assets/images/anniversary-temp-1.jpg" alt="anniversary-temp1">
+                                </div>
+                                <div class="radioSet">
+                                    <input type="radio" name="anniversary" id="anniversary-temp2"
+                                        onclick="loadTemplate('anniversary-temp2')">
+                                    <label for="anniversary-temp2"><span>Anniversary - 2</span></label>
+                                    <img src="./assets/images/anniversary-temp-2.jpg" alt="anniversary-temp2">
+                                </div>
+                            </div>
+                            <div id="retirementTemps" class="inner-container row split-2 hidden"
+                                data-category="retirement">
+                                <h3>Retirement Templates</h3>
+                                <div class="radioSet">
+                                    <input type="radio" name="retirement" id="retirement-temp1"
+                                        onclick="loadTemplate('retirement-temp1')">
+                                    <label for="retirement-temp1"><span>Retirement - 1</span></label>
+                                    <img src="./assets/images/retirement-temp-1.jpg" alt="retirement-temp1">
+                                </div>
+                            </div>
                             <div id="promotionTemps" class="inner-container row split-2 hidden"
                                 data-category="promotions">
                                 <h3>Promotion Templates</h3>
@@ -261,12 +295,6 @@
                                         onclick="loadTemplate('promotion-temp1')">
                                     <label for="promotion-temp1"><span>Promotion - 1</span></label>
                                     <img src="./assets/images/promot-temp-1.jpg" alt="promotion-temp1">
-                                </div>
-                                <div class="radioSet">
-                                    <input type="radio" name="promotions" id="promotion-temp2"
-                                        onclick="loadTemplate('promotion-temp2')">
-                                    <label for="promotion-temp2"><span>Promotion - 2</span></label>
-                                    <img src="./assets/images/promot-temp-2.jpg" alt="promotion-temp2">
                                 </div>
                             </div>
                             <div id="admissionTemps" class="inner-container row split-2 hidden"
@@ -291,18 +319,12 @@
                             </div>
                             <div id="greetingTemps" class="inner-container row split-2 hidden"
                                 data-category="greetings">
-                                <h3>Inauguration Templates</h3>
+                                <h3>Greeting Templates</h3>
                                 <div class="radioSet">
                                     <input type="radio" name="greetings" id="greetings-temp1"
                                         onclick="loadTemplate('greetings-temp1')">
                                     <label for="greetings-temp1"><span>Greetings - 1</span></label>
                                     <img src="./assets/images/greetings-temp-1.jpg" alt="greetings-temp1">
-                                </div>
-                                <div class="radioSet">
-                                    <input type="radio" name="greetings" id="greetings-temp2"
-                                        onclick="loadTemplate('greetings-temp2')">
-                                    <label for="greetings-temp2"><span>Greetings - 2</span></label>
-                                    <img src="./assets/images/greetings-temp-2.jpg" alt="greetings-temp2">
                                 </div>
                             </div>
                             <div id="politicalTemps" class="inner-container row split-2 hidden"

@@ -6,6 +6,8 @@
 @import url("../css/greeting-templates.css");
 @import url("../css/political-templates.css");
 @import url("../css/wedding-templates.css");
+@import url("../css/anniversary-templates.css");
+@import url("../css/retirement-templates.css");
 
 :root {
     --text-dark: #202020;
