@@ -10,7 +10,10 @@ body {
 }
 
 .retr1Head,
-.retr1Body {
+.retr1Body,
+.retr2Head,
+.retr2Body,
+.retr2Footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,9 +22,10 @@ body {
     width: 100%;
 }
 
-.retr1Head .topDecor {
+.retr1Head .topDecor,
+.retr2Head .topDecor {
     position: absolute;
-    top: -2.5rem;
+    top: -2.75rem;
     left: 0;
     width: -webkit-fill-available;
     width: -moz-fill-available;
@@ -38,7 +42,7 @@ body {
     flex-direction: column;
     line-height: 1;
     width: 100%;
-    margin: .6rem auto -1.5rem;
+    margin: 0 auto -1.65rem;
     padding: 0;
     background: url(../images/title-badge5.png) no-repeat center center;
     background-size: contain;
@@ -103,7 +107,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -.5rem;
+    margin-top: -.9rem;
     width: auto;
     height: 200px;
 }
@@ -125,6 +129,27 @@ body {
     margin: -.75rem auto 0;
     background: url(../images/title-bg-5-full-wht.png) no-repeat center center;
     background-size: contain;
+}
+
+.retr1Body .decoratedTitles::after,
+.retr1Body .decoratedTitles::before {
+    content: "";
+    position: absolute;
+    width: 65px;
+    top: 55%;
+    height: 65px;
+    background: url(../images/flower-bokey.png) no-repeat center center;
+    background-size: contain;
+    z-index: 1;
+}
+
+.retr1Body .decoratedTitles::before {
+    left: 13.5%;
+}
+
+.retr1Body .decoratedTitles::after {
+    right: 13.5%;
+    transform: rotateY(-180deg);
 }
 
 .retr1Body .decoratedTitles h1 {
@@ -156,9 +181,9 @@ body {
 .retr1Body h2 {
     font-family: "Gaddar", sans-serif !important;
     font-size: 24px !important;
-    line-height: 1 !important;
+    line-height: 1.1 !important;
     font-weight: 500 !important;
-    padding: .5rem 0 0 !important;
+    padding: .5rem 0 1rem !important;
     color: #fde926 !important;
     text-align: center !important;
     position: relative;
@@ -166,6 +191,18 @@ body {
     flex-direction: column;
     align-items: center;
     width: fit-content !important;
+}
+
+.retr1Body h2::after {
+    content: "";
+    position: absolute;
+    bottom: .15rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 15px;
+    background: url(../images/decor-line-small.png) no-repeat center center;
+    background-size: contain;
 }
 
 .retr1Body h2 span {
@@ -201,5 +238,181 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: fit-content !important;
+}
+
+/* Retirement Template 2 */
+.retr2Head h1 {
+    font-family: "Bonalu", sans-serif !important;
+    font-size: 42px !important;
+    line-height: 1 !important;
+    font-weight: 500 !important;
+    padding: 1.5rem 0 .25rem !important;
+    letter-spacing: .05rem !important;
+    color: #fff !important;
+    text-align: center !important;
+    position: relative;
+    width: fit-content !important;
+    text-shadow: 0 3px 2px rgba(0, 0, 0, .6);
+}
+
+.retr2Body .framedWeddingPhoto {
+    margin: 0 auto !important;
+    position: relative;
+    width: 100%;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.retr2Body .framedWeddingPhoto::after,
+.retr2Body .framedWeddingPhoto::before {
+    display: none;
+}
+
+.retr2Body .framedWeddingPhoto .imgHolder.backFrame {
+    position: absolute;
+    left: 50%;
+    top: -1rem;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.retr2Body .framedWeddingPhoto .imgHolder.backFrame img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.retr2Body .framedWeddingPhoto .imgHolder.groomPair {
+    height: 220px;
+    width: auto;
+    position: relative;
+    left: inherit;
+    transform: none;
+    z-index: 1;
+    bottom: 0;
+}
+
+.retr2Body h1 {
+    font-family: "Kaloji", sans-serif !important;
+    font-size: 36px !important;
+    line-height: 1 !important;
+    font-weight: 500 !important;
+    padding: 0 !important;
+    margin: -2.65rem auto 0 !important;
+    color: #fde926 !important;
+    text-align: center !important;
+    position: relative;
+    width: fit-content !important;
+    text-shadow: 0 3px 2px rgba(0, 0, 0, .6);
+}
+
+.retr2Body h5 {
+    font-family: "Roboto", sans-serif !important;
+    font-size: 16px !important;
+    line-height: 1 !important;
+    font-weight: 500 !important;
+    padding: .25rem 0 0 !important;
+    color: #fff !important;
+    text-align: center !important;
+    position: relative;
+    width: fit-content !important;
+    text-shadow: 0 3px 2px rgba(0, 0, 0, .6);
+}
+
+.retr2Body h2 {
+    font-family: "Kaloji", sans-serif !important;
+    font-size: 28px !important;
+    line-height: 1 !important;
+    font-weight: 500 !important;
+    padding: .25rem 0 0 !important;
+    color: #fff !important;
+    text-align: center !important;
+    position: relative;
+    width: fit-content !important;
+    text-shadow: 0 3px 2px rgba(0, 0, 0, .6);
+}
+
+.retr2Body h1 span {
+    font-size: 22px;
+}
+
+.retr2Body p {
+    font-family: "Kaloji", sans-serif !important;
+    font-size: 20px !important;
+    line-height: 1 !important;
+    font-weight: 500 !important;
+    padding: .35rem 0 0 !important;
+    color: #fff !important;
+    text-align: center !important;
+    position: relative;
+    width: fit-content !important;
+    text-shadow: 0 3px 2px rgba(0, 0, 0, .6);
+}
+
+.retr2Footer .show-in-row {
+    margin: .2rem auto 0 !important;
+    justify-content: center !important;
+}
+
+.retr2Footer .show-in-row .guestCard {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+    flex-direction: column;
+    gap: .15rem;
+    position: relative;
+    width: calc(1/2 * 100% - (1 - 1/2) * 16px);
+}
+
+.retr2Footer .show-in-row .guestCard .imgHolder {
+    width: auto;
+    height: 150px;
+    border-radius: 0;
+    overflow: hidden;
+}
+
+.retr2Footer .show-in-row .guestCard p {
+    background-color: #921f24;
+    border-radius: 4px;
+    font-family: "Kaloji", sans-serif !important;
+    font-size: 16px !important;
+    line-height: 1 !important;
+    font-weight: 500 !important;
+    padding: .25rem .4rem !important;
+    margin-top: -.85rem !important;
+    color: #fff !important;
+    text-align: center !important;
+    position: relative;
+    width: fit-content !important;
+}
+
+.retr2Footer .show-in-row .guestCard h2 {
+    font-family: "Bhagamati", sans-serif !important;
+    font-size: 28px !important;
+    line-height: 1 !important;
+    font-weight: 500 !important;
+    padding: 0 !important;
+    color: #921f24 !important;
+    text-align: center !important;
+    position: relative;
+    width: fit-content !important;
+}
+
+.retr2Footer p {
+    font-family: "Kaloji", sans-serif !important;
+    font-size: 20px !important;
+    line-height: 16px !important;
+    font-weight: normal !important;
+    padding: .25rem .4rem !important;
+    margin-top: -.25rem !important;
+    color: #333 !important;
+    text-align: center !important;
+    position: relative;
     width: fit-content !important;
 }

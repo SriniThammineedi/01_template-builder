@@ -5,18 +5,29 @@
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <title>Exported Template</title>
+
+                <!-- Google Fonts Declaration -->
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
                 <link
-                    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ramabhadra&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+                    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Doppio+One&family=Birthstone&family=Bowlby+One&display=swap"
                     rel="stylesheet" />
 
                 <!-- Telugu Fonts -->
                 <link
-                    href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Chathura:wght@100;300;400;700;800&family=Dhurjati&family=Gurajada&family=Lakki+Reddy&family=Mallanna&family=Mandali&family=NTR&family=Ramabhadra&family=Tiro+Telugu:ital@0;1&display=swap"
+                    href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Chathura:wght@100;300;400;700;800&family=Dhurjati&family=Gurajada&family=Lakki+Reddy&family=Mallanna&family=Mandali&family=NTR&family=Ramabhadra&family=Tiro+Telugu:ital@0;1&family=Anek+Telugu:wght@100..800&display=swap"
                     rel="stylesheet">
                 <style>
             @import url('../css/birthday-templates.css');
+@import url("../css/obituary-templates.css");
+@import url("../css/admission-templates.css");
+@import url("../css/promotion-templates.css");
+@import url("../css/inauguration-templates.css");
+@import url("../css/greeting-templates.css");
+@import url("../css/political-templates.css");
+@import url("../css/wedding-templates.css");
+@import url("../css/anniversary-templates.css");
+@import url("../css/retirement-templates.css");
 
 :root {
     --text-dark: #202020;
@@ -118,6 +129,70 @@ link:focus-visible {
     font-display: swap;
 }
 
+/* Bonalu Telugu Font Declaration */
+@font-face {
+    font-family: 'Bonalu';
+    src: url('../fonts/Bonalu.otf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Batukamma Telugu Font Declaration */
+@font-face {
+    font-family: 'Batukamma';
+    src: url('../fonts/Batukamma.otf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Bhagamati Telugu Font Declaration */
+@font-face {
+    font-family: 'Bhagamati';
+    src: url('../fonts/Bhagamati.otf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* KumramBheem Telugu Font Declaration */
+@font-face {
+    font-family: 'Kumram Bheem';
+    src: url('../fonts/KumramBheem.otf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Kaloji Telugu Font Declaration */
+@font-face {
+    font-family: 'Kaloji';
+    src: url('../fonts/Kaloji.otf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Gaddar Telugu Font Declaration */
+@font-face {
+    font-family: 'Gaddar';
+    src: url('../fonts/Gaddar.otf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Lashkar Telugu Font Declaration */
+@font-face {
+    font-family: 'Lashkar';
+    src: url('../fonts/Lashkar.otf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 body {
     background-color: transparent;
     border: none;
@@ -215,14 +290,14 @@ button.publishBtn {
     justify-content: center;
     gap: .75rem;
     cursor: pointer;
-    padding: .75rem 1rem;
+    padding: .35rem .6rem;
     font-family: inherit;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.2;
     border: none;
     border-radius: 0.25rem;
-    background-image: linear-gradient(135deg, #0004eb 0%, #a8663f 100%);
+    background-color: #0004eb;
     color: #ebebeb;
     transition: all 0.5s ease;
 }
@@ -251,7 +326,7 @@ ul.dropdown li ul.dropdown-content {
     bottom: auto;
     right: 0;
     background-color: #fff;
-    min-width: 160px;
+    min-width: 180px;
     width: 100%;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -259,13 +334,14 @@ ul.dropdown li ul.dropdown-content {
 
 ul.dropdown li ul.dropdown-content button {
     color: #333;
-    padding: 12px;
+    padding: 8px 12px;
     border: none;
     border-bottom: 1px solid #ddd;
     text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    white-space: nowrap;
     gap: .5rem;
     background-color: #fff;
     width: 100%;
@@ -475,6 +551,10 @@ ul.dropdown li:hover ul.dropdown-content {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     font-size: 15px;
     margin: 0 0 .35rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: .5rem;
     color: #202020;
     width: 100%;
 }
@@ -493,7 +573,7 @@ ul.expandable-menu {
     z-index: 1;
     background-color: #f7f7f7;
     height: 100%;
-    padding-top: 1rem;
+    padding: 0;
 }
 
 ul.expandable-menu li {
@@ -581,16 +661,16 @@ ul.expandable-menu li .accorParentContainer .accordHead h3 {
 
 ul.expandable-menu li .accorParentContainer .accordHead .close-btn {
     position: absolute;
-    top: .25rem;
-    right: .75rem;
-    background-color: #ff7b00;
+    top: 0;
+    right: .5rem;
+    background-color: #d13115;
     color: var(--text-light);
     border: none;
     border-radius: 50%;
     width: 34px;
     height: 34px;
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 600;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -672,8 +752,10 @@ ul.expandable-menu li .accorParentContainer.hide {
     width: 100%;
     align-items: flex-start;
     justify-content: flex-start;
+    position: relative;
     gap: 1rem;
     padding: 0;
+    z-index: 1;
 }
 
 .inner-container.row {
@@ -687,7 +769,10 @@ ul.expandable-menu li .accorParentContainer.hide {
     display: none !important;
 }
 
-.inner-container.show {
+.inner-container.show,
+.show,
+.active,
+.inner-container.active {
     display: flex !important;
 }
 
@@ -739,6 +824,18 @@ ul.expandable-menu li .accorParentContainer.hide {
     width: calc(1/4 * 100% - (1 - 1/4) * 1rem);
 }
 
+.inner-container.row.split-3>div,
+.inner-container.row.split-3 .content>div {
+    width: calc(1/3 * 100% - (1 - 1/3) * 1rem);
+    min-height: 50px;
+}
+
+.inner-container.row.split-4>div,
+.inner-container.row.split-4 .content>div {
+    width: calc(1/2 * 100% - (1 - 1/2) * 1rem);
+    min-height: 50px;
+}
+
 .inner-container.row.split-1-full>div {
     width: 100%;
 }
@@ -776,7 +873,7 @@ ul.expandable-menu li.open .accorParentContainer {
     align-items: center;
     justify-content: center;
     position: relative;
-    width: 100%;
+    width: calc(1/2 * 100% - (1 - 1/2) * .5rem);
 }
 
 .inner-container.row h5 {
@@ -784,6 +881,10 @@ ul.expandable-menu li.open .accorParentContainer {
     width: 100%;
     text-align: left;
     border-bottom: 1px dashed rgba(0, 0, 0, .2);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: .5rem;
 }
 
 .radioSet.bg-light-gray {
@@ -890,6 +991,14 @@ ul.expandable-menu li.open .accorParentContainer {
     overflow: hidden;
 }
 
+.imgHolder {
+    position: relative;
+}
+
+.imgHolder img {
+    max-width: 100%;
+}
+
 .selectable:hover,
 .template-wrapper #temp-header .photo-frame .imgHolder input[type='file']:hover {
     box-shadow: inset 0 0 0 2px #ffb327;
@@ -928,7 +1037,7 @@ ul.expandable-menu li.open .accorParentContainer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: .5rem;
     width: 100%;
 }
@@ -1008,6 +1117,7 @@ ul.expandable-menu li.open .accorParentContainer {
     width: 100%;
     height: 100%;
     position: relative;
+    background-size: cover;
     z-index: 3;
 }
 
@@ -1054,7 +1164,8 @@ ul.expandable-menu li.open .accorParentContainer {
     margin: 0 auto;
 }
 
-.template-wrapper #temp-header .photo-frame .imgHolder input[type='file'] {
+.template-wrapper #temp-header .photo-frame .imgHolder input[type='file'],
+.imgHolder input[type='file'] {
     position: absolute;
     inset: 0;
     opacity: 0;
@@ -1127,6 +1238,10 @@ ul.expandable-menu li.open .accorParentContainer {
     padding: 0 1.5rem;
 }
 
+.template-wrapper #temp-body #temp-title {
+    padding: 0;
+}
+
 .template-wrapper #temp-title h6#caption {
     font-family: "Chathura", sans-serif;
     font-size: 30px;
@@ -1153,28 +1268,6 @@ ul.expandable-menu li.open .accorParentContainer {
 .template-wrapper #temp-title h1#main-title span {
     font-size: 22px;
     color: var(--text-light);
-}
-
-.template-wrapper #temp-title h1::before,
-.template-wrapper #temp-title h1::after {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 20px;
-    background: url(assets/images/decor-line-1-light.png) no-repeat center top;
-    background-size: auto;
-    left: 50%;
-    top: 0;
-    transform: translateX(-50%);
-}
-
-#themeOuter.theme-light .template-wrapper #temp-title h1::before,
-#themeOuter.theme-light .template-wrapper #temp-title h1::after {
-    background: url(assets/images/decor-line-1-dark.png) no-repeat center top;
-}
-
-.template-wrapper #temp-title h1::after {
-    display: none;
 }
 
 .template-wrapper #temp-title h3#wish-type {
@@ -1803,11 +1896,11 @@ img.waterMarkLogo {
 
 .cardStyleFooter .heading {
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.75;
     text-align: center;
     color: #fff;
-    font-family: 'Anek Telugu', sans-serif !important;
+    font-family: 'Mallanna', sans-serif !important;
 }
 
 .cardStyleFooter .cardType {
@@ -1819,13 +1912,13 @@ img.waterMarkLogo {
     border-radius: 16px;
     outline: 1px solid #fff;
     outline-offset: .3rem;
-    gap: .5rem 1rem;
+    gap: 0 .5rem;
     width: 100%;
-    padding: 1rem;
+    padding: .5rem;
 }
 
 .cardStyleFooter .cardType h3 {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
     line-height: 1.5;
     text-align: center;
@@ -1834,7 +1927,7 @@ img.waterMarkLogo {
 }
 
 .cardStyleFooter .cardType h3 span {
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 600;
     text-align: center;
     color: #007c1f;
@@ -1842,9 +1935,9 @@ img.waterMarkLogo {
 }
 
 .cardStyleFooter .cardType h5 {
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 1.5;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.3;
     padding: .25rem .75rem;
     border-radius: 6px;
     text-align: center;
@@ -1854,11 +1947,11 @@ img.waterMarkLogo {
 }
 
 .cardStyleFooter .bgLabel {
-    padding: .25rem 1rem;
+    padding: .25rem .65rem;
     border-radius: 6px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
-    line-height: 1.5;
+    line-height: 1.3;
     text-align: center;
     color: #dd0303;
     background-color: #fff;
@@ -1866,9 +1959,9 @@ img.waterMarkLogo {
 }
 
 .cardStyleFooter h2.conclude {
-    font-size: 18px !important;
-    font-weight: 600;
-    line-height: 1.5;
+    font-size: 16px !important;
+    font-weight: 500;
+    line-height: 1.3;
     text-align: center !important;
     color: #fff !important;
     font-family: 'Mallanna', sans-serif !important;
@@ -1883,6 +1976,698 @@ img.waterMarkLogo {
     display: block;
     clear: both;
 }
+
+ul.expandable-menu li:hover .lordIcon,
+ul.dropdown li ul.dropdown-content button:hover .lordIcon {
+    --lord-icon-primary: #fff;
+    --lord-icon-secondary: #ffef15;
+}
+
+.stroked-light {
+    paint-order: stroke fill;
+    -webkit-text-stroke: 3px #fff;
+}
+
+.stroked-dark {
+    paint-order: stroke fill;
+    -webkit-text-stroke: 3px #000;
+}
+
+.stroked-dark-minimal {
+    paint-order: stroke fill;
+    -webkit-text-stroke: 2px #333;
+}
+
+.mask {
+    -webkit-mask-image: linear-gradient(to top, transparent 10%, #000 20%);
+    mask-image: linear-gradient(to top, transparent 2%, #000 20%);
+}
+
+/* Special Headings with Background */
+.wisher.special {
+    background: url(assets/images/spl-title-middle-2.png) repeat center top;
+    width: fit-content !important;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 .25rem !important;
+    height: 60px;
+}
+
+.wisher.special span {
+    font-size: 16px;
+    padding: 0 5px;
+    color: #fff;
+}
+
+.wisher.special::before {
+    content: '';
+    width: 34px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -33px;
+    background: url(assets/images/spl-title-left-end-2.png) no-repeat left top;
+    background-size: cover;
+    z-index: -1;
+}
+
+.wisher.special::after {
+    content: '';
+    width: 34px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -33px;
+    background: url(assets/images/spl-title-right-end-2.png) no-repeat right top;
+    background-size: cover;
+    z-index: -1;
+}
+
+/* Special-2 */
+.wisher.special-2 {
+    background: url(assets/images/spl-title-middle-2.png) repeat center top;
+    width: fit-content !important;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    flex-wrap: wrap;
+    padding: 0 .25rem !important;
+    font-family: 'Ramabhadra', sans-serif;
+    font-size: 26px;
+    height: 70px;
+}
+
+.wisher.special-2 span {
+    padding-right: 5px;
+}
+
+.wisher.special-2 span:last-child {
+    display: block;
+    clear: both;
+    font-size: 20px;
+    margin-top: -1rem;
+}
+
+.wisher.special-2::before {
+    content: '';
+    width: 35px;
+    height: 70px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -34px;
+    background: url(assets/images/spl-title-left-end-2.png) no-repeat left top;
+    background-size: cover;
+    z-index: -1;
+}
+
+.wisher.special-2::after {
+    content: '';
+    width: 35px;
+    height: 70px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -34px;
+    background: url(assets/images/spl-title-right-end-2.png) no-repeat right top;
+    background-size: cover;
+    z-index: -1;
+}
+
+/* Special-3 */
+.wisher.special-3 {
+    background: url(assets/images/spl-title-middle-3.png) repeat center top;
+    width: fit-content !important;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    flex-wrap: wrap;
+    padding: 0 .25rem !important;
+    font-family: 'Ramabhadra', sans-serif;
+    font-size: 22px;
+    height: 50px;
+}
+
+.wisher.special-3 span {
+    padding-right: 5px;
+}
+
+.wisher.special-3 span:last-child {
+    display: block;
+    clear: both;
+    font-size: 20px;
+    margin-top: -1rem;
+}
+
+.wisher.special-3::before {
+    content: '';
+    width: 35px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -34px;
+    background: url(assets/images/spl-title-left-end-3.png) no-repeat left top;
+    background-size: cover;
+    z-index: -1;
+}
+
+.wisher.special-3::after {
+    content: '';
+    width: 35px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -34px;
+    background: url(assets/images/spl-title-right-end-3.png) no-repeat right top;
+    background-size: cover;
+    z-index: -1;
+}
+
+.wisher.special-3 .leftDecor {
+    position: absolute;
+    left: -4.5rem;
+    top: 40%;
+    transform: translateY(-50%) rotate(-45deg);
+    width: 50px;
+    height: 50px;
+    background: url(assets/images/flower-bokey-yellow.png) no-repeat center center;
+    background-size: 100% auto;
+    z-index: 1;
+}
+
+.wisher.special-3 .rightDecor {
+    position: absolute;
+    right: -4.5rem;
+    top: 57%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background: url(assets/images/flower-bokey-yellow.png) no-repeat center center;
+    background-size: 100% auto;
+    z-index: 1;
+}
+
+h3 {
+    font-family: "Mallanna", sans-serif;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 500;
+    position: relative;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+h3.withBg {
+    font-family: "Mallanna", sans-serif;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 500;
+    position: relative;
+    padding: .25rem .7rem;
+    margin: .5rem auto;
+    color: #fff;
+    text-align: center;
+    background-color: #e61d27;
+    border-radius: 12px;
+}
+
+.mt-0 {
+    margin-top: .5rem;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mt-3 {
+    margin-top: 3rem;
+}
+
+.mt-4 {
+    margin-top: 4rem;
+}
+
+.mt-5 {
+    margin-top: 5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* New Drag and Drop Options */
+.draggable {
+    position: absolute;
+}
+
+#position-controls {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: .5rem .75rem;
+    gap: 1rem;
+    width: 100%;
+}
+
+#position-controls label {
+    background-color: #fff;
+    padding: 1rem .5rem .5rem;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    justify-content: flex-start;
+    flex-direction: column;
+    font-size: 12px;
+    color: #a8663f;
+    width: 100%;
+    cursor: pointer;
+}
+
+#position-controls label span {
+    position: absolute;
+    white-space: nowrap;
+    top: -10px;
+    left: .5rem;
+    background-color: #a8663f;
+    color: #fff;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 3px;
+    line-height: 1;
+    padding: .15rem .35rem;
+}
+
+#position-controls label input {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .1);
+    padding: .5rem;
+    border-radius: 4px;
+}
+
+.lineDecor {
+    padding: .5rem 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lineDecor img {
+    max-width: 100%;
+}
+
+
+
+
+
+/* Interactions Interface */
+.interactions {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 2.5vw;
+    width: fit-content;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    z-index: 10;
+}
+
+.inner-container .interactions {
+    position: relative;
+    transform: none;
+    flex-direction: row;
+    gap: .5rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+    top: auto;
+    right: auto;
+}
+
+.interactions button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: .15rem;
+    border-radius: 4px;
+    background-color: transparent;
+    border: none;
+    position: relative;
+    color: #fff;
+    opacity: 0;
+    top: 0;
+    animation: reveal .5s ease-in-out forwards;
+}
+
+.inner-container .interactions button {
+    color: #333;
+}
+
+.interactions button:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.interactions button:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.interactions button:nth-child(3) {
+    animation-delay: .5s;
+}
+
+.interactions button:nth-child(4) {
+    animation-delay: .7s;
+}
+
+.interactions button:nth-child(5) {
+    animation-delay: .9s;
+}
+
+@keyframes reveal {
+    to {
+        opacity: 1;
+        top: 5px;
+    }
+}
+
+.interactions button i.icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 100% auto;
+}
+
+.interactions button#roses i.icon {
+    border: 1px solid #fff;
+    background-color: #fafafa;
+    overflow: hidden;
+    width: 36px;
+    height: 36px;
+}
+
+.d-flex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    width: 100%;
+}
+
+.d-flex-row {
+    display: flex;
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    justify-content: space-between !important;
+    gap: .5rem !important;
+    width: 100% !important;
+}
+
+
+/* Address and Contact */
+#temp-footer p.address,
+p.address {
+    font-family: "Mallanna", sans-serif !important;
+    font-size: 16px !important;
+    line-height: 1;
+    font-weight: normal !important;
+    position: relative !important;
+    padding: 0 !important;
+    margin: .5rem auto 0;
+    color: #fff !important;
+    width: fit-content !important;
+    white-space: nowrap;
+    text-align: center !important;
+}
+
+#temp-footer p.address::before,
+p.address::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: url(assets/images/location-dark.svg) no-repeat center center;
+    background-size: 100% auto;
+    left: -20px;
+    top: -2px;
+    filter: invert(1);
+}
+
+#temp-footer p.whatsapp,
+p.whatsapp {
+    font-family: "Mallanna", sans-serif !important;
+    font-size: 16px !important;
+    line-height: 1;
+    font-weight: normal !important;
+    position: relative !important;
+    padding: 0 !important;
+    margin: .5rem auto 0;
+    color: #fff !important;
+    width: fit-content !important;
+    white-space: nowrap;
+    text-align: center !important;
+}
+
+#temp-footer p.whatsapp::before,
+p.whatsapp::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: url(assets/images/whatsapp_icon.png) no-repeat center center;
+    background-size: 100% auto;
+    left: -20px;
+    top: -2px;
+}
+
+#temp-footer p.contact,
+p.contact {
+    font-family: "Oswald", sans-serif !important;
+    text-transform: uppercase !important;
+    font-size: 18px !important;
+    line-height: 1;
+    font-weight: bold;
+    position: relative;
+    padding: 0 !important;
+    color: #fff;
+    margin: 0 auto;
+    width: fit-content !important;
+    white-space: nowrap;
+    text-align: center !important;
+}
+
+#temp-footer p.contact::before,
+p.contact::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: url(assets/images/phone-icon.png) no-repeat center center;
+    background-size: 100% auto;
+    filter: invert(1);
+    left: -20px;
+    top: 2px;
+}
+
+/* Special Decorated Text BG */
+#temp-body .splDecorTxt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    background: url(assets/images/title-bg-2.png) no-repeat center top;
+    background-size: contain;
+    padding: 1rem 0;
+}
+
+#temp-body .splDecorTxt h1 {
+    font-family: "Bonalu", sans-serif;
+    font-size: 36px;
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: .07rem;
+    position: relative;
+    padding: .05rem .5rem;
+    width: 100%;
+    text-align: center;
+    color: #fef104;
+    white-space: nowrap;
+    text-shadow: 0 2px 1px #000000;
+}
+
+.row-photo-frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    width: fit-content;
+    position: relative;
+    gap: .75rem;
+}
+
+.row-photo-frame .imgHolder.imgLS,
+.row-photo-frame .imgHolder.imgRS {
+    width: auto;
+    height: 68px;
+    position: relative;
+}
+
+.row-photo-frame .imgHolder.imgRS {
+    transform: rotateY(-180deg);
+}
+
+.row-photo-frame .imgHolder.imgLS img,
+.row-photo-frame .imgHolder.imgRS img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.photoSplitter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+}
+
+.photoSplitter .mainFrame {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 280px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.photoSplitter .imgHolder input,
+.photoSplitter .mainFrame input {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    z-index: 1;
+}
+
+.photoSplitter .imgHolder img,
+.photoSplitter .mainFrame img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.photoSplitter .imgHolder {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    position: absolute;
+    bottom: 2rem;
+}
+
+.photoSplitter .imgHolder.imgLS {
+    left: .75rem;
+}
+
+.photoSplitter .imgHolder.imgRS {
+    right: .75rem;
+}
+
+
+.coupleTitles {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: fit-content;
+    margin: -1rem auto -.35rem;
+    position: relative;
+    z-index: 2;
+}
+
+.coupleTitles h1 {
+    font-family: "Bonalu", sans-serif;
+    color: #eb0862;
+    font-size: 34px !important;
+    font-weight: normal !important;
+    white-space: nowrap;
+    text-align: center;
+    width: 49.5%;
+    padding: 0 .5rem;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 2px #fff;
+    margin: 0;
+}
+
+.coupleTitles h1 span {
+    font-size: 24px;
+}
+
+.imgHolder img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Mobile Responsive Styles */
@@ -1907,7 +2692,7 @@ img.waterMarkLogo {
     .showDesktop,
     .topNav .siteLogo,
     .desktopOnly {
-        display: none;
+        display: none !important;
     }
 
     .topNav {
@@ -1924,11 +2709,15 @@ img.waterMarkLogo {
 
     #main #designerSpace #loadingDiv {
         width: 100vw;
-        height: 83.5vh;
+        height: calc(100vh - 70px);
     }
 
     #main #designerSpace #loadingDiv p {
-        max-width: 90%;
+        width: 94%;
+        font-size: 12px;
+        font-weight: 400;
+        padding: .6rem;
+        text-align: center;
     }
 
     .asideLeft {
@@ -2040,7 +2829,7 @@ img.waterMarkLogo {
         border: none;
         position: absolute;
         right: 0;
-        top: -153px;
+        top: -96px;
         z-index: 4;
     }
 
@@ -2051,7 +2840,7 @@ img.waterMarkLogo {
     ul.expandable-menu li .accorParentContainer .accordHead {
         position: sticky;
         top: 0;
-        z-index: 2;
+        z-index: 5;
         background-color: #fff;
     }
 
@@ -2117,6 +2906,7 @@ img.waterMarkLogo {
         align-items: center;
         justify-content: space-between;
         width: 100%;
+        z-index: 5;
     }
 
     #main #designerSpace {
@@ -2125,7 +2915,7 @@ img.waterMarkLogo {
         justify-content: flex-start;
         order: 1;
         height: 100%;
-        max-height: 85%;
+        max-height: calc(100vh - 70px);
     }
 
     #main #designerSpace.lessHeight {
@@ -2151,12 +2941,34 @@ img.waterMarkLogo {
     ul.expandable-menu li .accorParentContainer.active {
         left: 0;
         width: 100%;
-        height: 44.4vh;
+        height: 36.5vh;
         overflow-y: auto;
         top: auto;
         bottom: 0;
-        padding: .5rem;
-        padding: 0 .5rem;
+        padding: 0 .5rem .5rem;
+    }
+
+    ul.expandable-menu li .accorParentContainer .accordHead .close-btn {
+        top: .4rem;
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .accorParentContainer .catRadios .radioGrp label {
+        line-height: 34px;
+        font-size: 10px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    .accorParentContainer .catRadios {
+        justify-content: flex-start;
+    }
+
+    .accorParentContainer .catRadios .radioGrp {
+        width: calc(1/3 * 100% - (1 - 1/3) * .7rem);
     }
 
     .template-wrapper #temp-title,
@@ -2184,7 +2996,7 @@ img.waterMarkLogo {
     }
 
     #themeOuter {
-        height: 85vh;
+        height: 84vh;
         max-height: fit-content;
         min-height: 100%;
         transform: scale(1);
@@ -2207,6 +3019,69 @@ img.waterMarkLogo {
     .birthday-footer-photo {
         max-height: 155px;
     }
+
+    ul.expandable-menu li .dropdownlink {
+        font-size: 8px;
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+
+    ul.expandable-menu li .dropdownlink lord-icon,
+    ul.expandable-menu li.exportMenu ul.dropdown-content li button lord-icon {
+        width: 26px !important;
+        height: 26px !important;
+    }
+
+    ul.expandable-menu li.exportMenu {
+        position: relative;
+    }
+
+    ul.expandable-menu li.exportMenu ul.dropdown-content {
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 150px;
+        background-color: #000;
+        gap: .15rem;
+        padding: .15rem;
+        bottom: 61px;
+        right: 0;
+    }
+
+    ul.expandable-menu li.exportMenu:hover,
+    ul.expandable-menu li.exportMenu.active {
+        background-color: transparent;
+        color: #000;
+    }
+
+    ul.expandable-menu li.exportMenu:hover .dropdownlink,
+    ul.expandable-menu li.active .dropdownlink {
+        color: #000;
+    }
+
+    ul.expandable-menu li.exportMenu ul.dropdown-content.active {
+        display: flex;
+    }
+
+    ul.expandable-menu li.exportMenu ul.dropdown-content li {
+        padding: 0;
+    }
+
+    ul.expandable-menu li.exportMenu ul.dropdown-content li button {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: .5rem;
+        padding: .25rem .5rem;
+        width: 100%;
+        border: none;
+        background-image: linear-gradient(135deg, #0004eb 0%, #a8663f 100%);
+        color: #ebebeb;
+        white-space: nowrap;
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 375px) {
@@ -2224,78 +3099,96 @@ img.waterMarkLogo {
         </style>
             </head>
             <body>
-                <div id="themeOuter" class="selectable theme-light" data-options="exportOptions">
+                <div id="themeOuter" class="theme-dark selectable" data-options="exportOptions">
 
                     <!-- WebView Animations -->
-                    <div class="animations">
-                        <div class="fire">
+                    <!--<div class="animations">
+                         <div class="fire">
                             <div class="before"></div>
                             <div class="after"></div>
                         </div>
                         <div class="fire">
                             <div class="before"></div>
                             <div class="after"></div>
-                        </div>
-                    </div>
+                        </div> 
+                    </div>-->
 
-                    <img src="/assets/images/way2news-watermark.png" alt="watermark" class="waterMarkLogo">
+                    <img src="./assets/images/way2news-watermark.png" alt="watermark" class="waterMarkLogo">
 
                     <!-- Change Background & Decorations -->
-                    <div id="background-selector">
+                    <div id="background-selector" style="background-image: url(&quot;/assets/images/back-bg-27.jpg&quot;);">
                         <div id="bgr-decorator">
-                            <img id="top-decorator" class="top-center" src="/assets/images/back-decor-0.png" alt="Top Decorative Image">
-                            <img id="bottom-decorator" class="bottom-center" src="/assets/images/back-decor-0.png" alt="Bottom Decorative Image">
+                            <img id="top-decorator" class="top-center" src="./assets/images/back-decor-0.png" alt="Top Decorative Image">
+                            <img id="bottom-decorator" class="bottom-center" src="./assets/images/back-decor-0.png" alt="Bottom Decorative Image">
                         </div>
                     </div>
 
                     <!-- New Template 2 -->
-                    <div class="template-wrapper" id="main-template-1">
-                        <!-- Template Header -->
-                        <div id="temp-header" class="default selectable" data-options="headerOptions">
-                            <div class="clipArt" id="left-object">
-                                <img src="/assets/images/baloons-1.png" alt="">
-                            </div>
-                            <div class="photo-frame" id="head-frame">
-                                <div class="imgHolder">
-                                    <img id="output" src="assets/images/replacable-photo.jpg" alt="">
-                                    <input name="photo" type="file" accept="image/*" onchange="document.getElementById('output').src = window.URL.createObjectURL(this.files[0])">
-                                </div>
-                            </div>
-                            <div class="clipArt" id="right-object">
-                                <img src="/assets/images/baloons-1.png" alt="">
-                            </div>
-                        </div>
+                    <div class="template-wrapper" id="obituary-temp-4" style="background-image: none;">
 
-                        <!-- Template Title Section -->
-                        <div id="temp-title">
-                            <h6 contenteditable="true" id="caption" class="selectable" data-options="editOptions">మా
-                                ఆశా జ్యోతి, మా బంగారు చిట్టి తల్లి</h6>
-                            <h1 contenteditable="true" id="main-title" class="selectable" data-options="editOptions">
-                                జ్ఞాన ప్రియ ప్రసూన <span contenteditable="true" class="selectable" data-options="editOptions">కు</span>
-                            </h1>
-                            <h3 contenteditable="true" id="wish-type" class="selectable" data-options="editOptions">
-                                పుట్టిన రోజు శుభాకాంక్షలు</h3>
-                        </div>
-
-                        <!-- Template Body Section -->
-                        <div id="temp-body">
-                            <p contenteditable="true" id="wish-body-content" class="selectable" data-options="editOptions">
-                                కోటి
-                                కాంతుల
-                                చరునవ్వులతో భగవంతుడు నీకు నిండు నూరేళ్ళు ఇవ్వాలని మనస్పూర్తిగా కోరుకుంటూ</p>
-                        </div>
-
-                        <!-- Template Footer Section -->
-                        <div id="temp-footer">
-                            <h2 contenteditable="true" id="from-wish" class="selectable" data-options="editOptions">
-                                ఇట్లు
-                                ప్రేమతో:
-                            </h2>
-                            <p contenteditable="true" id="who-wished" class="selectable" data-options="editOptions">
-                                అమ్మా,
-                                నాన్న, అమ్మమ్మలు, తాతయ్యలు, బాబాయి, మామయ్యా, పిన్ని ఇంకా ప్రియ సహచర బంధుగణం.!</p>
+                <!-- Template Header -->
+                <div id="temp-header">
+                    <div class="obt4Head">
+                        <div class="diyaTitle">
+                            <h1 contenteditable="true" class="selectable" data-options="editOptions">
+                                ఆదర్శమూర్తికి అశ్రునివాళి</h1>
                         </div>
                     </div>
+                </div>
+
+                <!-- Template Body Section -->
+                <div id="temp-body">
+                    <div class="obt4Body">
+                        <div class="obitPhotoSplitter">
+                            <div class="imgHolder selectable imgLS">
+                                <img src="/assets/images/diya-1.png" id="diya1" alt="">
+                                <input name="diya1" type="file" accept="image/*" onchange="document.getElementById('diya1').src = window.URL.createObjectURL(this.files[0])">
+                            </div>
+                            <div class="floweredFrame selectable mask">
+                                <img src="/assets/images/old-man2.png" id="obit-photo" alt="">
+                                <input name="photo" type="file" accept="image/*" onchange="document.getElementById('obit-photo').src = window.URL.createObjectURL(this.files[0])">
+                            </div>
+                            <div class="imgHolder selectable imgRS">
+                                <img src="/assets/images/diya-1.png" id="diya2" alt="">
+                                <input name="diya2" type="file" accept="image/*" onchange="document.getElementById('diya2').src = window.URL.createObjectURL(this.files[0])">
+                            </div>
+                        </div>
+                        <p class="selectable mt-1" contenteditable="true" data-options="editOptions">
+                            మాకు అత్యంత ఆత్మీయులు, సహృదయులు కేంద్ర సహాయ మంత్రి వర్యులు శ్రీ <span class="paraHeadGreen selectable" contenteditable="true" data-options="editOptions">భూపతిరాజు శ్రీనివాస వర్మ</span>
+                            గారి తండ్రి గారైన
+                        </p>
+                        <p class="selectable" contenteditable="true" data-options="editOptions">శ్రీ <span class="paraHeadRed selectable" contenteditable="true" data-options="editOptions">భూపతిరాజు
+                                సూర్యనారాయణ రాజు</span> గారి మృతికి చింతిస్తూ వారి పవిత్ర ఆత్మకు శాంతి చేకూరాలని
+                            భగవంతుడిని
+                            ప్రార్థిస్తున్నాము.</p>
+                    </div>
+                </div>
+
+                <!-- Template Footer Section -->
+                <div id="temp-footer">
+                    <div class="obt4Footer">
+                        <h1 contenteditable="true" class="selectable" data-options="editOptions">
+                            పి.వి. సూర్యనారాయణరాజు (DTDC బాబు)
+                        </h1>
+                        <h5 contenteditable="true" class="selectable" data-options="editOptions">మాజీ Amc వైస్ చైర్మన్,
+                            పాలకొల్లు
+                        </h5>
+                        <h3 contenteditable="true" class="selectable" data-options="editOptions">Managing Director</h3>
+                        <p contenteditable="true" class="selectable" data-options="editOptions">
+                            SRI SUBHA E COMMERCE LOGISTICS PVT LTD<br>Pragathi Towers, Nr. Vijayalakshmi theatere,
+                            Bhimavaram</p>
+                        <div class="branches">
+                            <h5 contenteditable="true" class="selectable" data-options="editOptions">Branches:</h5>
+                            <h3 contenteditable="true" class="selectable" data-options="editOptions">Palakol,
+                                Bhimavaram, Narasapuram, Kakinada,<br> Rajahumundry, Vijayawada, Hyderabad</h3>
+                            <p contenteditable="true" class="selectable" data-options="editOptions">National Franchise
+                                Advisory Board Member:</p>
+                            <h2 contenteditable="true" class="selectable" data-options="editOptions">DTDC Express
+                                Limited <img src="/assets/images/dtdc-logo.jpg" alt=""></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
                 </div>
                 <div class="overlay"></div>
             </body>
