@@ -13,7 +13,13 @@ body {
 .retr1Body,
 .retr2Head,
 .retr2Body,
-.retr2Footer {
+.retr2Footer,
+.retr3Head,
+.retr3Body,
+.retr3Footer,
+.retr4Head,
+.retr4Body,
+.retr4Footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -415,4 +421,445 @@ body {
     text-align: center !important;
     position: relative;
     width: fit-content !important;
+}
+
+/* Retirement Template 3 */
+.retr3Head .imgHolder {
+    width: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -1rem auto -.5rem;
+}
+
+.retr3Head h1 {
+    font-family: "Oswald", sans-serif !important;
+    font-size: 32px !important;
+    line-height: 1 !important;
+    font-weight: 600 !important;
+    padding: .5rem 0 .25rem !important;
+    color: #fff !important;
+    font-style: italic !important;
+    text-align: center !important;
+    position: relative;
+    width: fit-content !important;
+}
+
+.retr3Body .imgHolder {
+    width: auto;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(255, 255, 255, .75);
+    border-radius: 6px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.retr3Body h1 {
+    font-family: "Doppio One", sans-serif !important;
+    background-color: #fff;
+    border-radius: 4px;
+    margin: .25rem auto 0 !important;
+    font-size: 20px !important;
+    line-height: 1.2 !important;
+    font-weight: 600 !important;
+    padding: .35rem .5rem !important;
+    color: #b71218 !important;
+    text-align: center !important;
+    position: relative;
+    width: fit-content !important;
+}
+
+.retr3Body h1::before,
+.retr3Body h1::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    transform: rotate(45deg) translateY(-50%);
+}
+
+.retr3Body h1::before {
+    left: -1.2rem;
+}
+
+.retr3Body h1::after {
+    right: -1rem;
+}
+
+.retr3Body h5 {
+    font-family: "Oswald", sans-serif !important;
+    margin: .25rem auto .35rem !important;
+    font-size: 15px !important;
+    line-height: 1.2 !important;
+    font-weight: normal !important;
+    padding: 0 !important;
+    color: #fff !important;
+    text-align: center !important;
+    position: relative;
+    width: fit-content !important;
+}
+
+.retr3Body .boxedContent {
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
+    padding: .5rem 1.2rem .75rem;
+    background-color: #fff;
+    gap: .35rem;
+    border-radius: 24px 0 24px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.retr3Body .boxedContent::before,
+.retr3Body .boxedContent::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: url(../images/decorative-corner-flowers.png) no-repeat center center;
+    background-size: contain;
+    transform: rotate(90deg);
+}
+
+.retr3Body .boxedContent::before {
+    top: -.5rem;
+    left: 0;
+}
+
+.retr3Body .boxedContent::after {
+    bottom: -.5rem;
+    right: 0;
+    transform: rotate(-90deg);
+}
+
+.retr3Body .boxedContent p {
+    font-family: "Roboto", sans-serif !important;
+    font-size: 11px !important;
+    line-height: 1.2 !important;
+    font-weight: 500 !important;
+    padding: 0 !important;
+    color: #333;
+    text-align: center !important;
+    position: relative;
+    width: fit-content !important;
+}
+
+.retr3Body .boxedContent p.colorBlue {
+    color: #0f3c66 !important;
+}
+
+.retr3Body .boxedContent p.colorGreen {
+    color: #406635 !important;
+}
+
+.retr3Body .boxedContent p.colorPink {
+    color: #a42074 !important;
+}
+
+.retr3Footer .side-by-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: .35rem 1rem;
+    margin: .35rem auto;
+    width: fit-content;
+    position: relative;
+}
+
+.retr3Footer .side-by-side:first-child {
+    margin: 1rem auto .35rem !important;
+}
+
+.retr3Footer .side-by-side h2 {
+    font-family: "Times New Roman", sans-serif !important;
+    font-size: 20px !important;
+    line-height: 1.1 !important;
+    font-weight: 600 !important;
+    padding: 0 !important;
+    color: #a42074 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center !important;
+    position: relative;
+    border: none !important;
+    width: calc(1/2 * 100% - (1 - 1/2) * 16px) !important;
+}
+
+.retr3Footer .side-by-side h2 span {
+    font-size: 14px !important;
+    color: #034673 !important;
+}
+
+.retr3Footer .side-by-side h2 em {
+    font-style: normal !important;
+    color: #333 !important;
+    font-size: 10px !important;
+    white-space: nowrap;
+}
+
+.retr3Footer h3 {
+    font-family: "Oswald", sans-serif !important;
+    font-size: 14px !important;
+    line-height: 1.2 !important;
+    font-weight: 500 !important;
+    padding: .25rem 1rem 0 !important;
+    color: #034673 !important;
+    text-align: center !important;
+    position: relative;
+    width: fit-content !important;
+}
+
+.retr3Footer h3::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 12px;
+    background: url(../images/title-decor-bottom.png) no-repeat center center;
+    background-size: contain;
+    filter: invert(1);
+}
+
+.retr3Footer p {
+    font-family: "Oswald", sans-serif !important;
+    font-size: 24px !important;
+    line-height: 1.1 !important;
+    font-weight: 600 !important;
+    padding: 1rem 0 0 !important;
+    color: #fdfac3 !important;
+    text-align: center !important;
+    position: relative;
+}
+
+/* Retirement Template 4 */
+.retr4Head h1 {
+    font-family: "Kaloji", sans-serif !important;
+    font-size: 42px !important;
+    line-height: 30px !important;
+    font-weight: 500 !important;
+    padding: 0 !important;
+    margin: -.5rem auto 0 !important;
+    color: #fec40b !important;
+    text-align: center !important;
+    position: relative;
+    width: fit-content !important;
+    text-shadow: 0 3px 2px rgba(0, 0, 0, .6);
+}
+
+.retr4Head h1 span {
+    display: table;
+    clear: both;
+    margin: 0 auto;
+    padding: 0 1.6rem !important;
+    font-size: 34px !important;
+    position: relative;
+    color: #ebf200 !important;
+}
+
+.retr4Head h1 span::before,
+.retr4Head h1 span::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 16px;
+    background: url(../images/arrow-angle-right.svg) no-repeat center center;
+    background-size: contain;
+    filter: brightness(5);
+}
+
+.retr4Head h1 span::before {
+    left: 0;
+    transform: translateY(-50%) rotateY(-180deg);
+}
+
+.retr4Head h1 span::after {
+    right: 0;
+}
+
+.retr4Body .imgHolder {
+    width: auto;
+    height: 185px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(255, 255, 255, .75);
+    border-radius: 6px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#temp-body .retr4Body .splDecorTxt {
+    padding: 1.3rem 0 !important;
+    margin-top: -.5rem !important;
+}
+
+.retr4Body h1 {
+    font-family: "Oswald", sans-serif !important;
+    margin: -.5rem auto 0 !important;
+    font-size: 22px !important;
+    line-height: 1.2 !important;
+    letter-spacing: -.035rem !important;
+    font-weight: 600 !important;
+    padding: 0 1rem !important;
+    color: #fff !important;
+    text-align: center !important;
+    position: relative;
+    width: fit-content !important;
+    text-shadow: none !important;
+}
+
+.retr4Body h1 span {
+    font-size: 14px !important;
+}
+
+.retr4Body h6 {
+    font-family: "Oswald", sans-serif !important;
+    font-size: 11px !important;
+    line-height: 1.1 !important;
+    font-weight: normal !important;
+    padding: 0 !important;
+    color: #fff !important;
+    text-align: center !important;
+    position: relative;
+    width: fit-content !important;
+}
+
+.retr4Body p {
+    font-family: "Bhagamati", sans-serif !important;
+    font-size: 15px !important;
+    line-height: 1.2 !important;
+    font-weight: normal !important;
+    padding: .25rem 0 0 !important;
+    color: #fff !important;
+    text-align: center !important;
+    position: relative;
+    width: 85% !important;
+}
+
+.retr4Body h5 {
+    font-family: "Kaloji", sans-serif !important;
+    font-size: 20px !important;
+    line-height: 1 !important;
+    font-weight: 500 !important;
+    padding: 0 !important;
+    color: #ffea08 !important;
+    text-align: center !important;
+    position: relative;
+    width: fit-content !important;
+}
+
+.retr4Body h4 {
+    font-family: "Kaloji", sans-serif !important;
+    font-size: 26px !important;
+    line-height: 1.1 !important;
+    font-weight: 500 !important;
+    padding: 0 !important;
+    color: #ffea08 !important;
+    text-align: center !important;
+    position: relative;
+    width: fit-content !important;
+}
+
+.retr4Footer .side-by-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: .35rem 1rem;
+    margin: .35rem auto;
+    width: fit-content;
+    position: relative;
+}
+
+.retr4Footer .side-by-side .clearBoth {
+    flex: 1 1 100%;
+    height: 1px;
+}
+
+.retr4Footer .side-by-side:first-child {
+    margin: 0 auto .35rem !important;
+}
+
+.retr4Footer .side-by-side h2 {
+    font-family: "Kaloji", sans-serif !important;
+    font-size: 28px !important;
+    line-height: 20px !important;
+    font-weight: 500 !important;
+    padding: 0 !important;
+    color: #a42074 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center !important;
+    position: relative;
+    border: none !important;
+    width: fit-content !important;
+}
+
+.retr4Footer .side-by-side h2 span {
+    font-size: 20px !important;
+    color: #034673 !important;
+}
+
+.retr4Footer .side-by-side h2 em {
+    font-style: normal !important;
+    color: #333 !important;
+    font-size: 18px !important;
+    white-space: nowrap;
+}
+
+.retr4Footer .singleRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    gap: 1rem;
+    margin: 1.5rem auto 0;
+}
+
+.retr4Footer .singleRow h2 {
+    font-family: "Kaloji", sans-serif !important;
+    font-size: 26px !important;
+    line-height: 24px !important;
+    font-weight: 500 !important;
+    padding: 0 !important;
+    color: #fceb00 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center !important;
+    position: relative;
+    border: none !important;
+    width: fit-content !important;
+}
+
+.retr4Footer .singleRow h2 span {
+    font-size: 18px !important;
+    color: #fff !important;
+}
+
+.retr4Footer .singleRow h2 em {
+    font-style: normal !important;
+    color: #fff !important;
+    font-size: 14px !important;
+    word-wrap: break-word;
+    line-height: 12px !important;
 }
