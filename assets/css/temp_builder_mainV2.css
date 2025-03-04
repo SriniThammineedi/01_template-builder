@@ -2626,6 +2626,15 @@ p.contact::before {
     object-fit: contain;
 }
 
+.side-by-side {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: fit-content;
+    position: relative;
+    margin: 0 auto;
+    gap: 2rem;
+}
 
 
 

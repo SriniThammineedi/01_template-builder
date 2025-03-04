@@ -330,3 +330,641 @@ body {
     width: 30px;
     height: 30px;
 }
+
+
+/* Promotions Template-2 */
+.template-wrapper.noPadding,
+.template-wrapper.noPadding #temp-header,
+.template-wrapper.noPadding #temp-body,
+.template-wrapper.noPadding #temp-footer {
+    padding: 0 !important;
+}
+
+#temp-header .promo2Head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #ffc501;
+    padding: 2rem 1.5rem 0;
+}
+
+.promo2Head .combinedOffer {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 62.5%;
+}
+
+.promo2Head .combinedOffer .imgHolder {
+    margin-top: -.45rem;
+    width: auto;
+    height: 232px;
+}
+
+.promo2Head .combinedOffer h6 {
+    position: relative;
+    position: absolute;
+    font-family: 'Ramabhadra', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #00458d;
+    line-height: 1;
+    top: -.6rem;
+    text-align: center;
+    right: -1rem;
+}
+
+.promo2Head .combinedOffer h6 img {
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+
+.promo2Head h1 {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 52px;
+    font-weight: 600 !important;
+    line-height: 1;
+    font-family: 'Anek Telugu', sans-serif;
+    color: #00458d;
+    text-shadow: 2px 4px 2px rgba(0, 0, 0, .25);
+    transform: rotate(-5deg);
+}
+
+.promo2Head h1 span {
+    font-size: 26px;
+}
+
+.promo2Head h1 em {
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif !important;
+    text-transform: uppercase;
+    transform: rotate(-5deg);
+    margin-top: -.5rem;
+    text-shadow: none;
+}
+
+.promo2Body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.promo2Body .offersList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 94%;
+    margin: 0 auto .6rem;
+    gap: 0;
+    padding: 0;
+}
+
+.promo2Body .offersList .sareeMela,
+.promo2Body .offersList .handloomUtsav,
+.promo2Body .offersList .cottonSarees,
+.promo2Body .offersList .comboOffers,
+.promo2Body .offersList .kgSale {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid rgba(0, 0, 0, .25);
+    padding: 0 .6rem;
+}
+
+.promo2Body .offersList .kgSale {
+    border: none;
+}
+
+.promo2Body .offersList .sareeMela h4 {
+    font-size: 12px !important;
+    font-family: 'NTR', sans-serif !important;
+    font-weight: 600 !important;
+    line-height: 1.2 !important;
+    color: #00458d !important;
+    text-align: center !important;
+    padding: 0 !important;
+}
+
+.promo2Body .offersList .handloomUtsav h4 {
+    font-size: 14px !important;
+    font-family: 'Lashkar', sans-serif !important;
+    font-weight: 600 !important;
+    line-height: 1 !important;
+    color: #68192f !important;
+    text-align: center !important;
+    padding: 0 !important;
+}
+
+.promo2Body .offersList .cottonSarees h4 {
+    font-size: 11px !important;
+    font-family: 'Ramabhadra', sans-serif !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    color: #d83b58 !important;
+    text-align: center !important;
+    padding: 0 !important;
+}
+
+.promo2Body .offersList .comboOffers h4 {
+    font-size: 11px !important;
+    font-family: 'Oswald', sans-serif !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    color: #333 !important;
+    text-align: center !important;
+    padding: 0 !important;
+}
+
+.promo2Body .offersList .kgSale {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: .2rem;
+}
+
+.promo2Body .offersList .kgSale img {
+    max-width: 20px;
+}
+
+.promo2Body .offersList .kgSale h4 {
+    font-size: 11px !important;
+    font-family: 'Gaddar', sans-serif !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    color: #333 !important;
+    text-align: left !important;
+    padding: 0 !important;
+}
+
+.promo2Body .cardOffers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.promo2Body .cardOffers .card {
+    width: calc(1/2 * 100% - (1 - 1/2) * 0px);
+    padding: .75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-self: stretch;
+    background-color: #f57b3a;
+    position: relative;
+}
+
+.promo2Body .cardOffers .card:nth-child(2),
+.promo2Body .cardOffers .card:nth-child(3) {
+    background-color: #d53d78;
+}
+
+.promo2Body .cardOffers .card img {
+    max-width: 100%;
+}
+
+.promo2Body .cardOffers .card p {
+    font-size: 14px !important;
+    font-family: 'Mandali', sans-serif !important;
+    font-weight: 500 !important;
+    line-height: 1.2 !important;
+    color: #fff !important;
+    text-align: center !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.promo2Body .cardOffers .card h6 {
+    font-size: 12px !important;
+    font-family: 'Mandali', sans-serif !important;
+    font-weight: 500 !important;
+    line-height: 1.2 !important;
+    color: #000 !important;
+    text-align: center !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.promo2Body .cardOffers .card.card50Percent h1,
+.promo2Body .cardOffers .card.card20Percent h1 {
+    font-size: 68px !important;
+    font-family: 'Bowlby One', sans-serif !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    color: #fae800 !important;
+    text-align: center !important;
+    position: relative !important;
+    padding: 0 !important;
+    margin: .35rem auto 0 !important;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 4px rgba(0, 0, 0, .8);
+    text-shadow: 0 -2px 1px rgba(255, 255, 255, .5);
+    z-index: 1 !important;
+}
+
+.promo2Body .cardOffers .card.card50Percent h1 span,
+.promo2Body .cardOffers .card.card20Percent h1 span {
+    font-size: 36px !important;
+    position: absolute;
+    right: -1.65rem;
+}
+
+.promo2Body .cardOffers .card.card50Percent h1 em,
+.promo2Body .cardOffers .card.card20Percent h1 em {
+    font-style: normal !important;
+    font-size: 22px !important;
+    position: absolute;
+    bottom: .25rem;
+    right: -1rem;
+}
+
+.promo2Body .cardOffers .card.card50Percent h5,
+.promo2Body .cardOffers .card.card20Percent h5 {
+    font-size: 12px !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 900 !important;
+    line-height: 1.2 !important;
+    color: #000 !important;
+    position: absolute !important;
+    text-align: center !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    left: 34% !important;
+    top: 30% !important;
+    z-index: 2 !important;
+}
+
+.promo2Body .cardOffers .card.card33Percent h1 {
+    font-size: 58px !important;
+    font-family: 'Bowlby One', sans-serif !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    color: #fbee52 !important;
+    text-align: center !important;
+    position: relative !important;
+    padding: 0 !important;
+    margin: .35rem auto 0 !important;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 4px rgba(0, 0, 0, .8);
+    text-shadow: 0 5px 1px #0e3674;
+    z-index: 1 !important;
+}
+
+.promo2Body .cardOffers .card.card33Percent h1 span {
+    font-size: 30px !important;
+    position: absolute;
+}
+
+.promo2Body .cardOffers .card.card33Percent h1 em {
+    font-style: normal !important;
+    font-size: 18px !important;
+    position: absolute;
+    bottom: .25rem;
+}
+
+.promo2Body .cardOffers .card.card33Percent h5 {
+    font-size: 11px !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 900 !important;
+    line-height: 1.2 !important;
+    color: #000 !important;
+    position: absolute !important;
+    text-align: center !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    left: 35% !important;
+    top: 41% !important;
+    z-index: 2 !important;
+}
+
+.promo2Body .cardOffers .card.card33Percent p {
+    font-size: 20px !important;
+}
+
+.promo2Body .cardOffers .card.card20Percent {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.promo2Body .cardOffers .card.card20Percent .alignLeft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+}
+
+.promo2Body .cardOffers .card.card20Percent .alignRight {
+    width: 30%;
+}
+
+.promo2Body .cardOffers .card.card20Percent .alignRight .imgHolder {
+    height: 85px;
+    width: auto;
+}
+
+.promo2Body .cardOffers .card.card20Percent h5 {
+    left: 20% !important;
+    top: 64% !important;
+}
+
+.promo2Body .cardOffers .card.cardMixed h1 {
+    font-size: 22px !important;
+    white-space: nowrap !important;
+    font-family: 'Bowlby One', sans-serif !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    color: #fbee52 !important;
+    text-align: center !important;
+    position: relative !important;
+    padding: 0 !important;
+    margin: .35rem auto 0 !important;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 3px rgba(0, 0, 0, .8);
+    text-shadow: 0 3px 1px #3c1c21;
+    z-index: 1 !important;
+    display: flex;
+    align-items: flex-start;
+    gap: .25rem;
+    justify-content: center;
+}
+
+.promo2Body .cardOffers .card.cardMixed h1 span {
+    font-family: 'Mandali', sans-serif !important;
+    font-size: 17px !important;
+    color: #fff !important;
+    paint-order: 0;
+    -webkit-text-stroke: 0;
+    text-shadow: none;
+}
+
+.promo2Body .cardOffers .card.cardMixed h2 {
+    font-size: 20px !important;
+    white-space: nowrap !important;
+    font-family: 'Bowlby One', sans-serif !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    color: #fbee52 !important;
+    text-align: center !important;
+    position: relative !important;
+    padding: 0 !important;
+    margin: .25rem auto 0 !important;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 4px rgba(0, 0, 0, .8);
+    text-shadow: 0 4px 1px #3c1c21;
+    z-index: 1 !important;
+    display: flex;
+    align-items: flex-start;
+    gap: .25rem;
+    justify-content: center;
+}
+
+#temp-footer .promo2Footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+#temp-footer .promo2Footer .imgHolder {
+    width: auto;
+    height: 92px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#temp-footer .promo2Footer p.address {
+    font-size: 14px !important;
+    font-family: 'Mandali', sans-serif !important;
+    font-weight: 500 !important;
+    line-height: 1.2 !important;
+    color: #000 !important;
+    position: relative !important;
+    text-align: center !important;
+    padding: .25rem 0 0 !important;
+    border-top: 1px solid rgba(0, 0, 0, .5);
+    margin: .25rem auto 0 !important;
+}
+
+#temp-footer .promo2Footer p.address span {
+    font-weight: 600 !important;
+    font-size: 16px !important;
+}
+
+/* Promotion Template 3 */
+
+.promo3Head,
+.promo3Body,
+.promo3Footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto !important;
+    position: relative;
+    width: fit-content;
+}
+
+.promo3Head p {
+    font-size: 17px !important;
+    font-family: 'Ramabhadra', sans-serif !important;
+    font-weight: 500 !important;
+    line-height: 1.2 !important;
+    color: #fff !important;
+    position: relative !important;
+    text-align: center !important;
+    padding: 0 !important;
+}
+
+.promo3Head .side-by-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: .35rem auto;
+    width: fit-content !important;
+}
+
+.promo3Head .side-by-side h4 {
+    font-size: 30px !important;
+    font-family: 'Ramabhadra', sans-serif !important;
+    font-weight: 500 !important;
+    line-height: 1.2 !important;
+    color: #fff !important;
+    position: relative !important;
+    text-align: center !important;
+    padding: 0 !important;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, .5);
+}
+
+.promo3Head .side-by-side h1 {
+    font-size: 68px !important;
+    font-family: 'Lashkar', sans-serif !important;
+    font-weight: normal !important;
+    line-height: 1 !important;
+    color: #fff805 !important;
+    text-align: center !important;
+    position: relative !important;
+    padding: 0 !important;
+    margin: .35rem auto 0 !important;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 4px #041b83;
+    text-shadow: -2px 4px 1px #04135a;
+}
+
+.promo3Head .side-by-side h1 span {
+    font-family: 'Ramabhadra', sans-serif !important;
+    position: absolute;
+    bottom: -.5rem;
+    right: 0;
+    font-size: 20px !important;
+    color: #fff !important;
+    paint-order: 0;
+    -webkit-text-stroke: 0;
+    text-shadow: none;
+}
+
+.promo3Body .side-by-side::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 55%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: #ffe404;
+}
+
+.promo3Body .side-by-side .left-side,
+.promo3Body .side-by-side .right-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    padding: 0 .5rem;
+    width: fit-content;
+}
+
+.promo3Body .side-by-side .left-side p,
+.promo3Body .side-by-side .right-side p {
+    font-size: 16px !important;
+    font-family: 'Ramabhadra', sans-serif !important;
+    font-weight: 500 !important;
+    line-height: 1.2 !important;
+    color: #fff !important;
+    position: relative !important;
+    text-align: center !important;
+    padding: 0 !important;
+    margin: 0 auto !important;
+}
+
+.promo3Body .side-by-side .left-side h1,
+.promo3Body .side-by-side .right-side h1 {
+    font-size: 68px !important;
+    font-family: 'Bowlby One', sans-serif !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    color: #fae800 !important;
+    text-align: center !important;
+    position: relative !important;
+    padding: 0 !important;
+    margin: .5rem auto 0 !important;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 5px #1725a2;
+    text-shadow: -3px 3px 0 #050d50;
+    z-index: 1 !important;
+}
+
+.promo3Body .side-by-side .left-side h1 span,
+.promo3Body .side-by-side .right-side h1 span {
+    font-size: 32px !important;
+    position: absolute;
+    right: -1.75rem;
+}
+
+.promo3Body .side-by-side .left-side h1 em,
+.promo3Body .side-by-side .right-side h1 em {
+    font-style: normal !important;
+    font-size: 20px !important;
+    position: absolute;
+    bottom: .25rem;
+    right: -1.5rem;
+}
+
+.promo3Body .side-by-side .left-side h5 {
+    font-size: 12px !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 900 !important;
+    line-height: 1.2 !important;
+    color: #000 !important;
+    position: absolute !important;
+    text-align: center !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    left: 30% !important;
+    top: 22% !important;
+    z-index: 2 !important;
+}
+
+.promo3Body .side-by-side .left-side h4 {
+    font-size: 18px !important;
+    font-family: 'Ramabhadra', sans-serif !important;
+    font-weight: 500 !important;
+    line-height: 1.2 !important;
+    color: #fff !important;
+    text-align: center !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.promo3Body .side-by-side .left-side h4 span {
+    display: block;
+    clear: both;
+}
+
+.promo3Body .side-by-side .right-side h5 {
+    font-size: 12px !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 900 !important;
+    line-height: 1.2 !important;
+    color: #000 !important;
+    position: absolute !important;
+    text-align: center !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    left: 26% !important;
+    top: 32% !important;
+    z-index: 2 !important;
+}
+
+.promo3Body h3 {
+    font-size: 18px !important;
+    font-family: 'Ramabhadra', sans-serif !important;
+    font-weight: 500 !important;
+    line-height: 1.2 !important;
+    color: #fff !important;
+    text-align: center !important;
+    padding: .75rem 0 !important;
+    margin: 0 !important;
+}
