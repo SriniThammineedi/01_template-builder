@@ -891,8 +891,8 @@ body {
     padding: 0 !important;
     margin: .5rem auto 0 !important;
     paint-order: stroke fill;
-    -webkit-text-stroke: 5px #1725a2;
-    text-shadow: -3px 3px 0 #050d50;
+    -webkit-text-stroke: 8px #1725a2;
+    text-shadow: -4px 5px 2px #050d50;
     z-index: 1 !important;
 }
 
@@ -967,4 +967,271 @@ body {
     text-align: center !important;
     padding: .75rem 0 !important;
     margin: 0 !important;
+}
+
+#temp-footer .promo3Footer {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+    padding: .5rem 0 0;
+}
+
+#temp-footer .promo3Footer .imgHolder {
+    width: auto;
+    height: 50px;
+}
+
+#temp-footer .promo3Footer p {
+    font-size: 12px !important;
+    font-family: 'Ramabhadra', sans-serif !important;
+    font-weight: 500 !important;
+    line-height: 1.1 !important;
+    color: #000 !important;
+    position: relative !important;
+    width: fit-content !important;
+    text-align: left !important;
+    border-left: 1px solid rgba(0, 0, 0, .35);
+    padding: 0 0 0 .65rem !important;
+    margin: 0 !important;
+}
+
+p span {
+    color: #e01358 !important;
+    display: block;
+    clear: both;
+}
+
+/* Promotion Template 4 */
+.promo4Head,
+.promo4Body,
+.promo4Footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.promo4Head .bgText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    position: relative;
+    margin: 3rem auto 0;
+}
+
+.promo4Head .bgText::before {
+    content: "";
+    position: absolute;
+    top: -1.75rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    background: url(../images/kalasham.png) no-repeat center center;
+    background-size: contain;
+    z-index: -1;
+}
+
+.promo4Head .bgText p {
+    font-size: 18px !important;
+    font-family: 'Anek Telugu', sans-serif !important;
+    font-weight: 600 !important;
+    line-height: 1.2 !important;
+    color: #fff !important;
+    position: relative !important;
+    text-align: center !important;
+    padding: .5rem !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+    background-color: #04135a;
+}
+
+.promo4Head .bgText p span {
+    display: block;
+    clear: both;
+    font-weight: normal !important;
+    font-size: 15px !important;
+    color: #fff !important;
+}
+
+.promo4Head .bgText h3 {
+    font-size: 24px !important;
+    font-family: 'Anek Telugu', sans-serif !important;
+    font-weight: 600 !important;
+    line-height: 1 !important;
+    color: #fff !important;
+    position: relative !important;
+    text-align: center !important;
+    padding: .5rem !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+    background-color: #ee1d23;
+}
+
+.promo4Body p {
+    font-size: 17px !important;
+    font-family: 'Anek Telugu', sans-serif !important;
+    font-weight: 500 !important;
+    line-height: 1.4 !important;
+    color: #fff !important;
+    position: relative !important;
+    text-align: left !important;
+    padding: .75rem 0 !important;
+    margin: 0 auto !important;
+    width: fit-content !important;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .5);
+}
+
+.promo4Body p span {
+    display: inline-block;
+    clear: none;
+    font-weight: 600 !important;
+    color: #1c4178 !important;
+    font-size: 20px;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 3px #fff;
+}
+
+.promo4Body p b {
+    display: inline-block;
+    clear: none;
+    font-weight: 600 !important;
+    font-size: 20px;
+}
+
+.promo4Body .imgHolder {
+    width: auto;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.promo4Body p.darkColored {
+    font-size: 10px !important;
+    font-family: 'Anek Telugu', sans-serif !important;
+    font-weight: 500 !important;
+    line-height: 1.4 !important;
+    color: #09090b !important;
+    position: relative !important;
+    text-align: center !important;
+    padding: .75rem 0 !important;
+    margin: 0 auto !important;
+    width: fit-content !important;
+    text-shadow: none !important;
+}
+
+.promo4Body p.darkColored b {
+    font-size: 13px !important;
+}
+
+#temp-footer .promo4Footer {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.promo4Footer .standHolder {
+    width: 100%;
+    display: flex;
+    height: 230px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: relative;
+    bottom: -4.5rem;
+    margin: 0 auto;
+}
+
+.promo4Footer .standHolder .mainStand {
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.promo4Footer .standHolder .mainStand input {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+}
+
+.promo4Footer .standHolder .mainStand img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.promo4Footer .standHolder .imgHolder {
+    width: auto;
+    height: 120px;
+    margin: -5.5rem auto 0 !important;
+    position: relative;
+    z-index: 2;
+}
+
+.promo4Footer .standHolder .offerBadge {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -1.5rem;
+    right: 1.85rem;
+    z-index: 3;
+    background: url(../images/offer-badge-red.png) no-repeat center center;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.promo4Footer .standHolder .offerBadge p {
+    font-size: 10px !important;
+    font-family: 'Anek Telugu', sans-serif !important;
+    font-weight: 500 !important;
+    line-height: 12px !important;
+    color: #fdf21c !important;
+    position: relative !important;
+    text-align: center !important;
+    padding: .35rem 0 0 !important;
+    margin: 0 auto !important;
+    width: fit-content !important;
+    text-shadow: none !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.promo4Footer .standHolder .offerBadge p b {
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    line-height: 16px !important;
+}
+
+.promo4Footer .standHolder .offerBadge p span {
+    color: #fff !important;
+}
+
+.promo4Footer .standHolder h3 {
+    font-size: 15px !important;
+    font-family: 'Anek Telugu', sans-serif !important;
+    font-weight: normal !important;
+    line-height: 1.4 !important;
+    color: #fff !important;
+    position: relative !important;
+    text-align: center !important;
+    padding: 1.75rem 0 0 !important;
+    margin: 0 auto !important;
+    width: 35% !important;
 }
