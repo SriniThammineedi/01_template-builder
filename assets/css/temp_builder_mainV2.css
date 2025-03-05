@@ -3010,15 +3010,15 @@ p.contact::before {
     }
 
     ul.expandable-menu li .dropdownlink {
-        font-size: 8px;
+        font-size: 10px;
         text-transform: uppercase;
         font-weight: 800;
     }
 
     ul.expandable-menu li .dropdownlink lord-icon,
     ul.expandable-menu li.exportMenu ul.dropdown-content li button lord-icon {
-        width: 26px !important;
-        height: 26px !important;
+        width: 28px !important;
+        height: 28px !important;
     }
 
     ul.expandable-menu li.exportMenu {
