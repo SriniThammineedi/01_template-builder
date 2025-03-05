@@ -331,3 +331,464 @@ body {
     text-align: center;
     color: #0e367b;
 }
+
+/* Greeting Template 2 */
+.greet2Head,
+.greet2Body,
+.greet2Footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.greet2Head .topDecor {
+    position: absolute;
+    top: -3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: auto;
+}
+
+.greet2Head .row-photo-frame {
+    margin-top: .6rem;
+}
+
+.greet2Head .row-photo-frame h1 {
+    font-family: "Bonalu", sans-serif;
+    font-size: 46px;
+    font-style: italic;
+    white-space: nowrap;
+    line-height: 1;
+    font-weight: 500;
+    position: relative;
+    padding: 0;
+    width: fit-content;
+    text-align: center;
+    color: #c90e29;
+}
+
+.greet2Head .row-photo-frame .imgHolder {
+    height: 40px;
+}
+
+.greet2Body .side-by-side {
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0 auto .5rem;
+}
+
+.greet2Body .side-by-side .imgHolder {
+    height: 120px;
+    width: auto;
+}
+
+.greet2Body .side-by-side .imgHolder img {
+    border: 2px solid #fff;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.greet2Body .side-by-side h2 {
+    width: 65%;
+    font-family: "Kaloji", sans-serif;
+    font-size: 34px;
+    line-height: 1;
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+    padding: 0;
+    color: #086328;
+}
+
+.greet2Body .side-by-side h2 span {
+    display: block;
+    clear: both;
+    color: #c90e29 !important;
+}
+
+.greet2Body h2.fullWidthBg {
+    width: -webkit-fill-available;
+    width: -moz-fill-available;
+    margin: 0 -1.5rem !important;
+    background-color: #c90e29;
+    font-family: "Bonalu", sans-serif;
+    font-size: 54px;
+    line-height: 1;
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+    padding: .5rem !important;
+    color: #f9f000;
+    text-shadow: 0 3px 2px rgba(0, 0, 0, .25);
+}
+
+.greet2Body p {
+    font-family: "Ramabhadra", sans-serif;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .35rem;
+    padding: .6rem 0 !important;
+    color: #000;
+}
+
+.greet2Body p.withBg {
+    background-color: #fff;
+    font-family: "Kaloji", sans-serif;
+    font-size: 26px;
+    line-height: 1;
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+    padding: .35rem .6rem !important;
+    border-radius: 6px;
+    color: #c90e29;
+}
+
+.greet2Body h3 {
+    font-family: "Kaloji", sans-serif;
+    font-size: 38px;
+    line-height: 1.2;
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+    padding: 0 !important;
+    color: #0f5c2e;
+}
+
+.greet2Body h3 span {
+    display: block;
+    clear: both;
+    font-size: 20px !important;
+    line-height: 12px !important;
+    position: relative;
+    right: -1.75rem;
+    top: -.35rem;
+    text-align: right !important;
+}
+
+.greet2Body p.colorRed {
+    text-transform: uppercase;
+    font-weight: 600 !important;
+    font-size: 18px !important;
+    font-family: "Times New Roman", sans-serif;
+    color: #c90e29 !important;
+}
+
+.greet2Footer h3.withBg {
+    background-color: #c90e29;
+    font-family: "Kaloji", sans-serif;
+    font-size: 30px;
+    line-height: .85 !important;
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+    width: fit-content;
+    padding: .35rem .6rem !important;
+    border-radius: 6px;
+    color: #fff;
+    margin: -1rem auto 0 !important;
+}
+
+.greet2Footer .imgHolder {
+    height: 165px;
+}
+
+#temp-footer .greet2Footer p.contact,
+#temp-footer .greet3Footer p.contact {
+    background-color: #f9f000 !important;
+    padding: .35rem .6rem .35rem 1.5rem !important;
+    color: #000 !important;
+    font-family: "Oswald", sans-serif !important;
+    font-size: 22px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .35rem;
+    width: fit-content !important;
+    margin: .25rem auto 0 !important;
+    border-radius: 6px;
+}
+
+#temp-footer .greet2Footer p.contact::before,
+#temp-footer .greet3Footer p.contact::before {
+    left: .25rem !important;
+    top: 50% !important;
+    transform: translateY(-50%);
+    filter: none !important;
+}
+
+/* Greeting Template 3 */
+.greet3Head,
+.greet3Body,
+.greet3Footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.greet3Head .topDecor {
+    position: absolute;
+    top: -2.5em;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: auto;
+}
+
+.greet3Head h1 {
+    font-family: "Bonalu", sans-serif;
+    font-size: 52px;
+    white-space: nowrap;
+    line-height: 1;
+    font-weight: 500;
+    position: relative;
+    padding: 0;
+    width: fit-content;
+    text-align: center;
+    color: #c90e29;
+}
+
+.greet3Body h2.fullWidthBg {
+    width: -webkit-fill-available;
+    width: -moz-fill-available;
+    margin: -.5rem -1.5rem 0 !important;
+    background-color: #155eab;
+    font-family: "Bonalu", sans-serif;
+    font-size: 50px;
+    line-height: 1;
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+    padding: .5rem !important;
+
+    color: #fff;
+    text-shadow: 0 3px 2px rgba(0, 0, 0, .25);
+}
+
+.greet3Body p {
+    font-family: "Kaloji", sans-serif;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+    padding: .5rem 0 0 !important;
+    color: #09579f;
+}
+
+.greet3Body p span {
+    display: inline-block;
+    clear: none;
+    font-size: 26px !important;
+}
+
+.greet3Body h6 {
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    line-height: 1;
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+    padding: 0 !important;
+    color: #09579f;
+}
+
+.greet3Body p.withBg {
+    font-family: "Kaloji", sans-serif;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: normal !important;
+    position: relative;
+    text-align: center;
+    padding: .5rem !important;
+    background-color: #027733;
+    color: #e1ff43;
+    border-radius: 5px;
+    margin: .25rem auto .5rem !important;
+}
+
+.greet3Body .borderedList,
+.borderedList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto !important;
+    background-color: #fff;
+    border: 1px solid #335b7f;
+    gap: 1rem;
+    padding: .5rem;
+    border-radius: 8px;
+}
+
+.greet3Body .borderedList ul,
+.borderedList ul,
+.greet3Body .borderedList ul li,
+.borderedList ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: .35rem;
+    width: fit-content;
+    margin: 0;
+    list-style: none;
+}
+
+.greet3Body .borderedList ul li p,
+.borderedList ul li p {
+    font-family: "Kaloji", sans-serif;
+    font-size: 14px;
+    line-height: .8;
+    font-weight: normal !important;
+    position: relative;
+    text-align: center;
+    padding: 0 0 0 .5rem !important;
+}
+
+.greet3Body .borderedList ul li p::before,
+.borderedList ul li p::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.borderedList ul.darkColored p {
+    color: #000 !important;
+}
+
+.borderedList ul.blueColored p {
+    color: #113e6f !important;
+}
+
+.greet3Body h3 {
+    font-family: "Kaloji", sans-serif;
+    font-size: 23px;
+    line-height: 1;
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+    padding: 0 !important;
+    color: #bd0a0d;
+}
+
+.greet3Footer .show-in-row .guestCard {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+    flex-direction: column;
+    gap: .15rem;
+    position: relative;
+    width: calc(1/2 * 100% - (1 - 1/2) * .5rem);
+    margin: -.5rem auto 0 !important;
+}
+
+.greet3Footer .show-in-row .guestCard .imgHolder {
+    width: auto !important;
+    height: 130px;
+    border-radius: 5px;
+    border: none;
+    overflow: hidden;
+}
+
+.greet3Footer .show-in-row .guestCard h2 {
+    font-family: "Kaloji", sans-serif !important;
+    font-size: 22px !important;
+    line-height: 1 !important;
+    font-weight: 500 !important;
+    position: relative !important;
+    text-align: center !important;
+    border: none !important;
+    padding: 0 !important;
+    color: #120962 !important;
+    margin: -1rem 0 0 !important;
+}
+
+.greet3Footer .show-in-row .guestCard p {
+    font-family: "Roboto", sans-serif !important;
+    font-size: 12px !important;
+    line-height: 1 !important;
+    font-weight: 500 !important;
+    position: relative !important;
+    text-align: center !important;
+    border: none !important;
+    padding: 0 !important;
+    color: #000 !important;
+    margin: 0 !important;
+}
+
+.greet3Footer .show-in-row .guestCard h6 {
+    font-family: "Kaloji", sans-serif !important;
+    font-size: 10px !important;
+    line-height: 1 !important;
+    font-weight: 500 !important;
+    position: relative !important;
+    text-align: center !important;
+    border: none !important;
+    padding: 0 !important;
+    color: #120962 !important;
+    margin: 0 !important;
+}
+
+/* Greeting Template 4 */
+.greet4Head,
+.greet4Body,
+.greet4Footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.greet4Head .brandHolder {
+    background-color: #010566;
+    width: 85%;
+    margin: -2.5rem auto 0 !important;
+    position: relative;
+    border-radius: 0 0 50px 50px;
+    padding: 2rem 0 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.greet4Head .brandHolder .imgHolder.imgLS {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: -.5rem;
+}
+
+.greet4Head .brandHolder .imgHolder.imgRS {
+    height: 100px;
+    width: 150px;
+    position: relative;
+    right: -.75rem;
+}

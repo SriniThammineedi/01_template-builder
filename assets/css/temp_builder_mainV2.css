@@ -2636,9 +2636,35 @@ p.contact::before {
     gap: 2rem;
 }
 
+.show-in-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: .5rem;
+    position: relative;
+    margin-bottom: .35rem;
+    width: 100%;
+}
 
+.show-in-row .guestCard {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+    flex-direction: column;
+    gap: .15rem;
+    position: relative;
+    width: calc(1/3 * 100% - (1 - 1/3) * .5rem);
+}
 
-
+.show-in-row .guestCard .imgHolder {
+    width: 90px;
+    height: 96px;
+    border-radius: 5px;
+    border: .12rem solid #fff;
+    overflow: hidden;
+}
 
 
 

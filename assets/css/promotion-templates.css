@@ -1235,3 +1235,193 @@ p span {
     margin: 0 auto !important;
     width: 35% !important;
 }
+
+/* Promo Template 5 */
+
+.promo5Head,
+.promo5Body,
+.promo5Footer {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    margin: 0 auto;
+}
+
+.promo5Head {
+    margin-top: -1.5rem;
+}
+
+.promo5Head .festiveCollection {
+    width: 47%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: url(../images/mandala-art-2.png) no-repeat center center;
+    background-size: contain;
+    margin-top: -1.2rem;
+}
+
+.promo5Head .festiveCollection h1 {
+    font-size: 46px !important;
+    font-family: 'Bhagamati', sans-serif !important;
+    font-weight: 500 !important;
+    line-height: 35px !important;
+    color: #fff !important;
+    position: relative !important;
+    text-align: center !important;
+    padding: 0 1rem !important;
+    margin: 0 !important;
+    text-shadow: 0 4px 3px rgba(0, 0, 0, .5);
+}
+
+.promo5Head .festiveCollection h1 span {
+    font-size: 32px !important;
+    display: block;
+    clear: both;
+    line-height: 20px !important;
+}
+
+.promo5Head .doubleDhamaka {
+    width: 50%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    background: url(../images/double-dhamaka-badge.png) no-repeat center center;
+    background-size: 110% auto;
+    margin-top: -1.75rem;
+}
+
+.promo5Head .doubleDhamaka h2 {
+    font-size: 20px !important;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 600 !important;
+    line-height: 35px !important;
+    color: #42030b !important;
+    position: relative !important;
+    text-align: left !important;
+    text-indent: 15px;
+    padding: .7rem 1.2rem !important;
+    margin: -1.1rem 0 0 !important;
+}
+
+.promo5Head .doubleDhamaka h2 span {
+    display: block;
+    clear: both;
+    font-size: 26px !important;
+    color: #fff !important;
+    font-weight: 600 !important;
+    text-indent: 5px !important;
+}
+
+.promo5Head .doubleDhamaka p {
+    font-size: 11px !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    line-height: 1 !important;
+    color: #000 !important;
+    position: relative !important;
+    text-align: center !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    top: 1.5rem;
+}
+
+.promo5Body .side-by-side h1 {
+    font-size: 34px !important;
+    font-family: 'Kaloji', sans-serif !important;
+    font-weight: 500 !important;
+    line-height: .8 !important;
+    color: #4f2770 !important;
+    position: relative !important;
+    text-align: center !important;
+    padding: 0 !important;
+    width: 46% !important;
+    margin: 0 !important;
+}
+
+.promo5Body .festiveCombo {
+    width: 47%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    background-color: #e93828;
+    border: 3px solid #bb2012;
+    border-radius: 14px;
+    padding: .7rem .7rem 0;
+    margin: -.5rem 0 .5rem;
+}
+
+.promo5Body .festiveCombo::after {
+    content: "";
+    position: absolute;
+    top: -.85rem;
+    left: -1.2rem;
+    width: 120px;
+    height: 120px;
+    background: url(../images/hanging-ball3.png) no-repeat center center;
+    background-size: contain;
+    filter: hue-rotate(280deg);
+    z-index: 1;
+}
+
+.promo5Body .festiveCombo p {
+    font-size: 22px !important;
+    font-family: 'Kaloji', sans-serif !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    color: #fff !important;
+    position: relative !important;
+    text-align: left !important;
+    padding: 0 0 0 .85rem !important;
+    margin: 0 !important;
+    width: fit-content !important;
+    transform: rotate(-3.5deg);
+}
+
+.promo5Body .festiveCombo h1 {
+    font-size: 56px !important;
+    font-family: 'Kaloji', sans-serif !important;
+    font-weight: 500 !important;
+    line-height: .6 !important;
+    color: #ffe404 !important;
+    position: relative !important;
+    text-align: left !important;
+    padding: 0 0 0 .85rem !important;
+    margin: 0 !important;
+    width: fit-content !important;
+    text-shadow: 0 3px 3px rgba(0, 0, 0, .25);
+    transform: rotate(-3.5deg);
+}
+
+.promo5Body .festiveCombo h1 span {
+    display: block;
+    clear: both;
+    font-size: 32px !important;
+}
+
+.promo5Body .imgHolder {
+    height: 230px;
+}
+
+.promo5Footer .imgHolder {
+    height: 100px;
+}
+
+.promo5Footer .imgHolder img {
+    border-radius: 16px;
+}
+
+/* paint-order: stroke fill;
+-webkit-text-stroke: 4px rgba(0, 0, 0, .5); */
