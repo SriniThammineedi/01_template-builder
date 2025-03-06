@@ -1,0 +1,526 @@
+@import url("temp_builder_mainV2.css");
+
+body {
+    background-color: #ddd;
+}
+
+.template-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Coaching Template 1 */
+.coach1Head,
+.coach1Body,
+.coach1Footer {
+    position: relative;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.coach1Head p {
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    line-height: 1;
+    font-weight: 500;
+    position: relative;
+    padding: 0;
+    width: 73.5% !important;
+    text-align: center;
+    color: #505050 !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.coach1Head p span {
+    color: #505050 !important;
+}
+
+.coach1Head h1 {
+    font-family: "Kaloji", sans-serif;
+    font-size: 42px;
+    line-height: 1;
+    font-weight: 500;
+    position: relative;
+    padding: 0;
+    width: fit-content;
+    text-align: center;
+    color: #c3007b !important;
+    z-index: 5;
+}
+
+.coach1Head h5 {
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    line-height: 1.1;
+    font-weight: 500;
+    position: relative;
+    padding: .25rem .75rem;
+    border-radius: 12px;
+    width: fit-content;
+    color: #fff;
+    text-align: center;
+    background-color: #c3007b !important;
+}
+
+.coach1Head .side-by-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    width: 100%;
+    margin: .35rem auto;
+}
+
+.coach1Head .side-by-side h2 {
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 900;
+    position: relative;
+    padding: 1.25rem 1.5rem;
+    width: fit-content;
+    text-align: center;
+    color: #fdf00b !important;
+    background-color: #00376d;
+    white-space: nowrap;
+    border-radius: 60px;
+}
+
+.coach1Head .side-by-side h3 {
+    font-family: "Oswald", sans-serif;
+    font-size: 48px;
+    line-height: .8;
+    font-weight: 900;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: .35rem;
+    width: fit-content;
+    text-align: center;
+    color: #fff !important;
+    background-color: #d73413;
+    border-radius: 10px;
+}
+
+.coach1Head .side-by-side h3 span {
+    font-size: 18px !important;
+    line-height: 1.2 !important;
+}
+
+.coach1Head .side-by-side h3 em {
+    font-size: 20px !important;
+    background-color: #fdf00b;
+    color: #00395e !important;
+    padding: .25rem .35rem !important;
+    font-style: normal !important;
+    border-radius: 4px;
+}
+
+.coach1Body .curvedBg {
+    background-color: #a90580;
+    width: -webkit-fill-available;
+    width: -moz-fill-available;
+    margin: -1.1rem -1.5rem 0 !important;
+    position: relative;
+    overflow: hidden;
+    padding: 2rem !important;
+}
+
+.coach1Body .curvedBg p {
+    position: relative;
+    font-family: "Ramabhadra", sans-serif;
+    font-size: 18px;
+    text-align: center !important;
+    color: #fff !important;
+    line-height: 1.2;
+    font-weight: 500 !important;
+    position: relative;
+    z-index: 2;
+}
+
+.coach1Body .curvedBg::before {
+    background-color: #fef9db;
+    content: '';
+    position: absolute;
+    top: -2.75rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 100%;
+    width: 120%;
+    height: 60px;
+    z-index: 0;
+}
+
+.coach1Body .splLabel {
+    background-color: #f52f48;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: -1.2rem auto 1rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 5;
+}
+
+.coach1Body .splLabel h3 {
+    font-family: "Ramabhadra", sans-serif;
+    font-size: 22px;
+    line-height: 1;
+    font-weight: 500 !important;
+    position: relative;
+    padding: 0 .75rem 0 0 !important;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+    text-align: center;
+    color: #fff !important;
+    white-space: nowrap;
+}
+
+.coach1Body .splLabel h3 span {
+    background-color: #fdf00b;
+    padding: .5rem .7rem .5rem 1.5rem !important;
+    line-height: 1.1 !important;
+    color: #a8047d !important;
+    margin-left: -.5rem;
+    font-style: normal !important;
+    transform: skew(-20deg);
+    paint-order: stroke fill;
+    -webkit-text-stroke: 3px #fff;
+}
+
+.coach1Body .show-in-row .imgHolder {
+    height: 65px !important;
+    width: auto !important;
+    border-radius: 0 14px 0 0 !important;
+    overflow: hidden;
+}
+
+.coach1Body .show-in-row .imgHolder img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.coach1Body .show-in-row .guestCard h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+    line-height: 1;
+    font-weight: 600 !important;
+    position: relative;
+    padding: 0;
+    width: fit-content;
+    text-align: center;
+    color: #eb188d !important;
+    white-space: nowrap;
+}
+
+.coach1Body .show-in-row .guestCard p {
+    font-family: "Roboto", sans-serif;
+    font-size: 7px;
+    line-height: 1;
+    font-weight: 600 !important;
+    position: relative;
+    padding: 0;
+    width: fit-content;
+    text-align: center;
+    color: #005b88 !important;
+}
+
+#temp-footer .coach1Footer {
+    width: 100% !important;
+    padding: 0 !important;
+}
+
+#temp-footer .coach1Footer p.fullWidthBg {
+    background-color: #ee3442;
+    width: -webkit-fill-available;
+    width: -moz-fill-available;
+    margin: -.5rem -1.5rem 0 !important;
+    padding: .5rem !important;
+    position: relative;
+    font-family: "Ramabhadra", sans-serif;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 500 !important;
+}
+
+#temp-footer .coach1Footer p.contact {
+    font-family: "Ramabhadra", sans-serif !important;
+    font-size: 18px !important;
+    line-height: 1;
+    font-weight: 500 !important;
+    position: relative;
+    padding: .35rem .5rem !important;
+    width: fit-content;
+    text-align: center;
+    color: #000 !important;
+    background-color: #fdf00b;
+    border-radius: 6px;
+    white-space: nowrap;
+    margin: .35rem auto 0;
+}
+
+#temp-footer .coach1Footer p.contact::before {
+    display: none !important;
+}
+
+/* Coaching Template 2 */
+.coach2Head,
+.coach2Body,
+.coach2Footer {
+    position: relative;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.coach2Head p {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 500;
+    position: relative;
+    padding: 0;
+    width: 100% !important;
+    text-align: right;
+    color: #fff !important;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: .35rem;
+}
+
+.coach2Head p img {
+    max-width: 1.2rem;
+    filter: invert(1);
+}
+
+.coach2Head h1 {
+    font-family: "Bonalu", sans-serif;
+    font-size: 54px;
+    line-height: 1;
+    font-weight: 500;
+    position: relative;
+    padding: 0;
+    width: fit-content;
+    margin: .5rem auto 0;
+    text-align: center;
+    color: #fef200 !important;
+    z-index: 5;
+}
+
+.coach2Head h5 {
+    font-family: "Bhagamati", sans-serif;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 500;
+    position: relative;
+    padding: 0;
+    width: fit-content;
+    color: #fff;
+    text-align: center;
+}
+
+.coach2Head h3.withBg {
+    font-family: "Bhagamati", sans-serif;
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 500;
+    position: relative;
+    padding: .25rem .5rem;
+    width: fit-content;
+    color: #f02328;
+    text-align: center;
+    background-color: #fff !important;
+    border-radius: 6px;
+}
+
+.coach2Body h2.fullWidthBg {
+    background-color: #fef200;
+    width: -webkit-fill-available;
+    width: -moz-fill-available;
+    margin: -1rem -1.5rem 0 !important;
+    padding: .5rem !important;
+    font-family: "Graduate", sans-serif;
+    font-size: 24px !important;
+    letter-spacing: -.05rem;
+    text-align: center !important;
+    color: #032354 !important;
+    line-height: 1;
+    font-weight: 500 !important;
+    position: relative;
+    overflow: hidden;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 2px rgba(0, 0, 0, .5);
+}
+
+.coach2Body h2.fullWidthBg span {
+    display: block;
+    clear: both;
+    font-family: "Kaloji", sans-serif !important;
+    font-size: 22px !important;
+    paint-order: 0;
+    -webkit-text-stroke: 0;
+}
+
+.coach2Body p {
+    padding: .35rem 0 0 !important;
+    font-family: "Kaloji", sans-serif;
+    font-size: 24px !important;
+    text-align: center !important;
+    color: #fff !important;
+    line-height: 1;
+    font-weight: 500 !important;
+    position: relative;
+}
+
+.coach2Body h3.withBg {
+    background-color: #00a654;
+    padding: .35rem .5rem !important;
+    font-family: "Kaloji", sans-serif;
+    font-size: 28px !important;
+    text-align: center !important;
+    color: #fff !important;
+    line-height: 1 !important;
+    font-weight: 500 !important;
+    position: relative;
+    border-radius: 4px !important;
+}
+
+.coach2Body h4.fullWidthBg {
+    background-color: #f02328;
+    width: -webkit-fill-available !important;
+    width: -moz-fill-available !important;
+    margin: -.7rem -1.5rem 0 !important;
+    padding: .5rem !important;
+    font-family: "Kaloji", sans-serif !important;
+    font-size: 24px !important;
+    text-align: center !important;
+    color: #fff !important;
+    line-height: 1 !important;
+    font-weight: 500 !important;
+    position: relative;
+}
+
+.coach2Body h4.fullWidthBg span {
+    color: #fef200 !important;
+}
+
+.coach2Body h3.withBg.colorYellow {
+    background-color: #fef200;
+    padding: 0 0 0 .5rem !important;
+    font-family: "Bonalu", sans-serif !important;
+    font-size: 32px !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    color: #042649 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    line-height: 1 !important;
+    font-weight: 500 !important;
+    position: relative;
+    border-radius: 4px !important;
+}
+
+.coach2Body h3.withBg.colorYellow span {
+    color: #fff !important;
+    background-color: #00a852 !important;
+    padding: .5rem .75rem !important;
+    font-family: "Kaloji", sans-serif !important;
+    font-size: 28px !important;
+}
+
+.coach2Body h3.withBg.colorYellow b {
+    font-size: 38px !important;
+}
+
+.coach2Body h4.fullWidthBg.color-white {
+    background-color: #fff !important;
+    width: -webkit-fill-available !important;
+    width: -moz-fill-available !important;
+    margin: -.2rem -1.5rem 0 !important;
+    padding: .25rem .5rem !important;
+    font-family: "Kaloji", sans-serif !important;
+    font-size: 34px !important;
+    text-align: center !important;
+    color: #042649 !important;
+    line-height: 1 !important;
+    font-weight: 500 !important;
+    position: relative;
+}
+
+.coach2Body .show-in-row {
+    margin: .25rem auto !important;
+    width: 100% !important;
+    gap: .5rem;
+}
+
+.coach2Body .show-in-row .guestCard {
+    width: calc(1/7 * 100% - (1 - 1/7) * 10px);
+}
+
+.coach2Body .show-in-row .guestCard .imgHolder {
+    width: auto !important;
+    height: 35px !important;
+    border-radius: 6px !important;
+    z-index: 1;
+    overflow: hidden;
+}
+
+
+.coach2Body .show-in-row .guestCard .titlesArea {
+    background-color: #f02626;
+    padding: .15rem 0 !important;
+    border-radius: 3px !important;
+    margin-top: -.3rem !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content !important;
+    z-index: 2;
+}
+
+.coach2Body .show-in-row .guestCard h2,
+.coach2Body .show-in-row .guestCard p,
+.coach2Body .show-in-row .guestCard h6 {
+    font-family: "Roboto", sans-serif !important;
+    font-size: 8px !important;
+    line-height: 1.2 !important;
+    font-weight: 600 !important;
+    position: relative;
+    padding: 0 !important;
+    width: fit-content !important;
+    text-align: center !important;
+    color: #fff !important;
+    white-space: nowrap;
+}
+
+.coach2Body .show-in-row .guestCard p {
+    color: #fef200 !important;
+    font-size: 6px !important;
+}
+
+.coach2Body .show-in-row .guestCard h6 {
+    font-size: 5px !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 80% !important;
+}

@@ -8,6 +8,7 @@
 @import url("../css/wedding-templates.css");
 @import url("../css/anniversary-templates.css");
 @import url("../css/retirement-templates.css");
+@import url("../css/coaching-templates.css");
 
 :root {
     --text-dark: #202020;
@@ -952,6 +953,9 @@ ul.expandable-menu li.open .accorParentContainer {
     flex-direction: column;
     gap: .75rem;
     padding: 2.5rem 0 1.5rem;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% 100%;
 }
 
 #themeOuter {

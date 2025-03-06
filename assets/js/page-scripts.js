@@ -528,7 +528,8 @@ function showTemplate(selectedId) {
     'political': 'politicalTemps',
     'wedding': 'weddingTemps',
     'anniversary': 'anniversaryTemps',
-    'retirement': 'retirementTemps'
+    'retirement': 'retirementTemps',
+    'coaching': 'coachingTemps'
   };
 
   const templateDivs = document.querySelectorAll('.inner-container');
