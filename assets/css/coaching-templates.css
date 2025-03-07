@@ -318,7 +318,7 @@ body {
     position: relative;
     padding: 0;
     width: fit-content;
-    margin: .5rem auto 0;
+    margin: .5rem auto -.5rem;
     text-align: center;
     color: #fef200 !important;
     z-index: 5;
@@ -342,8 +342,9 @@ body {
     line-height: 1;
     font-weight: 500;
     position: relative;
-    padding: .25rem .5rem;
+    padding: .05rem .5rem;
     width: fit-content;
+    margin: .2rem auto .5rem;
     color: #f02328;
     text-align: center;
     background-color: #fff !important;
@@ -355,7 +356,7 @@ body {
     width: -webkit-fill-available;
     width: -moz-fill-available;
     margin: -1rem -1.5rem 0 !important;
-    padding: .5rem !important;
+    padding: .25rem .5rem !important;
     font-family: "Graduate", sans-serif;
     font-size: 24px !important;
     letter-spacing: -.05rem;
@@ -384,14 +385,14 @@ body {
     font-size: 24px !important;
     text-align: center !important;
     color: #fff !important;
-    line-height: 1;
+    line-height: 1 !important;
     font-weight: 500 !important;
     position: relative;
 }
 
 .coach2Body h3.withBg {
     background-color: #00a654;
-    padding: .35rem .5rem !important;
+    padding: .15rem .5rem !important;
     font-family: "Kaloji", sans-serif;
     font-size: 28px !important;
     text-align: center !important;
@@ -399,6 +400,7 @@ body {
     line-height: 1 !important;
     font-weight: 500 !important;
     position: relative;
+    margin: .2rem auto .35rem;
     border-radius: 4px !important;
 }
 
@@ -406,8 +408,8 @@ body {
     background-color: #f02328;
     width: -webkit-fill-available !important;
     width: -moz-fill-available !important;
-    margin: -.7rem -1.5rem 0 !important;
-    padding: .5rem !important;
+    margin: -.5rem -1.5rem 0 !important;
+    padding: .25rem .5rem !important;
     font-family: "Kaloji", sans-serif !important;
     font-size: 24px !important;
     text-align: center !important;
@@ -442,7 +444,7 @@ body {
 .coach2Body h3.withBg.colorYellow span {
     color: #fff !important;
     background-color: #00a852 !important;
-    padding: .5rem .75rem !important;
+    padding: .3rem .75rem !important;
     font-family: "Kaloji", sans-serif !important;
     font-size: 28px !important;
 }
@@ -456,7 +458,7 @@ body {
     width: -webkit-fill-available !important;
     width: -moz-fill-available !important;
     margin: -.2rem -1.5rem 0 !important;
-    padding: .25rem .5rem !important;
+    padding: .15rem .5rem !important;
     font-family: "Kaloji", sans-serif !important;
     font-size: 34px !important;
     text-align: center !important;
@@ -467,9 +469,11 @@ body {
 }
 
 .coach2Body .show-in-row {
-    margin: .25rem auto !important;
-    width: 100% !important;
-    gap: .5rem;
+    background-color: #fff;
+    margin: 0 auto !important;
+    padding: .25rem;
+    width: fit-content !important;
+    gap: .35rem;
 }
 
 .coach2Body .show-in-row .guestCard {
@@ -503,7 +507,7 @@ body {
 .coach2Body .show-in-row .guestCard h6 {
     font-family: "Roboto", sans-serif !important;
     font-size: 8px !important;
-    line-height: 1.2 !important;
+    line-height: 1 !important;
     font-weight: 600 !important;
     position: relative;
     padding: 0 !important;
@@ -523,4 +527,495 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
     max-width: 80% !important;
+}
+
+.coach2Body .side-by-side {
+    background-color: #fff;
+    justify-content: center !important;
+    padding: .25rem;
+    gap: .25rem !important;
+    width: fit-content !important;
+}
+
+.coach2Body .side-by-side p {
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 11px !important;
+    line-height: 1 !important;
+    font-weight: 600 !important;
+    position: relative;
+    padding: .3rem !important;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 6px !important;
+    text-align: center !important;
+    gap: .2rem;
+    color: #fff !important;
+    white-space: normal !important;
+    width: calc(1/4 * 100% - (1 - 1/4) * 10px);
+}
+
+.coach2Body .side-by-side p span {
+    font-size: 8px !important;
+    color: #fff !important;
+    font-weight: normal !important;
+}
+
+.coach2Body .side-by-side p.blueBg {
+    background-color: #2a358f;
+}
+
+.coach2Body .side-by-side p.pinkBg {
+    background-color: #ea0989;
+}
+
+.coach2Body .side-by-side p.maroonBg {
+    background-color: #9e1b20;
+}
+
+.coach2Body .side-by-side p.redBg {
+    background-color: #ff0000;
+}
+
+.coach2Body p.colorRed {
+    font-family: 'Kaloji', sans-serif !important;
+    font-size: 16px !important;
+    line-height: 1 !important;
+    font-weight: 500 !important;
+    position: relative;
+    padding: .35rem .65rem !important;
+    text-align: center !important;
+    color: #fff !important;
+    white-space: normal !important;
+    width: fit-content !important;
+    background-color: #f02328;
+    border-radius: 6px !important;
+}
+
+#temp-footer .coach2Footer {
+    width: 100% !important;
+}
+
+#temp-footer .coach2Footer p.fullWidthBg {
+    background-color: #fff;
+    font-family: 'Kaloji', sans-serif !important;
+    font-size: 18px !important;
+    line-height: 1 !important;
+    font-weight: 500 !important;
+    position: relative;
+    padding: .35rem .65rem !important;
+    text-align: center !important;
+    color: #021a46 !important;
+    white-space: nowrap !important;
+    width: -webkit-fill-available !important;
+    width: -moz-fill-available !important;
+    margin: -.2rem -1.5rem 0 !important;
+}
+
+#temp-footer .coach2Footer h5 {
+    font-family: 'Kaloji', sans-serif !important;
+    font-size: 20px !important;
+    line-height: 1 !important;
+    font-weight: 500 !important;
+    position: relative;
+    padding: .25rem 0 !important;
+    text-align: center !important;
+    color: #fef200 !important;
+    white-space: nowrap !important;
+}
+
+#temp-footer .coach2Footer p.contact,
+#temp-footer .coach3Footer p.contact {
+    background-color: #fef200;
+    font-family: 'Oswald', sans-serif !important;
+    font-size: 22px !important;
+    line-height: 1 !important;
+    font-weight: 500 !important;
+    position: relative;
+    padding: .35rem .5rem .35rem 1.5rem !important;
+    text-align: center !important;
+    color: #000 !important;
+    white-space: nowrap !important;
+    border-radius: 6px;
+}
+
+#temp-footer .coach2Footer p.contact::before,
+#temp-footer .coach3Footer p.contact::before {
+    left: .25rem !important;
+    top: 50% !important;
+    transform: translateY(-50%);
+    filter: none !important;
+}
+
+/* Coaching Template 3 */
+.coach3Head,
+.coach3Body,
+.coach3Footer {
+    position: relative;
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.coach3Head .logoWithText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: -1rem auto -.35rem;
+    gap: .5rem;
+}
+
+.coach3Head .logoWithText .imgHolder {
+    width: auto;
+    height: 50px;
+}
+
+.coach3Head h1 {
+    font-family: "Bonalu", sans-serif;
+    font-size: 54px;
+    line-height: 1;
+    font-weight: 500;
+    position: relative;
+    padding: 0;
+    width: fit-content;
+    margin: .5rem auto 0;
+    text-align: center;
+    color: #fef200 !important;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, .7);
+    z-index: 5;
+}
+
+.coach3Body h1.fullWidthBg {
+    background-color: #fff;
+    width: -webkit-fill-available;
+    width: -moz-fill-available;
+    margin: 0 -1.5rem !important;
+    padding: .25rem .5rem .1rem !important;
+    font-family: "Kaloji", sans-serif;
+    font-size: 24px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center !important;
+    color: #2d0d18 !important;
+    line-height: 1;
+    font-weight: 500 !important;
+    position: relative;
+}
+
+.coach3Body h1.fullWidthBg span {
+    font-family: 'Bonalu', sans-serif !important;
+    font-size: 34px !important;
+}
+
+.coach3Body h2.withBg {
+    background-color: #900000;
+    margin: .15rem auto -.7rem !important;
+    padding: .15rem .35rem !important;
+    font-family: "Oswald", sans-serif;
+    font-size: 60px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left !important;
+    color: #fff200 !important;
+    line-height: 1 !important;
+    width: fit-content !important;
+    gap: .5rem;
+    font-weight: 900 !important;
+    border-radius: 6px;
+    position: relative;
+    z-index: 5 !important;
+}
+
+.coach3Body h2.withBg span {
+    font-size: 20px !important;
+}
+
+.coach3Body h4.fullWidthBg {
+    background-color: #fff200;
+    width: -webkit-fill-available !important;
+    width: -moz-fill-available !important;
+    margin: 0 -1.5rem !important;
+    padding: .85rem .5rem .25rem !important;
+    font-family: "Bonalu", sans-serif !important;
+    font-size: 38px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center !important;
+    color: #381422 !important;
+    line-height: 1 !important;
+    font-weight: 500 !important;
+    position: relative;
+    z-index: 1 !important;
+}
+
+.coach3Body h4.fullWidthBg span {
+    font-family: 'Oswald', sans-serif !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    letter-spacing: -.085rem;
+}
+
+.coach3Body h5.offerBadge {
+    background-color: #2c8007;
+    width: 50px !important;
+    height: 50px !important;
+    margin: .25rem auto -.7rem !important;
+    padding: .15rem .35rem !important;
+    font-family: "Oswald", sans-serif;
+    font-size: 16px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center !important;
+    color: #fff !important;
+    line-height: 1.2 !important;
+    font-weight: 600 !important;
+    position: relative !important;
+    z-index: 5 !important;
+    margin: -2.5rem -20.5rem 0 0 !important;
+}
+
+.coach3Body h5.offerBadge:before,
+.coach3Body h5.offerBadge:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    background: #2c8007;
+    z-index: -1;
+}
+
+.coach3Body h5.offerBadge:before {
+    transform: rotate(30deg);
+}
+
+.coach3Body h5.offerBadge:after {
+    transform: rotate(60deg);
+}
+
+.coach3Body .show-in-row {
+    margin: 0 auto !important;
+    width: fit-content !important;
+    gap: .35rem;
+}
+
+.coach3Body .show-in-row .guestCard {
+    width: calc(1/5 * 100% - (1 - 1/5) * 10px);
+}
+
+.coach3Body .show-in-row .guestCard .imgHolder {
+    width: auto !important;
+    height: 70px !important;
+    border-radius: 6px 6px 0 0 !important;
+    background-color: #4bdac2;
+    border: 2px solid #094b03;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.coach3Body .show-in-row .guestCard .titlesArea {
+    background-color: #094b03;
+    padding: .15rem 0 !important;
+    border-radius: 0 0 6px 6px !important;
+    margin-top: -.15rem !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100% !important;
+    z-index: 2;
+}
+
+.coach3Body .show-in-row .guestCard h2,
+.coach3Body .show-in-row .guestCard p,
+.coach3Body .show-in-row .guestCard h6 {
+    font-family: "Roboto", sans-serif !important;
+    font-size: 6px !important;
+    line-height: 1 !important;
+    font-weight: 600 !important;
+    position: relative;
+    padding: 0 !important;
+    width: fit-content !important;
+    text-align: center !important;
+    color: #fff !important;
+    white-space: nowrap;
+}
+
+.coach3Body .show-in-row .guestCard h6 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 80% !important;
+}
+
+.coach3Body p.txtYellow {
+    font-family: "Kaloji", sans-serif !important;
+    color: #fff200 !important;
+    font-size: 22px !important;
+    font-weight: 500 !important;
+    line-height: 1.2 !important;
+    text-align: center !important;
+}
+
+#temp-footer .coach3Footer h3.withBg {
+    background-color: #fff;
+    margin: -.65rem auto 0 !important;
+    padding: .15rem .35rem !important;
+    font-family: "Kaloji", sans-serif;
+    font-size: 24px !important;
+    text-align: center !important;
+    color: #2c0e18 !important;
+    line-height: 1 !important;
+    width: fit-content !important;
+    font-weight: 500 !important;
+    border-radius: 6px;
+    position: relative;
+}
+
+#temp-footer .coach3Footer p.fullWidthBg {
+    background-color: #e6491e;
+    width: -webkit-fill-available !important;
+    width: -moz-fill-available !important;
+    margin: .25rem -1.5rem 0 !important;
+    padding: .15rem .5rem !important;
+    font-family: "Kaloji", sans-serif !important;
+    font-size: 22px !important;
+    text-align: center !important;
+    color: #fff !important;
+    line-height: 1 !important;
+    font-weight: 500 !important;
+    position: relative;
+}
+
+#temp-footer .coach3Footer h5 {
+    padding: .15rem 0 !important;
+    font-family: "Kaloji", sans-serif;
+    font-size: 19px !important;
+    text-align: center !important;
+    color: #fff !important;
+    line-height: 1 !important;
+    width: fit-content !important;
+    font-weight: 500 !important;
+    position: relative;
+}
+
+#temp-footer .coach3Footer p.contact {
+    background-color: #fff !important;
+    color: #2c0e18 !important;
+}
+
+
+/* Coaching Template 4 */
+.coach4Head,
+.coach4Body,
+.coach4Footer {
+    position: relative;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.coach4Head .logoWithText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: -1rem auto -.35rem;
+    gap: .5rem;
+}
+
+.coach4Head .logoWithText .imgHolder {
+    width: auto;
+    height: 65px;
+}
+
+.coach4Head h1 {
+    font-family: "Batukamma", sans-serif;
+    font-size: 50px;
+    line-height: 32px;
+    font-weight: 500;
+    position: relative;
+    padding: 0;
+    width: fit-content;
+    margin: .5rem auto 0;
+    text-align: left;
+    color: #fdf200;
+    z-index: 5;
+}
+
+.coach4Head h1 span {
+    display: block;
+    clear: both;
+    font-size: 38px;
+}
+
+.coach4Body h2.withBg {
+    background-color: #9e0505;
+    padding: .25rem .5rem !important;
+    font-family: "Bonalu", sans-serif;
+    font-size: 38px !important;
+    text-align: center !important;
+    color: #fff !important;
+    line-height: 1;
+    font-weight: 500 !important;
+    border-radius: 6px;
+    position: relative;
+}
+
+.coach4Body h3 {
+    padding: .5rem 0 !important;
+    font-family: "Bonalu", sans-serif !important;
+    font-size: 40px !important;
+    letter-spacing: .05rem;
+    text-align: center !important;
+    color: #fdf200 !important;
+    line-height: 1;
+    font-weight: 500 !important;
+    position: relative;
+}
+
+.coach4Body h3 span {
+    text-decoration: line-through;
+}
+
+.coach4Body h4.withBg {
+    background-color: #021a2f;
+    margin: .15rem auto !important;
+    padding: .35rem 1.2rem !important;
+    font-family: "Bonalu", sans-serif !important;
+    font-size: 40px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left !important;
+    color: #fff !important;
+    line-height: 1 !important;
+    width: fit-content !important;
+    gap: .5rem;
+    border-radius: 6px;
+    position: relative;
+}
+
+.coach4Body h4.withBg span {
+    background-color: #fff !important;
+    padding: .25rem .5rem .15rem !important;
+    color: #021a2f !important;
+    border-radius: 6px;
 }
