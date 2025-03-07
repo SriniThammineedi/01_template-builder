@@ -86,8 +86,8 @@ async function exportAsImage() {
         useCORS: true,
     });
         const link = document.createElement('a');
-    link.href = canvas.toDataURL('image/png');
-    link.download = 'exported_template.png';
+    link.href = canvas.toDataURL('image/jpg');
+    link.download = 'exported_template.jpg';
     link.click();
 }
 

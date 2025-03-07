@@ -627,7 +627,9 @@ body {
 }
 
 #temp-footer .coach2Footer p.contact,
-#temp-footer .coach3Footer p.contact {
+#temp-footer .coach3Footer p.contact,
+#temp-footer .coach4Footer p.contact,
+#temp-footer .coach5Footer p.contact {
     background-color: #fef200;
     font-family: 'Oswald', sans-serif !important;
     font-size: 22px !important;
@@ -642,7 +644,9 @@ body {
 }
 
 #temp-footer .coach2Footer p.contact::before,
-#temp-footer .coach3Footer p.contact::before {
+#temp-footer .coach3Footer p.contact::before,
+#temp-footer .coach4Footer p.contact::before,
+#temp-footer .coach5Footer p.contact::before {
     left: .25rem !important;
     top: 50% !important;
     transform: translateY(-50%);
@@ -969,7 +973,7 @@ body {
     background-color: #9e0505;
     padding: .25rem .5rem !important;
     font-family: "Bonalu", sans-serif;
-    font-size: 38px !important;
+    font-size: 32px !important;
     text-align: center !important;
     color: #fff !important;
     line-height: 1;
@@ -996,7 +1000,7 @@ body {
 
 .coach4Body h4.withBg {
     background-color: #021a2f;
-    margin: .15rem auto !important;
+    margin: -.35rem auto .2rem !important;
     padding: .35rem 1.2rem !important;
     font-family: "Bonalu", sans-serif !important;
     font-size: 40px !important;
@@ -1018,4 +1022,477 @@ body {
     padding: .25rem .5rem .15rem !important;
     color: #021a2f !important;
     border-radius: 6px;
+}
+
+.coach4Body p.txtYellow {
+    font-family: "Oswald", sans-serif !important;
+    font-size: 20px !important;
+    text-align: center !important;
+    color: #fdf200 !important;
+    line-height: 1.4 !important;
+    font-weight: 500 !important;
+    position: relative;
+}
+
+.coach4Body p.txtYellow span {
+    font-family: "Bonalu", sans-serif !important;
+    font-size: 32px !important;
+    color: #fdf200 !important;
+}
+
+.coach4Body h5.withBg {
+    font-family: "Ramabhadra", sans-serif !important;
+    font-size: 16px !important;
+    text-align: center !important;
+    color: #021a2f !important;
+    line-height: 1.2 !important;
+    font-weight: 500 !important;
+    position: relative;
+    width: 75% !important;
+    background-color: #fff;
+    margin: .15rem auto !important;
+    padding: .35rem .6rem !important;
+    border-radius: 6px;
+}
+
+.coach4Body h6 {
+    font-family: "Ramabhadra", sans-serif !important;
+    font-size: 13px !important;
+    text-align: center !important;
+    color: #fff !important;
+    line-height: 1.4 !important;
+    font-weight: 500 !important;
+    position: relative;
+    padding: .3rem 0 !important;
+}
+
+.coach4Body h6 span {
+    background-color: #9e0505;
+    color: #fff !important;
+    font-size: 10px !important;
+    padding: .1rem .35rem !important;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.coach4Body p.default {
+    font-family: "Kaloji", sans-serif !important;
+    font-size: 24px !important;
+    text-align: center !important;
+    color: #fdf200 !important;
+    line-height: 1.1 !important;
+    font-weight: 500 !important;
+    position: relative;
+    width: 80% !important;
+    margin: .5rem auto !important;
+}
+
+.coach4Footer h3 {
+    font-family: "Kaloji", sans-serif !important;
+    font-size: 20px !important;
+    text-align: center !important;
+    color: #fff !important;
+    line-height: 1 !important;
+    font-weight: 500 !important;
+    position: relative;
+    width: fit-content !important;
+    margin: 0 auto !important;
+}
+
+.coach4Footer p.withBg {
+    background-color: #34ff0c;
+    font-family: "Kaloji", sans-serif !important;
+    font-size: 24px !important;
+    text-align: center !important;
+    color: #021a2f !important;
+    line-height: 1 !important;
+    padding: .15rem .5rem !important;
+    font-weight: 500 !important;
+    position: relative;
+    width: fit-content !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .25rem;
+    margin: .2rem auto !important;
+    border-radius: 6px;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 3px #fff;
+}
+
+.coach4Footer p.withBg img {
+    max-width: 1.25rem;
+}
+
+#temp-footer .coach4Footer p.contact {
+    margin: .25rem auto !important;
+}
+
+/* Coaching Template 5 */
+.coach5Head,
+.coach5Body,
+.coach5Footer {
+    position: relative;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.coach5Head h1 {
+    font-family: "Kaloji", sans-serif;
+    font-size: 76px;
+    line-height: 56px;
+    font-weight: 500;
+    position: relative;
+    padding: 0;
+    width: fit-content;
+    margin: .5rem auto 0;
+    text-align: center !important;
+    text-shadow: 0 4px 3px #92151d;
+    color: #fff;
+}
+
+
+.coach5Head h1 b {
+    font-family: 'Oswald', sans-serif !important;
+    font-size: 48px !important;
+    font-weight: 900 !important;
+    color: #fff555 !important;
+}
+
+.coach5Head h1 span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content !important;
+    margin: .25rem auto 0;
+    font-size: 48px !important;
+    font-family: 'Batukamma', sans-serif !important;
+    background-color: #0000fe;
+    color: #fff200 !important;
+    padding: .35rem 1.5rem !important;
+    border-radius: 100%;
+    text-shadow: 0 4px 3px #0200a6;
+}
+
+.coach5Body h2.withBg {
+    background-color: #fff;
+    font-family: "Kaloji", sans-serif !important;
+    font-size: 19px;
+    line-height: 1;
+    font-weight: 500;
+    position: relative;
+    padding: .25rem .5rem !important;
+    margin: 0 auto !important;
+    width: fit-content !important;
+    margin: 0 auto !important;
+    letter-spacing: -.05rem !important;
+    text-align: center !important;
+    color: #0000fe !important;
+    border-radius: 25%;
+    white-space: nowrap !important;
+}
+
+.coach5Body h2.withBg span {
+    font-family: 'Oswald', sans-serif !important;
+    font-size: 14px !important;
+}
+
+.coach5Body .combinedTitles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .25rem;
+    width: fit-content;
+    margin: -.2rem auto 0;
+}
+
+.coach5Body .combinedTitles h1 {
+    font-family: "Oswald", sans-serif !important;
+    font-size: 60px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    white-space: nowrap !important;
+    line-height: 40px !important;
+    font-weight: 900 !important;
+    position: relative;
+    padding: .15rem 0 !important;
+    width: fit-content !important;
+    text-align: center !important;
+    color: #fff200 !important;
+    text-shadow: 0 4px 3px rgba(0, 0, 0, .5);
+}
+
+.coach5Body .combinedTitles h1 span {
+    font-size: 14px !important;
+}
+
+.coach5Body .combinedTitles h2 {
+    font-family: "Oswald", sans-serif !important;
+    font-size: 40px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    white-space: nowrap !important;
+    line-height: 1.2 !important;
+    font-weight: 900 !important;
+    position: relative !important;
+    padding: .15rem 0 !important;
+    width: fit-content !important;
+    text-align: left !important;
+    color: #fff !important;
+}
+
+.coach5Body .combinedTitles h2 em {
+    text-decoration: line-through;
+    color: #01ffff !important;
+    font-size: 18px !important;
+    font-style: normal !important;
+    line-height: 1 !important;
+}
+
+.coach5Body .combinedTitles h2 span {
+    position: absolute;
+    right: -.5rem;
+    bottom: .6rem;
+    font-family: "Batukamma", sans-serif !important;
+    font-size: 20px !important;
+    color: #fcff00 !important;
+    line-height: 1 !important;
+    text-shadow: 0 4px 3px rgba(0, 0, 0, .5);
+    font-weight: 500 !important;
+}
+
+.coach5Body .boxedContent {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    gap: .25rem;
+}
+
+.coach5Body .boxedContent h2 {
+    font-family: "Oswald", sans-serif !important;
+    font-size: 30px !important;
+    line-height: .8 !important;
+    font-weight: 900 !important;
+    position: relative !important;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: .15rem .5rem !important;
+    width: 100% !important;
+    text-align: left !important;
+    color: #fcff00 !important;
+    background-color: #4e0053;
+    border-bottom: 3px solid #260129;
+    text-shadow: 0 4px 3px rgba(0, 0, 0, .5);
+}
+
+.coach5Body .boxedContent h2 span {
+    font-family: "Kaloji", sans-serif !important;
+    font-size: 24px !important;
+    color: #fcff00 !important;
+    line-height: 1 !important;
+    font-weight: 500 !important;
+}
+
+.coach5Body .boxedContent p {
+    font-family: "Kaloji", sans-serif !important;
+    font-size: 18px !important;
+    line-height: 20px !important;
+    font-weight: 500 !important;
+    position: relative !important;
+    padding: 0 0 0 .5rem !important;
+    width: fit-content !important;
+    text-align: left !important;
+    color: #fff !important;
+}
+
+.coach5Body .boxedContent .borderedTxt {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: fit-content;
+    position: relative;
+    background-image: linear-gradient(to top, #3e403f 0%, #020200 100%);
+    padding: .15rem .35rem;
+    border-radius: 10px;
+    margin-left: .35rem;
+    border: 4px dotted #fff;
+}
+
+.coach5Body .boxedContent .borderedTxt h3 {
+    font-family: "Oswald", sans-serif !important;
+    font-size: 20px !important;
+    line-height: 1 !important;
+    font-weight: 900 !important;
+    position: relative !important;
+    padding: 0 !important;
+    width: fit-content !important;
+    text-align: center !important;
+    color: #04fcfe !important;
+}
+
+.coach5Body .boxedContent .borderedTxt h3 span {
+    display: block;
+    clear: both;
+    font-family: "Kaloji", sans-serif !important;
+    font-size: 17px !important;
+    font-weight: 500 !important;
+}
+
+.coach5Body .boxedContent .borderedTxt h2 {
+    font-family: "Batukamma", sans-serif !important;
+    font-size: 22px !important;
+    line-height: 1 !important;
+    font-weight: 500 !important;
+    position: relative !important;
+    padding: 0 !important;
+    width: fit-content !important;
+    text-align: center !important;
+    color: #fcff00 !important;
+    background-color: transparent !important;
+    border: none !important;
+    text-shadow: none !important;
+}
+
+.coach5Body .boxedContent .splBatch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: fit-content;
+    position: relative;
+    margin: 0 0 0 .5rem;
+    padding: .5rem;
+    border: 2px solid #fcff00;
+    background-image: linear-gradient(to top, #3e0008 0%, #be0000 100%);
+    border-radius: 10px;
+}
+
+.coach5Body .boxedContent .splBatch h2 {
+    font-family: "Roboto", sans-serif !important;
+    font-size: 15px !important;
+    line-height: .2 !important;
+    font-weight: 600 !important;
+    position: relative !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: fit-content !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center !important;
+    color: #fff !important;
+    background-color: transparent !important;
+    border: none !important;
+    text-shadow: none !important;
+}
+
+.coach5Body .boxedContent .splBatch h2 span {
+    font-size: 26px !important;
+    color: #fff555 !important;
+    font-weight: 900 !important;
+    line-height: 10px !important;
+}
+
+.coach5Body .boxedContent p.advPay {
+    background-color: #fff;
+    font-family: "Ramabhadra", sans-serif !important;
+    font-size: 12px !important;
+    line-height: 1 !important;
+    font-weight: 500 !important;
+    position: relative !important;
+    padding: .25rem .35rem !important;
+    color: #0403f5 !important;
+    width: fit-content !important;
+    letter-spacing: -.04rem !important;
+
+}
+
+.coach5Body .boxedContent .imgHolder {
+    position: absolute;
+    right: .25rem;
+    bottom: 4.3rem;
+    width: auto;
+    height: 170px;
+    z-index: 5 !important;
+}
+
+.coach5Body .boxedContent .bottomTxt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100% !important;
+    position: relative;
+    margin: 0;
+    padding: .5rem;
+    border-top: 2px solid #fff;
+    background-image: linear-gradient(to top, #076d07 0%, #61b610 100%);
+}
+
+.coach5Body .boxedContent .bottomTxt h2 {
+    font-family: "Kaloji", sans-serif !important;
+    font-size: 70px !important;
+    line-height: 26px !important;
+    font-weight: 500 !important;
+    position: relative !important;
+    padding: 0 !important;
+    width: fit-content !important;
+    text-align: left !important;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: #fff !important;
+    background-color: transparent !important;
+    border: none !important;
+    text-shadow: 0 4px 3px rgba(0, 0, 0, .5);
+}
+
+.coach5Body .boxedContent .bottomTxt h2 span {
+    font-size: 16px !important;
+    color: #fff555 !important;
+    font-weight: 500 !important;
+    line-height: .5 !important;
+}
+
+.coach5Body .boxedContent .bottomTxt h1 {
+    font-family: "Oswald", sans-serif !important;
+    font-size: 56px !important;
+    line-height: 20px !important;
+    font-weight: 900 !important;
+    position: relative !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: fit-content !important;
+    text-align: right !important;
+    color: #fff555 !important;
+    text-shadow: 0 4px 3px rgba(0, 0, 0, .5);
+}
+
+#temp-footer .coach5Footer p {
+    font-family: "Roboto", sans-serif !important;
+    font-size: 16px !important;
+    line-height: 1 !important;
+    font-weight: 600 !important;
+    position: relative !important;
+    padding: 0 0 .15rem !important;
+    color: #fff !important;
+    width: fit-content !important;
 }
