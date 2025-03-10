@@ -1496,3 +1496,272 @@ body {
     color: #fff !important;
     width: fit-content !important;
 }
+
+
+/* Coaching Template 6 */
+.coach6Head,
+.coach6Body,
+.coach6Footer {
+    position: relative;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.coach6Head .imgHolder {
+    width: auto;
+    height: 45px;
+}
+
+.coach6Head h1 {
+    font-family: "Times New Roman", sans-serif;
+    font-size: 32px;
+    line-height: 1;
+    font-weight: 600;
+    position: relative;
+    padding: 0;
+    width: fit-content;
+    margin: .5rem auto 0;
+    text-align: center !important;
+    color: #d40000;
+}
+
+.coach6Head p {
+    font-family: "Mandali", sans-serif;
+    font-size: 13px;
+    line-height: 1;
+    font-weight: 600;
+    position: relative;
+    padding: 0;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center !important;
+    color: #164964;
+}
+
+.coach6Body h1 {
+    font-family: "Oswald", sans-serif;
+    font-size: 32px;
+    line-height: 1;
+    font-weight: 600;
+    position: relative;
+    padding: .35rem .6rem;
+    width: fit-content;
+    margin: .5rem auto .25rem;
+    text-align: center !important;
+    color: #fff62b;
+    background-color: #d10101;
+    border-radius: 6px;
+}
+
+.coach6Body h4 {
+    font-family: "Ramabhadra", sans-serif !important;
+    font-size: 20px !important;
+    line-height: 1.1 !important;
+    font-weight: 500 !important;
+    position: relative;
+    padding: .5rem 0 0 !important;
+    width: fit-content !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+    color: #01008e !important;
+    white-space: normal !important;
+}
+
+.coach6Body p {
+    font-family: "Ramabhadra", sans-serif !important;
+    font-size: 17px !important;
+    line-height: 1.2 !important;
+    font-weight: 500 !important;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: .3rem !important;
+    padding: .6rem 0 0 !important;
+    white-space: normal !important;
+    width: 85% !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+    color: #094965 !important;
+}
+
+.coach6Body p b {
+    color: #be0a0b !important;
+    font-weight: 500 !important;
+    font-size: 19px !important;
+}
+
+.coach6Body p span,
+.coach6Body p em {
+    display: block;
+    clear: both;
+    font-style: normal !important;
+}
+
+.coach6Body p span {
+    color: #046400 !important;
+}
+
+.coach6Body p em {
+    color: #000392 !important;
+}
+
+.coach6Body .calendarTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: .8rem auto;
+    position: relative;
+}
+
+.coach6Body .calendarTitle h1 {
+    font-family: "Oswald", sans-serif !important;
+    font-size: 34px !important;
+    line-height: 1 !important;
+    font-weight: 900 !important;
+    position: relative !important;
+    padding: .35rem .5rem !important;
+    width: fit-content !important;
+    margin: 0 !important;
+    text-align: center !important;
+    color: #d40000 !important;
+    background-color: #fff;
+    border-radius: 6px 0 0 6px;
+    border: 2px solid #f03b34;
+    text-transform: uppercase !important;
+}
+
+.coach6Body .calendarTitle h3 {
+    font-family: "Roboto", sans-serif !important;
+    font-size: 20px !important;
+    line-height: 1 !important;
+    font-weight: 900 !important;
+    position: relative !important;
+    padding: 1rem 0 0 !important;
+    width: 60px !important;
+    height: 70px !important;
+    margin: 0 !important;
+    left: -.5rem !important;
+    text-align: center !important;
+    color: #fff !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url(../images/calendar-bg.png) no-repeat center center;
+    background-size: contain;
+    text-transform: uppercase !important;
+}
+
+.coach6Body .calendarTitle h3 span {
+    color: #000 !important;
+    font-size: 28px !important;
+}
+
+.coach6Body p.location,
+.coach6Body p.address {
+    font-family: "Ramabhadra", sans-serif !important;
+    font-size: 18px !important;
+    line-height: 1.2 !important;
+    font-weight: 500 !important;
+    position: relative !important;
+    padding: .35rem .5rem !important;
+    width: fit-content !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: .35rem !important;
+    margin: 0 !important;
+    text-align: center !important;
+    color: #00068f !important;
+}
+
+.coach6Body p.location img,
+.coach6Body h5.timings img,
+.coach6Body p.address img {
+    max-width: 18px;
+}
+
+.coach6Body h5.timings {
+    font-family: "Roboto", sans-serif !important;
+    font-size: 16px !important;
+    line-height: 1.2 !important;
+    font-weight: 500 !important;
+    position: relative !important;
+    padding: .35rem .5rem !important;
+    width: fit-content !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .35rem !important;
+    margin: 0 !important;
+    text-align: center !important;
+    color: #fff !important;
+    background-color: #f03b34;
+    border-radius: 6px;
+}
+
+.coach6Body p.address {
+    color: #000 !important;
+    font-size: 16px !important;
+    flex-wrap: nowrap !important;
+    align-items: flex-start !important;
+}
+
+.coach6Body p.address::before {
+    display: none !important;
+}
+
+.coach6Footer p {
+    font-family: "Ramabhadra", sans-serif !important;
+    font-size: 16px !important;
+    line-height: 1.2 !important;
+    font-weight: 500 !important;
+    position: relative !important;
+    padding: .5rem 0 !important;
+    width: fit-content !important;
+    margin: 0 !important;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center !important;
+    color: #fff !important;
+}
+
+.coach6Footer p span {
+    color: #fff62b !important;
+}
+
+#temp-footer .coach6Footer p.contact {
+    font-family: "Oswald", sans-serif !important;
+    font-size: 16px !important;
+    line-height: 1.2 !important;
+    letter-spacing: -.05rem !important;
+    font-weight: 900 !important;
+    position: relative !important;
+    padding: .35rem .5rem .35rem 1.5rem !important;
+    width: fit-content !important;
+    margin: 0 auto !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .35rem !important;
+    text-align: center !important;
+    color: #222 !important;
+    background-color: #fff62b;
+    border-radius: 6px;
+}
+
+#temp-footer .coach6Footer p.contact::before {
+    top: 50% !important;
+    left: .25rem !important;
+    transform: translateY(-50%) !important;
+    filter: none !important;
+}

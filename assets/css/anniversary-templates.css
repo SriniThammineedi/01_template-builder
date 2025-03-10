@@ -678,3 +678,610 @@ p.contact {
     white-space: nowrap;
     text-align: center;
 }
+
+/* Anniversary Template 3 */
+.anniv3Head,
+.anniv3Body,
+.anniv3Footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.anniv3Head .imgHolder.topDecor {
+    position: absolute;
+    top: -2.5rem;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.anniv3Head .side-by-side {
+    justify-content: center;
+    gap: .5rem;
+    margin: 1rem auto 0;
+}
+
+.anniv3Head .side-by-side .imgHolder {
+    width: auto;
+    height: 55px;
+}
+
+.anniv3Body .side-by-side {
+    justify-content: center;
+    gap: .5rem;
+    margin: 0 auto;
+}
+
+.anniv3Body .side-by-side h1 {
+    font-family: "Batukamma", sans-serif !important;
+    font-size: 34px !important;
+    line-height: 1 !important;
+    font-weight: 500 !important;
+    position: relative;
+    padding: 0 !important;
+    color: #dd0000 !important;
+    width: fit-content !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+}
+
+.anniv3Body .side-by-side h1 span {
+    font-size: 26px !important;
+}
+
+.anniv3Body .side-by-side .imgHolder {
+    width: auto;
+    height: 35px;
+}
+
+.anniv3Body .side-by-side h2 {
+    font-family: "Roboto", sans-serif !important;
+    font-size: 56px !important;
+    line-height: 1 !important;
+    font-weight: 900 !important;
+    position: relative;
+    padding: 0 !important;
+    color: #00600b !important;
+    width: fit-content !important;
+    text-align: center !important;
+}
+
+.anniv3Body .side-by-side h2 sup {
+    font-size: 28px !important;
+}
+
+.anniv3Body .side-by-side h2 span {
+    font-family: "Batukamma", sans-serif !important;
+    font-size: 30px !important;
+    line-height: 1 !important;
+    font-weight: 500 !important;
+    position: relative;
+    padding: 0 !important;
+    color: #dd0000 !important;
+    width: fit-content !important;
+    text-align: center !important;
+    display: block;
+    clear: both;
+}
+
+.anniv3Body h3 {
+    font-family: "Kaloji", sans-serif !important;
+    font-size: 30px !important;
+    line-height: .85 !important;
+    font-weight: normal !important;
+    position: relative !important;
+    padding: .25rem .5rem !important;
+    border-radius: 6px !important;
+    color: #fff000 !important;
+    background-color: #005f0b !important;
+    width: fit-content !important;
+    text-align: center !important;
+}
+
+.anniv3Body h3 span {
+    color: #fff !important;
+    font-size: 22px !important;
+    display: block;
+    clear: both;
+}
+
+.anniv3Body ul.highlightsList,
+.anniv3Body ul.highlightsList li {
+    margin: 0 auto;
+    padding: .25rem 1rem 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: .5rem;
+    width: fit-content;
+}
+
+.anniv3Body ul.highlightsList li {
+    width: calc(1/2 * 100% - (1 - 1/2) * .5rem);
+}
+
+.anniv3Body ul.highlightsList li p {
+    font-family: "Anek Telugu", sans-serif !important;
+    font-size: 15px !important;
+    line-height: 1 !important;
+    font-weight: 600 !important;
+    position: relative !important;
+    padding: 0 0 0 1.1rem !important;
+    color: #000201 !important;
+    width: 100% !important;
+    text-align: left !important;
+    white-space: nowrap !important;
+}
+
+.anniv3Body ul.highlightsList li p::before {
+    content: "";
+    position: absolute;
+    width: .8rem;
+    height: .8rem;
+    background: url(../images/list-arrow.png) no-repeat center center;
+    background-size: contain;
+    left: 0;
+    top: 0;
+}
+
+.anniv3Body .flexRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    margin: 1rem auto 0;
+    width: fit-content;
+}
+
+.anniv3Body .flexRow .specialities,
+.anniv3Body .flexRow .locationQr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: .5rem;
+    width: 100%;
+}
+
+.anniv3Body .flexRow .specialities h4.withBg {
+    font-family: "Batukamma", sans-serif !important;
+    font-size: 24px !important;
+    line-height: 1 !important;
+    font-weight: 500 !important;
+    position: relative !important;
+    padding: .25rem .5rem !important;
+    border-radius: 6px !important;
+    color: #f4df00 !important;
+    background-color: #c20200 !important;
+    width: fit-content !important;
+    text-align: center !important;
+}
+
+.anniv3Body .flexRow .specialities p {
+    font-family: "Kaloji", sans-serif !important;
+    font-size: 22px !important;
+    line-height: 1 !important;
+    font-weight: 500 !important;
+    position: relative !important;
+    padding: 0 !important;
+    color: #117505 !important;
+    width: fit-content !important;
+    text-align: center !important;
+}
+
+.anniv3Body .flexRow .locationQr h4 {
+    font-family: "Roboto", sans-serif !important;
+    font-size: 14px !important;
+    line-height: 1 !important;
+    font-weight: 600 !important;
+    position: relative !important;
+    margin: 0 0 -.35rem !important;
+    padding: 0 !important;
+    color: #c20200 !important;
+    width: fit-content !important;
+    text-align: center !important;
+}
+
+.anniv3Body .flexRow .locationQr .imgHolder {
+    width: auto;
+    height: 130px;
+}
+
+#temp-footer .anniv3Footer p.address {
+    font-family: "Anek Telugu", sans-serif !important;
+    font-size: 16px !important;
+    line-height: 1.3 !important;
+    font-weight: normal !important;
+    position: relative !important;
+    padding: 0 !important;
+    margin: 2.2rem auto 0;
+    color: #fff !important;
+    width: fit-content !important;
+    white-space: nowrap;
+    text-align: center !important
+}
+
+#temp-footer .anniv3Footer p.address span {
+    display: block;
+    clear: both;
+    font-size: 26px !important;
+    color: #fff !important;
+    font-weight: 600 !important;
+}
+
+#temp-footer .anniv3Footer p.contact {
+    font-family: "Oswald", sans-serif !important;
+    font-size: 26px !important;
+    line-height: 1 !important;
+    font-weight: 600 !important;
+    position: relative !important;
+    padding: .35rem .75rem .35rem 2.2rem !important;
+    margin: 0 auto !important;
+    color: #fff !important;
+    width: fit-content !important;
+    text-align: center !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    background-color: #c20200 !important;
+    border-radius: 6px;
+}
+
+#temp-footer .anniv3Footer p.contact::before {
+    top: .5rem !important;
+    left: .25rem !important;
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+}
+
+
+/* Anniversary Template 4 */
+.anniv4Head,
+.anniv4Body,
+.anniv4Footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.anniv4Head .imgHolder.topDecor {
+    position: absolute;
+    top: -2.5rem;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.anniv4Head h1 {
+    font-family: "Anek Telugu", sans-serif !important;
+    font-size: 24px !important;
+    line-height: 1 !important;
+    font-weight: 900 !important;
+    position: relative;
+    padding: 2rem 0 0 !important;
+    color: #556004 !important;
+    width: fit-content !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 3px #fff;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .25);
+}
+
+.anniv4Body h1.withBg {
+    font-family: "Oswald", sans-serif !important;
+    font-size: 40px !important;
+    line-height: 1.4 !important;
+    letter-spacing: .05rem !important;
+    font-weight: 900 !important;
+    padding: .5rem .35rem !important;
+    color: #005fb2 !important;
+    width: fit-content !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    background-color: #cc2052 !important;
+    border-radius: 12px;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 3px #fff;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .25);
+}
+
+.anniv4Body .borderedTxt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    margin: .6rem auto;
+    width: fit-content;
+    border: 1px solid rgba(0, 0, 0, .35);
+    border-radius: 14px;
+    padding: .6rem .25rem;
+}
+
+.anniv4Body .borderedTxt img {
+    width: auto;
+    max-height: 30px;
+}
+
+.anniv4Body .borderedTxt h3 {
+    font-family: "Batukamma", sans-serif !important;
+    font-size: 40px !important;
+    line-height: 1 !important;
+    font-weight: 500 !important;
+    position: relative;
+    padding: 0 !important;
+    color: #cd1e55 !important;
+    width: fit-content !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 3px #fff;
+}
+
+.anniv4Body .stackAsRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    margin: 0 auto;
+    width: 90%;
+    border-bottom: 1px solid rgba(0, 0, 0, .4);
+}
+
+.anniv4Body .stackAsRow .imgHolder {
+    width: auto;
+    height: 50px;
+    margin-top: -1rem;
+}
+
+.anniv4Body .stackAsRow .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: .25rem;
+    width: calc(100% - 120px);
+}
+
+.anniv4Body .stackAsRow .content h3 {
+    font-family: "Batukamma", sans-serif !important;
+    font-size: 18px !important;
+    line-height: 1 !important;
+    font-weight: 500 !important;
+    position: relative;
+    padding: 0 !important;
+    color: #525c06 !important;
+    width: fit-content !important;
+    text-align: center !important;
+}
+
+.anniv4Body .stackAsRow .content h4 {
+    font-family: "Anek Telugu", sans-serif !important;
+    font-size: 20px !important;
+    line-height: 1 !important;
+    font-weight: 700 !important;
+    position: relative;
+    padding: 1rem 0 .3rem !important;
+    color: #025eb1 !important;
+    width: fit-content !important;
+    text-align: center !important;
+    letter-spacing: -.05rem !important;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 3px #fff;
+    white-space: nowrap !important;
+}
+
+.anniv4Body p {
+    font-family: "Batukamma", sans-serif !important;
+    font-size: 15px !important;
+    line-height: 1.2 !important;
+    font-weight: 500 !important;
+    padding: .5rem 0 !important;
+    color: #c82751 !important;
+    width: fit-content !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 3px #fff;
+}
+
+.anniv4Body .defaultList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: .35rem .5rem;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #005cb9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .25);
+    padding: .75rem .25rem;
+}
+
+.anniv4Body .defaultList h5 {
+    font-family: "Anek Telugu", sans-serif !important;
+    font-size: 12px !important;
+    line-height: 1 !important;
+    font-weight: 500 !important;
+    position: relative;
+    padding: 0 0 .25rem !important;
+    color: #ffff36 !important;
+    width: fit-content !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .5);
+    flex: 1 1 100%;
+}
+
+.anniv4Body .defaultList p {
+    font-family: "Anek Telugu", sans-serif !important;
+    font-size: 11px !important;
+    line-height: 1 !important;
+    font-weight: 500 !important;
+    position: relative !important;
+    padding: 0 .15rem 0 .65rem !important;
+    color: #fff !important;
+    width: fit-content !important;
+    text-align: left !important;
+    white-space: nowrap !important;
+    paint-order: 0 !important;
+    -webkit-text-stroke: 0 !important;
+}
+
+.anniv4Body .defaultList p::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    left: 0;
+    top: 0;
+    background: url(../images/tick-mark.png) no-repeat center center;
+    background-size: contain;
+}
+
+.anniv4Footer .show-in-row {
+    justify-content: space-between !important;
+    width: 100% !important;
+    margin: .5rem auto !important;
+    flex-wrap: nowrap !important;
+}
+
+.anniv4Footer .show-in-row h3.withBg {
+    font-family: "Anek Telugu", sans-serif !important;
+    font-size: 16px !important;
+    line-height: 1.3 !important;
+    font-weight: 700 !important;
+    position: relative;
+    padding: .5rem .35rem !important;
+    color: #0065b3 !important;
+    width: 30% !important;
+    text-align: center !important;
+    background-color: #cc2052;
+    border-radius: 8px;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 2px #fff;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .25);
+}
+
+.anniv4Footer .show-in-row .guestCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0;
+    width: 33%;
+    padding: 0;
+}
+
+.anniv4Footer .show-in-row .guestCard .imgHolder {
+    width: auto;
+    height: 130px;
+    border: none !important;
+}
+
+.anniv4Footer .show-in-row .guestCard h2 {
+    font-family: "Oswald", sans-serif !important;
+    font-size: 14px !important;
+    line-height: 1 !important;
+    font-weight: 600 !important;
+    position: relative !important;
+    padding: 0 !important;
+    color: #0065b3 !important;
+    width: fit-content !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 3px #fff;
+}
+
+.anniv4Footer .show-in-row .guestCard p {
+    font-family: "Oswald", sans-serif !important;
+    font-size: 10px !important;
+    line-height: 1 !important;
+    font-weight: 500 !important;
+    position: relative !important;
+    padding: .2rem 0 0 !important;
+    color: #ce1e4d !important;
+    width: fit-content !important;
+    text-align: center !important;
+    white-space: normal !important;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 3px #fff;
+}
+
+#temp-footer .anniv4Footer p.address {
+    font-family: "Anek Telugu", sans-serif !important;
+    font-size: 16px !important;
+    line-height: 1 !important;
+    font-weight: 700 !important;
+    position: relative !important;
+    padding: .5rem 0 0 1.3rem !important;
+    color: #005ca9 !important;
+    width: fit-content !important;
+    text-align: center !important;
+    white-space: normal !important;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 3px #fff;
+}
+
+#temp-footer .anniv4Footer p.address::before {
+    left: 0 !important;
+    top: .35rem !important;
+    filter: none !important;
+}
+
+
+#temp-footer .anniv4Footer p.contactClickable {
+    font-family: "Oswald", sans-serif !important;
+    font-size: 26px !important;
+    line-height: 1 !important;
+    font-weight: 900 !important;
+    position: relative !important;
+    padding: .5rem 2rem .5rem 2.25rem !important;
+    margin: .35rem auto 0 !important;
+    color: #005ca9 !important;
+    width: fit-content !important;
+    text-align: center !important;
+    white-space: normal !important;
+    background-color: #d41c52 !important;
+    border-radius: 30px !important;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 3px #fff;
+}
+
+#temp-footer .anniv4Footer p.contactClickable::before {
+    content: "";
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    left: .5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url(../images/phone-icon.png) no-repeat center center;
+    background-size: contain;
+    filter: invert(1);
+}
+
+#temp-footer .anniv4Footer p.contactClickable::after {
+    content: "";
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    right: 0;
+    top: 60%;
+    transform: translateY(-50%);
+    background: url(../images/click_hand_icon.png) no-repeat center center;
+    background-size: contain;
+}
