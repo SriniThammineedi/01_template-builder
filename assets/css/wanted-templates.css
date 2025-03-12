@@ -8,3 +8,714 @@ body {
     position: relative;
     overflow: hidden;
 }
+
+
+/* Wanted Template 1 */
+.wanted1Head,
+.wanted1Body,
+.wanted1Footer {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.wanted1Head .splWantedBadge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: 80%;
+    background: url(../images/wanted-label-badge.png) no-repeat center center;
+    background-size: contain;
+    padding: 6rem 1.5rem 1rem;
+    margin: -.5rem auto -1rem;
+}
+
+.wanted1Head .splWantedBadge h1 {
+    font-family: 'Bowlby One', sans-serif !important;
+    font-size: 20px !important;
+    white-space: nowrap;
+    font-weight: 600 !important;
+    color: #293a94 !important;
+    line-height: 1 !important;
+    text-align: center !important;
+    text-transform: uppercase !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.wanted1Head .splWantedBadge h1 span {
+    font-size: 30px !important;
+}
+
+.wanted1Head .splWantedBadge h4 {
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 20px !important;
+    white-space: nowrap;
+    font-weight: 900 !important;
+    color: #000 !important;
+    line-height: 1.2 !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    padding: .5rem .6rem 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.wanted1Head .splWantedBadge h4 span {
+    font-size: 17px !important;
+    font-weight: 500 !important;
+}
+
+.wanted1Body h2 {
+    font-family: 'Bowlby One', sans-serif !important;
+    font-size: 20px !important;
+    white-space: nowrap;
+    font-weight: normal !important;
+    color: #fff !important;
+    line-height: 1.2 !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    padding: .5rem .6rem 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, .6);
+}
+
+.wanted1Body h2 span {
+    font-size: 24px !important;
+    font-weight: 500 !important;
+    color: #fdcb00 !important;
+}
+
+.wanted1Body h3 {
+    font-family: 'Oswald', sans-serif !important;
+    font-size: 22px !important;
+    font-weight: 900 !important;
+    color: #fff !important;
+    line-height: 1.2 !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    padding: .35rem .6rem 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, .6);
+}
+
+.wanted1Body h3 span {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+}
+
+.wanted1Body h3.colorYellow {
+    color: #fdcb00 !important;
+    font-size: 25px !important;
+}
+
+.wanted1Body p {
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 400 !important;
+    color: #fff !important;
+    line-height: 1.3 !important;
+    width: 90% !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    padding: .5rem .6rem 0 !important;
+}
+
+.wanted1Footer h4.fullWidthBg {
+    background-color: #fdcb00;
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    color: #000 !important;
+    line-height: 1.2 !important;
+    width: 100% !important;
+    text-align: center !important;
+    margin: -.85rem auto 0 !important;
+    padding: .35rem !important;
+}
+
+.wanted1Footer .imgHolder {
+    width: auto;
+    height: 150px;
+    margin: .25rem auto 0;
+}
+
+#temp-footer .wanted1Footer p.contact,
+#temp-footer .wanted2Footer p.contact {
+    font-family: 'Oswald', sans-serif !important;
+    font-size: 26px !important;
+    font-weight: 900 !important;
+    color: #000 !important;
+    line-height: 1 !important;
+    width: fit-content !important;
+    text-align: center !important;
+    margin: -.5rem auto 0 !important;
+    padding: .25rem .6rem .25rem 1.85rem !important;
+    background-color: #fff000;
+    border-radius: 6px;
+    position: relative;
+}
+
+#temp-footer .wanted1Footer p.contact::before,
+#temp-footer .wanted2Footer p.contact::before {
+    left: .25rem !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    width: 1.3rem !important;
+    height: 1.3rem !important;
+    filter: none !important;
+}
+
+/* Wanted Template 2 */
+
+.wanted2Head,
+.wanted2Body,
+.wanted2Footer {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.wanted2Head h1 {
+    font-family: 'Bonalu', sans-serif !important;
+    font-size: 40px !important;
+    white-space: nowrap !important;
+    font-weight: 500 !important;
+    color: #e6052d !important;
+    line-height: 1 !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+}
+
+.wanted2Head .imgHolder {
+    width: auto;
+    height: 275px;
+    margin: .55rem auto 0;
+}
+
+.wanted2Body .borderedTxt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: fit-content;
+    border: .15rem solid rgba(255, 255, 255, .6);
+    padding: 1.2rem .5rem .5rem;
+    position: relative;
+    margin: .7rem auto 0;
+    border-radius: 10px;
+}
+
+.wanted2Body .borderedTxt h1 {
+    font-family: 'Batukamma', sans-serif !important;
+    font-size: 42px !important;
+    white-space: nowrap !important;
+    font-weight: 500 !important;
+    color: #fff !important;
+    line-height: 1 !important;
+    text-align: center !important;
+    margin: -2.5rem auto 0 !important;
+    padding: 0 1rem !important;
+    background-color: #080d35;
+    position: relative;
+}
+
+.wanted2Body .borderedTxt h1 span {
+    font-size: 24px !important;
+}
+
+.wanted2Body .borderedTxt h2 {
+    font-family: 'Batukamma', sans-serif !important;
+    font-size: 26px !important;
+    white-space: nowrap !important;
+    font-weight: 500 !important;
+    color: #ffff36 !important;
+    line-height: 1 !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    position: relative;
+}
+
+.wanted2Body .borderedTxt h2 span {
+    background-color: #fff;
+    padding: 0 4px;
+    border-radius: 4px;
+    color: #e6052d !important;
+}
+
+.wanted2Body h3.withBg {
+    font-family: 'Batukamma', sans-serif !important;
+    font-size: 22px !important;
+    white-space: nowrap !important;
+    font-weight: 500 !important;
+    color: #1f1724 !important;
+    background-color: #ffff36 !important;
+    line-height: 1.1 !important;
+    text-align: center !important;
+    margin: .35rem auto !important;
+    padding: .15rem .5rem !important;
+    position: relative;
+    border-radius: 24px;
+}
+
+.wanted2Body .defaultList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.wanted2Body .defaultList p {
+    font-family: 'Ramabhadra', sans-serif !important;
+    font-size: 16px !important;
+    white-space: nowrap !important;
+    font-weight: 500 !important;
+    color: #fff !important;
+    line-height: 1 !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    padding: .15rem .5rem !important;
+    position: relative;
+}
+
+.wanted2Body .defaultList p:last-child {
+    margin-bottom: .5rem !important;
+}
+
+.wanted2Body .defaultList p::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: url(../images/listitem_arrow_icon.png) no-repeat center center;
+    background-size: contain;
+    left: -.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.wanted2Body h4.withBg {
+    font-family: 'Ramabhadra', sans-serif !important;
+    font-size: 14px !important;
+    white-space: nowrap !important;
+    font-weight: 500 !important;
+    color: #1f2353 !important;
+    width: fit-content !important;
+    background-color: #fff !important;
+    line-height: 1.2 !important;
+    text-align: center !important;
+    margin: .125rem auto !important;
+    padding: .25rem 1rem !important;
+    position: relative;
+    border-radius: 24px;
+}
+
+.wanted2Footer h3.withBg {
+    font-family: 'Batukamma', sans-serif !important;
+    font-size: 24px !important;
+    white-space: nowrap !important;
+    font-weight: 500 !important;
+    color: #ffff36 !important;
+    width: fit-content !important;
+    background-color: #bf1106 !important;
+    line-height: 1.2 !important;
+    text-align: center !important;
+    margin: -.25rem auto 0 !important;
+    padding: .15rem 1rem !important;
+    position: relative;
+    border-radius: 6px !important;
+}
+
+#temp-footer .wanted2Footer p.contact {
+    margin: 0 auto !important;
+}
+
+
+/* Wanted Template 3 */
+
+.wanted3Head,
+.wanted3Body,
+.wanted3Footer {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.wanted3Head h1 {
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 44px !important;
+    font-weight: 500 !important;
+    color: #fbb217 !important;
+    line-height: 1 !important;
+    text-align: center !important;
+    margin: -.5rem auto 1.2rem !important;
+    padding: .5rem 1.5rem !important;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, .3);
+    text-transform: uppercase !important;
+}
+
+.wanted3Head h1 span {
+    font-size: 15px !important;
+    color: #fff !important;
+    font-weight: 300 !important;
+    margin-top: -1rem !important;
+    background-color: #2c22a5 !important;
+    padding: 0 .8rem !important;
+}
+
+.wanted3Head h1 em {
+    font-size: 25px !important;
+    color: #fff !important;
+    font-family: 'Bonheur Royale', sans-serif !important;
+    font-style: normal !important;
+    text-transform: none !important;
+    margin-bottom: -1.75rem !important;
+    position: relative;
+    top: -.25rem !important;
+    background-color: #3830aa !important;
+    padding: 0 .8rem !important;
+}
+
+.wanted3Head .combinedTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    gap: .5rem;
+    margin: 0 auto;
+}
+
+.wanted3Head .combinedTitle .imgHolder {
+    width: auto;
+    height: 40px;
+}
+
+.wanted3Head .combinedTitle .imgHolder img {
+    border-radius: 6px;
+}
+
+.wanted3Head .combinedTitle h2 {
+    font-family: 'Batukamma', sans-serif !important;
+    font-size: 28px !important;
+    white-space: nowrap !important;
+    font-weight: 500 !important;
+    color: #fef000 !important;
+    line-height: 1 !important;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative;
+}
+
+.wanted3Body .imgHolder {
+    width: auto;
+    height: 235px;
+    margin: -.65rem auto 0 !important;
+}
+
+.wanted3Body h2 {
+    font-family: 'Batukamma', sans-serif !important;
+    font-size: 32px !important;
+    white-space: nowrap !important;
+    font-weight: 500 !important;
+    color: #fef000 !important;
+    line-height: 1 !important;
+    text-align: center !important;
+    width: fit-content !important;
+    margin: -1.5rem auto 0 !important;
+    padding: 0 !important;
+    position: relative;
+}
+
+.wanted3Body h4.withBg {
+    font-family: 'Kaloji', sans-serif !important;
+    font-size: 20px !important;
+    white-space: nowrap !important;
+    font-weight: 500 !important;
+    color: #950407 !important;
+    background-color: #f6f700 !important;
+    border-radius: 6px !important;
+    line-height: 1 !important;
+    width: fit-content !important;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: .25rem .5rem !important;
+    position: relative;
+}
+
+.wanted3Body h4.withBgRed {
+    background-color: #950407 !important;
+    color: #fff !important;
+    max-width: 80% !important;
+    font-family: 'Kaloji', sans-serif !important;
+    font-size: 20px !important;
+    white-space: normal !important;
+    font-weight: 500 !important;
+    border-radius: 0 0 6px 6px !important;
+    line-height: 1 !important;
+    width: fit-content !important;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: .25rem .5rem !important;
+    position: relative;
+}
+
+.wanted3Body h3.withBg {
+    font-family: 'Batukamma', sans-serif !important;
+    font-size: 22px !important;
+    white-space: nowrap !important;
+    letter-spacing: .02rem !important;
+    font-weight: normal !important;
+    color: #fff !important;
+    background-color: #191313 !important;
+    border-radius: 6px !important;
+    line-height: 1 !important;
+    width: fit-content !important;
+    text-align: center !important;
+    margin: .25rem auto 0 !important;
+    padding: .25rem .5rem !important;
+    position: relative;
+}
+
+.wanted3Body p {
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 11px !important;
+    white-space: normal !important;
+    letter-spacing: .02rem !important;
+    font-weight: normal !important;
+    color: #fff !important;
+    line-height: 1.2 !important;
+    width: fit-content !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    padding: .25rem 0 !important;
+    text-transform: uppercase !important;
+    position: relative;
+}
+
+.wanted3Body p span {
+    display: block;
+    clear: both;
+    font-weight: 500 !important;
+    font-size: 13px !important;
+    margin-bottom: .35rem !important;
+    text-decoration: underline;
+    color: #fff !important;
+}
+
+.wanted3Body h3.withBgYellow {
+    font-family: 'Oswald', sans-serif !important;
+    font-size: 22px !important;
+    white-space: nowrap !important;
+    letter-spacing: .02rem !important;
+    font-weight: 900 !important;
+    color: #1b1e27 !important;
+    background-color: #fff100 !important;
+    border-radius: 6px !important;
+    line-height: 1 !important;
+    width: fit-content !important;
+    text-align: center !important;
+    margin: .25rem 0 0 7.5rem !important;
+    padding: .25rem .5rem .25rem 1.5rem !important;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wanted3Body h3.withBgYellow span {
+    background-color: #fff !important;
+    padding: .25rem .5rem .25rem 1.5rem !important;
+    position: absolute !important;
+    left: -7.7rem !important;
+    font-size: 18px !important;
+    color: #bf1106 !important;
+    border-radius: 6px !important;
+}
+
+.wanted3Body h3.withBgYellow span::before {
+    content: "";
+    position: absolute;
+    left: .35rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1rem;
+    height: 1rem;
+    background: url(../images/location-dark.svg) no-repeat center center;
+    background-size: contain;
+}
+
+.wanted3Body p.withBgBlack {
+    font-family: 'Ramabhadra', sans-serif !important;
+    font-size: 12px !important;
+    white-space: nowrap !important;
+    font-weight: normal !important;
+    color: #fff !important;
+    line-height: 1.2 !important;
+    width: fit-content !important;
+    text-align: center !important;
+    margin: .4rem auto 0 !important;
+    padding: .15rem .35rem !important;
+    background-color: #000 !important;
+    border-radius: 6px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    position: relative;
+}
+
+.wanted3Body p.withBgBlack span {
+    text-decoration: none !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 10px !important;
+    margin: 0 !important;
+}
+
+.wanted3Footer h6.withBg {
+    font-family: 'Ramabhadra', sans-serif !important;
+    font-size: 13px !important;
+    white-space: nowrap !important;
+    font-weight: 500 !important;
+    color: #1b1e27 !important;
+    background-color: #fef102 !important;
+    border-radius: 6px !important;
+    line-height: 1 !important;
+    width: fit-content !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    padding: .25rem .5rem !important;
+    position: relative;
+}
+
+.wanted3Footer h3 {
+    font-family: 'Oswald', sans-serif !important;
+    font-size: 20px !important;
+    white-space: nowrap !important;
+    font-weight: 500 !important;
+    color: #1b1e27 !important;
+    line-height: 1.2 !important;
+    width: fit-content !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    padding: .25rem 0 !important;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.wanted3Footer h3 span {
+    font-size: 14px !important;
+}
+
+#temp-footer .wanted3Footer p.contactClickable {
+    font-family: "Oswald", sans-serif !important;
+    font-size: 26px !important;
+    line-height: 1 !important;
+    font-weight: 900 !important;
+    position: relative !important;
+    padding: .5rem 2rem .5rem 2.25rem !important;
+    margin: .15rem auto 0 !important;
+    color: #fff !important;
+    width: fit-content !important;
+    text-align: center !important;
+    white-space: normal !important;
+    background-color: #980203 !important;
+    border-radius: 6px !important;
+}
+
+#temp-footer .wanted3Footer p.contactClickable::before {
+    content: "";
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    left: .5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url(../images/phone-icon.png) no-repeat center center;
+    background-size: contain;
+    filter: invert(1);
+}
+
+#temp-footer .wanted3Footer p.contactClickable::after {
+    content: "";
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    right: 0;
+    top: 60%;
+    transform: translateY(-50%);
+    background: url(../images/click_hand_icon.png) no-repeat center center;
+    background-size: contain;
+}
+
+/* Wanted Template 4 */
+
+.wanted4Head,
+.wanted4Body,
+.wanted4Footer {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.wanted4Head h1 {
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 44px !important;
+    font-weight: 500 !important;
+    color: #fbb217 !important;
+    line-height: 1 !important;
+    text-align: center !important;
+    margin: -.5rem auto 1.2rem !important;
+    padding: .5rem 1.5rem !important;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, .3);
+    text-transform: uppercase !important;
+}

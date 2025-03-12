@@ -2671,6 +2671,47 @@ p.contact::before {
     overflow: hidden;
 }
 
+/* Contact Button 2 Actions */
+#temp-footer p.contactClickable {
+    font-family: "Oswald", sans-serif !important;
+    font-size: 26px !important;
+    line-height: 1 !important;
+    font-weight: 900 !important;
+    position: relative !important;
+    padding: .5rem 2rem .5rem 2.25rem !important;
+    margin: .15rem auto 0 !important;
+    color: #fff !important;
+    width: fit-content !important;
+    text-align: center !important;
+    white-space: normal !important;
+    background-color: #980203 !important;
+    border-radius: 6px !important;
+}
+
+#temp-footer p.contactClickable::before {
+    content: "";
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    left: .5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url(../images/phone-icon.png) no-repeat center center;
+    background-size: contain;
+    filter: invert(1);
+}
+
+#temp-footer p.contactClickable::after {
+    content: "";
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    right: 0;
+    top: 60%;
+    transform: translateY(-50%);
+    background: url(../images/click_hand_icon.png) no-repeat center center;
+    background-size: contain;
+}
 
 
 
