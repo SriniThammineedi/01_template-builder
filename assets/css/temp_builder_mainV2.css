@@ -9,6 +9,7 @@
 @import url("../css/anniversary-templates.css");
 @import url("../css/retirement-templates.css");
 @import url("../css/coaching-templates.css");
+@import url("../css/wanted-templates.css");
 
 :root {
     --text-dark: #202020;

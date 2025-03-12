@@ -529,7 +529,8 @@ function showTemplate(selectedId) {
     'wedding': 'weddingTemps',
     'anniversary': 'anniversaryTemps',
     'retirement': 'retirementTemps',
-    'coaching': 'coachingTemps'
+    'coaching': 'coachingTemps',
+    'wanted': 'wantedTemps'
   };
 
   const templateDivs = document.querySelectorAll('.inner-container');

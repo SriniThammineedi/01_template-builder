@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wanted Template-1</title>
+
+        <link rel="stylesheet" href="/assets/css/admission-templates.css">
+    </head>
+
+    <body>
+        <div id="themeOuter">
+            <!-- Wanted Template-1 Start -->
+            <div class="template-wrapper" id="Wanted-template-1"
+                style="background-image: url(/assets/images/back-bg-67.jpg);">
+
+                <!-- Template Header -->
+                <div id="temp-header">
+                    <div class="wanted1Head">
+                        <h3 class="selectable" contenteditable="true" data-options="editOptions">Hello</h3>
+                    </div>
+                </div>
+
+                <!-- Template Body Section -->
+                <div id="temp-body">
+                    <div class="wanted1Body">
+                        <h1 class="selectable" contenteditable="true" data-options="editOptions"></h1>
+                    </div>
+                </div>
+
+                <!-- Template Footer Section -->
+                <div id="temp-footer">
+                    <div class="wanted1Footer">
+                        <div class="imgHolder selectable">
+                            <img id="teacherPic" src="/assets/images/replacable-photo.jpg" alt="" />
+                            <input name="teach" type="file" accept="image/*"
+                                onchange="document.getElementById('teacherPic').src = window.URL.createObjectURL(this.files[0])" />
+                        </div>
+                        <p class="selectable contact" contenteditable="true" data-options="editOptions"></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Wanted Template-1 End -->
+        </div>
+    </body>
+
+</html>

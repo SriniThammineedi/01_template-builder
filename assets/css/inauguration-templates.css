@@ -331,3 +331,1085 @@ h1.spl-heading.withBg {
 }
 
 /* Inaugration Template 2 */
+.inaug2Head,
+.inaug2Body,
+.inaug2Footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.inaug2Head .imgHolder.topDecor {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: -2.5rem;
+    left: 0;
+    z-index: -1;
+}
+
+.inaug2Head h1 {
+    font-family: "Bonalu", sans-serif;
+    font-size: 54px;
+    line-height: 1;
+    font-weight: 500;
+    position: relative;
+    font-style: italic;
+    padding: .6rem 0 0;
+    color: #fff500;
+    width: fit-content;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: .05rem;
+    text-shadow: 0 4px 5px rgba(0, 0, 0, .6);
+    align-items: center;
+}
+
+.inaug2Head h1 span {
+    font-family: "NTR", sans-serif;
+    font-size: 30px;
+}
+
+.inaug2Body h5.withBg {
+    font-family: "Bhagamati", sans-serif;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 500;
+    position: relative;
+    padding: 0;
+    color: #fff;
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto;
+    background: #5b001f;
+    padding: .2rem .5rem;
+    border-radius: 6px;
+}
+
+.inaug2Body p {
+    font-family: "Kumram Bheem", sans-serif;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 500;
+    position: relative;
+    padding: 0;
+    color: #fff;
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto;
+    padding: .3rem 0;
+}
+
+.inaug2Body .imgHolder.brandLogo {
+    width: auto;
+    height: 90px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.inaug2Body h4 {
+    font-family: "Kumram Bheem", sans-serif !important;
+    font-size: 22px !important;
+    line-height: 1 !important;
+    font-weight: normal !important;
+    position: relative;
+    padding: .35rem 0 !important;
+    color: #fff !important;
+    width: fit-content !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    text-shadow: 0 3px 4px rgba(0, 0, 0, .5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inaug2Body h4 span {
+    font-family: 'Gurajada', sans-serif !important;
+    font-size: 26px !important;
+    letter-spacing: 0 !important;
+}
+
+.inaug2Body h3.withBg {
+    font-family: "Bonalu", sans-serif !important;
+    font-size: 20px !important;
+    line-height: 1 !important;
+    font-weight: 500 !important;
+    position: relative !important;
+    color: #fff500 !important;
+    width: fit-content !important;
+    text-align: center !important;
+    letter-spacing: .05rem !important;
+    margin: 0 auto !important;
+    background-image: linear-gradient(to right, #680102 0%, #cd0200 50%, #680102 100%) !important;
+    padding: .3rem .5rem !important;
+    border-radius: 6px !important;
+    box-shadow: 0 2px 0 rgba(255, 34, 5, .3);
+    text-shadow: 0 3px 4px rgba(0, 0, 0, .5);
+}
+
+.inaug2Body h1 {
+    font-family: "Bonalu", sans-serif !important;
+    font-size: 44px !important;
+    line-height: 1 !important;
+    font-style: italic !important;
+    font-weight: normal !important;
+    position: relative;
+    padding: .25rem 0 0 !important;
+    color: #fff500 !important;
+    width: fit-content !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    text-shadow: 0 3px 4px rgba(0, 0, 0, .5);
+}
+
+.inaug2Body .photoCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.inaug2Body .photoCard .imgHolder {
+    width: auto;
+    height: 128px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.inaug2Body .photoCard h2 {
+    font-family: "Bonalu", sans-serif !important;
+    font-size: 26px !important;
+    line-height: 1 !important;
+    font-weight: normal !important;
+    position: relative !important;
+    padding: 0 !important;
+    color: #fff !important;
+    width: fit-content !important;
+    text-align: center !important;
+    margin: -.35rem auto 0 !important;
+    text-shadow: 0 3px 4px rgb(102, 0, 0);
+    letter-spacing: .05rem !important;
+}
+
+.inaug2Body .photoCard h2 span {
+    font-size: 18px !important;
+}
+
+.inaug2Body .photoCard p {
+    font-family: "Kumram Bheem", sans-serif !important;
+    font-size: 20px !important;
+    line-height: 1 !important;
+    font-weight: normal !important;
+    position: relative !important;
+    padding: 0 !important;
+    color: #fff !important;
+    width: fit-content !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    text-shadow: 0 3px 4px rgb(102, 0, 0);
+    letter-spacing: .05rem !important;
+}
+
+#temp-footer .inaug2Footer p {
+    font-family: "Kaloji", sans-serif !important;
+    font-size: 20px !important;
+    line-height: 1;
+    font-weight: normal !important;
+    position: relative !important;
+    padding: .5rem 0 0 !important;
+    color: #fff !important;
+    width: fit-content !important;
+    white-space: nowrap;
+    text-align: center !important;
+}
+
+#temp-footer .inaug2Footer p span {
+    color: #fff500 !important;
+}
+
+#temp-footer .inaug2Footer p.contact,
+#temp-footer .inaug6Footer p.contact {
+    font-family: "Kaloji", sans-serif !important;
+    font-size: 28px !important;
+    line-height: 1 !important;
+    font-weight: normal !important;
+    position: relative !important;
+    padding: .25rem .5rem .25rem 1.5rem !important;
+    border-radius: 6px !important;
+    color: #55001e !important;
+    margin: .2rem auto 0 !important;
+    width: fit-content !important;
+    white-space: nowrap !important;
+    text-align: center !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff !important;
+}
+
+#temp-footer .inaug2Footer p.contact::before,
+#temp-footer .inaug6Footer p.contact::before {
+    left: .25rem !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    filter: none !important;
+}
+
+/* Inaugration Template 3 */
+.inaug3Head,
+.inaug3Body,
+.inaug3Footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.inaug3Head .imgHolder {
+    margin: 4rem auto 0;
+    width: auto;
+    height: 130px;
+}
+
+.inaug3Body p {
+    font-family: "Kaloji", sans-serif !important;
+    font-size: 18px !important;
+    line-height: 1 !important;
+    font-weight: 500 !important;
+    position: relative !important;
+    color: #82002e !important;
+    width: 85% !important;
+    text-align: center !important;
+    display: inline-block;
+    margin: -.5rem auto -.25rem !important;
+    padding: 0 !important;
+}
+
+.inaug3Body p span,
+.inaug3Body p b {
+    font-weight: normal !important;
+    display: inline-block;
+    clear: none;
+    color: #fa0a17 !important;
+    font-size: 24px !important;
+}
+
+.inaug3Body .imgHolder {
+    width: auto;
+    height: 230px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.inaug3Body h4 {
+    font-family: "Times New Roman", sans-serif !important;
+    font-size: 16px !important;
+    line-height: 1.3 !important;
+    font-weight: 600 !important;
+    position: relative !important;
+    color: #522704 !important;
+    text-transform: uppercase !important;
+    width: 85% !important;
+    text-align: center !important;
+    display: inline-block;
+    margin: -.25rem auto 0 !important;
+    padding: 0 !important;
+}
+
+.inaug3Body h4 span {
+    padding: 0 .75rem !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 14px !important;
+}
+
+.inaug3Body .defaultList {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 85%;
+    margin: 0 auto;
+    padding: .5rem .35rem;
+    border-radius: 6px;
+    background-color: #fde5e3;
+}
+
+.inaug3Body .defaultList p {
+    font-family: "Ramabhadra", sans-serif !important;
+    font-size: 13px !important;
+    line-height: 1.1 !important;
+    font-weight: normal !important;
+    position: relative !important;
+    color: #095845 !important;
+    width: fit-content !important;
+    text-align: left !important;
+    display: list-item !important;
+    list-style: disc !important;
+    margin: 0 0 0 1rem !important;
+    padding: 0 !important;
+}
+
+.inaug3Body .defaultList p span {
+    display: inline-block;
+    clear: none;
+    color: #a40548 !important;
+    font-size: 14px !important;
+}
+
+.inaug3Body .defaultList h6 {
+    font-family: "Ramabhadra", sans-serif !important;
+    font-size: 10px !important;
+    line-height: 1 !important;
+    font-weight: normal !important;
+    position: relative !important;
+    color: #522704 !important;
+    width: 100% !important;
+    text-align: right !important;
+    margin: 0 !important;
+    padding: .15rem 0 0 !important;
+}
+
+.inaug3Footer h3.withBg {
+    font-family: "Bhagamati", sans-serif !important;
+    font-size: 20px !important;
+    line-height: 1 !important;
+    font-weight: normal !important;
+    position: relative !important;
+    color: #fff !important;
+    width: fit-content !important;
+    text-align: center !important;
+    margin: -.5rem auto 0 !important;
+    letter-spacing: .05rem !important;
+    padding: .35rem 1rem !important;
+    background-color: #820031 !important;
+    border-radius: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Inaugration Template 4 */
+.inaug4Head,
+.inaug4Body,
+.inaug4Footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.inaug4Head .stackList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .25rem;
+    width: fit-content;
+    margin: -.5rem auto 0;
+}
+
+.inaug4Head .stackList .imgHolder {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #ed9a38;
+    overflow: hidden;
+}
+
+.inaug4Head .stackList .imgHolder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.inaug4Body h1 {
+    font-family: "Bonalu", sans-serif !important;
+    font-size: 46px !important;
+    line-height: 1.1 !important;
+    font-weight: normal !important;
+    position: relative !important;
+    color: #fff !important;
+    width: fit-content !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    letter-spacing: .05rem !important;
+    padding: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-shadow: 0 3px 4px rgba(0, 0, 0, .6);
+}
+
+.inaug4Body h1 span {
+    font-family: 'Mandali', sans-serif !important;
+    font-size: 24px !important;
+    font-weight: 500 !important;
+    color: #fff500 !important;
+}
+
+.inaug4Body p {
+    font-family: "Mandali", sans-serif !important;
+    font-size: 14px !important;
+    line-height: 1 !important;
+    font-weight: 600 !important;
+    position: relative !important;
+    color: #e7112b !important;
+    width: fit-content !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    padding: .2rem .35rem !important;
+    border-radius: 6px;
+    gap: .25rem !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    flex-direction: row;
+}
+
+.inaug4Body p img {
+    max-width: 16px;
+}
+
+.inaug4Body .imgHolder {
+    width: auto;
+    height: 80px;
+    margin: .5rem auto .15rem !important;
+}
+
+.inaug4Body h4 {
+    font-family: "Mandali", sans-serif !important;
+    font-size: 20px !important;
+    line-height: 1 !important;
+    font-weight: 600 !important;
+    position: relative !important;
+    color: #fff !important;
+    width: fit-content !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+}
+
+.inaug4Body h2 {
+    font-family: "Batukamma", sans-serif !important;
+    font-size: 34px !important;
+    line-height: 1 !important;
+    font-weight: 500 !important;
+    position: relative !important;
+    color: #fff500 !important;
+    width: fit-content !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    padding: .25rem 0 0 !important;
+}
+
+.inaug4Body h2 span {
+    font-size: 20px !important;
+}
+
+.inaug4Body h2 em {
+    font-size: 10px !important;
+    font-weight: 600 !important;
+    background-color: #fff;
+    padding: .15rem .5rem !important;
+    font-style: normal !important;
+    position: relative;
+    top: -.75rem;
+    font-family: 'Roboto', sans-serif !important;
+    color: #222 !important;
+    border-radius: 4px !important;
+}
+
+.inaug4Body h3 {
+    font-family: "Roboto", sans-serif !important;
+    font-size: 16px !important;
+    line-height: 1 !important;
+    font-weight: 500 !important;
+    position: relative !important;
+    color: #fff !important;
+    width: fit-content !important;
+    text-align: center !important;
+    margin: -.6rem auto -.15rem !important;
+    padding: .25rem 0 0 !important;
+    border-bottom: 1px solid #fff;
+}
+
+.inaug4Body .show-in-row {
+    gap: .3rem !important;
+}
+
+.inaug4Body .show-in-row .guestCard {
+    width: calc(1/4 * 100% - (1 - 1/4) * .5rem);
+}
+
+.inaug4Body .show-in-row .guestCard .imgHolder {
+    width: auto;
+    height: 110px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: none;
+    position: relative;
+    z-index: 2;
+}
+
+.inaug4Body .show-in-row .guestCard .content {
+    padding: .75rem .35rem .25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    margin-top: -1rem;
+    gap: .3rem;
+    border-radius: 6px;
+    background-image: linear-gradient(to bottom, #89003a 0%, #780680 100%);
+    border: 1px solid rgba(255, 255, 255, .6);
+}
+
+.inaug4Body .show-in-row .guestCard .content h2 {
+    font-size: 9px !important;
+    font-weight: 600 !important;
+    color: #fff !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: center !important;
+    font-family: "Roboto", sans-serif !important;
+}
+
+.inaug4Body .show-in-row .guestCard .content p {
+    font-size: 7px !important;
+    font-weight: 500 !important;
+    color: #fff !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: center !important;
+    font-family: "Roboto", sans-serif !important;
+    background-color: transparent !important;
+}
+
+.inaug4Footer .photoWithTxt {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: fit-content;
+    margin: .5rem auto 0;
+}
+
+.inaug4Footer .photoWithTxt .imgHolder {
+    width: auto;
+    height: 130px;
+    position: relative;
+    border: 1px solid #fff;
+    z-index: 2;
+}
+
+.inaug4Footer .photoWithTxt .boxedContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: calc(100% - 145px);
+    position: relative;
+    margin-left: -.5rem;
+    z-index: 1;
+}
+
+.inaug4Footer .photoWithTxt .boxedContent h3 {
+    font-family: "Kaloji", sans-serif !important;
+    font-size: 18px !important;
+    line-height: 1 !important;
+    font-weight: 500 !important;
+    position: relative !important;
+    color: #fff !important;
+    width: fit-content !important;
+    text-align: center !important;
+    margin: .25rem auto 0 !important;
+    padding: .65rem !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, .3);
+    border-radius: 10px;
+}
+
+.inaug4Footer .photoWithTxt .boxedContent h3 span {
+    color: #fff500 !important;
+}
+
+#temp-footer .inaug4Footer .photoWithTxt .boxedContent p.address {
+    font-family: "Ramabhadra", sans-serif !important;
+    font-size: 14px !important;
+    line-height: 1.3 !important;
+    font-weight: 500 !important;
+    position: relative !important;
+    color: #fff !important;
+    width: fit-content !important;
+    text-align: center !important;
+    margin: .35rem auto 0 !important;
+    padding: 0 !important;
+}
+
+#temp-footer .inaug4Footer .photoWithTxt .boxedContent p.address::before {
+    top: .15rem !important;
+    left: -.3rem !important;
+}
+
+/* Inaugration Template 5 */
+.inaug5Head,
+.inaug5Body,
+.inaug5Footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.inaug5Head .splitPhotoView {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    margin: -3.26rem auto 0;
+}
+
+.inaug5Head .splitPhotoView .imgHolder {
+    width: auto;
+    height: 230px;
+}
+
+.inaug5Head .splitPhotoView .imgHolder.grandOpen {
+    position: absolute;
+    right: 1rem;
+    bottom: -3.5rem;
+    width: auto;
+    height: 125px;
+}
+
+.inaug5Head .splitPhotoView .imgHolder.brandLogo {
+    position: relative;
+    right: -1.25rem;
+    height: 160px;
+    z-index: 2;
+}
+
+.inaug5Body .show-in-row {
+    margin: 1rem auto 0;
+}
+
+.inaug5Body .show-in-row .guestCard {
+    width: calc(1/3 * 100% - (1 - 1/3) * .5rem);
+}
+
+.inaug5Body .show-in-row .guestCard .imgHolder {
+    width: auto;
+    border: none;
+    height: 125px;
+}
+
+.inaug5Body .show-in-row .guestCard .content h6 {
+    font-size: 8px !important;
+    font-weight: 500 !important;
+    font-style: italic !important;
+    color: #1f2e89 !important;
+    margin: -.75rem auto 0 !important;
+    padding: 0 !important;
+    text-align: center !important;
+    font-family: "Roboto", sans-serif !important;
+}
+
+.inaug5Body .show-in-row .guestCard .content h2 {
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    color: #fa0a17 !important;
+    margin: -.35rem 0 .1rem !important;
+    padding: 0 !important;
+    line-height: 1 !important;
+    text-align: center !important;
+    font-family: "Oswald", sans-serif !important;
+    white-space: nowrap !important;
+}
+
+.inaug5Body .show-in-row .guestCard .content h2 span {
+    font-size: 8px !important;
+}
+
+.inaug5Body .show-in-row .guestCard .content p {
+    font-size: 8px !important;
+    font-weight: 500 !important;
+    font-style: italic !important;
+    color: #1f2e89 !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    text-align: center !important;
+    font-family: "Roboto", sans-serif !important;
+}
+
+.inaug5Body .show-in-row .guestCard.calendar {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.inaug5Body .show-in-row .guestCard.calendar h1 {
+    background: url(../images/yashasvi-calendar-bg.png) no-repeat center center;
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    position: relative;
+    font-family: 'Oswald', sans-serif !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1 !important;
+    padding: 0 !important;
+    font-size: 54px !important;
+    font-weight: 500 !important;
+    color: #283d90 !important;
+}
+
+.inaug5Body .show-in-row .guestCard.calendar h1 span {
+    font-size: 16px !important;
+    color: #fff !important;
+    font-weight: 600 !important;
+    font-family: 'Roboto', sans-serif !important;
+    text-transform: uppercase;
+}
+
+.inaug5Body .show-in-row .guestCard.calendar h1 em {
+    font-style: normal;
+    font-size: 20px !important;
+    color: #222 !important;
+    position: absolute;
+    line-height: .7 !important;
+    font-family: 'Times New Roman', Times, serif !important;
+    font-weight: 600 !important;
+    right: .25rem;
+    bottom: .7rem;
+    width: 15px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    word-break: break-all;
+}
+
+.inaug5Body .show-in-row .guestCard.calendar p {
+    font-size: 10px !important;
+    font-weight: 600 !important;
+    color: #fa0a17 !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    text-align: center !important;
+    font-family: "Times New Roman", sans-serif !important;
+}
+
+.inaug5Body .doctorCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1.15rem auto 0;
+}
+
+.inaug5Body .doctorCard .imgHolder {
+    width: auto;
+    height: 170px;
+    border: 2px solid #00aa9d;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.inaug5Body .doctorCard h2 {
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    color: #ec1e22 !important;
+    margin: 0 auto !important;
+    padding: .5rem 0 .3rem !important;
+    line-height: 1 !important;
+    text-align: center !important;
+    font-family: "Oswald", sans-serif !important;
+    white-space: nowrap !important;
+}
+
+.inaug5Body .doctorCard p {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    color: #1f2e89 !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    text-align: center !important;
+    font-family: "Oswald", sans-serif !important;
+}
+
+#temp-footer .inaug5Footer p {
+    font-family: "Oswald", sans-serif !important;
+    font-size: 12px !important;
+    font-weight: normal !important;
+    line-height: 1 !important;
+    color: #fff !important;
+    margin: .6rem auto !important;
+    white-space: nowrap !important;
+    padding: 0 !important;
+    text-align: center !important;
+}
+
+#temp-footer .inaug5Footer p.contact {
+    font-family: "Oswald", sans-serif !important;
+    font-size: 24px !important;
+    font-weight: 600 !important;
+    line-height: 1.2 !important;
+    color: #fff !important;
+    margin: 0 auto !important;
+    white-space: nowrap !important;
+    padding: .25rem .5rem .25rem 1.85rem !important;
+    text-align: center !important;
+    background-color: #e20008 !important;
+    border-radius: 6px !important;
+}
+
+#temp-footer .inaug5Footer p.contact::before {
+    left: .25rem !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    width: 1.4rem !important;
+    height: 1.4rem !important;
+}
+
+/* Inaugration Template 6 */
+.inaug6Head,
+.inaug6Body,
+.inaug6Footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.inaug6Head .imgHolder.topDecor {
+    position: absolute;
+    top: -2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75%;
+    height: auto;
+    z-index: -1;
+}
+
+.inaug6Head .branndName {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: fit-content;
+    margin: -1.85rem auto 0;
+}
+
+.inaug6Head .branndName .imgHolder {
+    width: auto;
+    height: 60px;
+}
+
+.inaug6Head .branndName h1 {
+    font-family: "Ramabhadra", sans-serif !important;
+    font-size: 34px !important;
+    font-weight: normal !important;
+    color: #77c345 !important;
+    margin: -.25rem auto 0 !important;
+    line-height: 1.2 !important;
+    padding: 0 !important;
+    text-align: center !important;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 4px #fff;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, .8);
+}
+
+.inaug6Head .branndName h1 b {
+    font-weight: normal !important;
+    color: #fff !important;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 4px #1a206a;
+}
+
+.inaug6Head .branndName h1 span {
+    display: block;
+    clear: both;
+    font-size: 20px !important;
+    color: #a72a28 !important;
+    paint-order: 0 !important;
+    -webkit-text-stroke: 0 !important;
+    text-shadow: none !important;
+}
+
+.inaug6Body h2 span {
+    font-family: "Bonalu", sans-serif !important;
+    font-size: 38px !important;
+    font-weight: 500 !important;
+    letter-spacing: .05rem !important;
+    color: #a72a28 !important;
+    display: inline-block !important;
+    padding: .35rem 0 !important;
+    text-align: center !important;
+}
+
+.inaug6Body h2 span.colorGreen {
+    color: #06592d !important;
+}
+
+.inaug6Body h2 span.colorPink {
+    color: #d80c92 !important;
+}
+
+.inaug6Body h2 span.colorBlue {
+    color: #2d318a !important;
+}
+
+.inaug6Body p {
+    font-family: "Ramabhadra", sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    color: #a72a28 !important;
+    display: inline-block !important;
+    padding: 0 !important;
+    text-align: center !important;
+}
+
+.inaug6Body h4 {
+    font-family: "Bhagamati", sans-serif !important;
+    font-size: 24px !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    color: #fff !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .35rem 1.5rem !important;
+    text-align: center !important;
+    background: url(../images/title-bg-6-full.png) no-repeat center center;
+    background-size: contain;
+    width: fit-content !important;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .7);
+    height: 50px !important;
+}
+
+.inaug6Body .imgHolder.grandOpen {
+    width: auto;
+    height: 160px;
+    margin: 0 auto !important;
+}
+
+.inaug6Body .side-by-side {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 0 !important;
+}
+
+.inaug6Body .side-by-side>* {
+    width: calc(1/2 * 100% - (1 - 1/2) * 1rem);
+}
+
+.inaug6Body .side-by-side h2.withBg,
+.inaug6Body .side-by-side h3.withBg {
+    font-family: "Batukamma", sans-serif !important;
+    background-color: #06592d !important;
+    border-radius: 6px !important;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    margin: .1rem !important;
+    line-height: 1 !important;
+    color: #fff !important;
+    display: inline-block !important;
+    width: fit-content !important;
+    padding: .35rem 1rem !important;
+    text-align: center !important;
+}
+
+.inaug6Body .side-by-side h2.withBg {
+    font-size: 26px !important;
+}
+
+.inaug6Body p.withBg {
+    font-family: "Ramabhadra", sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    line-height: 1.1 !important;
+    color: #fff !important;
+    display: inline-block !important;
+    width: 85% !important;
+    padding: .4rem .6rem !important;
+    text-align: center !important;
+    background-color: #c7225e !important;
+}
+
+#temp-footer .inaug6Footer h3 {
+    font-family: "Kaloji", sans-serif !important;
+    font-size: 28px !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    color: #fbef11 !important;
+    padding: 1.4rem 0 0 !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+}
+
+#temp-footer .inaug6Footer h4.withBg {
+    font-family: "Kaloji", sans-serif !important;
+    font-size: 23px !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    color: #fff !important;
+    background-color: #025625 !important;
+    border-radius: 6px !important;
+    padding: .15rem .5rem !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+}
+
+#temp-footer .inaug6Footer p {
+    font-family: "Mandali", sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    line-height: 1.2 !important;
+    color: #fff !important;
+    padding: .25rem 0 !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+}
+
+#temp-footer .inaug6Footer p.contact {
+    background-color: #fff500 !important;
+    font-family: 'Oswald', sans-serif !important;
+    font-weight: 900 !important;
+    font-size: 22px !important;
+}
+
+#temp-footer .inaug6Footer p.contact::before {
+    width: 1.2rem !important;
+    height: 1.2rem !important;
+}

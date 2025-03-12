@@ -1,0 +1,10 @@
+@import url("temp_builder_mainV2.css");
+
+body {
+    background-color: #ddd;
+}
+
+.template-wrapper {
+    position: relative;
+    overflow: hidden;
+}
