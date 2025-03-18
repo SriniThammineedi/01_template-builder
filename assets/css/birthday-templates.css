@@ -1083,6 +1083,7 @@ h1.specialCaptioned span.bottomRightCaption {
     text-align: center;
     paint-order: stroke fill;
     -webkit-text-stroke: 4px #fff;
+    margin-top: -.5rem;
 }
 
 .bt9Head h2 {
@@ -1111,7 +1112,7 @@ h1.specialCaptioned span.bottomRightCaption {
 .bt9Body .photoSplit .imgHolder.imgLS,
 .bt9Body .photoSplit .imgHolder.imgRS {
     width: auto;
-    height: 240px;
+    height: 230px;
     position: absolute;
     top: 0;
     z-index: 1;
@@ -1134,7 +1135,7 @@ h1.specialCaptioned span.bottomRightCaption {
 .bt9Body .photoSplit .imgHolder.mainPhoto {
     z-index: 2;
     width: auto;
-    height: 300px;
+    height: 285px;
 }
 
 .bt9Body h1 {

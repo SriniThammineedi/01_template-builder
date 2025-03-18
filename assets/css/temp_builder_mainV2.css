@@ -10,6 +10,7 @@
 @import url("../css/retirement-templates.css");
 @import url("../css/coaching-templates.css");
 @import url("../css/wanted-templates.css");
+@import url("../css/events-templates.css");
 
 :root {
     --text-dark: #202020;
@@ -745,6 +746,47 @@ ul.expandable-menu li .accorParentContainer.hide {
     position: relative;
     flex-wrap: wrap;
     transition: all .2s ease-in-out;
+}
+
+.inner-container.row .fullWidth {
+    flex: 1 1 100%;
+    position: relative;
+}
+
+.inner-container.row .fullWidth input {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    padding: 0.65rem;
+    font-size: 14px;
+    font-weight: 400;
+    color: #212121;
+    position: relative;
+    transition: all .2s ease-in-out;
+    z-index: 1;
+}
+
+.inner-container.row .fullWidth input:focus {
+    border: 1px solid rgba(0, 102, 255, 0.5);
+    box-shadow: 0 0 6px rgba(0, 217, 255, 0.3);
+}
+
+.inner-container.row .fullWidth #clearSearch {
+    position: absolute;
+    padding: .35rem .5rem;
+    border: none;
+    background: #f44336;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    right: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
 }
 
 .inner-container.hidden {

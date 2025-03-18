@@ -457,7 +457,10 @@ body {
 }
 
 .adTexts .para-1.telugu span {
-    color: #fdf305;
+    color: #fdf305 !important;
+    font-weight: bold !important;
+    display: inline-block;
+    clear: none;
 }
 
 .adTexts .para-2 {
@@ -496,6 +499,7 @@ body {
     font-family: "Anek Telugu", sans-serif;
     font-size: 12px;
     font-weight: normal;
+    color: #fff !important;
 }
 
 .adTexts .offerHeading-1 {

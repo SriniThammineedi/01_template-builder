@@ -530,7 +530,8 @@ function showTemplate(selectedId) {
     'anniversary': 'anniversaryTemps',
     'retirement': 'retirementTemps',
     'coaching': 'coachingTemps',
-    'wanted': 'wantedTemps'
+    'wanted': 'wantedTemps',
+    'events': 'eventsTemps'
   };
 
   const templateDivs = document.querySelectorAll('.inner-container');
@@ -740,3 +741,37 @@ function addDecorOnRadioSelection() {
 }
 
 addDecorOnRadioSelection();
+
+
+
+
+
+// Event Filter
+document.addEventListener("DOMContentLoaded", function () {
+    const searchInput = document.getElementById("searchTemplates");
+    const clearButton = document.getElementById("clearSearch");
+    const radioSets = document.querySelectorAll("#eventsTemps .radioSet");
+
+    searchInput.addEventListener("input", function () {
+        const searchText = this.value.toLowerCase().trim();
+        let hasResults = false;
+
+        radioSets.forEach(set => {
+            const label = set.querySelector("label span").textContent.toLowerCase();
+            if (label.includes(searchText)) {
+                set.style.display = "flex";
+                hasResults = true;
+            } else {
+                set.style.display = "none";
+            }
+        });
+
+        clearButton.style.display = searchText ? "inline-block" : "none";
+    });
+
+    clearButton.addEventListener("click", function () {
+        searchInput.value = "";
+        radioSets.forEach(set => set.style.display = "flex");
+        clearButton.style.display = "none";
+    });
+});
