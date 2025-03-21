@@ -3378,3 +3378,912 @@ body {
     border: 1px solid #1e0f6c !important;
     border-radius: 24px !important;
 }
+
+
+/* Events Template 16 (Holi - 3) */
+.event16Head,
+.event16Body,
+.event16Footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.event16Head {
+    flex-direction: row !important;
+    z-index: 2;
+    margin-top: -.6rem;
+}
+
+.event16Head .imgHolder {
+    width: auto;
+    height: 60px;
+}
+
+.event16Head .imgHolder img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.event16Head h1 {
+    font-family: 'Bhagamati', sans-serif !important;
+    font-size: 50px !important;
+    font-weight: 500 !important;
+    line-height: 1.2 !important;
+    color: #134e52 !important;
+    text-align: center !important;
+    margin: 0 !important;
+    position: relative !important;
+    width: fit-content !important;
+    white-space: nowrap !important;
+    padding: 0 !important;
+}
+
+.event16Body .brandTitles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    width: -webkit-fill-available;
+    width: -moz-fill-available;
+    margin: -.85rem -1.5rem 0 !important;
+    padding: .35rem .5rem;
+    background-color: #cd030f;
+    gap: .5rem;
+}
+
+.event16Body .brandTitles .imgHolder {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.event16Body .brandTitles .imgHolder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.event16Body .brandTitles h1 {
+    font-family: 'Revue', sans-serif !important;
+    font-size: 36px !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    color: #fff !important;
+    text-align: left !important;
+    margin: 0 !important;
+    position: relative !important;
+    width: calc(85% - 55px) !important;
+    white-space: nowrap !important;
+    padding: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.event16Body .brandTitles h1 span {
+    color: #f5fd00 !important;
+    font-family: 'Oswald', sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    white-space: normal !important;
+    padding-left: .4rem;
+}
+
+.event16Body .brandTitles h1 span em {
+    font-style: normal !important;
+    font-size: 20px !important;
+    font-weight: 900 !important;
+}
+
+.event16Body .brandTitles h5 {
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    color: #fff !important;
+    text-align: center !important;
+    margin: 0 !important;
+    position: relative !important;
+    width: 100% !important;
+    white-space: nowrap !important;
+    padding: 0 !important;
+    flex: 1 1 100%;
+}
+
+.event16Body .side-by-side {
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 0 !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+}
+
+.event16Body .side-by-side h3 {
+    font-family: 'Squada One', sans-serif !important;
+    font-size: 24px !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    color: #022e39 !important;
+    text-transform: uppercase !important;
+    letter-spacing: -.05rem !important;
+    text-align: center !important;
+    margin: 0 -1rem !important;
+    position: relative !important;
+    width: 60% !important;
+    white-space: nowrap !important;
+    padding: 0 !important;
+}
+
+.event16Body .side-by-side .badgeWithTxt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 1rem;
+    top: .25rem;
+    gap: .25rem;
+    position: relative;
+    width: 40% !important;
+    height: 100px;
+    background: url(../images/admission-badge.png) no-repeat center center;
+    background-size: contain;
+}
+
+.event16Body .side-by-side .badgeWithTxt h2 {
+    font-family: 'Bowlby One', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: normal !important;
+    line-height: 1 !important;
+    color: #fff !important;
+    text-align: center !important;
+    margin: 0 !important;
+    position: relative !important;
+    width: fit-content !important;
+    white-space: nowrap !important;
+    padding: .25rem !important;
+    border: 2px solid #f7c530;
+    border-radius: 6px;
+}
+
+.event16Body .side-by-side .badgeWithTxt h3.badge {
+    font-family: 'Doppio One', sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    line-height: 1 !important;
+    color: #003940 !important;
+    text-align: center !important;
+    text-transform: uppercase !important;
+    margin: 0 !important;
+    position: relative !important;
+    width: 100% !important;
+    height: 24px;
+    white-space: nowrap !important;
+    padding: .25rem .5rem !important;
+    background: url(../images/label-ribbon-bg.png) no-repeat center center;
+    background-size: contain;
+}
+
+.event16Body .side-by-side .badgeWithTxt p {
+    font-family: 'Doppio One', sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    line-height: 1 !important;
+    color: #f2c222 !important;
+    text-align: center !important;
+    text-transform: uppercase !important;
+    margin: 0 !important;
+    position: relative !important;
+    width: fit-content !important;
+    white-space: nowrap !important;
+    padding: 0 !important;
+}
+
+.event16Body h2.withBg {
+    font-family: 'Doppio One', sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 900 !important;
+    line-height: 1.4 !important;
+    color: #fff !important;
+    text-align: center !important;
+    margin: 0 !important;
+    position: relative !important;
+    width: fit-content !important;
+    white-space: nowrap !important;
+    padding: .25rem .5rem !important;
+    background-color: #e15e30 !important;
+    border-radius: 4px !important;
+}
+
+.event16Body h3 {
+    font-family: 'Doppio One', sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 900 !important;
+    line-height: 1.3 !important;
+    color: #1a4c53 !important;
+    text-align: center !important;
+    text-transform: uppercase !important;
+    margin: 0 !important;
+    position: relative !important;
+    width: fit-content !important;
+    white-space: nowrap !important;
+    padding: .25rem 0 !important;
+}
+
+.event16Body p.boxedContent {
+    font-family: 'Doppio One', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    line-height: 1.2 !important;
+    color: #fff !important;
+    text-align: center !important;
+    text-transform: uppercase !important;
+    margin: 0 !important;
+    position: relative !important;
+    width: fit-content !important;
+    white-space: nowrap !important;
+    padding: .4rem .6rem !important;
+    background-color: #1a4c53 !important;
+    border-radius: 6px !important;
+}
+
+.event16Body hr.fullWidth {
+    width: -webkit-fill-available;
+    width: -moz-fill-available;
+    margin: .5rem -1.5rem !important;
+    background-color: #cd030f;
+    height: 3px;
+    border: none;
+}
+
+.event16Body .inlineFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    gap: 1rem;
+}
+
+.event16Body .inlineFlex .imgHolder {
+    width: auto;
+    height: 85px;
+}
+
+.event16Body .inlineFlex .contentArea {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: -1rem 0 0;
+}
+
+#temp-footer .event16Footer h5 {
+    font-family: 'Doppio One', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 900 !important;
+    line-height: 1.3 !important;
+    color: #1a4c53 !important;
+    text-align: center !important;
+    margin: -1.35rem 0 0 !important;
+    position: relative !important;
+    width: fit-content !important;
+    white-space: nowrap !important;
+    padding: 0 !important;
+}
+
+#temp-footer .event16Footer h3.withBg {
+    font-family: 'Doppio One', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    line-height: 1.3 !important;
+    color: #fff !important;
+    text-align: center !important;
+    margin: 0 !important;
+    position: relative !important;
+    width: 50% !important;
+    white-space: normal !important;
+    padding: .25rem .5rem !important;
+    background-color: #1a4c53 !important;
+    border-radius: 6px !important;
+}
+
+#temp-footer .event16Footer p {
+    font-family: 'Doppio One', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    line-height: 1 !important;
+    color: #fff !important;
+    text-align: center !important;
+    margin: 0 !important;
+    position: relative !important;
+    width: fit-content !important;
+    white-space: nowrap !important;
+    padding: .35rem 0 !important;
+}
+
+#temp-footer .event16Footer h4.withBg {
+    font-family: 'Doppio One', sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    line-height: 1.3 !important;
+    color: #cd0800 !important;
+    text-align: center !important;
+    margin: 0 !important;
+    position: relative !important;
+    width: fit-content !important;
+    white-space: normal !important;
+    padding: .25rem .5rem !important;
+    background-color: #f5fc00 !important;
+    border-radius: 6px !important;
+}
+
+#temp-footer .event16Footer p.bgAround {
+    font-family: 'Doppio One', sans-serif !important;
+    font-size: 10px !important;
+    font-weight: 600 !important;
+    line-height: 1.4 !important;
+    color: #1a4c53 !important;
+    text-align: center !important;
+    margin: 0 !important;
+    position: relative !important;
+    width: fit-content !important;
+    white-space: normal !important;
+    padding: .35rem .65rem !important;
+    background-color: #fff !important;
+    border-radius: 6px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#temp-footer .event16Footer p.bgAround span {
+    color: #1a4c53 !important;
+}
+
+#temp-footer .event16Footer p.bgAround em.devider {
+    width: 50%;
+    height: 1px;
+    margin: .15rem auto;
+    background-color: #1a4c53;
+}
+
+
+
+/* Events Template 17 (Holi - 4) */
+.event17Head,
+.event17Body,
+.event17Footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.event17Head {
+    flex-direction: row !important;
+    z-index: 2;
+    margin-top: -1rem;
+}
+
+.event17Head .imgHolder {
+    width: auto;
+    height: 50px;
+}
+
+.event17Head .imgHolder img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.event17Head h1 {
+    font-family: 'Oswald', sans-serif !important;
+    font-style: italic !important;
+    font-size: 34px !important;
+    font-weight: 500 !important;
+    line-height: 1.2 !important;
+    color: #fde900 !important;
+    text-align: center !important;
+    margin: 0 !important;
+    position: relative !important;
+    width: fit-content !important;
+    white-space: nowrap !important;
+    padding: 0 !important;
+    text-shadow: 0 4px 3px rgba(0, 0, 0, .3);
+}
+
+.event17Body .imgHolder.brandLogo {
+    width: auto;
+    height: 92px;
+}
+
+.event17Body .imgHolder.hotelView {
+    width: auto;
+    height: 145px;
+}
+
+.event17Body .imgHolder.hotelOuterView {
+    width: auto;
+    height: 145px;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, .75);
+    margin-top: .25rem;
+}
+
+.event17Body h2 {
+    font-family: 'Lashkar', sans-serif !important;
+    font-size: 40px !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    color: #fae609 !important;
+    text-align: center !important;
+    margin: 0 !important;
+    position: relative !important;
+    width: fit-content !important;
+    white-space: normal !important;
+    padding: .5rem 0 .25rem !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-shadow: 0 4px 3px rgba(0, 0, 0, .3);
+}
+
+.event17Body h2 span {
+    color: #f2b409 !important;
+    font-size: 30px !important;
+}
+
+.event17Footer .side-by-side {
+    width: 100% !important;
+    justify-content: center !important;
+    gap: .2rem !important;
+    margin-top: -.5rem !important;
+}
+
+.event17Footer .side-by-side .imgHolder {
+    width: 66px;
+    height: 50px;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, .5);
+}
+
+.event17Footer .side-by-side .imgHolder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.event17Footer h2.withBg {
+    font-family: 'Batukamma', sans-serif !important;
+    font-size: 22px !important;
+    letter-spacing: .075rem !important;
+    font-weight: normal !important;
+    line-height: 1.2 !important;
+    color: #fff !important;
+    text-align: center !important;
+    margin: .5rem 0 0 !important;
+    position: relative !important;
+    width: fit-content !important;
+    white-space: nowrap !important;
+    padding: .25rem .75rem !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a4c53 !important;
+    border-radius: 6px !important;
+}
+
+.event17Footer p {
+    font-family: 'Oswald', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    line-height: 1.2 !important;
+    color: #222 !important;
+    text-align: center !important;
+    margin: 0 !important;
+    position: relative !important;
+    width: fit-content !important;
+    white-space: normal !important;
+    padding: .35rem .65rem !important;
+}
+
+#temp-footer .event17Footer p.contactClickable {
+    background-color: #78040d !important;
+    color: #fff !important;
+}
+
+
+/* Events Template 18 (World Kidney Day 1) */
+.event18Head,
+.event18Body,
+.event18Footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.event18Head {
+    flex-direction: row !important;
+    justify-content: center !important;
+    margin: -1.25rem auto -.75rem !important;
+    align-items: center !important;
+    gap: 1.5rem !important;
+}
+
+.event18Head .imgHolder.brandLogo {
+    width: auto;
+    height: 95px;
+}
+
+.event18Head .side-by-side {
+    justify-content: center !important;
+    align-items: center !important;
+    gap: .5rem !important;
+    width: fit-content !important;
+}
+
+.event18Head .side-by-side .imgHolder.brIcon {
+    width: auto;
+    height: 70px;
+}
+
+.event18Head .side-by-side h1 {
+    font-family: 'Oswald', sans-serif !important;
+    font-style: italic !important;
+    font-size: 25px !important;
+    font-weight: 900 !important;
+    line-height: .95 !important;
+    color: #fff !important;
+    text-transform: uppercase !important;
+    text-align: left !important;
+    margin: 0 !important;
+    position: relative !important;
+    width: fit-content !important;
+    white-space: nowrap !important;
+    padding: 0 !important;
+    text-shadow: 0 4px 3px rgba(0, 0, 0, .2);
+}
+
+.event18Body .side-by-side {
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    gap: 1rem !important;
+    margin: 0 auto !important;
+}
+
+.event18Body .side-by-side h3 {
+    font-family: 'Oswald', sans-serif !important;
+    font-size: 24px !important;
+    font-weight: 600 !important;
+    line-height: 1.2 !important;
+    color: #f8fe5c !important;
+    text-align: left !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: fit-content !important;
+    position: relative;
+    z-index: 1 !important;
+}
+
+.event18Body .side-by-side h3 span {
+    display: block;
+    clear: both;
+    color: #fff !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    padding-top: .35rem !important;
+}
+
+.event18Body .side-by-side h3::before,
+.event18Body .side-by-side h3::after {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 10px;
+    background: url(../images/line-dot-after-psudo.png) no-repeat right center;
+    background-size: contain;
+    right: -1rem;
+    bottom: -1.2rem;
+}
+
+.event18Body .side-by-side h3::before {
+    right: -3rem;
+    bottom: auto;
+    top: -1rem;
+}
+
+.event18Body .side-by-side .imgHolder {
+    width: auto;
+    height: 120px;
+    z-index: 2 !important;
+}
+
+.event18Body h1 {
+    font-family: 'Oswald', sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    line-height: 1.2 !important;
+    color: #fff !important;
+    text-align: left !important;
+    margin: -.85rem 0 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    position: relative;
+    z-index: 1 !important;
+}
+
+.event18Body h1 span {
+    display: table;
+    clear: both;
+    color: #11100b !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    background-color: #f8fe5c !important;
+    padding: .15rem .35rem !important;
+}
+
+.event18Body .serviceList {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: relative;
+    margin-top: .7rem;
+    width: 100%;
+    gap: .15rem;
+}
+
+.event18Body .serviceList p {
+    font-family: 'Oswald', sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    line-height: 1.2 !important;
+    color: #9d1114 !important;
+    text-align: left !important;
+    margin: 0 !important;
+    padding: .2rem .5rem !important;
+    width: fit-content !important;
+    position: relative;
+    background-color: #fff !important;
+    box-shadow: 4px 5px 6px rgba(0, 0, 0, .25);
+}
+
+#temp-footer .event18Footer {
+    width: 100% !important;
+}
+
+#temp-footer .event18Footer p.fullWidthBg {
+    background-color: #fff !important;
+    padding: .3rem .5rem !important;
+    width: -webkit-fill-available !important;
+    width: -moz-fill-available !important;
+    margin: -.15rem -1.5rem .15rem !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    line-height: 1.2 !important;
+    color: #11100b !important;
+    text-align: center !important;
+}
+
+#temp-footer .event18Footer h5 {
+    padding: .3rem .5rem !important;
+    width: fit-content !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    line-height: 1.2 !important;
+    color: #fff !important;
+    text-align: center !important;
+}
+
+#temp-footer .event18Footer p.contactClickable {
+    background-color: #fff100 !important;
+    padding: .25rem .5rem .25rem 2.2rem !important;
+    border-radius: 0 !important;
+    color: #11100b !important;
+}
+
+#temp-footer .event18Footer p.contactClickable::before {
+    content: "";
+    position: absolute;
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+    left: .5rem !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    background: url(../images/phone-icon.png) no-repeat center center !important;
+    background-size: contain !important;
+}
+
+#temp-footer .event18Footer p.contactClickable::after {
+    display: none !important;
+}
+
+
+
+/* Events Template 19 (World Kidney Day 2) */
+.event19Head,
+.event19Body,
+.event19Footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.event19Head .imgHolder {
+    width: auto;
+    height: 75px;
+    margin-top: -1.75rem;
+}
+
+.event19Body .side-by-side {
+    justify-content: center !important;
+    gap: 1rem !important;
+    align-items: center !important;
+    margin-top: -.75rem;
+}
+
+.event19Body .side-by-side .imgHolder.lftLogo,
+.event19Body .side-by-side .imgHolder.rtLogo {
+    width: auto;
+    height: 45px;
+}
+
+.event19Body .side-by-side h1 {
+    font-family: 'Kaloji', sans-serif !important;
+    font-size: 28px !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    color: #00039b !important;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: fit-content !important;
+    position: relative;
+    z-index: 1 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.event19Body .side-by-side h1 span {
+    font-size: 22px !important;
+}
+
+.event19Body .side-by-side h1 span em {
+    font-style: normal !important;
+    font-family: 'Inter', sans-serif !important;
+    font-size: 16px !important;
+}
+
+.event19Body h4 {
+    font-family: 'Bhagamati', sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    color: #000 !important;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: .15rem 0 0 !important;
+    width: fit-content !important;
+    position: relative;
+}
+
+.event19Body h3 {
+    font-family: 'Batukamma', sans-serif !important;
+    font-size: 24px !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    color: #81311a !important;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: .15rem 0 !important;
+    width: fit-content !important;
+    position: relative;
+}
+
+.event19Body h2.withBg {
+    font-family: 'Batukamma', sans-serif !important;
+    font-size: 26px !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    color: #f5e307 !important;
+    text-align: center !important;
+    margin: -.15rem 0 0 !important;
+    padding: .25rem 1rem !important;
+    width: fit-content !important;
+    background-color: #81311a !important;
+    border-radius: 0 !important;
+    position: relative;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, .4);
+}
+
+.event19Body h5 {
+    font-family: 'Bonalu', sans-serif !important;
+    font-size: 24px !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    color: #81311a !important;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: .35rem 0 .15rem !important;
+    width: fit-content !important;
+    position: relative;
+}
+
+.event19Body h4.withBg {
+    font-family: 'Bhagamati', sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    color: #fff !important;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: .2rem .35rem !important;
+    width: fit-content !important;
+    background-color: #0f607d !important;
+    border-radius: 4px !important;
+    position: relative;
+}
+
+.event19Body .imgHolder {
+    width: auto;
+    height: 150px;
+}
+
+.event19Body h5.withBg {
+    font-family: 'Bhagamati', sans-serif !important;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    color: #fff !important;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: .25rem .5rem !important;
+    width: fit-content !important;
+    background-color: #c01f31 !important;
+    border-radius: 0 !important;
+    position: relative;
+}
+
+.event19Body p {
+    font-family: 'Bhagamati', sans-serif !important;
+    font-size: 17px !important;
+    font-weight: normal !important;
+    line-height: 1.1 !important;
+    color: #fff !important;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: .25rem 0 !important;
+    width: 70% !important;
+    position: relative;
+}

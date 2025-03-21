@@ -112,6 +112,20 @@ link:focus-visible {
     font-display: swap;
 }
 
+/* Revue Bold Font Declaration */
+@font-face {
+    font-family: 'Revue';
+    src: url('../fonts/Revue.eot');
+    src: url('../fonts/Revue.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Revue.woff2') format('woff2'),
+        url('../fonts/Revue.woff') format('woff'),
+        url('../fonts/Revue.ttf') format('truetype'),
+        url('../fonts/Revue.svg#Revue') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* Bonalu Telugu Font Declaration */
 @font-face {
     font-family: 'Bonalu';
@@ -2716,10 +2730,10 @@ p.contact::before {
 
 /* Contact Button 2 Actions */
 #temp-footer p.contactClickable {
-    font-family: "Oswald", sans-serif !important;
+    font-family: "Squada One", sans-serif !important;
     font-size: 26px !important;
     line-height: 1 !important;
-    font-weight: 900 !important;
+    font-weight: 500 !important;
     position: relative !important;
     padding: .5rem 2rem .5rem 2.25rem !important;
     margin: .15rem auto 0 !important;
@@ -2739,9 +2753,8 @@ p.contact::before {
     left: .5rem;
     top: 50%;
     transform: translateY(-50%);
-    background: url(../images/phone-icon.png) no-repeat center center;
+    background: url(../images/phone-icon-wht.png) no-repeat center center;
     background-size: contain;
-    filter: invert(1);
 }
 
 #temp-footer p.contactClickable::after {
