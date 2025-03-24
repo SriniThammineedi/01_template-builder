@@ -531,7 +531,8 @@ function showTemplate(selectedId) {
     'retirement': 'retirementTemps',
     'coaching': 'coachingTemps',
     'wanted': 'wantedTemps',
-    'events': 'eventsTemps'
+    'events': 'eventsTemps',
+    'invitations': 'invitationsTemps'
   };
 
   const templateDivs = document.querySelectorAll('.inner-container');

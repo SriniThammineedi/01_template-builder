@@ -1,0 +1,357 @@
+@import url("temp_builder_mainV2.css");
+
+body {
+    background-color: #ddd;
+}
+
+.template-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Events Template 1 */
+.invit1Head,
+.invit1Body,
+.invit1Footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.invit1Head .imgHolder {
+    width: auto;
+    height: 70px;
+}
+
+.invit1Head h1 {
+    font-family: 'Bonalu', sans-serif;
+    font-size: 36px;
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: .05rem;
+    color: #a9000f;
+    text-align: center;
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+}
+
+.invit1Body p {
+    font-family: 'Ramabhadra', sans-serif !important;
+    font-size: 22px !important;
+    line-height: 1 !important;
+    font-weight: normal !important;
+    color: #085622 !important;
+    text-align: center !important;
+    width: 75% !important;
+    margin: 0 !important;
+    padding: 1rem 0 !important;
+}
+
+.invit1Body .side-by-side {
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 90% !important;
+    position: relative;
+    margin: 0 auto !important;
+    gap: 1rem !important;
+}
+
+.invit1Body .side-by-side::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 50px;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url(../images/love-arrows-vector.png) no-repeat center center;
+    background-size: contain;
+    z-index: 1;
+}
+
+.invit1Body .side-by-side .guestCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 48%;
+}
+
+.invit1Body .side-by-side .guestCard .imgHolder {
+    width: 165px;
+    height: 165px;
+    border: none;
+}
+
+.invit1Body .side-by-side .guestCard h2 {
+    font-family: 'Batukamma', sans-serif !important;
+    font-size: 42px !important;
+    line-height: .8 !important;
+    font-weight: normal !important;
+    letter-spacing: .05rem !important;
+    color: #a8000d !important;
+    text-align: center !important;
+    width: fit-content !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.invit1Body .side-by-side .guestCard h2 span {
+    display: block;
+    clear: both;
+    font-family: 'Ramabhadra', sans-serif !important;
+    font-size: 16px !important;
+    color: #085622 !important;
+}
+
+.invit1Body h5 {
+    font-family: 'Ramabhadra', sans-serif !important;
+    font-size: 20px !important;
+    line-height: 1 !important;
+    font-weight: normal !important;
+    color: #085622 !important;
+    text-align: center !important;
+    width: fit-content !important;
+    white-space: nowrap !important;
+    margin: 0 !important;
+    padding: 1rem 0 !important;
+}
+
+#temp-footer .invit1Footer h3 {
+    font-family: 'Ramabhadra', sans-serif !important;
+    font-size: 18px !important;
+    line-height: 1 !important;
+    font-weight: normal !important;
+    color: #fff !important;
+    text-align: center !important;
+    width: fit-content !important;
+    white-space: nowrap !important;
+    margin: 0 !important;
+    background: url(../images/title-bg-1.png) no-repeat center center;
+    background-size: 100% auto;
+    padding: .85rem 1.75rem !important;
+}
+
+#temp-footer .invit1Footer p {
+    font-family: 'Ramabhadra', sans-serif !important;
+    font-size: 20px !important;
+    line-height: 1 !important;
+    font-weight: normal !important;
+    color: #085622 !important;
+    text-align: center !important;
+    width: fit-content !important;
+    white-space: nowrap !important;
+    position: relative !important;
+    margin: 0 !important;
+    padding: 1rem 0 !important;
+}
+
+#temp-footer .invit1Footer p::after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 20px;
+    bottom: -.75rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url(../images/decor-line-4-dark.png) no-repeat center center;
+    background-size: contain;
+    z-index: 1;
+}
+
+
+
+/* Events Template 2 */
+.invit2Head,
+.invit2Body,
+.invit2Footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.invit2Head .imgHolder {
+    width: auto;
+    height: 70px;
+    position: relative;
+    margin-top: 1rem;
+    top: .5rem;
+    z-index: 2;
+}
+
+.invit2Head h1 {
+    font-family: 'Batukamma', sans-serif;
+    font-size: 34px;
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: .05rem;
+    color: #fff;
+    text-align: center;
+    width: fit-content;
+    top: -.65rem;
+    margin: 0;
+    padding: 1.25rem;
+    background: url(../images/title-bg-7-full.png) no-repeat center center;
+    background-size: 100% auto;
+    position: relative;
+    z-index: 1;
+}
+
+.invit2Body p {
+    font-family: 'Ramabhadra', sans-serif !important;
+    font-size: 22px !important;
+    line-height: 1 !important;
+    font-weight: normal !important;
+    color: #085622 !important;
+    text-align: center !important;
+    width: 75% !important;
+    margin: 0 !important;
+    padding: 1rem 0 !important;
+}
+
+.invit2Body .imgHolder {
+    width: auto;
+    height: 175px;
+    border: none;
+    position: relative;
+    z-index: 1;
+}
+
+.invit2Body .imgHolder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 24px;
+}
+
+.invit2Body .imgHolder::before,
+.invit2Body .imgHolder::after {
+    content: "";
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    top: -1rem;
+    left: -1rem;
+    background: url(../images/photo-frame-back-decor.png) no-repeat center center;
+    background-size: contain;
+    z-index: -1;
+}
+
+.invit2Body .imgHolder::after {
+    left: auto;
+    right: -1rem;
+}
+
+.invit2Body h1 {
+    font-family: 'Batukamma', sans-serif !important;
+    font-size: 42px !important;
+    line-height: .8 !important;
+    font-weight: normal !important;
+    letter-spacing: .05rem !important;
+    color: #a8000d !important;
+    text-align: center !important;
+    width: fit-content !important;
+    margin: 0 !important;
+    padding: .5rem !important;
+    position: relative;
+}
+
+.invit2Body h1::before,
+.invit2Body h1::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url(../images/title-besides-decor.png) no-repeat center center;
+    background-size: contain;
+}
+
+.invit2Body h1::before {
+    right: 100%;
+}
+
+.invit2Body h1::after {
+    left: 100%;
+    transform: translateY(-50%) rotate(180deg);
+}
+
+#temp-footer .invit2Footer h3 {
+    font-family: 'Batukamma', sans-serif !important;
+    font-size: 24px !important;
+    line-height: 1.5 !important;
+    font-weight: normal !important;
+    color: #007128 !important;
+    text-align: center !important;
+    width: fit-content !important;
+    margin: .35rem auto !important;
+    padding: .8rem 0 !important;
+    position: relative !important;
+}
+
+#temp-footer .invit2Footer h3::before,
+#temp-footer .invit2Footer h3::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url(../images/title-above-decor.png) no-repeat center center;
+    background-size: contain;
+}
+
+#temp-footer .invit2Footer h3::before {
+    top: -1.25rem;
+}
+
+#temp-footer .invit2Footer h3::after {
+    bottom: -1.25rem;
+    transform: translateX(-50%) rotateX(180deg);
+}
+
+#temp-footer .invit2Footer h5 {
+    font-family: 'Ramabhadra', sans-serif !important;
+    font-size: 18px !important;
+    line-height: 1 !important;
+    font-weight: normal !important;
+    color: #a6020f !important;
+    text-align: center !important;
+    width: fit-content !important;
+    white-space: nowrap !important;
+    position: relative !important;
+    margin: 0 !important;
+    padding: .75rem 0 !important;
+}
+
+#temp-footer .invit2Footer p {
+    font-family: 'Ramabhadra', sans-serif !important;
+    font-size: 18px !important;
+    line-height: 1.2 !important;
+    font-weight: normal !important;
+    color: #085622 !important;
+    text-align: center !important;
+    width: fit-content !important;
+    white-space: nowrap !important;
+    position: relative !important;
+    margin: 0 !important;
+    padding: .25rem .65rem !important;
+    background-color: #fdf6e6 !important;
+    border: 1px dashed #a6020f !important;
+    border-radius: 6px !important;
+}
+
+#temp-footer .invit2Footer .imgHolder {
+    width: auto;
+    height: 150px;
+    margin: .5rem auto 0;
+}
