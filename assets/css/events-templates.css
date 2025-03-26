@@ -4419,3 +4419,406 @@ body {
     justify-content: center;
     flex-direction: column;
 }
+
+
+
+
+/* Events Template 20 (Republic Day 1) */
+.event20Head,
+.event20Body,
+.event20Footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.event20Head h1 {
+    font-family: 'Kaloji', sans-serif !important;
+    font-size: 34px !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    color: #c60500 !important;
+    text-align: center !important;
+    margin: -.85rem 0 -.2rem !important;
+    padding: 0 !important;
+    width: fit-content !important;
+    position: relative;
+}
+
+.event20Head h2 {
+    font-family: 'Ramabhadra', sans-serif !important;
+    font-size: 34px !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    color: #05649a !important;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: fit-content !important;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .35rem;
+}
+
+.event20Head h2 img {
+    max-width: 32px;
+    position: relative;
+    top: .25rem;
+}
+
+.event20Head h4 {
+    font-family: 'Ramabhadra', sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    color: #05649a !important;
+    text-align: center !important;
+    margin: 0 0 0 1.5rem !important;
+    padding: 0 .5rem !important;
+    width: fit-content !important;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .75rem;
+    background-color: #fefae1;
+}
+
+.event20Head h4::after {
+    content: '';
+    position: absolute;
+    width: 125%;
+    height: 2px;
+    background-color: #05649a;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.event20Head h6 {
+    font-family: 'Mandali', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    line-height: 1 !important;
+    color: #05649a !important;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: .3rem 0 0 !important;
+    width: fit-content !important;
+    position: relative;
+}
+
+.event20Body h1 {
+    font-family: 'Bonalu', sans-serif !important;
+    font-size: 34px !important;
+    letter-spacing: .05rem !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    color: #1a6640 !important;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: .1rem 0 !important;
+    width: fit-content !important;
+    position: relative;
+}
+
+.event20Body h2 {
+    font-family: 'Kaloji', sans-serif !important;
+    font-size: 24px !important;
+    font-weight: 500 !important;
+    line-height: .8 !important;
+    color: #022195 !important;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: .15rem .35rem !important;
+    width: fit-content !important;
+    border: 1px solid #022195;
+    border-radius: 5px;
+    position: relative;
+}
+
+.event20Body h3 {
+    font-family: 'Kaloji', sans-serif !important;
+    font-size: 19px !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    color: #030c29 !important;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: .25rem 0 !important;
+    width: fit-content !important;
+    position: relative;
+}
+
+.event20Body h3 span {
+    color: #d60602 !important;
+}
+
+.event20Body .imgHolder.specsImg {
+    width: auto;
+    height: 70px;
+}
+
+.event20Body p {
+    font-family: 'Kaloji', sans-serif !important;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    color: #030c29 !important;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 75% !important;
+    position: relative;
+}
+
+.event20Body h4.withBg {
+    font-family: 'Kaloji', sans-serif !important;
+    font-size: 19px !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    color: #fff !important;
+    text-align: center !important;
+    margin: .15rem 0 !important;
+    padding: .15rem .75rem !important;
+    width: fit-content !important;
+    position: relative;
+    background-color: #022195;
+}
+
+.event20Body h4.withBg span {
+    text-decoration: double line-through !important;
+}
+
+.event20Body h4.withBg em {
+    color: #fff100 !important;
+    font-style: normal !important;
+}
+
+.event20Body .defaultList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: .2rem auto 0;
+    width: fit-content;
+    gap: .05rem;
+}
+
+.event20Body .defaultList p {
+    font-family: 'Ramabhadra', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: normal !important;
+    line-height: 1 !important;
+    color: inherit;
+    text-align: left !important;
+    margin: 0 !important;
+    padding: 0 .35rem 0 .5rem !important;
+    width: fit-content !important;
+    position: relative;
+}
+
+.event20Body .defaultList .seperator {
+    flex: 1 1 100%;
+    height: 1px;
+}
+
+.event20Body .defaultList p.colorPink {
+    color: #ff007f !important;
+}
+
+.event20Body .defaultList p.colorGreen {
+    color: #275f3a !important;
+}
+
+.event20Body .defaultList p::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    background: url(../images/list-arrow.png) no-repeat left center;
+    background-size: contain;
+    width: 9px;
+    height: 9px;
+}
+
+.event20Body .side-by-side {
+    justify-content: center !important;
+    gap: 1.5rem !important;
+    align-items: center !important;
+    width: 90% !important;
+    margin-top: .35rem !important;
+}
+
+.event20Body .side-by-side .guestCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.event20Body .side-by-side .guestCard .imgHolder {
+    width: auto;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid #92ae98;
+}
+
+.event20Body .side-by-side .guestCard h2 {
+    font-family: 'Oswald', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    color: #c70503 !important;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    white-space: nowrap !important;
+    border: none !important;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.event20Body .side-by-side .guestCard h2 span {
+    color: #222 !important;
+    font-size: 10px !important;
+    text-align: right !important;
+    width: 100% !important;
+}
+
+.event20Body .side-by-side .guestCard p {
+    font-family: 'Ramabhadra', sans-serif !important;
+    font-size: 9px !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    color: #222 !important;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: fit-content !important;
+    position: relative;
+}
+
+.event20Footer .borderAround {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    padding: .65rem .5rem .3rem;
+    border: 1px solid rgba(0, 0, 0, .7);
+    border-radius: 6px;
+    width: 75% !important;
+    margin: .35rem auto 0;
+}
+
+.event20Footer .borderAround h1.withBg {
+    font-family: 'Batukamma', sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    line-height: .7 !important;
+    color: #d20202 !important;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: .25rem .5rem !important;
+    width: fit-content !important;
+    position: absolute !important;
+    top: -.85rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffbc37;
+    border-radius: 5px;
+}
+
+.event20Footer .borderAround p {
+    font-family: 'Ramabhadra', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    line-height: 1.1 !important;
+    color: #222 !important;
+    text-align: center !important;
+    white-space: normal !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: fit-content !important;
+    position: relative;
+}
+
+.event20Footer h2 {
+    font-family: 'Kaloji', sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    color: #041f94 !important;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: .1rem 0 0 !important;
+    width: fit-content !important;
+    border: none !important;
+    white-space: normal !important;
+    position: relative;
+}
+
+.event20Footer p {
+    font-family: 'Ramabhadra', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    color: #222 !important;
+    text-align: center !important;
+    white-space: normal !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: fit-content !important;
+    position: relative;
+}
+
+#temp-footer .event20Footer p.address {
+    font-family: 'Ramabhadra', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    line-height: 1.2 !important;
+    color: #fff !important;
+    text-align: center !important;
+    white-space: normal !important;
+    margin: .85rem 0 0 !important;
+    padding: 0 !important;
+    width: 80% !important;
+    position: relative;
+}
+
+#temp-footer .event20Footer p.address::before {
+    left: -1rem !important;
+    top: 0 !important;
+    background: url(../images/location-icon-wht.png) no-repeat center center !important;
+    background-size: contain !important;
+    filter: none !important;
+}
+
+#temp-footer .event20Footer p.contactClickable {
+    background-color: #ce0000 !important;
+    font-size: 20px !important;
+    line-height: .8 !important;
+    border-radius: 4px !important;
+}
+
+#temp-footer .event20Footer p.contactClickable::before {
+    background: url(../images/phone-icon-wht.png) no-repeat center center !important;
+    background-size: contain !important;
+}
+
+#temp-footer .event20Footer p.contactClickable::after {
+    background: url(../images/click_hand_icon2-wht.svg) no-repeat center center !important;
+    background-size: contain !important;
+}

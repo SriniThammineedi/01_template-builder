@@ -1,4 +1,4 @@
-@import url('../css/birthday-templates.css');
+@import url("../css/birthday-templates.css");
 @import url("../css/obituary-templates.css");
 @import url("../css/admission-templates.css");
 @import url("../css/promotion-templates.css");
@@ -2754,7 +2754,7 @@ p.contact::before {
     left: .5rem;
     top: 50%;
     transform: translateY(-50%);
-    background: url(../images/phone-icon-wht.png) no-repeat center center;
+    background: url(../images/phone-icon.png) no-repeat center center;
     background-size: contain;
 }
 
@@ -2766,7 +2766,52 @@ p.contact::before {
     right: 0;
     top: 60%;
     transform: translateY(-50%);
-    background: url(../images/click_hand_icon.png) no-repeat center center;
+    background: url(../images/click_hand_icon2.svg) no-repeat center center;
+    background-size: contain;
+}
+
+/* WhatsApp Button with Actions */
+#temp-footer p.whatsappClicked {
+    font-family: "Ramabhadra", sans-serif !important;
+    font-size: 16px !important;
+    line-height: 1 !important;
+    font-weight: 500 !important;
+    position: relative !important;
+    padding: .5rem 2rem .5rem 1.25rem !important;
+    margin: .15rem auto 0 !important;
+    color: #fff !important;
+    width: fit-content !important;
+    text-align: center !important;
+    white-space: normal !important;
+    background-color: #2cb740 !important;
+    border-radius: 6px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#temp-footer p.whatsappClicked::before {
+    content: "";
+    position: absolute;
+    width: 2.2rem;
+    height: 2.2rem;
+    left: -1.2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url(../images/whatsapp_icon2_bordered.svg) no-repeat center center;
+    background-size: contain;
+    display: block;
+}
+
+#temp-footer p.whatsappClicked::after {
+    content: "";
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    right: 0;
+    top: 60%;
+    transform: translateY(-50%);
+    background: url(../images/click_hand_icon3.svg) no-repeat center center;
     background-size: contain;
 }
 
