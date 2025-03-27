@@ -1435,22 +1435,439 @@ p span {
     margin: 0 auto;
 }
 
-.promo6Head {
-    margin-top: -1.5rem;
+.promo6Head .imgHolder {
+    width: auto;
+    height: 90px;
+    margin-top: -.5rem;
 }
 
-.promo6Head h1 {
-    font-size: 46px !important;
-    font-family: 'Bhagamati', sans-serif !important;
+.promo6Body h3 {
+    font-size: 18px !important;
+    font-family: 'Batukamma', sans-serif !important;
     font-weight: 500 !important;
-    line-height: 35px !important;
+    line-height: 1 !important;
+    color: #fff805 !important;
+    position: relative !important;
+    text-align: center !important;
+    padding: 0 !important;
+    margin: 0 auto !important;
+}
+
+.promo6Body h3 span {
+    color: #fff !important;
+    font-family: 'Ramabhadra', sans-serif !important;
+}
+
+.promo6Body h4.withBorder {
+    font-size: 18px !important;
+    font-family: 'Batukamma', sans-serif !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    color: #fff805 !important;
+    border: 1px solid #fff !important;
+    border-radius: 5px !important;
+    position: relative !important;
+    text-align: center !important;
+    padding: .25rem .35rem !important;
+    width: fit-content !important;
+    margin: .35rem auto !important;
+    display: flex;
+    justify-content: center;
+    gap: .25rem;
+}
+
+.promo6Body h4.withBorder img {
+    max-height: 30px;
+}
+
+.promo6Body h2.withBg {
+    font-size: 18px !important;
+    font-family: 'Ramabhadra', sans-serif !important;
+    font-weight: 500 !important;
+    line-height: 1.1 !important;
+    color: #0b1672 !important;
+    position: relative !important;
+    text-align: center !important;
+    background-color: #fff !important;
+    border-radius: 5px !important;
+    padding: .35rem !important;
+    width: 85% !important;
+    margin: .25rem auto !important;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.promo6Body h2.withBg span {
+    color: #db0306 !important;
+    font-size: 24px !important;
+    font-family: 'Kaloji', sans-serif !important;
+}
+
+.promo6Body h1 {
+    font-size: 34px !important;
+    font-family: 'Batukamma', sans-serif !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    color: #fff805 !important;
+    position: relative !important;
+    text-align: center !important;
+    padding: .25rem 0 !important;
+    margin: 0 auto !important;
+}
+
+.promo6Body p {
+    font-size: 15px !important;
+    font-family: 'Ramabhadra', sans-serif !important;
+    font-weight: 500 !important;
+    line-height: 1.1 !important;
     color: #fff !important;
     position: relative !important;
     text-align: center !important;
-    padding: 0 1rem !important;
-    margin: 0 !important;
-    text-shadow: 0 4px 3px rgba(0, 0, 0, .5);
+    margin: 0 auto !important;
+    padding: .25rem 0 !important;
+    width: 78% !important;
 }
 
-/* paint-order: stroke fill;
--webkit-text-stroke: 4px rgba(0, 0, 0, .5); */
+.promo6Body .side-by-side {
+    justify-self: center !important;
+    gap: .5rem !important;
+    width: 95% !important;
+    margin: .5rem auto .25rem !important;
+}
+
+.promo6Body .side-by-side .boxedContent {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: .25rem;
+    width: calc(100% - 135px);
+    background-color: #fff;
+    border-radius: 5px;
+    padding: .5rem;
+}
+
+.promo6Body .side-by-side .boxedContent p {
+    font-size: 13px !important;
+    font-family: 'Kaloji', sans-serif !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    color: #222 !important;
+    position: relative !important;
+    text-align: left !important;
+    padding: 0 0 0 1rem !important;
+    margin: 0 !important;
+    width: 100% !important;
+}
+
+.promo6Body .side-by-side .boxedContent p::before {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: -4px;
+    width: 14px;
+    height: 10px;
+    background: url(../images/list-arrow-long-red.png) no-repeat center center;
+    background-size: contain;
+}
+
+.promo6Body .side-by-side .imgHolder {
+    width: 125px;
+    height: 150px;
+}
+
+.promo6Body .side-by-side .boxedContent h3 {
+    font-size: 20px !important;
+    font-family: 'Kaloji', sans-serif !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    color: #db0704 !important;
+    position: relative !important;
+    text-align: left !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+}
+
+.promo6Footer h3 {
+    font-size: 24px !important;
+    font-family: 'Kaloji', sans-serif !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    color: #ffb600 !important;
+    position: relative !important;
+    text-align: center !important;
+    width: 80% !important;
+    padding: 0 !important;
+    margin: 0 auto !important;
+}
+
+#temp-footer .promo6Footer p.address {
+    font-size: 17px !important;
+    font-family: 'Kaloji', sans-serif !important;
+    font-weight: normal !important;
+    line-height: 1 !important;
+    color: #fff !important;
+    position: relative !important;
+    text-align: center !important;
+    width: fit-content !important;
+    padding: .25rem 0 !important;
+    margin: 0 auto !important;
+}
+
+#temp-footer .promo6Footer p.address::before {
+    left: -1.1rem !important;
+    top: .25rem !important;
+    background: url(../images/location-icon-wht.png) no-repeat center center !important;
+    background-size: contain !important;
+    filter: none !important;
+}
+
+.promo6Footer h5 {
+    font-size: 14px !important;
+    font-family: 'Mandali', sans-serif !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    color: #fff !important;
+    position: relative !important;
+    text-align: center !important;
+    width: fit-content !important;
+    padding: .25rem 0 !important;
+    margin: 0 auto !important;
+}
+
+#temp-footer .promo6Footer p.contactClickable {
+    background-color: #c20273 !important;
+    font-size: 20px !important;
+    line-height: .8 !important;
+    color: #fff !important;
+}
+
+#temp-footer .promo6Footer p.contactClickable::before {
+    background: url(../images/phone-icon-wht.png) no-repeat center center !important;
+    background-size: contain !important;
+}
+
+#temp-footer .promo6Footer p.contactClickable::after {
+    background: url(../images/click_hand_icon2-wht.svg) no-repeat center center !important;
+    background-size: contain !important;
+}
+
+
+/* Promo Template 7 */
+.promo7Head,
+.promo7Body,
+.promo7Footer {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    margin: 0 auto;
+}
+
+.promo7Head h1 {
+    font-size: 60px !important;
+    font-family: 'Oswald', sans-serif !important;
+    font-weight: 600 !important;
+    line-height: 1 !important;
+    color: #0e6230 !important;
+    position: relative !important;
+    text-align: center !important;
+    padding: 0 !important;
+    margin: 0 auto !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: .4rem;
+    width: fit-content;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 3px rgba(255, 255, 255, .6);
+}
+
+.promo7Head h1 img {
+    max-height: 50px;
+}
+
+.promo7Head h1 span {
+    flex: 1 1 100%;
+    font-size: 32px !important;
+    position: relative;
+    top: -.25rem;
+}
+
+.promo7Body p {
+    font-size: 15px !important;
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 600 !important;
+    line-height: 1 !important;
+    color: #3e3b42 !important;
+    position: relative !important;
+    text-align: center !important;
+    padding: 0 !important;
+    margin: -.35rem auto 0 !important;
+}
+
+.promo7Body h3.borderAround {
+    font-size: 20px !important;
+    font-family: 'Oswald', sans-serif !important;
+    font-weight: 700 !important;
+    line-height: 1 !important;
+    color: #106689 !important;
+    position: relative !important;
+    text-align: center !important;
+    padding: .25rem .35rem !important;
+    border-radius: 5px !important;
+    margin: .25rem auto !important;
+    border: 1px solid #3e3b42;
+}
+
+.promo7Body .circledBadge {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background: url(../images/circled-badge-bg.png) no-repeat center center;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: .5rem auto !important;
+    padding: .65rem !important;
+    gap: .35rem;
+}
+
+.promo7Body .circledBadge h2.withBg {
+    font-size: 18px !important;
+    font-family: 'Oswald', sans-serif !important;
+    font-weight: 700 !important;
+    line-height: 1 !important;
+    color: #74043c !important;
+    position: relative !important;
+    text-align: center !important;
+    padding: .25rem .35rem !important;
+    margin: 0 !important;
+    background-color: #fff !important;
+    border-radius: 5px !important;
+}
+
+.promo7Body .circledBadge h1 {
+    font-size: 28px !important;
+    font-family: 'Oswald', sans-serif !important;
+    font-weight: 700 !important;
+    line-height: 1.1 !important;
+    letter-spacing: -.03rem !important;
+    color: #fff805 !important;
+    position: relative !important;
+    text-align: center !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.promo7Body .circledBadge h1 span {
+    color: #fff !important;
+    font-size: 16px !important;
+    display: block;
+    clear: both;
+}
+
+.promo7Body .circledBadge p {
+    font-size: 14px !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 500 !important;
+    line-height: 1.3 !important;
+    color: #fff !important;
+    position: relative !important;
+    text-align: center !important;
+    width: 70% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.promo7Body .side-by-side {
+    justify-self: center !important;
+    gap: .5rem !important;
+    width: 100% !important;
+    flex-wrap: wrap !important;
+}
+
+.promo7Body .side-by-side .imgHolder {
+    width: 100px;
+    height: 45px;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #3e3b42;
+}
+
+.promo7Body .side-by-side .imgHolder img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.promo7Footer h3 {
+    font-size: 19px !important;
+    font-family: 'Oswald', sans-serif !important;
+    font-weight: 700 !important;
+    line-height: 1 !important;
+    letter-spacing: -.03rem !important;
+    color: #fff805 !important;
+    position: relative !important;
+    text-align: center !important;
+    padding: 0 !important;
+    margin: 1.1rem auto 0 !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, .5);
+}
+
+.promo7Footer h3 span {
+    font-size: 13px !important;
+}
+
+#temp-footer .promo7Footer p.address {
+    font-size: 13px !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    letter-spacing: -.02rem !important;
+    color: #fff !important;
+    position: relative !important;
+    width: fit-content !important;
+    text-align: center !important;
+    padding: .5rem !important;
+    margin: 0 !important;
+    white-space: nowrap !important;
+}
+
+#temp-footer .promo7Footer p.address::before {
+    left: -.75rem !important;
+    top: .5rem !important;
+    background: url(../images/location-icon-wht.png) no-repeat center center !important;
+    background-size: contain !important;
+    filter: none !important;
+}
+
+#temp-footer .promo7Footer p.contact {
+    font-size: 16px !important;
+    font-family: 'Oswald', sans-serif !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    letter-spacing: -.02rem !important;
+    color: #fff !important;
+    position: relative !important;
+    width: fit-content !important;
+    text-align: center !important;
+    padding: 0 .5rem !important;
+    margin: 0 !important;
+    white-space: nowrap !important;
+}
+
+#temp-footer .promo7Footer p.contact::before {
+    left: -.75rem !important;
+    top: .15rem !important;
+    background: url(../images/phone-icon2-wht.png) no-repeat center center !important;
+    background-size: contain !important;
+    filter: none !important;
+}
