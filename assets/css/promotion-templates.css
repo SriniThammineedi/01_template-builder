@@ -1644,12 +1644,14 @@ p span {
     color: #fff !important;
 }
 
-#temp-footer .promo6Footer p.contactClickable::before {
+#temp-footer .promo6Footer p.contactClickable::before,
+#temp-footer .promo8Footer p.contactClickable::before {
     background: url(../images/phone-icon-wht.png) no-repeat center center !important;
     background-size: contain !important;
 }
 
-#temp-footer .promo6Footer p.contactClickable::after {
+#temp-footer .promo6Footer p.contactClickable::after,
+#temp-footer .promo8Footer p.contactClickable::after {
     background: url(../images/click_hand_icon2-wht.svg) no-repeat center center !important;
     background-size: contain !important;
 }
@@ -1870,4 +1872,680 @@ p span {
     background: url(../images/phone-icon2-wht.png) no-repeat center center !important;
     background-size: contain !important;
     filter: none !important;
+}
+
+
+
+/* Promo Template 8 */
+.promo8Head,
+.promo8Body,
+.promo8Footer {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    margin: 0 auto;
+}
+
+.promo8Head h1 {
+    font-size: 32px !important;
+    font-family: 'Anek Telugu', sans-serif !important;
+    font-weight: 700 !important;
+    line-height: 1 !important;
+    color: #fff !important;
+    position: relative !important;
+    text-align: center !important;
+    padding: 0 !important;
+    margin: 0 auto !important;
+    width: fit-content;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, .5);
+}
+
+.promo8Head h1 span {
+    display: block;
+    clear: both;
+    font-size: 17px !important;
+    padding-top: .85rem !important;
+    font-weight: 600 !important;
+}
+
+.promo8Head h3.withBg {
+    font-size: 14px !important;
+    font-family: 'Anek Telugu', sans-serif !important;
+    font-weight: 600 !important;
+    line-height: 1 !important;
+    color: #fff !important;
+    position: relative !important;
+    text-align: center !important;
+    padding: .5rem .5rem .15rem !important;
+    margin: .3rem auto .1rem !important;
+    background-image: linear-gradient(to bottom, #4d5229 0%, #7a2624 100%) !important;
+    border: 1px solid rgba(255, 255, 255, .5) !important;
+    border-radius: 10px !important;
+    width: fit-content;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .25);
+}
+
+.promo8Body h2 {
+    font-size: 20px !important;
+    font-family: 'Anek Telugu', sans-serif !important;
+    font-weight: 600 !important;
+    line-height: 1 !important;
+    color: #fff !important;
+    position: relative !important;
+    text-align: center !important;
+    padding: .15rem 0 !important;
+    margin: 0 auto !important;
+    width: fit-content;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, .5);
+}
+
+.promo8Body p.withBg {
+    font-size: 13px !important;
+    font-family: 'Anek Telugu', sans-serif !important;
+    font-weight: 500 !important;
+    line-height: 1.4 !important;
+    color: #fff !important;
+    position: relative !important;
+    text-align: center !important;
+    padding: .5rem !important;
+    margin: 0 auto !important;
+    background-color: #058047 !important;
+    border-radius: 16px !important;
+    width: 75% !important;
+}
+
+.promo8Body .side-by-side {
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 0 !important;
+    margin: .85rem auto 0 !important;
+    width: 90% !important;
+}
+
+.promo8Body .side-by-side .imgHolder {
+    width: 140px;
+    height: 140px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.promo8Body .side-by-side .contentArea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: calc(100% - 160px);
+}
+
+.promo8Body .side-by-side .contentArea h1.withBg {
+    font-size: 28px !important;
+    font-family: 'Anek Telugu', sans-serif !important;
+    font-weight: 700 !important;
+    line-height: 1.5 !important;
+    color: #fff !important;
+    position: relative !important;
+    text-align: center !important;
+    padding: 1rem 1rem .15rem !important;
+    margin: 0 !important;
+    width: fit-content !important;
+    background-color: #781c21 !important;
+    border-radius: 12px !important;
+    border: 2px solid #889f2d !important;
+}
+
+.promo8Body .side-by-side .contentArea h3.withBg {
+    font-size: 20px !important;
+    font-family: 'Anek Telugu', sans-serif !important;
+    font-weight: 700 !important;
+    line-height: 1.5 !important;
+    color: #000 !important;
+    position: relative !important;
+    text-align: center !important;
+    padding: 1.1rem .5rem .15rem !important;
+    margin: -2px 0 0 !important;
+    width: fit-content !important;
+    background-color: #fff !important;
+    border-radius: 10px !important;
+    border: 2px solid #889f2d !important;
+}
+
+.promo8Body .side-by-side .contentArea h3.withBg span {
+    position: absolute !important;
+    top: -.75rem !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    font-size: 14px !important;
+    background-color: #fff !important;
+    padding: .35rem .5rem .15rem !important;
+    border-radius: 10px !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
+}
+
+.promo8Body .defaultList {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: .5rem auto 0;
+    gap: .3rem;
+    background-color: #fff !important;
+    border-radius: 8px !important;
+    border: 2px solid #889f2d !important;
+    padding: .75rem .75rem .35rem;
+    position: relative;
+}
+
+.promo8Body .defaultList::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1px;
+    height: 90%;
+    background-color: #e9ecd9;
+}
+
+.promo8Body .defaultList p {
+    font-size: 14px !important;
+    font-family: 'Anek Telugu', sans-serif !important;
+    font-weight: 600 !important;
+    line-height: 1.2 !important;
+    color: #761921 !important;
+    position: relative !important;
+    text-align: left !important;
+    padding: 0 .35rem 0 1.25rem !important;
+    margin: 0 !important;
+    width: calc(1/2 * 100% - (1 - 1/2) * .5rem) !important;
+}
+
+.promo8Body .defaultList p:nth-child(2n) {
+    margin-left: .5rem !important;
+    margin-right: -.5rem !important;
+}
+
+.promo8Body .defaultList p::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    background: url(../images/list-item-ayurvedic.png) no-repeat center center;
+    background-size: contain;
+}
+
+.promo8Footer h3 {
+    font-size: 18px !important;
+    font-family: 'Anek Telugu', sans-serif !important;
+    font-weight: 700 !important;
+    line-height: 1 !important;
+    color: #7c2325 !important;
+    position: relative !important;
+    text-align: center !important;
+    padding: .25rem 0 !important;
+    margin: 0 auto !important;
+    width: fit-content !important;
+}
+
+#temp-footer .promo8Footer p.address {
+    font-size: 16px !important;
+    font-family: 'Anek Telugu', sans-serif !important;
+    font-weight: 600 !important;
+    line-height: 1.2 !important;
+    color: #222 !important;
+    position: relative !important;
+    text-align: center !important;
+    padding: .35rem 0 !important;
+    margin: 0 auto !important;
+    width: fit-content !important;
+}
+
+#temp-footer .promo8Footer p.address span {
+    font-size: 18px !important;
+    color: #781c21 !important;
+    display: block;
+    clear: both;
+}
+
+#temp-footer .promo8Footer p.address::before {
+    background: url(../images/location-icon.png) no-repeat center center !important;
+    background-size: contain !important;
+    filter: none !important;
+    top: .25rem !important;
+}
+
+#temp-footer .promo8Footer h4 {
+    font-size: 15px !important;
+    font-family: 'Anek Telugu', sans-serif !important;
+    font-weight: 700 !important;
+    line-height: 1.4 !important;
+    color: #222 !important;
+    position: relative !important;
+    text-align: center !important;
+    padding: .35rem 0 0 !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+    border-top: 2px solid #c4cd8c !important;
+}
+
+#temp-footer .promo8Footer p.contactClickable {
+    background-color: #7d2428 !important;
+    border-radius: 24px !important;
+    border: 2px solid #8d9e34 !important;
+    color: #fff !important;
+    font-size: 20px !important;
+}
+
+
+
+
+/* Promotion Template 9 */
+.promo9Head,
+.promo9Body,
+.promo9Footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
+    position: relative;
+}
+
+.promo9Head .combinedTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    margin: 0 auto;
+    position: relative;
+    width: fit-content;
+}
+
+.promo9Head .combinedTitle .imgHolder {
+    width: auto;
+    height: 60px;
+}
+
+.promo9Head .combinedTitle .content {
+    width: fit-content !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.promo9Head .combinedTitle .content h1 {
+    font-family: "Bonalu", sans-serif !important;
+    font-size: 26px !important;
+    font-weight: normal !important;
+    letter-spacing: .08rem !important;
+    color: #fff !important;
+    margin: 0 !important;
+    line-height: 1.1 !important;
+    padding: 0 !important;
+    text-align: center !important;
+    position: relative !important;
+    width: fit-content !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.promo9Head .combinedTitle .content h1 span {
+    font-size: 32px !important;
+}
+
+.promo9Head .combinedTitle .content h4 {
+    font-family: "Anek Telugu", sans-serif !important;
+    font-size: 14px !important;
+    font-weight: normal !important;
+    color: #fff !important;
+    margin: 0 !important;
+    line-height: 1.2 !important;
+    padding: .25rem 0 0 !important;
+    text-align: center !important;
+    position: relative !important;
+    width: fit-content !important;
+}
+
+.promo9Head .combinedTitle .content h4 span {
+    color: #fff500 !important;
+}
+
+.promo9Head .combinedTitle .content h4 b {
+    color: #fff500 !important;
+    font-weight: normal !important;
+    font-size: 16px !important;
+}
+
+.promo9Body .imgHolder {
+    width: auto;
+    height: 264px;
+    margin: 0 auto;
+}
+
+.promo9Body p {
+    font-family: "Ramabhadra", sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    color: #fff !important;
+    margin: 0 !important;
+    line-height: 1.2 !important;
+    padding: .25rem 0 !important;
+    text-align: center !important;
+    width: fit-content !important;
+    position: relative !important;
+}
+
+.promo9Body .boxedContent {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: -.05rem auto 1.6rem;
+    padding: .5rem 1rem 1.5rem;
+    border: 1px solid rgba(255, 255, 255, .7);
+    position: relative;
+    border-top: none;
+}
+
+.promo9Body .boxedContent h5 {
+    font-family: "Anek Telugu", sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    color: #fff500 !important;
+    margin: 0 !important;
+    line-height: 1.2 !important;
+    padding: .25rem 0 !important;
+    text-align: center !important;
+    width: fit-content !important;
+    position: relative !important;
+}
+
+.promo9Body .boxedContent h5 b {
+    font-size: 16px !important;
+    font-weight: normal !important;
+}
+
+.promo9Body .boxedContent h4 {
+    font-family: "Anek Telugu", sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    color: #fff !important;
+    margin: 0 !important;
+    line-height: 1 !important;
+    padding: .25rem 0 .4rem !important;
+    text-align: center !important;
+    width: fit-content !important;
+    position: relative !important;
+}
+
+.promo9Body .boxedContent h4::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: linear-gradient(to right, #19355d 0%, #fff 50%, #19355d 100%);
+}
+
+.promo9Body .boxedContent h1 {
+    font-family: "Bhagamati", sans-serif !important;
+    font-size: 34px !important;
+    font-weight: 500 !important;
+    color: #fff !important;
+    margin: 0 !important;
+    line-height: 1 !important;
+    padding: .25rem .5rem !important;
+    text-align: center !important;
+    width: 94% !important;
+    position: absolute !important;
+    background-color: #102b56;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .75rem;
+}
+
+.promo9Body .boxedContent h1 span {
+    color: #fff500 !important;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: .7 !important;
+}
+
+.promo9Body .boxedContent h1 span em {
+    font-style: normal !important;
+    font-size: 14px !important;
+    color: #fff !important;
+}
+
+#temp-footer .promo9Footer h5 {
+    font-family: "Ramabhadra", sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    color: #0c3c40 !important;
+    margin: 0 !important;
+    line-height: 1.2 !important;
+    padding: 1rem 0 .5rem !important;
+    text-align: center !important;
+    width: fit-content !important;
+    position: relative !important;
+}
+
+
+/* Promotion Template 10 */
+.promo10Head,
+.promo10Body,
+.promo10Footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
+    position: relative;
+}
+
+.template-wrapper #temp-header {
+    padding: 0 !important;
+}
+
+.promo10Head {
+    padding: 0 !important;
+    width: 100% !important;
+}
+
+.promo10Head::before {
+    content: '';
+    position: absolute;
+    top: -2.5rem;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background-color: #b82841;
+    z-index: -1;
+}
+
+.promo10Head .imgHolder {
+    width: auto;
+    height: 60px;
+}
+
+.promo10Body h2 {
+    font-family: "Batukamma", sans-serif !important;
+    font-size: 36px !important;
+    font-weight: 500 !important;
+    color: #b82841 !important;
+    margin: .85rem 0 0 !important;
+    line-height: 1 !important;
+    padding: .5rem 0 .25rem !important;
+    text-align: center !important;
+    width: fit-content !important;
+    position: relative !important;
+}
+
+.promo10Body p {
+    font-family: "Ramabhadra", sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    color: #b82841 !important;
+    margin: 0 !important;
+    line-height: 1 !important;
+    padding: 0 !important;
+    text-align: center !important;
+    width: fit-content !important;
+    position: relative !important;
+}
+
+.promo10Body h1.freeBadge {
+    font-family: "Bonalu", sans-serif !important;
+    font-size: 50px !important;
+    font-weight: normal !important;
+    color: #fff !important;
+    margin: .35rem 0 0 -3.5rem !important;
+    letter-spacing: .05rem !important;
+    line-height: 1.2 !important;
+    height: 85px !important;
+    padding: 1rem 2rem !important;
+    text-align: center !important;
+    width: fit-content !important;
+    position: relative !important;
+    background: url(../images/oval-shape1.png) no-repeat center center !important;
+    background-size: contain !important;
+}
+
+.promo10Body .side-by-side {
+    justify-content: center !important;
+    gap: 1rem !important;
+    align-items: center !important;
+    width: 90% !important;
+    margin: 0 auto !important;
+}
+
+.promo10Body .side-by-side .defaultList {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: calc(100% - 170px);
+    gap: .15rem !important;
+}
+
+.promo10Body .side-by-side .defaultList p {
+    font-family: "Ramabhadra", sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    color: #fff !important;
+    background-color: #b82841 !important;
+    margin: 0 !important;
+    line-height: 1 !important;
+    padding: .25rem .5rem .25rem 1.2rem !important;
+    text-align: left !important;
+    width: 100% !important;
+    position: relative !important;
+}
+
+.promo10Body .side-by-side .defaultList p::before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 4px;
+    width: 14px;
+    height: 14px;
+    background: url(../images/list-arrow2.png) no-repeat center center;
+    background-size: contain;
+}
+
+.promo10Body .side-by-side .defaultList h3 {
+    font-family: "Bonalu", sans-serif !important;
+    font-size: 26px !important;
+    font-weight: 500 !important;
+    color: #000 !important;
+    margin: .5rem 0 0 !important;
+    line-height: 1.1 !important;
+    padding: .25rem 0 !important;
+    text-align: left !important;
+    width: 100% !important;
+    position: relative !important;
+}
+
+.promo10Body .side-by-side .imgHolder {
+    width: 160px;
+    height: 260px;
+}
+
+.promo10Footer {
+    width: 100% !important;
+    padding: 0 !important;
+}
+
+.promo10Footer .bgFilled {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: -webkit-fill-available !important;
+    width: -moz-fill-available !important;
+    margin: 0 -3rem .35rem !important;
+    padding: 1rem 0 !important;
+    background-color: #b82841 !important;
+}
+
+.promo10Footer .bgFilled h2 {
+    font-family: "Bonalu", sans-serif !important;
+    font-size: 30px !important;
+    letter-spacing: .05rem !important;
+    font-weight: 500 !important;
+    color: #fff !important;
+    margin: 0 auto !important;
+    line-height: 1 !important;
+    padding: 0 !important;
+    text-align: center !important;
+    width: fit-content !important;
+    position: relative !important;
+    border: none !important;
+}
+
+.promo10Footer .bgFilled p {
+    font-family: "Ramabhadra", sans-serif !important;
+    font-size: 22px !important;
+    font-weight: 500 !important;
+    color: #fff !important;
+    margin: 0 auto !important;
+    line-height: 1 !important;
+    padding: 0 !important;
+    text-align: center !important;
+    width: fit-content !important;
+    position: relative !important;
+    border: none !important;
+}
+
+.promo10Footer .bgFilled h5 {
+    font-family: "Ramabhadra", sans-serif !important;
+    font-size: 17px !important;
+    font-weight: 500 !important;
+    color: #fff !important;
+    margin: 0 auto !important;
+    line-height: 1 !important;
+    padding: .5rem 0 0 !important;
+    text-align: center !important;
+    width: fit-content !important;
+    position: relative !important;
+    border: none !important;
 }
