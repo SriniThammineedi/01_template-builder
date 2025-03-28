@@ -4813,12 +4813,18 @@ body {
     border-radius: 4px !important;
 }
 
-#temp-footer .event20Footer p.contactClickable::before {
+#temp-footer .event20Footer p.contactClickable::before,
+#temp-footer .event15Footer p.contactClickable::before,
+#temp-footer .event17Footer p.contactClickable::before,
+#temp-footer .event19Footer p.contactClickable::before {
     background: url(../images/phone-icon-wht.png) no-repeat center center !important;
     background-size: contain !important;
 }
 
-#temp-footer .event20Footer p.contactClickable::after {
+#temp-footer .event20Footer p.contactClickable::after,
+#temp-footer .event15Footer p.contactClickable::after,
+#temp-footer .event17Footer p.contactClickable::after,
+#temp-footer .event19Footer p.contactClickable::after {
     background: url(../images/click_hand_icon2-wht.svg) no-repeat center center !important;
     background-size: contain !important;
 }

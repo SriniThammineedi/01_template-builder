@@ -662,7 +662,9 @@ body {
     border-radius: 6px !important;
 }
 
-#temp-footer .wanted3Footer p.contactClickable::before {
+#temp-footer .wanted3Footer p.contactClickable::before,
+#temp-footer .wanted4Footer p.contactClickable::before,
+#temp-footer .wanted5Footer p.contactClickable::before {
     content: "";
     position: absolute;
     width: 1.5rem;
@@ -670,12 +672,14 @@ body {
     left: .5rem;
     top: 50%;
     transform: translateY(-50%);
-    background: url(../images/phone-icon.png) no-repeat center center;
+    background: url(../images/phone-icon-wht.png) no-repeat center center;
     background-size: contain;
-    filter: invert(1);
+    filter: none !important;
 }
 
-#temp-footer .wanted3Footer p.contactClickable::after {
+#temp-footer .wanted3Footer p.contactClickable::after,
+#temp-footer .wanted4Footer p.contactClickable::after,
+#temp-footer .wanted5Footer p.contactClickable::after {
     content: "";
     position: absolute;
     width: 2rem;
@@ -685,6 +689,7 @@ body {
     transform: translateY(-50%);
     background: url(../images/click_hand_icon.png) no-repeat center center;
     background-size: contain;
+    filter: none !important;
 }
 
 /* Wanted Template 4 */

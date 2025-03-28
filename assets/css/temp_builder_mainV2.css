@@ -1306,7 +1306,7 @@ ul.expandable-menu li.open .accorParentContainer {
     color: var(--text-light);
 }
 
-.template-wrapper #temp-footer h2 {
+.template-wrapper #temp-footer h2#from-wish {
     padding: .15rem .5rem;
     font-size: 24px;
     font-family: "Kaloji", sans-serif;
@@ -1324,7 +1324,7 @@ ul.expandable-menu li.open .accorParentContainer {
     border-bottom: 1px solid rgba(0, 0, 0, .4);
 }
 
-.template-wrapper #temp-footer p {
+.template-wrapper #temp-footer p#who-wished {
     padding: .5rem 0 0;
     font-size: 28px;
     font-family: "Bhagamati", sans-serif;
@@ -2528,13 +2528,12 @@ p.contact {
 p.contact::before {
     content: "";
     position: absolute;
-    width: 14px;
-    height: 14px;
+    width: 1.5rem;
+    height: 1.5rem;
     background: url(../images/phone-icon.png) no-repeat center center;
     background-size: 100% auto;
-    filter: invert(1);
     left: -20px;
-    top: 2px;
+    top: 4px;
 }
 
 /* Special Decorated Text BG */
