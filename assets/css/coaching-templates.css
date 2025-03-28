@@ -1765,3 +1765,176 @@ body {
     transform: translateY(-50%) !important;
     filter: none !important;
 }
+
+
+
+
+
+/* Coaching Template 7 (Rankers Temp 1) */
+.coach7Head,
+.coach7Body,
+.coach7Footer {
+    position: relative;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.coach7Head .imgHolder {
+    width: auto;
+    height: 75px;
+}
+
+.coach7Head h1.withBg {
+    font-family: "Batukamma", sans-serif;
+    font-size: 28px;
+    line-height: 1.3;
+    font-weight: 500;
+    position: relative;
+    padding: .25rem .5rem;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center !important;
+    color: #fff;
+    background-color: #fe0002;
+    border-radius: 6px;
+}
+
+.coach7Body h2 {
+    font-family: "Batukamma", sans-serif !important;
+    font-size: 40px !important;
+    line-height: 1 !important;
+    font-weight: 500 !important;
+    position: relative !important;
+    padding: .25rem 0 !important;
+    width: fit-content !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+    color: #fff !important;
+}
+
+.coach7Body h2 span {
+    display: block;
+    clear: both;
+    font-size: 22px !important;
+}
+
+.coach7Body .side-by-side {
+    justify-content: space-between !important;
+    gap: 0 !important;
+    align-items: center !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+}
+
+.coach7Body .side-by-side h1 {
+    font-family: "Oswald", sans-serif !important;
+    font-size: 250px !important;
+    line-height: 1 !important;
+    font-weight: 900 !important;
+    position: relative !important;
+    padding: 0 .5rem !important;
+    white-space: nowrap !important;
+    width: 150px !important;
+    margin: 0 !important;
+    text-align: center !important;
+    color: #f1e100 !important;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 6px #ecc84e;
+}
+
+.coach7Body .side-by-side h1 span {
+    display: block;
+    clear: both;
+    font-size: 66px !important;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, .4);
+    letter-spacing: .05rem !important;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 3px #bb710f;
+}
+
+.coach7Body .side-by-side h1 sup {
+    font-size: 32px !important;
+    paint-order: 0 !important;
+    -webkit-text-stroke: 0 !important;
+    text-transform: uppercase;
+    position: absolute;
+    top: 10%;
+    left: 75%;
+}
+
+.coach7Body .side-by-side .guestCard {
+    width: calc(100% - 150px) !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.coach7Body .side-by-side .guestCard .imgHolder {
+    width: 230px;
+    height: 320px;
+    border: none;
+}
+
+.coach7Body .side-by-side .guestCard h2.withBg {
+    font-family: "Roboto", sans-serif !important;
+    font-size: 17px !important;
+    line-height: 1.2 !important;
+    font-weight: 600 !important;
+    position: relative !important;
+    padding: .25rem .5rem !important;
+    white-space: nowrap !important;
+    width: fit-content !important;
+    margin: -.3rem auto 0 !important;
+    text-align: center !important;
+    color: #003cb0 !important;
+    background-color: #fff !important;
+    border-radius: 6px !important;
+}
+
+.coach7Body .side-by-side .guestCard h2.withBg span {
+    font-size: 18px !important;
+    display: block;
+    clear: both;
+}
+
+#temp-footer .coach7Footer {
+    padding: 2rem 0 0 !important;
+}
+
+#temp-footer .coach7Footer h3 {
+    font-family: "Roboto", sans-serif !important;
+    font-size: 20px !important;
+    line-height: 1 !important;
+    font-weight: 900 !important;
+    position: relative !important;
+    padding: 0 !important;
+    width: fit-content !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+    color: #01102e !important;
+}
+
+#temp-footer .coach7Footer h3 span {
+    font-family: 'Birthstone', sans-serif !important;
+    font-size: 30px !important;
+    font-weight: 600 !important;
+    color: #b04f00 !important;
+}
+
+#temp-footer .coach7Footer h4 {
+    font-family: "Ramabhadra", sans-serif !important;
+    font-size: 24px !important;
+    line-height: 1.2 !important;
+    font-weight: 500 !important;
+    position: relative !important;
+    padding: 0 !important;
+    width: fit-content !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+    color: #01102e !important;
+}
