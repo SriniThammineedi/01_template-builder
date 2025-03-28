@@ -1,11 +1,13 @@
 
 
+
+// Export Templates as HTML or Image
 document.querySelectorAll('.exportBtn').forEach(button => {
     button.addEventListener('click', async function () {
         const loadingDiv = document.getElementById('loadingDiv');
         loadingDiv.style.display = 'flex';
         button.disabled = true;
-        await new Promise(resolve => setTimeout(resolve, 2000));
+        await new Promise(resolve => setTimeout(resolve, 500));
         try {
             if (button.classList.contains('exportAsHTML')) {
                 await exportAsHTML();
@@ -20,6 +22,8 @@ document.querySelectorAll('.exportBtn').forEach(button => {
 });
 
 
+
+// Export as HTML Webview including all added animations
 async function exportAsHTML() {
     const content = document.getElementById('themeOuter').outerHTML;
     let styles = '';
@@ -75,7 +79,9 @@ async function exportAsHTML() {
         link.click();
 }
 
-// Export script for exporting as image/webview
+
+
+// Export template as image format
 async function exportAsImage() {
     const targetElement = document.getElementById('themeOuter');
     const isMobile = window.innerWidth <= 768;

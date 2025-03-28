@@ -747,32 +747,62 @@ addDecorOnRadioSelection();
 
 
 
-// Event Filter
-document.addEventListener("DOMContentLoaded", function () {
-    const searchInput = document.getElementById("searchTemplates");
-    const clearButton = document.getElementById("clearSearch");
-    const radioSets = document.querySelectorAll("#eventsTemps .radioSet");
 
-    searchInput.addEventListener("input", function () {
-        const searchText = this.value.toLowerCase().trim();
+// All Category Templates Filter
+document.addEventListener("DOMContentLoaded", function () {
+    const filterInput = document.getElementById("filterTemplates");
+    const resetButton = document.getElementById("clearFilters");
+    const templateContainer = document.getElementById("templates-menu-container");
+    const categories = templateContainer.querySelectorAll(".inner-container");
+    const defaultCategory = templateContainer.querySelector("[data-category='birthday']");
+
+    function resetCategories() {
+        categories.forEach(cat => cat.classList.add("hidden"));
+        if (defaultCategory) defaultCategory.classList.remove("hidden");
+    }
+
+    function filterTemplates() {
+        const filterText = filterInput.value.toLowerCase().trim();
         let hasResults = false;
 
-        radioSets.forEach(set => {
-            const label = set.querySelector("label span").textContent.toLowerCase();
-            if (label.includes(searchText)) {
-                set.style.display = "flex";
+        if (filterText === "") {
+            resetCategories();
+            resetButton.style.display = "none";
+            return;
+        }
+
+        categories.forEach(category => {
+            let categoryHasMatch = false;
+            const radioBtns = category.querySelectorAll(".radioSet");
+
+            radioBtns.forEach(set => {
+                const labelText = set.querySelector("label span").textContent.toLowerCase();
+                if (labelText.includes(filterText)) {
+                    set.style.display = "flex";
+                    categoryHasMatch = true;
+                } else {
+                    set.style.display = "none";
+                }
+            });
+
+            if (categoryHasMatch) {
+                category.classList.remove("hidden");
                 hasResults = true;
             } else {
-                set.style.display = "none";
+                category.classList.add("hidden");
             }
         });
 
-        clearButton.style.display = searchText ? "inline-block" : "none";
+        resetButton.style.display = hasResults ? "inline-block" : "none";
+    }
+
+    filterInput.addEventListener("input", filterTemplates);
+    resetButton.addEventListener("click", function () {
+        filterInput.value = "";
+        categories.forEach(cat => cat.querySelectorAll(".radioSet").forEach(set => set.style.display = "flex"));
+        resetCategories();
+        resetButton.style.display = "none";
     });
 
-    clearButton.addEventListener("click", function () {
-        searchInput.value = "";
-        radioSets.forEach(set => set.style.display = "flex");
-        clearButton.style.display = "none";
-    });
+    resetCategories();
 });
