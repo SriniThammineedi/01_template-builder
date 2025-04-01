@@ -106,8 +106,9 @@ function loadTemplate(templateId) {
   fetch(`./templates/${category}/${templateFileName}`)
     .then((response) => response.text())
     .then((data) => {
+      const updatedData = data.replace(/(\.\.\/\.\.\/assets\/)/g, './assets/');
       const parser = new DOMParser();
-      const doc = parser.parseFromString(data, 'text/html');
+      const doc = parser.parseFromString(updatedData, 'text/html');
       const newTemplateWrapper = doc.querySelector('.template-wrapper');
       const inlineBackgroundImage = newTemplateWrapper.style.backgroundImage;
 
@@ -128,6 +129,7 @@ function loadTemplate(templateId) {
       console.error('Error loading template:', error);
     });
 }
+
 
 function addBackgroundThumbnail(backgroundImage) {
   const newId = 'bg-' + document.querySelectorAll('.radioSet').length;
