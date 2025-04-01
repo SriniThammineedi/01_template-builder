@@ -555,7 +555,7 @@ function showTemplate(selectedId) {
 
 
 ////////////////////////////////////////////////////////////////////////////////
-// Conver Divs into Accordion menu
+// Convert Divs into Accordion menu
 document.addEventListener('DOMContentLoaded', function () {
   const accordionDivs = document.querySelectorAll('.inner-container');
 
@@ -807,4 +807,220 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     resetCategories();
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Drag and Drop Functionality for Objects
+document.addEventListener("DOMContentLoaded", () => {
+  const objectItems = document.querySelectorAll(".draggable-item");
+  const templateWrapper = document.querySelector(".template-wrapper");
+  const editOptionsPanel = document.getElementById("obj-edit-options");
+  let selectedElement = null;
+
+  objectItems.forEach(item => {
+    item.setAttribute("draggable", true);
+    item.addEventListener("dragstart", dragStart);
+  });
+
+  templateWrapper.addEventListener("dragover", dragOver);
+  templateWrapper.addEventListener("drop", dropElement);
+
+  function dragStart(event) {
+    event.dataTransfer.setData("text/plain", event.target.outerHTML);
+  }
+
+  function dragOver(event) {
+    event.preventDefault();
+  }
+
+  function dropElement(event) {
+    event.preventDefault();
+    const draggedElementHTML = event.dataTransfer.getData("text/plain");
+    const tempDiv = document.createElement("div");
+    tempDiv.innerHTML = draggedElementHTML;
+    const newElement = tempDiv.firstElementChild;
+
+    // Set default styles
+    const wrapperRect = templateWrapper.getBoundingClientRect();
+    newElement.style.position = "absolute";
+    newElement.style.left = `${event.clientX - wrapperRect.left}px`;
+    newElement.style.top = `${event.clientY - wrapperRect.top}px`;
+    newElement.style.width = "100px";
+    const aspectRatio = newElement.naturalHeight / newElement.naturalWidth;
+    newElement.style.height = `${100 * aspectRatio}px`;
+    newElement.style.borderRadius = "0";
+    newElement.style.opacity = "1";
+    newElement.style.zIndex = "1";
+
+    newElement.classList.add("movable", "selectable");
+    newElement.setAttribute("data-options", "objEditOptions");
+
+    addResizeHandle(newElement, aspectRatio);
+    enableDragging(newElement);
+    enableSelection(newElement);
+
+    templateWrapper.appendChild(newElement);
+  }
+
+  function enableDragging(element) {
+    let offsetX, offsetY, isDragging = false;
+
+    element.addEventListener("mousedown", (event) => {
+      if (event.target.classList.contains("resize-handle")) return;
+
+      isDragging = true;
+      const rect = element.getBoundingClientRect();
+      offsetX = event.clientX - rect.left;
+      offsetY = event.clientY - rect.top;
+      element.style.cursor = "grabbing";
+
+      function moveElement(moveEvent) {
+        if (!isDragging) return;
+
+        const wrapperRect = templateWrapper.getBoundingClientRect();
+        let newX = moveEvent.clientX - wrapperRect.left - offsetX;
+        let newY = moveEvent.clientY - wrapperRect.top - offsetY;
+
+        element.style.left = `${newX}px`;
+        element.style.top = `${newY}px`;
+      }
+
+      function stopDragging() {
+        isDragging = false;
+        element.style.cursor = "grab";
+        document.removeEventListener("mousemove", moveElement);
+        document.removeEventListener("mouseup", stopDragging);
+      }
+
+      document.addEventListener("mousemove", moveElement);
+      document.addEventListener("mouseup", stopDragging);
+    });
+  }
+
+  function addResizeHandle(element, aspectRatio) {
+    const resizeHandle = document.createElement("div");
+    resizeHandle.classList.add("resize-handle");
+    element.appendChild(resizeHandle);
+
+    resizeHandle.addEventListener("mousedown", (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+
+      let startX = event.clientX;
+      let startWidth = parseInt(window.getComputedStyle(element).width, 10);
+
+      function resize(event) {
+        let newWidth = startWidth + (event.clientX - startX);
+        element.style.width = `${newWidth}px`;
+        element.style.height = `${newWidth * aspectRatio}px`;
+        document.getElementById("width-input").value = newWidth;
+        document.getElementById("height-input").value = newWidth * aspectRatio;
+      }
+
+      function stopResize() {
+        document.removeEventListener("mousemove", resize);
+        document.removeEventListener("mouseup", stopResize);
+      }
+
+      document.addEventListener("mousemove", resize);
+      document.addEventListener("mouseup", stopResize);
+    });
+  }
+
+  function enableSelection(element) {
+    element.addEventListener("click", (event) => {
+      event.stopPropagation();
+      if (selectedElement) {
+        selectedElement.classList.remove("selected");
+      }
+
+      selectedElement = element;
+      selectedElement.classList.add("selected");
+      editOptionsPanel.style.display = "flex";
+      exportOptions.style.display = "none";
+
+      document.getElementById("width-input").value = parseInt(selectedElement.style.width);
+
+      // Editable Options
+      document.getElementById("width-input").value = parseInt(selectedElement.style.width);
+      document.getElementById("border-radius-input").value = parseInt(selectedElement.style.borderRadius);
+      document.getElementById("opacity-input").value = selectedElement.style.opacity;
+      document.getElementById("z-index-input").value = selectedElement.style.zIndex;
+      document.getElementById("border-thickness-input").value = selectedElement.style.borderWidth.replace("px", "") || 0;
+      document.getElementById("border-color-input").value = selectedElement.style.borderColor || "#000000";
+    });
+  }
+
+  document.getElementById("width-input").addEventListener("input", (e) => {
+    if (selectedElement) {
+      const aspectRatio = selectedElement.offsetHeight / selectedElement.offsetWidth;
+      selectedElement.style.width = `${e.target.value}px`;
+      selectedElement.style.height = `${e.target.value * aspectRatio}px`;
+      document.getElementById("height-input").value = e.target.value * aspectRatio;
+    }
+  });
+
+  // Declare edit options
+  document.getElementById("border-radius-input").addEventListener("input", (e) => {
+    if (selectedElement) selectedElement.style.borderRadius = `${e.target.value}%`;
+  });
+
+  document.getElementById("opacity-input").addEventListener("input", (e) => {
+    if (selectedElement) selectedElement.style.opacity = e.target.value;
+  });
+
+  document.getElementById("z-index-input").addEventListener("input", (e) => {
+    if (selectedElement) selectedElement.style.zIndex = e.target.value;
+  });
+
+  document.getElementById("border-thickness-input").addEventListener("input", (e) => {
+    if (selectedElement) selectedElement.style.borderWidth = `${e.target.value}px`;
+  });
+
+  document.getElementById("border-color-input").addEventListener("input", (e) => {
+    if (selectedElement) selectedElement.style.borderColor = e.target.value;
+  });
+
+  document.getElementById("flip-btn").addEventListener("click", () => {
+    if (selectedElement) {
+      selectedElement.style.transform = selectedElement.style.transform.includes("scaleX(-1)")
+        ? "scaleX(1)"
+        : "scaleX(-1)";
+    }
+  });
+
+  document.getElementById("rotate-btn").addEventListener("click", () => {
+    if (selectedElement) {
+      let rotation = selectedElement.style.transform.match(/rotate\((\d+)deg\)/);
+      let currentRotation = rotation ? parseInt(rotation[1]) : 0;
+      selectedElement.style.transform = `rotate(${currentRotation + 90}deg)`;
+    }
+  });
+
+  document.getElementById("delete-btn").addEventListener("click", () => {
+    if (selectedElement) {
+      selectedElement.remove();
+      editOptionsPanel.style.display = "none";
+      selectedElement = null;
+    }
+  });
+
+  document.getElementById("delete-btn").addEventListener("click", () => {
+    if (selectedElement) {
+      selectedElement.remove();
+      editOptionsPanel.style.display = "none";
+      selectedElement = null;
+    }
+  });
 });

@@ -1021,7 +1021,8 @@ ul.expandable-menu li.open .accorParentContainer {
     box-shadow: 0 0 0 2px #ffb327;
 }
 
-.asideRight .edit-options {
+.asideRight .edit-options,
+.asideRight #obj-edit-options {
     display: none;
     flex-direction: column;
     gap: .5rem;
@@ -1032,7 +1033,8 @@ ul.expandable-menu li.open .accorParentContainer {
     max-height: calc(100vh - 80px);
 }
 
-.asideRight .edit-options h3 {
+.asideRight .edit-options h3,
+.asideRight #obj-edit-options h3 {
     padding: 0 1.2rem;
 }
 
@@ -1040,7 +1042,8 @@ ul.expandable-menu li.open .accorParentContainer {
     padding: .5rem 0 .25rem;
 }
 
-.asideRight .edit-options .setOptions {
+.asideRight .edit-options .setOptions,
+.asideRight #obj-edit-options .setOptions {
     padding: 1rem 1.2rem;
     display: flex;
     align-items: center;
@@ -1048,18 +1051,6 @@ ul.expandable-menu li.open .accorParentContainer {
     flex-wrap: wrap;
     gap: .5rem;
     width: 100%;
-}
-
-.asideRight .edit-options .setOptions #rightPanelPreview {
-    width: 100%;
-    height: auto;
-    border: 1px solid #ddd;
-    margin: 0;
-    padding: .35rem;
-}
-
-.asideRight .edit-options .setOptions #rightPanelPreview img {
-    max-width: 100%;
 }
 
 #themeOuter #background-selector {
@@ -1137,6 +1128,7 @@ ul.expandable-menu li.open .accorParentContainer {
     gap: .5rem;
     position: relative;
     width: 100%;
+    z-index: 1;
 }
 
 .template-wrapper #temp-header .photo-frame {
@@ -1244,6 +1236,7 @@ ul.expandable-menu li.open .accorParentContainer {
     width: 100%;
     flex-direction: column;
     padding: 0 1.5rem;
+    z-index: 1;
 }
 
 .template-wrapper #temp-footer {
@@ -2847,8 +2840,26 @@ p.contact::before {
 }
 
 
+/* Drag and Drop Styles */
+.draggable-item {
+    width: auto;
+    height: 80px;
+    cursor: grab;
+}
 
+.movable {
+    cursor: move;
+    border-style: solid;
+    border-width: 0;
+    border-color: #fff;
+    z-index: 1;
+}
 
+#obj-edit-options button {
+    margin: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
 
 
 

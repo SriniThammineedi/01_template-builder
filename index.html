@@ -814,7 +814,7 @@
                             </div>
                         </div>
                     </li>
-                    <li id="cliparts">
+                    <!-- <li id="cliparts">
                         <div class="dropdownlink">
                             <lord-icon src="https://cdn.lordicon.com/ohcuigqh.json" class="lordIcon" trigger="loop"
                                 stroke="bold" colors="primary:#111111,secondary:#e83a30" style="width:40px;height:40px">
@@ -875,6 +875,58 @@
                                     <label for="siders-4"></label>
                                     <img src="./assets/images/diya-1.png" alt="siders-4">
                                 </div>
+                            </div>
+                        </div>
+                    </li> -->
+                    <li id="objects">
+                        <div class="dropdownlink">
+                            <lord-icon src="https://cdn.lordicon.com/vgwutnhw.json" class="lordIcon" trigger="loop"
+                                stroke="bold" colors="primary:#111111,secondary:#e83a30" style="width:40px;height:40px">
+                            </lord-icon>
+                            <span>Objects</span>
+                        </div>
+                        <div class="accorParentContainer" id="objects-menu-container">
+                            <div class="accordHead">
+                                <h3>Insertable Objects</h3>
+                                <button id="close-btn" class="close-btn">X</button>
+                            </div>
+                            <div class="objects">
+                                <img src="./assets/images/ayyappa-swamy.png" class="draggable-item" />
+                                <img src="./assets/images/bananaa-tree.png" class="draggable-item" />
+                                <img src="./assets/images/dolak.png" class="draggable-item" />
+                                <img src="./assets/images/diya-1.png" class="draggable-item" />
+                                <img src="./assets/images/diya-light.png" class="draggable-item" />
+                                <img src="./assets/images/diya-flowers.png" class="draggable-item" />
+                                <img src="./assets/images/ganapathy-clipart2.png" class="draggable-item" />
+                                <img src="./assets/images/ganapathy-clipart1.png" class="draggable-item" />
+                                <img src="./assets/images/frame-vector.png" class="draggable-item" />
+                                <img src="./assets/images/ganesh.png" class="draggable-item" />
+                                <img src="./assets/images/hanuman-clipart1.png" class="draggable-item" />
+                                <img src="./assets/images/goddess-annapurna-devi.png" class="draggable-item" />
+                                <img src="./assets/images/decorative-corner-flowers.png" class="draggable-item" />
+                                <img src="./assets/images/decor-flowers-footer.png" class="draggable-item" />
+                                <img src="./assets/images/clip-art-3.png" class="draggable-item" />
+                                <img src="./assets/images/birthday-party.png" class="draggable-item" />
+                                <img src="./assets/images/clip-art-2.png" class="draggable-item" />
+                                <img src="./assets/images/clip-art-1.png" class="draggable-item" />
+                                <img src="./assets/images/clip-art-4.png" class="draggable-item" />
+                                <img src="./assets/images/baloons-1.png" class="draggable-item" />
+                                <img src="./assets/images/baloons-2.png" class="draggable-item" />
+                                <img src="./assets/images/baloons-3.png" class="draggable-item" />
+                                <img src="./assets/images/candle-light.png" class="draggable-item" />
+                                <img src="./assets/images/candle-light2.png" class="draggable-item" />
+                                <img src="./assets/images/bot-decor-birthday-party.png" class="draggable-item" />
+                                <img src="./assets/images/cloth-knot.png" class="draggable-item" />
+                                <img src="./assets/images/flower-bokey.png" class="draggable-item" />
+                                <img src="./assets/images/flower-bokey-yellow.png" class="draggable-item" />
+                                <img src="./assets/images/flowers-photo-bottom.png" class="draggable-item" />
+                                <img src="./assets/images/flowers-photo-bottom2.png" class="draggable-item" />
+                                <img src="./assets/images/flowers-photo-bottom3.png" class="draggable-item" />
+
+                                <img src="./assets/images/holi-celebration2.png" class="draggable-item" />
+                                <img src="./assets/images/holi-kids-celebration.png" class="draggable-item" />
+                                <img src="./assets/images/kalasham2.png" class="draggable-item" />
+                                <img src="./assets/images/kalasham.png" class="draggable-item" />
                             </div>
                         </div>
                     </li>
@@ -1645,6 +1697,27 @@
                                 <span>Left</span>
                                 <input class="left-pos position-input" type="number" value="0" />
                             </label>
+                        </div>
+                    </div>
+
+                    <!-- Drag & Drop Image Edit Options -->
+                    <div id="obj-edit-options" class="edit-options">
+                        <h3>Edit Object</h3>
+                        <div class="setOptions">
+                            <label>Width: <input type="range" id="width-input" min="10" max="300" step="10"
+                                    value="100"></label>
+                            <label>Border Radius: <input type="range" id="border-radius-input" min="0" max="50"
+                                    step=".5" value="0"></label>
+                            <label>Border Thickness: <input type="range" id="border-thickness-input" min="0" max="20"
+                                    step="1" value="0"></label>
+                            <label>Border Color: <input type="color" name="color" id="border-color-input"
+                                    value="#000000"></label>
+                            <label>Opacity: <input type="range" id="opacity-input" min="0.2" max="1" step="0.1"
+                                    value="1"></label>
+                            <label>Z-Index: <input type="number" id="z-index-input" value="2"></label>
+                            <button id="flip-btn">Flip</button>
+                            <button id="rotate-btn">Rotate</button>
+                            <button id="delete-btn">Remove</button>
                         </div>
                     </div>
                 </div>
