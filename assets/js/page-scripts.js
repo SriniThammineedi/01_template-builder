@@ -827,10 +827,21 @@ document.addEventListener("DOMContentLoaded", () => {
   const templateWrapper = document.querySelector(".template-wrapper");
   const editOptionsPanel = document.getElementById("obj-edit-options");
   let selectedElement = null;
+  let lastTapTime = 0;
 
   objectItems.forEach(item => {
     item.setAttribute("draggable", true);
     item.addEventListener("dragstart", dragStart);
+
+    // Enable double-tap placement for mobile
+    item.addEventListener("touchstart", (event) => {
+      const currentTime = new Date().getTime();
+      if (currentTime - lastTapTime < 300) {
+        placeElement(item);
+        event.preventDefault();
+      }
+      lastTapTime = currentTime;
+    });
   });
 
   templateWrapper.addEventListener("dragover", dragOver);
@@ -851,24 +862,29 @@ document.addEventListener("DOMContentLoaded", () => {
     tempDiv.innerHTML = draggedElementHTML;
     const newElement = tempDiv.firstElementChild;
 
-    // Set default styles
+    placeElement(newElement, event.clientX, event.clientY);
+  }
+
+  function placeElement(item, x = 50, y = 50) {
+    const newElement = item.cloneNode(true);
+    newElement.classList.add("movable", "selectable");
+    newElement.setAttribute("data-options", "objEditOptions");
+
     const wrapperRect = templateWrapper.getBoundingClientRect();
     newElement.style.position = "absolute";
-    newElement.style.left = `${event.clientX - wrapperRect.left}px`;
-    newElement.style.top = `${event.clientY - wrapperRect.top}px`;
+    newElement.style.left = `${x - wrapperRect.left}px`;
+    newElement.style.top = `${y - wrapperRect.top}px`;
     newElement.style.width = "100px";
-    const aspectRatio = newElement.naturalHeight / newElement.naturalWidth;
+
+    const aspectRatio = item.naturalHeight / item.naturalWidth || 1;
     newElement.style.height = `${100 * aspectRatio}px`;
     newElement.style.borderRadius = "0";
     newElement.style.opacity = "1";
     newElement.style.zIndex = "1";
 
-    newElement.classList.add("movable", "selectable");
-    newElement.setAttribute("data-options", "objEditOptions");
-
-    addResizeHandle(newElement, aspectRatio);
-    enableDragging(newElement);
     enableSelection(newElement);
+    enableDragging(newElement);
+    addResizeHandle(newElement, aspectRatio);
 
     templateWrapper.appendChild(newElement);
   }
@@ -876,7 +892,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function enableDragging(element) {
     let offsetX, offsetY, isDragging = false;
 
-    element.addEventListener("mousedown", (event) => {
+    element.addEventListener("pointerdown", (event) => {
       if (event.target.classList.contains("resize-handle")) return;
 
       isDragging = true;
@@ -899,12 +915,12 @@ document.addEventListener("DOMContentLoaded", () => {
       function stopDragging() {
         isDragging = false;
         element.style.cursor = "grab";
-        document.removeEventListener("mousemove", moveElement);
-        document.removeEventListener("mouseup", stopDragging);
+        document.removeEventListener("pointermove", moveElement);
+        document.removeEventListener("pointerup", stopDragging);
       }
 
-      document.addEventListener("mousemove", moveElement);
-      document.addEventListener("mouseup", stopDragging);
+      document.addEventListener("pointermove", moveElement);
+      document.addEventListener("pointerup", stopDragging);
     });
   }
 
@@ -913,7 +929,7 @@ document.addEventListener("DOMContentLoaded", () => {
     resizeHandle.classList.add("resize-handle");
     element.appendChild(resizeHandle);
 
-    resizeHandle.addEventListener("mousedown", (event) => {
+    resizeHandle.addEventListener("pointerdown", (event) => {
       event.preventDefault();
       event.stopPropagation();
 
@@ -929,12 +945,12 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       function stopResize() {
-        document.removeEventListener("mousemove", resize);
-        document.removeEventListener("mouseup", stopResize);
+        document.removeEventListener("pointermove", resize);
+        document.removeEventListener("pointerup", stopResize);
       }
 
-      document.addEventListener("mousemove", resize);
-      document.addEventListener("mouseup", stopResize);
+      document.addEventListener("pointermove", resize);
+      document.addEventListener("pointerup", stopResize);
     });
   }
 
@@ -950,9 +966,7 @@ document.addEventListener("DOMContentLoaded", () => {
       editOptionsPanel.style.display = "flex";
       exportOptions.style.display = "none";
 
-      document.getElementById("width-input").value = parseInt(selectedElement.style.width);
-
-      // Editable Options
+      // Populate editable options
       document.getElementById("width-input").value = parseInt(selectedElement.style.width);
       document.getElementById("border-radius-input").value = parseInt(selectedElement.style.borderRadius);
       document.getElementById("opacity-input").value = selectedElement.style.opacity;
@@ -962,6 +976,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // Editable Options
   document.getElementById("width-input").addEventListener("input", (e) => {
     if (selectedElement) {
       const aspectRatio = selectedElement.offsetHeight / selectedElement.offsetWidth;
@@ -971,7 +986,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Declare edit options
   document.getElementById("border-radius-input").addEventListener("input", (e) => {
     if (selectedElement) selectedElement.style.borderRadius = `${e.target.value}%`;
   });
@@ -988,11 +1002,18 @@ document.addEventListener("DOMContentLoaded", () => {
     if (selectedElement) selectedElement.style.borderWidth = `${e.target.value}px`;
   });
 
+  document.getElementById("rotate-input").addEventListener("input", (e) => {
+    if (selectedElement) {
+        let rotationAngle = e.target.value;
+        selectedElement.style.transform = `rotate(${rotationAngle}deg)`;
+    }
+  });
+
   document.getElementById("border-color-input").addEventListener("input", (e) => {
     if (selectedElement) selectedElement.style.borderColor = e.target.value;
   });
 
-  document.getElementById("flip-btn").addEventListener("click", () => {
+  document.getElementById("flip-btn-horizontal").addEventListener("click", () => {
     if (selectedElement) {
       selectedElement.style.transform = selectedElement.style.transform.includes("scaleX(-1)")
         ? "scaleX(1)"
@@ -1000,19 +1021,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  document.getElementById("rotate-btn").addEventListener("click", () => {
+  document.getElementById("flip-btn-vertical").addEventListener("click", () => {
     if (selectedElement) {
-      let rotation = selectedElement.style.transform.match(/rotate\((\d+)deg\)/);
-      let currentRotation = rotation ? parseInt(rotation[1]) : 0;
-      selectedElement.style.transform = `rotate(${currentRotation + 90}deg)`;
-    }
-  });
-
-  document.getElementById("delete-btn").addEventListener("click", () => {
-    if (selectedElement) {
-      selectedElement.remove();
-      editOptionsPanel.style.display = "none";
-      selectedElement = null;
+      selectedElement.style.transform = selectedElement.style.transform.includes("scaleY(-1)")
+        ? "scaleY(1)"
+        : "scaleY(-1)";
     }
   });
 
