@@ -922,6 +922,39 @@ document.addEventListener("DOMContentLoaded", () => {
       document.addEventListener("pointermove", moveElement);
       document.addEventListener("pointerup", stopDragging);
     });
+    
+    // Touch support for mobile (smooth dragging)
+    element.addEventListener("touchstart", (event) => {
+      isDragging = true;
+      const rect = element.getBoundingClientRect();
+      const touch = event.touches[0];
+
+      offsetX = touch.clientX - rect.left;
+      offsetY = touch.clientY - rect.top;
+      element.style.cursor = "grabbing";
+
+      function moveElement(touchMoveEvent) {
+        if (!isDragging) return;
+        const touch = touchMoveEvent.touches[0];
+
+        const wrapperRect = templateWrapper.getBoundingClientRect();
+        let newX = touch.clientX - wrapperRect.left - offsetX;
+        let newY = touch.clientY - wrapperRect.top - offsetY;
+
+        element.style.left = `${newX}px`;
+        element.style.top = `${newY}px`;
+      }
+
+      function stopDragging() {
+        isDragging = false;
+        element.style.cursor = "grab";
+        document.removeEventListener("touchmove", moveElement);
+        document.removeEventListener("touchend", stopDragging);
+      }
+
+      document.addEventListener("touchmove", moveElement);
+      document.addEventListener("touchend", stopDragging);
+    });
   }
 
   function addResizeHandle(element, aspectRatio) {
