@@ -5665,3 +5665,99 @@ body {
     background-color: #fff000 !important;
     color: #000 !important;
 }
+
+
+
+
+
+/* Events Template 24 (Ugadi 4) */
+.event24Head,
+.event24Body,
+.event24Footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.event24Head .imgHolder.topDecor {
+    position: relative;
+    margin: -2.5rem auto;
+    z-index: -1;
+}
+
+.event24Head .imgHolder.brandLogo {
+    width: auto;
+    height: 55px;
+    margin: -3rem auto 0;
+}
+
+.event24Head .imgHolder.wishImg {
+    width: auto;
+    height: 180px;
+}
+
+.event24Head h4 {
+    font-family: 'Anek Telugu', sans-serif !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    line-height: 1.2 !important;
+    color: #bb3212 !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    padding: .85rem 0 0 !important;
+    width: fit-content !important;
+    position: relative;
+}
+
+.event24Body h2 {
+    font-family: 'Oswald', sans-serif !important;
+    font-size: 22px !important;
+    font-weight: 900 !important;
+    line-height: 1.2 !important;
+    color: #bb3212 !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    width: fit-content !important;
+    position: relative;
+}
+
+.event24Body p {
+    font-family: 'Anek Telugu', sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    line-height: 1.2 !important;
+    color: #396e36 !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    padding: .25rem 0 0 !important;
+    width: fit-content !important;
+    position: relative;
+}
+
+.event24Body .imgHolder.productImg {
+    width: auto;
+    height: 250px;
+}
+
+.event24Footer h4 {
+    font-family: 'Anek Telugu', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    line-height: 1.2 !important;
+    color: #fff !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    padding: 0 0 .25rem !important;
+    width: fit-content !important;
+    position: relative;
+}
+
+#temp-footer .event24Footer p.contactClickable {
+    background-color: #ffe544 !important;
+    color: #174625 !important;
+}
