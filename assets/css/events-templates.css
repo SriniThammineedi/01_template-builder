@@ -5332,10 +5332,22 @@ body {
 
 .event23Head .imgHolder.topDecor {
     position: relative;
-    margin: -1.5rem auto 0;
+    margin: -2rem auto 0;
     z-index: -1;
 }
 
+.event23Head h4 {
+    font-family: 'Anek Telugu', sans-serif !important;
+    font-size: 9px !important;
+    font-weight: 600 !important;
+    line-height: 1.2 !important;
+    color: #9d051c !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    padding: .25rem 0 0 !important;
+    width: fit-content !important;
+    position: relative;
+}
 
 .event23Head .titleWithThumbs {
     width: fit-content;
@@ -5350,13 +5362,306 @@ body {
 .event23Head .titleWithThumbs .imgHolder {
     position: absolute;
     width: auto;
-    height: 50px;
+    height: 30px;
 }
 
 .event23Head .titleWithThumbs .imgHolder.imgLS {
-    left: -1.5rem;
+    left: -2rem;
 }
 
 .event23Head .titleWithThumbs .imgHolder.imgRS {
-    right: -1.5rem;
+    right: -2rem;
+}
+
+.event23Head .titleWithThumbs h3 {
+    font-family: 'Anek Telugu', sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    line-height: 1.4 !important;
+    color: #314e0e !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    width: fit-content !important;
+    position: relative;
+}
+
+.event23Body .side-by-side {
+    justify-content: center !important;
+    gap: .35rem !important;
+    margin: -.75rem auto 0 !important;
+}
+
+.event23Body .side-by-side .imgHolder {
+    width: auto;
+    height: 75px;
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+.event23Body .side-by-side .imgHolder:nth-child(2) {
+    height: 82px;
+}
+
+.event23Body .titleWithThumbs {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    margin: .15rem auto;
+}
+
+.event23Body .titleWithThumbs .imgHolder {
+    position: relative;
+    width: auto;
+    margin: 0 .25rem;
+    height: 50px;
+}
+
+.event23Body .titleWithThumbs h1 {
+    font-family: 'Batukamma', sans-serif !important;
+    font-size: 32px !important;
+    font-weight: 500 !important;
+    line-height: .75 !important;
+    color: #314e0e !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    width: fit-content !important;
+    position: relative;
+}
+
+.event23Body .locatedIn {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 1.85rem 0 0;
+    margin: 0 auto;
+}
+
+.event23Body .locatedIn h4.withBg {
+    font-family: 'Anek Telugu', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    line-height: 1.2 !important;
+    color: #fff !important;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: .25rem .5rem !important;
+    width: fit-content !important;
+    white-space: nowrap !important;
+    position: absolute !important;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #b70306;
+    border-radius: 4px;
+}
+
+.event23Body .locatedIn h5 {
+    font-family: 'Anek Telugu', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    line-height: 1.1 !important;
+    color: #831039 !important;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: .05rem .5rem 0 !important;
+    width: fit-content !important;
+    position: relative;
+    border-right: 1px solid #363636;
+}
+
+.event23Body .locatedIn h5:last-child {
+    border-right: none;
+}
+
+.event23Body .locatedIn h5 span {
+    display: table;
+    clear: both;
+    color: #222 !important;
+    padding-left: .85rem !important;
+    position: relative;
+}
+
+.event23Body .locatedIn h5 span::before {
+    content: '';
+    position: absolute;
+    top: 35%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background: url(../images/call-icon.png) no-repeat center center;
+    background-size: contain;
+}
+
+.event23Body .borderedContent {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: fit-content;
+    gap: .5rem;
+    margin: 1rem auto 0;
+    padding: .6rem .35rem .35rem;
+    border: 1px solid #ba0113;
+    border-radius: 10px;
+    background-color: transparent;
+    position: relative;
+}
+
+.event23Body .borderedContent h6 {
+    font-family: 'Anek Telugu', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    line-height: 1 !important;
+    color: #990d0e !important;
+    text-align: left !important;
+    margin: 0 !important;
+    padding: .25rem .5rem !important;
+    background-color: #fff4fe;
+    width: fit-content !important;
+    position: absolute !important;
+    left: 12%;
+    top: -.75rem;
+}
+
+.event23Body .borderedContent h6 span {
+    background-color: #990d0e !important;
+    color: #fff !important;
+    padding: .15rem .35rem !important;
+    border-radius: 4px !important;
+}
+
+.event23Body .borderedContent h2 {
+    font-family: 'Anek Telugu', sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    line-height: 1.4 !important;
+    color: #990d0e !important;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: .25rem 0 0 !important;
+    width: 75% !important;
+}
+
+.event23Body .borderedContent h2 span {
+    font-size: 13px !important;
+}
+
+.event23Body .borderedContent .imgHolder {
+    width: auto;
+    height: 70px;
+}
+
+.event23Body .kisnaDiamonds {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    margin: 2.25rem auto 0;
+}
+
+.event23Body .kisnaDiamonds h1 {
+    font-family: 'AL Nevrada', sans-serif !important;
+    font-size: 70px !important;
+    font-weight: 500 !important;
+    line-height: .7 !important;
+    color: #f8fe00 !important;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: .5rem 0 0 !important;
+    width: fit-content !important;
+    position: relative;
+    text-shadow: 0 4px 5px rgba(0, 0, 0, .4);
+}
+
+.event23Body .kisnaDiamonds h3 {
+    font-family: 'AL Nevrada', sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    color: #fff !important;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: fit-content !important;
+    position: relative;
+}
+
+.event23Body .kisnaDiamonds h3 span {
+    display: block;
+    clear: both;
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 400 !important;
+}
+
+.event23Body .inlineFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: fit-content;
+    margin: .5rem auto .15rem;
+    gap: .5rem;
+}
+
+.event23Body .inlineFlex h2 {
+    font-family: 'Oswald', sans-serif !important;
+    font-size: 48px !important;
+    font-weight: 600 !important;
+    line-height: 1 !important;
+    color: #fff !important;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: .85rem .75rem .45rem !important;
+    width: 40% !important;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, .8);
+    border-radius: 12px;
+}
+
+.event23Body .inlineFlex h2 span {
+    font-family: 'Anek Telugu', sans-serif !important;
+    font-size: 16px !important;
+    line-height: 1.2 !important;
+    padding-top: .45rem !important;
+    display: block;
+    clear: both;
+}
+
+.event23Body .inlineFlex h2 em {
+    font-style: normal !important;
+    font-family: 'Anek Telugu', sans-serif !important;
+    font-size: 14px !important;
+    position: absolute;
+    left: .85rem;
+    top: .25rem;
+    display: block;
+    clear: both;
+}
+
+.event23Footer h4 {
+    font-family: 'Anek Telugu', sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    line-height: 1 !important;
+    color: #fff !important;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: 0 0 .25rem !important;
+    width: fit-content !important;
+    position: relative;
+}
+
+#temp-footer .event23Footer p.contactClickable {
+    background-color: #fff000 !important;
+    color: #000 !important;
 }
