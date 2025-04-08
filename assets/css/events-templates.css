@@ -4817,7 +4817,8 @@ body {
 #temp-footer .event15Footer p.contactClickable::before,
 #temp-footer .event17Footer p.contactClickable::before,
 #temp-footer .event19Footer p.contactClickable::before,
-#temp-footer .event21Footer p.contactClickable::before {
+#temp-footer .event21Footer p.contactClickable::before,
+#temp-footer .event25Footer p.contactClickable::before {
     background: url(../images/phone-icon-wht.png) no-repeat center center !important;
     background-size: contain !important;
 }
@@ -4826,7 +4827,8 @@ body {
 #temp-footer .event15Footer p.contactClickable::after,
 #temp-footer .event17Footer p.contactClickable::after,
 #temp-footer .event19Footer p.contactClickable::after,
-#temp-footer .event21Footer p.contactClickable::after {
+#temp-footer .event21Footer p.contactClickable::after,
+#temp-footer .event25Footer p.contactClickable::after {
     background: url(../images/click_hand_icon2-wht.svg) no-repeat center center !important;
     background-size: contain !important;
 }
@@ -5760,4 +5762,451 @@ body {
 #temp-footer .event24Footer p.contactClickable {
     background-color: #ffe544 !important;
     color: #174625 !important;
+}
+
+
+
+
+
+
+
+/* Events Template 25 (Ugadi 5) */
+.event25Head,
+.event25Body,
+.event25Footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.event25Head .imgHolder.topDecor {
+    position: relative;
+    margin: -2rem auto 0;
+    z-index: -1;
+}
+
+.event25Head .titleWithThumbs {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+
+.event25Head .titleWithThumbs .imgHolder {
+    position: absolute;
+    width: auto;
+    height: 40px;
+}
+
+.event25Head .titleWithThumbs .imgHolder.imgLS {
+    left: -2.5rem;
+}
+
+.event25Head .titleWithThumbs .imgHolder.imgRS {
+    right: -2.5rem;
+}
+
+.event25Head .titleWithThumbs h3 {
+    font-family: 'Batukamma', sans-serif !important;
+    font-size: 30px !important;
+    font-weight: normal !important;
+    line-height: 1 !important;
+    color: #fff100 !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    width: fit-content !important;
+    position: relative;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 3px #222;
+}
+
+.event25Head .titleWithThumbs h3 span {
+    display: block;
+    clear: both;
+    font-size: 28px !important;
+}
+
+.event25Body .boxedContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: 85%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: .5rem;
+}
+
+.event25Body .boxedContent h3 {
+    font-family: 'Oswald', sans-serif !important;
+    font-size: 32px !important;
+    font-weight: 600 !important;
+    line-height: 1.2 !important;
+    color: #d30006 !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    text-transform: uppercase !important;
+    width: fit-content !important;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, .8);
+    gap: .15rem;
+}
+
+.event25Body .boxedContent h3 em {
+    font-style: normal;
+    font-size: 16px !important;
+}
+
+.event25Body .boxedContent h3 span {
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 22px !important;
+}
+
+.event25Body .inlineFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    gap: .5rem;
+    margin: .25rem auto !important;
+}
+
+.event25Body .inlineFlex p {
+    font-family: 'Kaloji', sans-serif !important;
+    font-size: 28px !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    color: #fef30b !important;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 55% !important;
+    position: relative;
+}
+
+.event25Body .inlineFlex .imgHolder {
+    width: auto;
+    height: 130px;
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+.event25Body .inlineFlex .guestCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: fit-content;
+}
+
+.event25Body .inlineFlex .guestCard .imgHolder {
+    width: auto;
+    height: 140px;
+    border: none;
+}
+
+.event25Body .inlineFlex .guestCard h2 {
+    font-family: 'Oswald', sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    line-height: 1.2 !important;
+    color: #fef30b !important;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: fit-content !important;
+    position: relative;
+}
+
+.event25Body .inlineFlex .guestCard h6 {
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 10px !important;
+    font-weight: 500 !important;
+    line-height: 1.2 !important;
+    color: #fff !important;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: fit-content !important;
+    position: relative;
+}
+
+.event25Footer h4 {
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    line-height: 1.2 !important;
+    color: #000100 !important;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: 1.25rem 0 .25rem !important;
+    width: fit-content !important;
+    position: relative;
+}
+
+#temp-footer .event25Footer p.contactClickable {
+    background-color: #cf0400 !important;
+    color: #fff !important;
+}
+
+
+
+
+
+
+
+/* Events Template 26 (Ugadi 6) */
+.event26Head,
+.event26Body,
+.event26Footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.event26Head .imgHolder.topDecor {
+    position: relative;
+    margin: -2rem auto -3rem;
+    z-index: -1;
+}
+
+.event26Head h1 {
+    font-family: 'Kaloji', sans-serif !important;
+    font-size: 40px !important;
+    font-weight: 500 !important;
+    line-height: 1.2 !important;
+    color: #fff100 !important;
+    text-align: center !important;
+    margin: -.85rem auto 0 !important;
+    padding: 0 !important;
+    width: fit-content !important;
+    position: relative;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, .8);
+}
+
+.event26Body {
+    width: 100% !important;
+}
+
+.event26Body h5 {
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    line-height: 1.2 !important;
+    color: #fff !important;
+    text-align: center !important;
+    margin: -1rem auto 0 !important;
+    padding: 0 !important;
+    width: fit-content !important;
+    position: relative;
+}
+
+.event26Body .boxedContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: 65%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: .15rem .5rem;
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, .3);
+}
+
+.event26Body .boxedContent h3 {
+    font-family: 'Oswald', sans-serif !important;
+    font-size: 24px !important;
+    font-weight: 600 !important;
+    line-height: 1.2 !important;
+    color: #dd3504 !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    width: fit-content !important;
+    position: relative;
+}
+
+.event26Body .boxedContent .imgHolder {
+    width: auto;
+    height: 45px;
+    position: absolute;
+    bottom: .5rem;
+}
+
+.event26Body .boxedContent .imgHolder.imgLS {
+    left: -3rem;
+}
+
+.event26Body .boxedContent .imgHolder.imgRS {
+    right: -3rem;
+}
+
+.event26Body h2 {
+    font-family: 'Oswald', sans-serif !important;
+    font-size: 24px !important;
+    font-weight: 600 !important;
+    line-height: 1.2 !important;
+    color: #fff !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    margin: 0 auto !important;
+    padding: .5rem 0 !important;
+    width: fit-content !important;
+    position: relative;
+}
+
+.event26Body .side-by-side {
+    width: 90% !important;
+    margin: 0 auto !important;
+    gap: 1rem !important;
+    align-items: center !important;
+}
+
+.event26Body .side-by-side .imgHolder {
+    width: auto;
+    height: 280px;
+}
+
+.event26Body .side-by-side .defaultList {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: .2rem;
+    flex-direction: column;
+    position: relative;
+    width: 47.5%;
+}
+
+.event26Body .side-by-side .defaultList h4 {
+    font-family: 'Oswald', sans-serif !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    line-height: 1 !important;
+    color: #db3211 !important;
+    text-align: left !important;
+    margin: 0 0 .25rem !important;
+    padding: .15rem .25rem .15rem .5rem !important;
+    width: fit-content !important;
+    position: relative;
+    background-color: #fff !important;
+    border-radius: 24px 0 0 0;
+}
+
+.event26Body .side-by-side .defaultList p {
+    font-family: 'Oswald', sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    line-height: 1.1 !important;
+    color: #fff !important;
+    text-align: left !important;
+    margin: 0 !important;
+    padding: .25rem 0 .15rem 1.15rem !important;
+    width: fit-content !important;
+    position: relative;
+}
+
+.event26Body .side-by-side .defaultList p::before {
+    content: "";
+    position: absolute;
+    top: .5rem;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background: url(../images/list-item-diamond.png) no-repeat center center;
+    background-size: contain;
+}
+
+.event26Body .side-by-side .defaultList h5 {
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    line-height: 1 !important;
+    color: #fff !important;
+    text-align: left !important;
+    margin: 0 0 .25rem !important;
+    padding: .25rem 0 !important;
+    width: fit-content !important;
+    position: relative;
+}
+
+.event26Footer .side-by-side {
+    width: 90% !important;
+    margin: .65rem auto 0 !important;
+    gap: .5rem !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.event26Footer .side-by-side .imgHolder {
+    width: auto;
+    height: 80px;
+}
+
+.event26Footer h3 {
+    font-family: 'Oswald', sans-serif !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    line-height: 1 !important;
+    color: #190694 !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    width: fit-content !important;
+    position: relative;
+}
+
+.event26Footer h3 span {
+    font-size: 16px !important;
+}
+
+.event26Footer h4 {
+    font-family: 'Oswald', sans-serif !important;
+    font-size: 17px !important;
+    font-weight: 600 !important;
+    line-height: 1 !important;
+    color: #006022 !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    margin: 0 auto !important;
+    padding: .3rem 0 !important;
+    width: fit-content !important;
+    position: relative;
+}
+
+.event26Footer .inlineFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    width: fit-content;
+    margin: .5rem auto 0;
+}
+
+.event26Footer .inlineFlex .imgHolder {
+    width: auto;
+    height: 35px;
 }

@@ -2,7 +2,7 @@
 //  All functionality declarations for the page
 
 
-
+let selectedElement = null;
 
 ////////////////////////////////////////////////////////////////
 // Change theme mode from Dark to Light and Light to Dark
@@ -328,7 +328,6 @@ head4.addEventListener('change', updateClass);
 
 ///////////////////////////////////////////////////////////////
 // Update caption styles on header from edit panel
-let selectedElement = null;
 
 function setupEditableOptions() {
   document.querySelectorAll('.selectable').forEach(element => {
@@ -826,7 +825,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const objectItems = document.querySelectorAll(".draggable-item");
   const templateWrapper = document.querySelector(".template-wrapper");
   const editOptionsPanel = document.getElementById("obj-edit-options");
-  let selectedElement = null;
   let lastTapTime = 0;
 
   objectItems.forEach(item => {

@@ -2859,8 +2859,8 @@ p.contact::before {
 
 /* Drag and Drop Styles */
 .draggable-item {
-    max-width: 70px;
-    max-height: 70px;
+    max-width: 80px;
+    max-height: 80px;
     cursor: grab;
     transition: all .3s ease-in-out;
 }
@@ -2972,6 +2972,32 @@ p.contact::before {
     background-color: #ad0303;
 }
 
+
+
+
+
+
+/* CSS for preview boxes (you can put this in your main CSS file) */
+.font-preview-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.font-preview {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-size: 16px;
+}
+
+.font-preview:hover {
+    background-color: #f0f0f0;
+}
 
 
 
