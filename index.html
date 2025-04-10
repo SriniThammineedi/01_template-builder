@@ -852,6 +852,12 @@
                                     <label for="events-temp26"><span>Ugadi - 6</span></label>
                                     <img src="./thumbnails/events/events-temp-26.jpg" alt="events-temp26">
                                 </div>
+                                <div class="radioSet">
+                                    <input type="radio" name="events" id="events-temp27"
+                                        onclick="loadTemplate('events-temp27')">
+                                    <label for="events-temp27"><span>Ugadi - 7</span></label>
+                                    <img src="./thumbnails/events/events-temp-27.jpg" alt="events-temp27">
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -868,6 +874,17 @@
                                 <button id="close-btn" class="close-btn">X</button>
                             </div>
                             <div class="objects">
+                                <h5>Custom ImgHolder & Text Field </h5>
+                                <div class="inner-container row gap-lr-1">
+                                    <div class="imgHolder selectable customImg draggable-item">
+                                        <img id="cstImg" src="./assets/images/replacable-photo.jpg" alt="" />
+                                        <input name="customimg" type="file" accept="image/*"
+                                            onchange="document.getElementById('cstImg').src = window.URL.createObjectURL(this.files[0])" />
+                                    </div>
+                                    <h1 class="selectable draggable-item customTxt" contenteditable="true"
+                                        data-options="editOptions">ధన్యవాదములు మిత్రమా!</h1>
+                                </div>
+
                                 <h5>God / Goddess</h5>
                                 <div class="inner-container row gap-lr-1">
                                     <img src="./assets/images/ganapathy-clipart2.png" class="draggable-item" />
@@ -994,66 +1011,67 @@
                                     <img src="./assets/images/calendar-bg2.png" class="draggable-item" />
                                     <img src="./assets/images/wifi-router.png" class="draggable-item" />
                                     <img src="./assets/images/call-icon.png" class="draggable-item" />
+                                </div>
 
-                                    <h5>Mandala Art / Wedding</h5>
-                                    <div class="inner-container row gap-lr-1">
-                                        <img src="./assets/images/mandala-art.png" class="draggable-item" />
-                                        <img src="./assets/images/mandala-art-3.png" class="draggable-item" />
-                                        <img src="./assets/images/mandala-art-2.png" class="draggable-item" />
-                                        <img src="./assets/images/yamaha-offer-badge.png" class="draggable-item" />
-                                        <img src="./assets/images/wedding-photo-behind.png" class="draggable-item" />
-                                        <img src="./assets/images/dolak.png" class="draggable-item" />
-                                        <img src="./assets/images/sannayi-instrument.png" class="draggable-item" />
-                                        <img src="./assets/images/tabala.png" class="draggable-item" />
-                                        <img src="./assets/images/wedding-sannayi.png" class="draggable-item" />
-                                        <img src="./assets/images/mandapam.png" class="draggable-item" />
-                                        <img src="./assets/images/cloth-knot.png" class="draggable-item" />
-                                        <img src="./assets/images/marriage-pallaki-left.png" class="draggable-item" />
-                                        <img src="./assets/images/marriage-pallaki.png" class="draggable-item" />
-                                    </div>
+                                <h5>Mandala Art / Wedding</h5>
+                                <div class="inner-container row gap-lr-1">
+                                    <img src="./assets/images/mandala-art.png" class="draggable-item" />
+                                    <img src="./assets/images/mandala-art-3.png" class="draggable-item" />
+                                    <img src="./assets/images/mandala-art-2.png" class="draggable-item" />
+                                    <img src="./assets/images/yamaha-offer-badge.png" class="draggable-item" />
+                                    <img src="./assets/images/wedding-photo-behind.png" class="draggable-item" />
+                                    <img src="./assets/images/dolak.png" class="draggable-item" />
+                                    <img src="./assets/images/sannayi-instrument.png" class="draggable-item" />
+                                    <img src="./assets/images/tabala.png" class="draggable-item" />
+                                    <img src="./assets/images/wedding-sannayi.png" class="draggable-item" />
+                                    <img src="./assets/images/mandapam.png" class="draggable-item" />
+                                    <img src="./assets/images/cloth-knot.png" class="draggable-item" />
+                                    <img src="./assets/images/marriage-pallaki-left.png" class="draggable-item" />
+                                    <img src="./assets/images/marriage-pallaki.png" class="draggable-item" />
+                                </div>
 
-                                    <h5>Top Decors / Hangings</h5>
-                                    <div class="inner-container row gap-lr-1">
-                                        <img src="./assets/images/flower-hangings-top-2.png" class="draggable-item" />
-                                        <img src="./assets/images/hanging-ball1.png" class="draggable-item" />
-                                        <img src="./assets/images/hanging-ball2.png" class="draggable-item" />
-                                        <img src="./assets/images/hanging-ball3.png" class="draggable-item" />
-                                        <img src="./assets/images/hanging-flowers-top.png" class="draggable-item" />
-                                    </div>
+                                <h5>Top Decors / Hangings</h5>
+                                <div class="inner-container row gap-lr-1">
+                                    <img src="./assets/images/flower-hangings-top-2.png" class="draggable-item" />
+                                    <img src="./assets/images/hanging-ball1.png" class="draggable-item" />
+                                    <img src="./assets/images/hanging-ball2.png" class="draggable-item" />
+                                    <img src="./assets/images/hanging-ball3.png" class="draggable-item" />
+                                    <img src="./assets/images/hanging-flowers-top.png" class="draggable-item" />
+                                </div>
 
-                                    <h5>Special Offers / List Items</h5>
-                                    <div class="inner-container row gap-lr-1">
-                                        <img src="./assets/images/spl-offer1.png" class="draggable-item" />
-                                        <img src="./assets/images/spl-offer2.png" class="draggable-item" />
-                                        <img src="./assets/images/spl-offer3.png" class="draggable-item" />
-                                        <img src="./assets/images/spl-offer4.png" class="draggable-item" />
-                                        <img src="./assets/images/spl-offer5.png" class="draggable-item" />
-                                        <img src="./assets/images/spl-offer6.png" class="draggable-item" />
-                                        <img src="./assets/images/spl-offer7.png" class="draggable-item" />
-                                        <img src="./assets/images/tick-mark.png" class="draggable-item" />
-                                        <img src="./assets/images/success_icon.png" class="draggable-item" />
-                                        <img src="./assets/images/list-arrow.png" class="draggable-item" />
-                                        <img src="./assets/images/list-arrow2.png" class="draggable-item" />
-                                        <img src="./assets/images/list-arrow-long-red.png" class="draggable-item" />
-                                        <img src="./assets/images/listitem_arrow_icon.png" class="draggable-item" />
-                                        <img src="./assets/images/list-item-ayurvedic.png" class="draggable-item" />
-                                    </div>
+                                <h5>Special Offers / List Items</h5>
+                                <div class="inner-container row gap-lr-1">
+                                    <img src="./assets/images/spl-offer1.png" class="draggable-item" />
+                                    <img src="./assets/images/spl-offer2.png" class="draggable-item" />
+                                    <img src="./assets/images/spl-offer3.png" class="draggable-item" />
+                                    <img src="./assets/images/spl-offer4.png" class="draggable-item" />
+                                    <img src="./assets/images/spl-offer5.png" class="draggable-item" />
+                                    <img src="./assets/images/spl-offer6.png" class="draggable-item" />
+                                    <img src="./assets/images/spl-offer7.png" class="draggable-item" />
+                                    <img src="./assets/images/tick-mark.png" class="draggable-item" />
+                                    <img src="./assets/images/success_icon.png" class="draggable-item" />
+                                    <img src="./assets/images/list-arrow.png" class="draggable-item" />
+                                    <img src="./assets/images/list-arrow2.png" class="draggable-item" />
+                                    <img src="./assets/images/list-arrow-long-red.png" class="draggable-item" />
+                                    <img src="./assets/images/listitem_arrow_icon.png" class="draggable-item" />
+                                    <img src="./assets/images/list-item-ayurvedic.png" class="draggable-item" />
+                                </div>
 
-                                    <h5>Political Avatars / Logos</h5>
-                                    <div class="inner-container row gap-lr-1">
-                                        <img src="./assets/images/ntr-vaidya-seva.png" class="draggable-item" />
-                                        <img src="./assets/images/cbn.png" class="draggable-item" />
-                                        <img src="./assets/images/birthday-main-1.png" class="draggable-item" />
-                                        <img src="./assets/images/lokesh.png" class="draggable-item" />
-                                        <img src="./assets/images/krishnam-raju.png" class="draggable-item" />
-                                        <img src="./assets/images/ysr.png" class="draggable-item" />
-                                        <img src="./assets/images/jagan.png" class="draggable-item" />
-                                        <img src="./assets/images/nimmala-ramanaidu-mla.png" class="draggable-item" />
-                                        <img src="./assets/images/jagan.png" class="draggable-item" />
-                                        <img src="./assets/images/ap-emblem.png" class="draggable-item" />
-                                    </div>
+                                <h5>Political Avatars / Logos</h5>
+                                <div class="inner-container row gap-lr-1">
+                                    <img src="./assets/images/ntr-vaidya-seva.png" class="draggable-item" />
+                                    <img src="./assets/images/cbn.png" class="draggable-item" />
+                                    <img src="./assets/images/birthday-main-1.png" class="draggable-item" />
+                                    <img src="./assets/images/lokesh.png" class="draggable-item" />
+                                    <img src="./assets/images/krishnam-raju.png" class="draggable-item" />
+                                    <img src="./assets/images/ysr.png" class="draggable-item" />
+                                    <img src="./assets/images/jagan.png" class="draggable-item" />
+                                    <img src="./assets/images/nimmala-ramanaidu-mla.png" class="draggable-item" />
+                                    <img src="./assets/images/jagan.png" class="draggable-item" />
+                                    <img src="./assets/images/ap-emblem.png" class="draggable-item" />
                                 </div>
                             </div>
+                        </div>
                     </li>
                     <li class="showMobile exportMenu">
                         <div class="dropdownlink">
@@ -2024,6 +2042,45 @@
                                         <input type="text" name="color" class="hex-input" placeholder="#ffffff">
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+
+                        <!-- Text Shadow Controls -->
+                        <h3>Text Shadow</h3>
+                        <div id="textShadowControls">
+                            <div class="formGroup">
+                                <label>
+                                    X Offset:
+                                    <input type="range" id="shadowX" min="-20" max="20" value="0">
+                                    <span id="shadowXValue">0</span>
+                                </label>
+                            </div>
+                            <div class="formGroup">
+                                <label>
+                                    Y Offset:
+                                    <input type="range" id="shadowY" min="-20" max="20" value="0">
+                                    <span id="shadowYValue">0</span>
+                                </label>
+                            </div>
+                            <div class="formGroup">
+                                <label>
+                                    Blur:
+                                    <input type="range" id="shadowBlur" min="0" max="20" value="0">
+                                    <span id="shadowBlurValue">0</span>
+                                </label>
+                            </div>
+                            <div class="formGroup">
+                                <label>
+                                    Color:
+                                    <input type="color" id="shadowColor" value="#000000">
+                                </label>
+                            </div>
+                            <div class="formGroup">
+                                <label>
+                                    Opacity:
+                                    <input type="range" id="shadowOpacity" min="0" max="1" step="0.1" value="1">
+                                    <span id="shadowOpacityValue">1</span>
+                                </label>
                             </div>
                         </div>
 
