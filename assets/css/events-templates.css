@@ -4818,7 +4818,8 @@ body {
 #temp-footer .event17Footer p.contactClickable::before,
 #temp-footer .event19Footer p.contactClickable::before,
 #temp-footer .event21Footer p.contactClickable::before,
-#temp-footer .event25Footer p.contactClickable::before {
+#temp-footer .event25Footer p.contactClickable::before,
+#temp-footer .event27Footer p.contactClickable::before {
     background: url(../images/phone-icon-wht.png) no-repeat center center !important;
     background-size: contain !important;
 }
@@ -4828,7 +4829,8 @@ body {
 #temp-footer .event17Footer p.contactClickable::after,
 #temp-footer .event19Footer p.contactClickable::after,
 #temp-footer .event21Footer p.contactClickable::after,
-#temp-footer .event25Footer p.contactClickable::after {
+#temp-footer .event25Footer p.contactClickable::after,
+#temp-footer .event27Footer p.contactClickable::after {
     background: url(../images/click_hand_icon2-wht.svg) no-repeat center center !important;
     background-size: contain !important;
 }
@@ -6230,37 +6232,244 @@ body {
 
 .event27Head .imgHolder.topDecor {
     position: relative;
-    margin: -2.7rem auto 0;
+    margin: -2.7rem auto;
     z-index: -1;
 }
 
 .event27Head h1 {
+    font-family: 'Batukamma', sans-serif !important;
+    font-size: 34px !important;
+    font-weight: 500 !important;
+    line-height: .8 !important;
+    color: #386a09 !important;
+    text-align: center !important;
+    margin: -2rem auto -.5rem !important;
+    padding: 0 !important;
+    width: fit-content !important;
+    position: relative;
+}
+
+.event27Head h1 span {
+    font-family: 'Bonalu', sans-serif !important;
+    font-size: 28px !important;
+    font-style: italic !important;
+    display: block !important;
+    clear: both !important;
+}
+
+.event27Body h1 {
+    font-family: 'Batukamma', sans-serif !important;
+    font-size: 52px !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    color: #f70002 !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    width: fit-content !important;
+    position: relative;
+}
+
+.event27Body h1 span {
+    font-size: 28px !important;
+    color: #0b2ad0 !important;
+    display: block !important;
+    clear: both !important;
+}
+
+.event27Body h4 {
     font-family: 'Kaloji', sans-serif !important;
-    font-size: 40px !important;
+    font-size: 20px !important;
     font-weight: 500 !important;
     line-height: 1.2 !important;
-    color: #fff100 !important;
+    color: #f9fe0c !important;
     text-align: center !important;
-    margin: -.85rem auto 0 !important;
-    padding: 0 !important;
+    margin: 0 auto !important;
+    padding: .2rem .35rem !important;
     width: fit-content !important;
+    background-color: #0b2ad0 !important;
+    border-radius: 6px !important;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, .3);
     position: relative;
-    text-shadow: 0 2px 0 rgba(0, 0, 0, .8);
 }
 
-.event27Body {
-    width: 100% !important;
+.event27Body .side-by-side {
+    justify-content: center !important;
+    gap: .5rem !important;
+    align-items: center !important;
+    padding: 2.5rem 0 0 !important;
+    margin: 0 auto !important;
+    width: 90% !important;
+    position: relative;
 }
 
-.event27Body h5 {
-    font-family: 'Roboto', sans-serif !important;
-    font-size: 16px !important;
-    font-weight: 600 !important;
-    line-height: 1.2 !important;
+.event27Body .side-by-side .imgHolder.butterflyStove {
+    position: absolute;
+    top: .5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    height: 40px;
+}
+
+.event27Body .side-by-side .imgHolder.hpLogo {
+    position: absolute;
+    top: .15rem;
+    left: 4%;
+    width: auto;
+    height: 55px;
+    z-index: 5;
+}
+
+.event27Body .side-by-side h3.splBgTxt {
+    font-family: 'Kaloji', sans-serif !important;
+    font-size: 22px !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
     color: #fff !important;
     text-align: center !important;
-    margin: -1rem auto 0 !important;
+    margin: 0 !important;
+    padding: .5rem !important;
+    width: 35% !important;
+    background-color: #ff2f0b !important;
+    border-radius: 60px !important;
+    position: relative;
+}
+
+.event27Body .side-by-side h3.splBgTxt span {
+    color: #fff100 !important;
+    display: block;
+    clear: both;
+}
+
+.event27Body .side-by-side h2 {
+    font-family: 'Kaloji', sans-serif !important;
+    font-size: 32px !important;
+    font-weight: 500 !important;
+    line-height: .9 !important;
+    color: #2a2c45 !important;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: 0 .5rem !important;
+    width: fit-content !important;
+    position: relative;
+}
+
+.event27Body .side-by-side .imgHolder.hpCylinder {
+    width: auto;
+    height: 120px;
+    position: relative;
+    top: -.85rem;
+}
+
+.event27Body h3.withBg {
+    font-family: 'Kaloji', sans-serif !important;
+    font-size: 24px !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    color: #fff100 !important;
+    text-align: center !important;
+    margin: -.75rem 0 0 !important;
+    padding: .2rem 0 !important;
+    width: fit-content !important;
+    background-color: #f40000 !important;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, .3);
+    border-radius: 0 !important;
+    position: relative;
+}
+
+.event27Body h2 {
+    font-family: 'Kaloji', sans-serif !important;
+    font-size: 44px !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    color: #092adb !important;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: .25rem 0 0 !important;
+    width: fit-content !important;
+    position: relative;
+}
+
+.event27Body p {
+    font-family: 'Kaloji', sans-serif !important;
+    font-size: 22px !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    color: #f30100 !important;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: 0 0 .25rem !important;
+    width: fit-content !important;
+    position: relative;
+}
+
+.event27Body .boxedContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: fit-content;
+    padding: .25rem .35rem;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 3px;
+    gap: .35rem;
+}
+
+.event27Body .boxedContent p {
+    font-family: 'Kaloji', sans-serif !important;
+    font-size: 19px !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    color: #04066a !important;
+    text-align: center !important;
+    margin: 0 !important;
     padding: 0 !important;
     width: fit-content !important;
     position: relative;
+}
+
+.event27Body .boxedContent .inlineFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .75rem;
+    width: fit-content;
+}
+
+.event27Body .boxedContent .inlineFlex .imgHolder {
+    width: auto;
+    height: 20px;
+}
+
+.event27Footer h3 {
+    font-family: 'Kaloji', sans-serif !important;
+    font-size: 44px !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    color: #a80cb8 !important;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: fit-content !important;
+    position: relative;
+}
+
+.event27Footer p {
+    font-family: 'Kaloji', sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    color: #651a6f !important;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: .25rem .35rem !important;
+    width: fit-content !important;
+    position: relative;
+}
+
+#temp-footer .event27Footer p.contactClickable {
+    background-color: #d80001 !important;
+    color: #fff !important;
 }
