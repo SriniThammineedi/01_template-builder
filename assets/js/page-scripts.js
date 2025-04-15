@@ -1330,3 +1330,66 @@ document.getElementById('deleteObjectBtn').addEventListener('click', function (e
         console.log('Nothing selected!');
     }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Range Label move along with the slider
+
+class RangeLabelMover {
+  constructor(containerSelector = ".range-container", rangeClass = "range") {
+    this.rangeContainers = document.querySelectorAll(containerSelector);
+    this.rangeClass = rangeClass;
+    this.init();
+  }
+
+  scale(num, in_min, in_max, out_min, out_max) {
+    return ((num - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min;
+  }
+
+  moveLabel(e) {
+    const input = e.target;
+    const label = input.nextElementSibling;
+    const value = +input.value;
+
+    const rangeWidth = parseFloat(getComputedStyle(input).width);
+    const labelWidth = parseFloat(getComputedStyle(label).width);
+
+    const min = +input.min;
+    const max = +input.max;
+
+    const left =
+      value * (rangeWidth / max) -
+      labelWidth / 2 +
+      this.scale(value, min, max, 1, 1);
+
+    label.style.left = `${left}px`;
+    label.innerHTML = value;
+  }
+
+  init() {
+    this.rangeContainers.forEach((container) => {
+      const rangeInput = container.querySelector(`input.${this.rangeClass}`);
+      const label = rangeInput?.nextElementSibling;
+
+      if (rangeInput && label) {
+        this.moveLabel({ target: rangeInput });
+        rangeInput.addEventListener("input", this.moveLabel.bind(this));
+      }
+    });
+  }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  new RangeLabelMover();
+});

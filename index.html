@@ -2171,19 +2171,54 @@
                     <div id="obj-edit-options" class="edit-options">
                         <h3>Edit Object</h3>
                         <div class="imgOptions">
-                            <label>Image Size: <input type="range" id="widthInput" min="10" max="300" step="10"
-                                    value="100"><span id="widthLabel">0</span></label>
-                            <label>Border Radius: <input type="range" id="borderRadiusInput" min="0" max="50" step=".5"
-                                    value="0"><span id="radiusLabel">0</span></label>
-                            <label>Border Thickness: <input type="range" id="borderThicknessInput" min="0" max="20"
-                                    step="1" value="0"><span id="borderLabel">0</span></label>
-                            <label>Border Color: <input type="color" name="color" id="borderColorInput"
-                                    value="#000000"></label>
-                            <label>Opacity: <input type="range" id="opacityInput" min="0.2" max="1" step="0.1"
-                                    value="1"><span id="opacityLabel">0</span></label>
-                            <label>Rotate: <input type="range" name="rotate" id="rotateInput" min="-180" max="180"
-                                    value="0"><span id="rotateLabel">0</span></label>
-                            <label>Z-Index: <input type="number" id="zIndexInput" value="2"></label>
+                            <div class="rangeGrp">
+                                <span>Image Size:</span>
+                                <div class="range-container">
+                                    <input type="range" name="range" id="widthInput" class="range" min="10" max="300"
+                                        step="10" value="100">
+                                    <label id="widthLabel">0</label>
+                                </div>
+                            </div>
+                            <div class="rangeGrp">
+                                <span>Border Radius:</span>
+                                <div class="range-container">
+                                    <input type="range" name="range" id="borderRadiusInput" class="range" min="0"
+                                        max="50" step=".5" value="0">
+                                    <label id="radiusLabel">0</label>
+                                </div>
+                            </div>
+                            <div class="rangeGrp">
+                                <span>Border Thickness:</span>
+                                <div class="range-container">
+                                    <input type="range" name="range" id="borderThicknessInput" class="range" min="0"
+                                        max="20" step="1" value="0">
+                                    <label id="borderLabel">0</label>
+                                </div>
+                            </div>
+                            <div class="rangeGrp">
+                                <span>Border Color:</span>
+                                <input type="color" name="range" name="color" id="borderColorInput" value="#000000">
+                            </div>
+                            <div class="rangeGrp">
+                                <span>Opacity:</span>
+                                <div class="range-container">
+                                    <input type="range" name="range" id="opacityInput" class="range" min="0.2" max="1"
+                                        step="0.1" value="1">
+                                    <label id="opacityLabel">0</label>
+                                </div>
+                            </div>
+                            <div class="rangeGrp">
+                                <span>Rotate:</span>
+                                <div class="range-container">
+                                    <input type="range" name="range" name="rotate" id="rotateInput" class="range"
+                                        min="-180" max="180" value="0">
+                                    <label id="rotateLabel">0</label>
+                                </div>
+                            </div>
+                            <div class="rangeGrp">
+                                <span>Z-Index:</span>
+                                <input type="number" id="zIndexInput" value="2">
+                            </div>
                             <button id="flip-btn-horizontal"><img src="./assets/images/flip_horizontal.svg" alt=""> Flip
                                 Horizontal</button>
                             <button id="flip-btn-vertical"><img src="./assets/images/flip_vertical.svg" alt=""> Flip
