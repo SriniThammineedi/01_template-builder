@@ -1071,11 +1071,12 @@ document.addEventListener("DOMContentLoaded", () => {
         let newWidth = startWidth + (event.clientX - startX);
         element.style.width = `${newWidth}px`;
         element.style.height = `${newWidth * aspectRatio}px`;
-        if (document.getElementById("width-input")) {
-          document.getElementById("width-input").value = newWidth;
+        if (document.getElementById("widthInput")) {
+          document.getElementById("widthInput").value = newWidth;
+          document.getElementById("widthLabel").textContent = width;
         }
-        if (document.getElementById("height-input")) {
-          document.getElementById("height-input").value = newWidth * aspectRatio;
+        if (document.getElementById("heightInput")) {
+          document.getElementById("heightInput").value = newWidth * aspectRatio;
         }
       }
       function stopResize() {
@@ -1103,20 +1104,20 @@ document.addEventListener("DOMContentLoaded", () => {
       }
       
       if (!selectedElement.classList.contains('customTxt')) {
-        if (document.getElementById("width-input")) {
-          document.getElementById("width-input").value = parseInt(selectedElement.style.width);
+        if (document.getElementById("widthInput")) {
+          document.getElementById("widthInput").value = parseInt(selectedElement.style.width);
         }
-        if (document.getElementById("border-radius-input")) {
-          document.getElementById("border-radius-input").value = parseInt(selectedElement.style.borderRadius);
+        if (document.getElementById("borderRadiusInput")) {
+          document.getElementById("borderRadiusInput").value = parseInt(selectedElement.style.borderRadius);
         }
-        if (document.getElementById("opacity-input")) {
-          document.getElementById("opacity-input").value = selectedElement.style.opacity;
+        if (document.getElementById("opacityInput")) {
+          document.getElementById("opacityInput").value = selectedElement.style.opacity;
         }
-        if (document.getElementById("z-index-input")) {
-          document.getElementById("z-index-input").value = selectedElement.style.zIndex;
+        if (document.getElementById("zIndexInput")) {
+          document.getElementById("zIndexInput").value = selectedElement.style.zIndex;
         }
-        if (document.getElementById("border-thickness-input")) {
-          document.getElementById("border-thickness-input").value = selectedElement.style.borderWidth.replace("px", "") || 0;
+        if (document.getElementById("borderThicknessInput")) {
+          document.getElementById("borderThicknessInput").value = selectedElement.style.borderWidth.replace("px", "") || 0;
         }
         if (document.getElementById("border-color-input")) {
           document.getElementById("border-color-input").value = selectedElement.style.borderColor || "#000000";
@@ -1125,45 +1126,45 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  if (document.getElementById("width-input")) {
-    document.getElementById("width-input").addEventListener("input", (e) => {
-      if (selectedElement) {
-        const aspectRatio = selectedElement.offsetHeight / selectedElement.offsetWidth;
-        selectedElement.style.width = `${e.target.value}px`;
-        selectedElement.style.height = `${e.target.value * aspectRatio}px`;
-        if (document.getElementById("height-input")) {
-          document.getElementById("height-input").value = e.target.value * aspectRatio;
-        }
-      }
-    });
-  }
+  document.getElementById("widthInput").addEventListener("input", (e) => {
+    if (selectedElement) {
+      const aspectRatio = selectedElement.offsetHeight / selectedElement.offsetWidth;
+      selectedElement.style.width = `${e.target.value}px`;
+      selectedElement.style.height = `${e.target.value * aspectRatio}px`;
+      // document.getElementById("heightInput").value = e.target.value * aspectRatio;
+      document.getElementById("widthLabel").textContent = e.target.value;
+    }
+  });
 
-  if (document.getElementById("border-radius-input")) {
-    document.getElementById("border-radius-input").addEventListener("input", (e) => {
-      if (selectedElement) selectedElement.style.borderRadius = `${e.target.value}%`;
-    });
-  }
+  document.getElementById("borderRadiusInput").addEventListener("input", (e) => {
+    if (selectedElement) {
+      selectedElement.style.borderRadius = `${e.target.value}%`;
+      document.getElementById("radiusLabel").textContent = e.target.value;
+    }
+  });
 
-  if (document.getElementById("opacity-input")) {
-    document.getElementById("opacity-input").addEventListener("input", (e) => {
-      if (selectedElement) selectedElement.style.opacity = e.target.value;
-    });
-  }
+  document.getElementById("opacityInput").addEventListener("input", (e) => {
+    if (selectedElement) {
+      selectedElement.style.opacity = e.target.value;
+      document.getElementById("opacityLabel").textContent = e.target.value;
+    }
+  });
 
-  if (document.getElementById("z-index-input")) {
-    document.getElementById("z-index-input").addEventListener("input", (e) => {
+  if (document.getElementById("zIndexInput")) {
+    document.getElementById("zIndexInput").addEventListener("input", (e) => {
       if (selectedElement) selectedElement.style.zIndex = e.target.value;
     });
   }
 
-  if (document.getElementById("border-thickness-input")) {
-    document.getElementById("border-thickness-input").addEventListener("input", (e) => {
-      if (selectedElement) selectedElement.style.borderWidth = `${e.target.value}px`;
-    });
-  }
+  document.getElementById("borderThicknessInput").addEventListener("input", (e) => {
+    if (selectedElement) {
+      selectedElement.style.borderWidth = `${e.target.value}px`;
+      document.getElementById("borderLabel").textContent = e.target.value;
+    }
+  });
 
-  if (document.getElementById("rotate-input")) {
-    document.getElementById("rotate-input").addEventListener("input", (e) => {
+  if (document.getElementById("rotateInput")) {
+    document.getElementById("rotateInput").addEventListener("input", (e) => {
       if (selectedElement) {
         let rotationAngle = e.target.value;
         selectedElement.style.transform = `rotate(${rotationAngle}deg)`;
@@ -1237,8 +1238,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+
 ////////////////////////////////////////////////////////////////////////////////
-// Disable contentEditable for elements inside .objects and enable to .template-wrapper
+// Disable contentEditable for elements inside 'objects' and enable to 'template-wrapper'
 function updateContentEditableState(element) {
   const isInObjects = element.closest('.objects') !== null;
   const isInTemplate = element.closest('.template-wrapper') !== null;
@@ -1262,4 +1264,69 @@ document.addEventListener('DOMContentLoaded', function() {
       }, 0);
     }
   });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+// Delete Selected item from the scene using keyboard shortcut key
+document.addEventListener('keydown', function (e) {
+    const selected = document.querySelector('.selectable.selected');
+    if (e.key === 'Delete' && selected) {
+        selected.remove();
+    }
+});
+
+// Selection Logic for both (touch + click)
+function handleSelection(e) {
+    const isDeleteButton = e.target.id === 'deleteObjectBtn';
+    const isSelectable = e.target.classList.contains('selectable');
+
+    if (isDeleteButton) {
+        return;
+    }
+
+    setTimeout(() => {
+        document.querySelectorAll('.selectable').forEach(el => el.classList.remove('selected'));
+        if (isSelectable) {
+            e.target.classList.add('selected');
+            console.log('Selected:', e.target);
+        }
+    }, 500);
+}
+
+document.addEventListener('click', handleSelection);
+document.addEventListener('touchstart', handleSelection);
+
+
+// Delete Selected item from the scene using delete button
+document.getElementById('deleteObjectBtn').addEventListener('click', function (e) {
+    e.stopPropagation();
+
+    const selected = document.querySelector('.selectable.selected');
+    if (selected) {
+        selected.remove();
+    } else {
+        console.log('Nothing selected!');
+    }
 });

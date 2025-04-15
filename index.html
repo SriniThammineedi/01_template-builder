@@ -2042,6 +2042,9 @@
                                         <input type="text" name="color" class="hex-input" placeholder="#ffffff">
                                     </div>
                                 </div>
+                                <div class="formGroup">
+                                    <button id="deleteObjectBtn">Delete Item</button>
+                                </div>
                             </div>
                         </div>
 
@@ -2168,19 +2171,19 @@
                     <div id="obj-edit-options" class="edit-options">
                         <h3>Edit Object</h3>
                         <div class="imgOptions">
-                            <label>Image Size: <input type="range" id="width-input" min="10" max="300" step="10"
-                                    value="100"></label>
-                            <label>Border Radius: <input type="range" id="border-radius-input" min="0" max="50"
-                                    step=".5" value="0"></label>
-                            <label>Border Thickness: <input type="range" id="border-thickness-input" min="0" max="20"
-                                    step="1" value="0"></label>
-                            <label>Border Color: <input type="color" name="color" id="border-color-input"
+                            <label>Image Size: <input type="range" id="widthInput" min="10" max="300" step="10"
+                                    value="100"><span id="widthLabel">0</span></label>
+                            <label>Border Radius: <input type="range" id="borderRadiusInput" min="0" max="50" step=".5"
+                                    value="0"><span id="radiusLabel">0</span></label>
+                            <label>Border Thickness: <input type="range" id="borderThicknessInput" min="0" max="20"
+                                    step="1" value="0"><span id="borderLabel">0</span></label>
+                            <label>Border Color: <input type="color" name="color" id="borderColorInput"
                                     value="#000000"></label>
-                            <label>Opacity: <input type="range" id="opacity-input" min="0.2" max="1" step="0.1"
-                                    value="1"></label>
-                            <label>Rotate: <input type="range" name="rotate" id="rotate-input" min="0" max="360"
-                                    value="0"></label>
-                            <label>Z-Index: <input type="number" id="z-index-input" value="2"></label>
+                            <label>Opacity: <input type="range" id="opacityInput" min="0.2" max="1" step="0.1"
+                                    value="1"><span id="opacityLabel">0</span></label>
+                            <label>Rotate: <input type="range" name="rotate" id="rotateInput" min="-180" max="180"
+                                    value="0"><span id="rotateLabel">0</span></label>
+                            <label>Z-Index: <input type="number" id="zIndexInput" value="2"></label>
                             <button id="flip-btn-horizontal"><img src="./assets/images/flip_horizontal.svg" alt=""> Flip
                                 Horizontal</button>
                             <button id="flip-btn-vertical"><img src="./assets/images/flip_vertical.svg" alt=""> Flip

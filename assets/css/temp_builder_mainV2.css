@@ -1502,6 +1502,19 @@ ul.expandable-menu li.open .accorParentContainer {
     padding: 0 1rem !important;
 }
 
+.formGroup #deleteObjectBtn {
+    position: relative;
+    background: #c40000;
+    border: none;
+    padding: .25rem .5rem;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
 
 /* Change Color of Text in Templates */
 #themeOuter.theme-dark>.template-wrapper>* {
@@ -2964,17 +2977,29 @@ p.contact::before {
     justify-content: flex-end;
     padding: .25rem .5rem;
     width: 100%;
-    gap: .25rem;
+    gap: .75rem;
 }
 
 .asideRight .edit-options .imgOptions label {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
     width: 100%;
     font-size: 13px;
     font-weight: 500;
     color: #444;
+}
+
+.asideRight .edit-options .imgOptions label span {
+    position: absolute;
+    top: -.5rem;
+    right: 0;
+    font-size: 13px;
+    line-height: 1;
+    font-weight: 600;
+    color: #444;
+    border-bottom: 2px solid rgb(0, 17, 255);
 }
 
 .asideRight .edit-options .imgOptions label input {
