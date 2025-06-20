@@ -41,6 +41,7 @@ font-family: "Lohit Telugu", sans-serif;
 html {
     height: 100%;
     scroll-behavior: smooth;
+    overflow: hidden;
 }
 
 * {
@@ -212,7 +213,7 @@ body {
     color: #000;
     font-family: 'Roboto', sans-serif;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     margin: 0 auto;
     height: 100vh;
@@ -380,6 +381,7 @@ ul.dropdown li:hover ul.dropdown-content {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow-y: auto;
     z-index: 1;
     transition: all 0.3s ease;
     background-color: #fcf4ef;
@@ -387,6 +389,20 @@ ul.dropdown li:hover ul.dropdown-content {
     background-position: 0 0, 25px 25px;
     background-size: 25px 25px;
 }
+
+/* #main #designerSpace:before {
+    content: "";
+    display: block;
+    position: fixed;
+    width: 100vw;
+    opacity: .3;
+    aspect-ratio: 1;
+    left: 100%;
+    top: 50%;
+    z-index: 0;
+    transform: translateX(-50%) translateY(-50%);
+    background-image: radial-gradient(at 50% 50% in oklch, color-mix(in oklch, #f7af3a, #aed52f 80%), color-mix(in oklch, #f7af3a, #c5796c 10%) 19%, color-mix(in oklch, #f7af3a, blue 20%) 20%, color-mix(in oklch, #f7af3a, #00f9ff3b 80%), color-mix(in oklch, #ffcc00d6, #b13ba84d 50%) 55%, transparent 70%);
+} */
 
 #main #designerSpace.shrink {
     max-width: calc(100vw - 750px);
@@ -992,7 +1008,7 @@ ul.expandable-menu li.open .accorParentContainer {
     height: 100%;
     max-height: 768px !important;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     margin: 0 auto;
     border: none;
@@ -1000,7 +1016,7 @@ ul.expandable-menu li.open .accorParentContainer {
     position: relative;
     background-color: #585858;
     transition: all 0.3s ease;
-    overflow-y: auto;
+    overflow: hidden;
 }
 
 .imgHolder {
@@ -1486,34 +1502,17 @@ ul.expandable-menu li.open .accorParentContainer {
     padding: 0 1rem !important;
 }
 
-.formGroup #deleteObjectBtn, .formGroup #undoBtn {
+.formGroup #deleteObjectBtn {
     position: relative;
     background: #c40000;
     border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: .35rem;
-    padding: .5rem;
+    padding: .25rem .5rem;
     border-radius: 6px;
     font-size: 12px;
     font-weight: 600;
     color: #fff;
     cursor: pointer;
     transition: all .2s ease-in-out;
-}
-
-.formGroup #undoBtn{
-    background: #1f14af;
-}
-
-.formGroup #deleteObjectBtn img{
-    filter: brightness(5);
-}
-
-.formGroup #undoBtn img{
-    width: 18px;
-    filter: invert(1);
 }
 
 
@@ -1655,11 +1654,11 @@ ul.expandable-menu li.open .accorParentContainer {
 /* Custom Font Selector DropDown */
 .custom-font-select {
     position: relative;
-    width: 100%;
+    width: 250px;
 }
 
 .selected-font {
-    padding: 2px 10px;
+    padding: 6px 10px;
     background: #fff url(../images/select-down-arrow.svg) no-repeat 96% center;
     background-size: 12px auto;
     border: 1px solid rgba(0, 0, 0, .2);
@@ -3102,11 +3101,13 @@ p.contact::before {
 
     body,
     html {
+        overflow: hidden;
         font-size: 14px;
     }
 
     #main {
         flex-direction: column;
+        overflow: hidden;
     }
 
     .showMobile {
@@ -3151,7 +3152,6 @@ p.contact::before {
         height: 60px;
         order: 2;
         z-index: 3;
-        left: 0;
         overflow: visible;
         position: fixed;
         bottom: 0;
@@ -3245,13 +3245,6 @@ p.contact::before {
         bottom: 60px;
     }
 
-    .asideRight .edit-options,
-    .asideRight #obj-edit-options{
-        height: 100%;
-        max-height: inherit;
-        overflow: auto;
-    }
-
     #mobileToggle {
         display: flex;
         align-items: center;
@@ -3296,8 +3289,8 @@ p.contact::before {
         align-items: flex-end !important;
     }
 
-    .formGroup.splMobileView label[for="theme"], .formGroup.splMobileView label {
-        display: none !important;
+    .formGroup.splMobileView label[for="theme"] {
+        display: none;
     }
 
     .formGroup.splMobileView .switch-container {
@@ -3344,29 +3337,32 @@ p.contact::before {
     }
 
     #main #designerSpace {
-        width: 100%;
-        max-width: inherit !important;
+        max-width: 100% !important;
         align-items: flex-start;
-        justify-content: center;
+        justify-content: flex-start;
         order: 1;
         height: 100%;
         max-height: calc(100vh - 60px);
-        overflow: auto !important;
     }
 
-    #main #designerSpace.shrink, #main #designerSpace.lessHeight{
-        height: 100%;
-        max-height: calc(100vh - 60vh) !important;
+    #main #designerSpace.lessHeight {
+        /* height: calc(100vh - 45vh); */
+        height: auto;
     }
 
-    .inner-container.row.split-2>div, .inner-container.row.split-2 .content>div, .inner-container.row>div{
+    .inner-container.row>div {
+        width: calc(1/8 * 100% - (1 - 1/8) * 1rem);
+    }
+
+    .inner-container.row.split-2>div, .inner-container.row.split-2 .content>div{
         width: calc(1/7 * 100% - (1 - 1/7) * 1rem);
     }
 
     #main #designerSpace.lessHeight #themeOuter,
     #main #designerSpace.shrink #themeOuter {
+        transform: scale(.4);
         transform-origin: center top;
-        margin: 0 auto;
+        margin: .4rem auto -.4rem;
     }
 
     .asideLeft.expanded {
@@ -3432,14 +3428,15 @@ p.contact::before {
     }
 
     #themeOuter {
-        height: 768px;
-        max-height: 768px !important;
-        min-width: 432px;
-        overflow: auto !important;
+        height: 84vh;
+        max-height: fit-content;
+        min-height: 100%;
+        transform: scale(1);
     }
 
     .setOptions .flexRow .formGroup label {
-        font-size: 10px;
+        font-size: 0;
+        color: transparent;
     }
 
     .topNav button.publishBtn i,

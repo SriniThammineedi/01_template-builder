@@ -1327,7 +1327,6 @@ document.getElementById('deleteObjectBtn').addEventListener('click', function (e
     }
 });
 
-// Undo delete functionality
 document.getElementById('undoBtn').addEventListener('click', function () {
     if (lastDeleted) {
         const { element, parent, nextSibling } = lastDeleted;
@@ -1343,7 +1342,6 @@ document.getElementById('undoBtn').addEventListener('click', function () {
     }
 });
 
-// Helper function to delete and store deleted element
 function deleteSelectedElement(element) {
     lastDeleted = {
         element: element,
@@ -1365,6 +1363,87 @@ function deleteSelectedElement(element) {
 
 
 
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+// === ✅ Structured Undo System ===
+
+// === Stack to hold up to 15 changes ===
+const structuredUndoStack = [];
+const maxStructuredUndo = 15;
+
+// === Save all .selectable elements as structured state ===
+function saveStructuredState() {
+    const wrapper = document.querySelector('.template-wrapper');
+    if (!wrapper) return;
+
+    const elements = Array.from(wrapper.querySelectorAll('.selectable'));
+    const snapshot = elements.map(el => ({
+        tag: el.tagName,
+        className: el.className,
+        style: el.getAttribute('style'),
+        html: el.innerHTML,
+        dataset: { ...el.dataset }
+    }));
+
+    structuredUndoStack.push(snapshot);
+
+    if (structuredUndoStack.length > maxStructuredUndo) {
+        structuredUndoStack.shift();
+    }
+
+    console.log("Structured state saved. Stack size:", structuredUndoStack.length);
+}
+
+// === Undo the last structured state ===
+function undoStructuredState() {
+    const wrapper = document.querySelector('.template-wrapper');
+    if (!wrapper || structuredUndoStack.length === 0) {
+        console.log("Nothing to undo.");
+        return;
+    }
+
+    const lastSnapshot = structuredUndoStack.pop();
+    // Clear current
+    wrapper.querySelectorAll('.selectable').forEach(el => el.remove());
+
+    // Restore elements
+    lastSnapshot.forEach(data => {
+        const el = document.createElement(data.tag);
+        el.className = data.className;
+        el.setAttribute('style', data.style || '');
+        el.innerHTML = data.html;
+        Object.entries(data.dataset || {}).forEach(([key, value]) => {
+            el.dataset[key] = value;
+        });
+
+        wrapper.appendChild(el);
+
+        // Reapply logic
+        if (el.classList.contains('customTxt')) {
+            el.setAttribute('contenteditable', 'true');
+        }
+
+        // Enable interactions
+        enableSelection(el);
+    });
+
+    setupEditableOptions();
+    console.log("Undo successful. Remaining stack:", structuredUndoStack.length);
+}
+
+// === Hook Ctrl+Z and Undo Button ===
+document.addEventListener('keydown', function (e) {
+    if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'z') {
+        e.preventDefault();
+        undoStructuredState();
+    }
+});
+document.getElementById('undoBtn')?.addEventListener('click', undoStructuredState);
+
+// === Expose saveStructuredState() globally for other calls ===
+window.saveStructuredState = saveStructuredState;
 
 
 // Range Label move along with the slider
